@@ -1,0 +1,164 @@
+Considering the following customized categories: {'artificial intelligence': 1, 'natural language processing': 1, 'robotics': 1, 'neural networks': 1}
+Creating graphs.
+in create_graph_gml_files
+in read_dict_to_list
+out read_dict_to_list
+in read_dict_to_pkl_file
+out read_dict_to_pkl_file
+in read_dict_to_pkl_file
+out read_dict_to_pkl_file
+in read_venue_assignments_csv
+out read_venue_assignments_csv
+in create_cat_venue_dictionary
+out create_cat_venue_dictionary
+in get_authors
+out get_authors
+Creating graphs.
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+Time required to create graphhs is: 16.508735418319702 sec
+Adding cross-edges to the graph.
+Category is: artificial intelligence
+New number of nodes of graph: 43716
+New number of edges of graph: 828114
+Category is: natural language processing
+New number of nodes of graph: 16749
+New number of edges of graph: 640203
+Category is: robotics
+New number of nodes of graph: 31188
+New number of edges of graph: 883725
+Category is: neural networks
+New number of nodes of graph: 39135
+New number of edges of graph: 671388
+Time required to add cross-edges is: 2.477022171020508 sec
+out create_graph_gml_files
+Cleaning graphs.
+in clean_graphs
+Creating core graph.
+Creating core graph.
+Creating core graph.
+Creating core graph.
+out clean_graphs
+Length of nodes list: 30446 length of nodes 0
+Length of nodes list: 13068 length of nodes 30446
+Length of nodes list: 25796 length of nodes 43514
+Length of nodes list: 28473 length of nodes 69310
+Number of unique nodes 68978 number of all nodes: 97783
+Avg End./Role: 728726.0
+Avg End./Expert: 42.258459218881384
+Max End./Expert 4703
+Number of overlapping nodes: 28473
+in get_overlapping_graph_nodes
+Number of intersecting nodes: 599
+out get_overlapping_graph_nodes
+Time to create weighted matrices:  0.8466236591339111
+===============================================================================
+                                     CVXPY                                     
+                                    v1.1.12                                    
+===============================================================================
+(CVXPY) Jan 27 10:24:14 PM: Your problem has 2396 variables, 2 constraints, and 0 parameters.
+(CVXPY) Jan 27 10:24:15 PM: It is compliant with the following grammars: DCP, DQCP
+(CVXPY) Jan 27 10:24:15 PM: (If you need to solve this problem multiple times, but with different data, consider using parameters.)
+(CVXPY) Jan 27 10:24:15 PM: CVXPY will first compile your problem; then, it will invoke a numerical solver to obtain a solution.
+-------------------------------------------------------------------------------
+                                  Compilation                                  
+-------------------------------------------------------------------------------
+(CVXPY) Jan 27 10:24:15 PM: Compiling problem (target solver=GUROBI).
+(CVXPY) Jan 27 10:24:15 PM: Reduction chain: FlipObjective -> CvxAttr2Constr -> Qp2SymbolicQp -> QpMatrixStuffing -> GUROBI
+(CVXPY) Jan 27 10:24:15 PM: Applying reduction FlipObjective
+(CVXPY) Jan 27 10:24:15 PM: Applying reduction CvxAttr2Constr
+(CVXPY) Jan 27 10:24:15 PM: Applying reduction Qp2SymbolicQp
+(CVXPY) Jan 27 10:24:15 PM: Applying reduction QpMatrixStuffing
+(CVXPY) Jan 27 10:24:16 PM: Applying reduction GUROBI
+(CVXPY) Jan 27 10:24:16 PM: Finished problem compilation (took 1.815e-01 seconds).
+-------------------------------------------------------------------------------
+                                Numerical solver                               
+-------------------------------------------------------------------------------
+(CVXPY) Jan 27 10:24:16 PM: Invoking solver GUROBI  to obtain a solution.
+Academic license - for non-commercial use only - expires 2022-12-18
+Using license file /home/pcs00440/gurobi.lic
+Parameter OutputFlag unchanged
+   Value: 1  Min: 0  Max: 1  Default: 1
+Changed value of parameter QCPDual to 1
+   Prev: 0  Min: 0  Max: 1  Default: 0
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+Optimize a model with 603 rows, 2396 columns and 4792 nonzeros
+Model fingerprint: 0xaee3c511
+Model has 75937 quadratic objective terms
+Variable types: 0 continuous, 2396 integer (2396 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [0e+00, 0e+00]
+  QObjective range [4e+00, 5e+02]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 0.0000000
+Presolve time: 0.20s
+Presolved: 1877 rows, 3670 columns, 83277 nonzeros
+Variable types: 0 continuous, 3670 integer (2439 binary)
+
+Root relaxation: objective -3.668320e+03, 574 iterations, 0.08 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 -3668.3203    0   89    0.00000 -3668.3203      -     -    0s
+H    0     0                    -340.0000000 -3668.3203   979%     -    0s
+H    0     0                    -342.0000000 -3668.3203   973%     -    0s
+H    0     0                    -656.0000000 -2605.1984   297%     -    0s
+     0     0 -2278.2945    0  132 -656.00000 -2278.2945   247%     -    0s
+H    0     0                    -680.0000000 -2278.2945   235%     -    1s
+H    0     0                    -700.0000000 -2122.4839   203%     -    1s
+     0     0 -2122.4839    0  139 -700.00000 -2122.4839   203%     -    1s
+     0     0 -2101.8377    0  142 -700.00000 -2101.8377   200%     -    1s
+     0     0 -2101.8377    0  143 -700.00000 -2101.8377   200%     -    1s
+     0     0 -1784.7566    0  157 -700.00000 -1784.7566   155%     -    1s
+     0     0 -1769.7762    0  157 -700.00000 -1769.7762   153%     -    1s
+     0     2 -1769.7762    0  157 -700.00000 -1769.7762   153%     -    2s
+  2077   633     cutoff   71      -700.00000 -1521.8028   117%  29.3    5s
+
+Cutting planes:
+  Gomory: 1
+  MIR: 176
+  StrongCG: 3
+  Zero half: 12
+  RLT: 66
+
+Explored 3368 nodes (104408 simplex iterations) in 5.93 seconds
+Thread count was 32 (of 32 available processors)
+
+Solution count 6: -700 -680 -656 ... 0
+No other solutions better than -700
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective -7.000000000000e+02, best bound -7.000000000000e+02, gap 0.0000%
+-------------------------------------------------------------------------------
+                                    Summary                                    
+-------------------------------------------------------------------------------
+(CVXPY) Jan 27 10:24:22 PM: Problem status: optimal
+(CVXPY) Jan 27 10:24:22 PM: Optimal value: 7.000e+02
+(CVXPY) Jan 27 10:24:22 PM: Compilation took 1.815e-01 seconds
+(CVXPY) Jan 27 10:24:22 PM: Solver (including time spent in interface) took 6.019e+00 seconds
+in compute graph score
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+Solution is: {'artificial intelligence': b'Sebastian Thrun', 'natural language processing': b'Armin B. Cremers', 'robotics': b'Dieter Fox', 'neural networks': b'Dirk Hhnel'}
+Weighted solution score for iqp graph truth is: 350
+Solution score for iqp graph truth is: 9
+Edges are: [(b'Sebastian Thrun', b'Armin B. Cremers'), (b'Sebastian Thrun', b'Dieter Fox'), (b'Sebastian Thrun', b'Dirk Hhnel'), (b'Dieter Fox', b'Sebastian Thrun'), (b'Dieter Fox', b'Armin B. Cremers'), (b'Dieter Fox', b'Dirk Hhnel'), (b'Dirk Hhnel', b'Sebastian Thrun'), (b'Dirk Hhnel', b'Armin B. Cremers'), (b'Dirk Hhnel', b'Dieter Fox')]
+Running time is: 7.592083930969238
+Exiting main!

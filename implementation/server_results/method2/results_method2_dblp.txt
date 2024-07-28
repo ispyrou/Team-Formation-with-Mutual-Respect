@@ -1,0 +1,805 @@
+Considering the following customized categories: {'artificial intelligence': 1, 'natural language processing': 1, 'robotics': 1, 'neural networks': 1}
+Creating graphs.
+in create_graph_gml_files
+in read_dict_to_list
+out read_dict_to_list
+in read_dict_to_pkl_file
+out read_dict_to_pkl_file
+in read_dict_to_pkl_file
+out read_dict_to_pkl_file
+in read_venue_assignments_csv
+out read_venue_assignments_csv
+in create_cat_venue_dictionary
+out create_cat_venue_dictionary
+in get_authors
+out get_authors
+Creating graphs.
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+Time required to create graphhs is: 16.275712728500366 sec
+Adding cross-edges to the graph.
+Category is: artificial intelligence
+New number of nodes of graph: 43716
+New number of edges of graph: 828114
+Category is: natural language processing
+New number of nodes of graph: 16749
+New number of edges of graph: 640203
+Category is: robotics
+New number of nodes of graph: 31188
+New number of edges of graph: 883725
+Category is: neural networks
+New number of nodes of graph: 39135
+New number of edges of graph: 671388
+Time required to add cross-edges is: 2.361722946166992 sec
+out create_graph_gml_files
+Cleaning graphs.
+in clean_graphs
+Creating core graph.
+Creating core graph.
+Creating core graph.
+Creating core graph.
+out clean_graphs
+Length of nodes list: 30446 length of nodes 0
+Length of nodes list: 13068 length of nodes 30446
+Length of nodes list: 25796 length of nodes 43514
+Length of nodes list: 28473 length of nodes 69310
+Number of unique nodes 68978 number of all nodes: 97783
+Avg End./Role: 728726.0
+Avg End./Expert: 42.258459218881384
+Max End./Expert 4703
+Number of overlapping nodes: 28473
+in get_overlapping_graph_nodes
+Number of intersecting nodes: 599
+out get_overlapping_graph_nodes
+Length of x is: 2396
+===============================================================================
+                                     CVXPY                                     
+                                    v1.1.12                                    
+===============================================================================
+(CVXPY) Mar 31 02:58:18 PM: Your problem has 2396 variables, 3 constraints, and 0 parameters.
+(CVXPY) Mar 31 02:58:20 PM: It is compliant with the following grammars: DCP, DQCP
+(CVXPY) Mar 31 02:58:20 PM: (If you need to solve this problem multiple times, but with different data, consider using parameters.)
+(CVXPY) Mar 31 02:58:20 PM: CVXPY will first compile your problem; then, it will invoke a numerical solver to obtain a solution.
+-------------------------------------------------------------------------------
+                                  Compilation                                  
+-------------------------------------------------------------------------------
+(CVXPY) Mar 31 02:58:20 PM: Compiling problem (target solver=GUROBI).
+(CVXPY) Mar 31 02:58:20 PM: Reduction chain: CvxAttr2Constr -> Qp2SymbolicQp -> QpMatrixStuffing -> GUROBI
+(CVXPY) Mar 31 02:58:20 PM: Applying reduction CvxAttr2Constr
+(CVXPY) Mar 31 02:58:20 PM: Applying reduction Qp2SymbolicQp
+(CVXPY) Mar 31 02:58:20 PM: Applying reduction QpMatrixStuffing
+(CVXPY) Mar 31 02:58:20 PM: Applying reduction GUROBI
+(CVXPY) Mar 31 02:58:20 PM: Finished problem compilation (took 1.828e-01 seconds).
+-------------------------------------------------------------------------------
+                                Numerical solver                               
+-------------------------------------------------------------------------------
+(CVXPY) Mar 31 02:58:20 PM: Invoking solver GUROBI  to obtain a solution.
+Academic license - for non-commercial use only - expires 2022-12-18
+Using license file /home/pcs00440/gurobi.lic
+Parameter OutputFlag unchanged
+   Value: 1  Min: 0  Max: 1  Default: 1
+Changed value of parameter QCPDual to 1
+   Prev: 0  Min: 0  Max: 1  Default: 0
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+Optimize a model with 604 rows, 2396 columns and 7188 nonzeros
+Model fingerprint: 0xea47a328
+Model has 75937 quadratic objective terms
+Variable types: 0 continuous, 2396 integer (2396 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [0e+00, 0e+00]
+  QObjective range [4e+00, 8e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 4e+00]
+Found heuristic solution: objective 4.0000000
+Presolve removed 1 rows and 0 columns
+Presolve time: 0.20s
+Presolved: 2103 rows, 3896 columns, 83729 nonzeros
+Variable types: 0 continuous, 3896 integer (2445 binary)
+
+Root relaxation: objective 0.000000e+00, 6 iterations, 0.01 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+*    0     0               0       0.0000000    0.00000  0.00%     -    0s
+
+Explored 1 nodes (6 simplex iterations) in 0.48 seconds
+Thread count was 32 (of 32 available processors)
+
+Solution count 2: 0 4 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+-------------------------------------------------------------------------------
+                                    Summary                                    
+-------------------------------------------------------------------------------
+(CVXPY) Mar 31 02:58:21 PM: Problem status: optimal
+(CVXPY) Mar 31 02:58:21 PM: Optimal value: 0.000e+00
+(CVXPY) Mar 31 02:58:21 PM: Compilation took 1.828e-01 seconds
+(CVXPY) Mar 31 02:58:21 PM: Solver (including time spent in interface) took 5.520e-01 seconds
+in compute graph score
+Solution is: {'artificial intelligence': b'Andrei Barbu', 'natural language processing': b'Baoxin Li', 'robotics': b'Bo Wang', 'neural networks': b'Anurag Ajay'}
+Solution score for iqp graph truth is: 0
+Edges are: []
+Running time is: 2.6347508430480957
+Considering the following customized categories: {'data mining': 1, 'databases': 1, 'algorithms and theory': 1, 'algorithms': 1}
+Creating graphs.
+in create_graph_gml_files
+in read_dict_to_list
+out read_dict_to_list
+in read_dict_to_pkl_file
+out read_dict_to_pkl_file
+in read_dict_to_pkl_file
+out read_dict_to_pkl_file
+in read_venue_assignments_csv
+out read_venue_assignments_csv
+in create_cat_venue_dictionary
+out create_cat_venue_dictionary
+in get_authors
+out get_authors
+Creating graphs.
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+Time required to create graphhs is: 9.937378883361816 sec
+Adding cross-edges to the graph.
+Category is: data mining
+New number of nodes of graph: 18953
+New number of edges of graph: 497386
+Category is: databases
+New number of nodes of graph: 24693
+New number of edges of graph: 969093
+Category is: algorithms and theory
+New number of nodes of graph: 14324
+New number of edges of graph: 246467
+Category is: algorithms
+New number of nodes of graph: 9072
+New number of edges of graph: 113859
+Time required to add cross-edges is: 1.6098129749298096 sec
+out create_graph_gml_files
+Cleaning graphs.
+in clean_graphs
+Creating core graph.
+Creating core graph.
+Creating core graph.
+Creating core graph.
+out clean_graphs
+Length of nodes list: 15157 length of nodes 0
+Length of nodes list: 20295 length of nodes 15157
+Length of nodes list: 8997 length of nodes 35452
+Length of nodes list: 5449 length of nodes 44449
+Number of unique nodes 31701 number of all nodes: 49898
+Avg End./Role: 442794.25
+Avg End./Expert: 55.87132898015835
+Max End./Expert 3995
+Number of overlapping nodes: 5449
+in get_overlapping_graph_nodes
+Number of intersecting nodes: 1111
+out get_overlapping_graph_nodes
+Length of x is: 4444
+===============================================================================
+                                     CVXPY                                     
+                                    v1.1.12                                    
+===============================================================================
+(CVXPY) Mar 31 02:59:52 PM: Your problem has 4444 variables, 3 constraints, and 0 parameters.
+(CVXPY) Mar 31 02:59:57 PM: It is compliant with the following grammars: DCP, DQCP
+(CVXPY) Mar 31 02:59:57 PM: (If you need to solve this problem multiple times, but with different data, consider using parameters.)
+(CVXPY) Mar 31 02:59:57 PM: CVXPY will first compile your problem; then, it will invoke a numerical solver to obtain a solution.
+-------------------------------------------------------------------------------
+                                  Compilation                                  
+-------------------------------------------------------------------------------
+(CVXPY) Mar 31 02:59:57 PM: Compiling problem (target solver=GUROBI).
+(CVXPY) Mar 31 02:59:57 PM: Reduction chain: CvxAttr2Constr -> Qp2SymbolicQp -> QpMatrixStuffing -> GUROBI
+(CVXPY) Mar 31 02:59:57 PM: Applying reduction CvxAttr2Constr
+(CVXPY) Mar 31 02:59:57 PM: Applying reduction Qp2SymbolicQp
+(CVXPY) Mar 31 02:59:57 PM: Applying reduction QpMatrixStuffing
+(CVXPY) Mar 31 02:59:58 PM: Applying reduction GUROBI
+(CVXPY) Mar 31 02:59:58 PM: Finished problem compilation (took 5.538e-01 seconds).
+-------------------------------------------------------------------------------
+                                Numerical solver                               
+-------------------------------------------------------------------------------
+(CVXPY) Mar 31 02:59:58 PM: Invoking solver GUROBI  to obtain a solution.
+Parameter OutputFlag unchanged
+   Value: 1  Min: 0  Max: 1  Default: 1
+Changed value of parameter QCPDual to 1
+   Prev: 0  Min: 0  Max: 1  Default: 0
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+Optimize a model with 1116 rows, 4444 columns and 13332 nonzeros
+Model fingerprint: 0xd3602758
+Model has 355537 quadratic objective terms
+Variable types: 0 continuous, 4444 integer (4444 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [0e+00, 0e+00]
+  QObjective range [4e+00, 8e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 4e+00]
+Found heuristic solution: objective 0.0000000
+Presolve removed 1 rows and 0 columns
+Presolve time: 0.84s
+Presolved: 4207 rows, 7536 columns, 370609 nonzeros
+Variable types: 0 continuous, 7536 integer (4554 binary)
+
+Explored 0 nodes (0 simplex iterations) in 0.93 seconds
+Thread count was 32 (of 32 available processors)
+
+Solution count 1: 0 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+-------------------------------------------------------------------------------
+                                    Summary                                    
+-------------------------------------------------------------------------------
+(CVXPY) Mar 31 02:59:59 PM: Problem status: optimal
+(CVXPY) Mar 31 02:59:59 PM: Optimal value: 0.000e+00
+(CVXPY) Mar 31 02:59:59 PM: Compilation took 5.538e-01 seconds
+(CVXPY) Mar 31 02:59:59 PM: Solver (including time spent in interface) took 1.041e+00 seconds
+in compute graph score
+Solution is: {'data mining': b'Feifei Li', 'databases': b'Emmanuel Mller', 'algorithms and theory': b'Jongwuk Lee', 'algorithms': b'Kiran Garimella'}
+Solution score for iqp graph truth is: 0
+Edges are: []
+Running time is: 7.27984619140625
+Considering the following customized categories: {'data mining': 1, 'databases': 1, 'algorithms and theory': 1, 'algorithms': 1, 'artificial intelligence': 1, 'natural language processing': 1, 'robotics': 1, 'neural networks': 1}
+Creating graphs.
+in create_graph_gml_files
+in read_dict_to_list
+out read_dict_to_list
+in read_dict_to_pkl_file
+out read_dict_to_pkl_file
+in read_dict_to_pkl_file
+out read_dict_to_pkl_file
+in read_venue_assignments_csv
+out read_venue_assignments_csv
+in create_cat_venue_dictionary
+out create_cat_venue_dictionary
+in get_authors
+out get_authors
+Creating graphs.
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+Time required to create graphhs is: 26.601427793502808 sec
+Adding cross-edges to the graph.
+Category is: data mining
+New number of nodes of graph: 29275
+New number of edges of graph: 628167
+Category is: databases
+New number of nodes of graph: 31117
+New number of edges of graph: 1037344
+Category is: algorithms and theory
+New number of nodes of graph: 19888
+New number of edges of graph: 278766
+Category is: algorithms
+New number of nodes of graph: 11599
+New number of edges of graph: 126716
+Category is: artificial intelligence
+New number of nodes of graph: 54758
+New number of edges of graph: 1043585
+Category is: natural language processing
+New number of nodes of graph: 21415
+New number of edges of graph: 714800
+Category is: robotics
+New number of nodes of graph: 31713
+New number of edges of graph: 886838
+Category is: neural networks
+New number of nodes of graph: 45523
+New number of edges of graph: 780411
+Time required to add cross-edges is: 9.544454097747803 sec
+out create_graph_gml_files
+Cleaning graphs.
+in clean_graphs
+Creating core graph.
+Creating core graph.
+Creating core graph.
+Creating core graph.
+Creating core graph.
+Creating core graph.
+Creating core graph.
+Creating core graph.
+out clean_graphs
+Length of nodes list: 21330 length of nodes 0
+Length of nodes list: 23445 length of nodes 21330
+Length of nodes list: 10675 length of nodes 44775
+Length of nodes list: 6351 length of nodes 55450
+Length of nodes list: 37383 length of nodes 61801
+Length of nodes list: 16001 length of nodes 99184
+Length of nodes list: 26011 length of nodes 115185
+Length of nodes list: 32544 length of nodes 141196
+Number of unique nodes 95903 number of all nodes: 173740
+Avg End./Role: 659539.375
+Avg End./Expert: 55.017204884101645
+Max End./Expert 5971
+Number of overlapping nodes: 32544
+in get_overlapping_graph_nodes
+Number of intersecting nodes: 131
+out get_overlapping_graph_nodes
+Length of x is: 1048
+===============================================================================
+                                     CVXPY                                     
+                                    v1.1.12                                    
+===============================================================================
+(CVXPY) Mar 31 03:02:33 PM: Your problem has 1048 variables, 3 constraints, and 0 parameters.
+(CVXPY) Mar 31 03:02:33 PM: It is compliant with the following grammars: DCP, DQCP
+(CVXPY) Mar 31 03:02:33 PM: (If you need to solve this problem multiple times, but with different data, consider using parameters.)
+(CVXPY) Mar 31 03:02:33 PM: CVXPY will first compile your problem; then, it will invoke a numerical solver to obtain a solution.
+-------------------------------------------------------------------------------
+                                  Compilation                                  
+-------------------------------------------------------------------------------
+(CVXPY) Mar 31 03:02:33 PM: Compiling problem (target solver=GUROBI).
+(CVXPY) Mar 31 03:02:33 PM: Reduction chain: CvxAttr2Constr -> Qp2SymbolicQp -> QpMatrixStuffing -> GUROBI
+(CVXPY) Mar 31 03:02:33 PM: Applying reduction CvxAttr2Constr
+(CVXPY) Mar 31 03:02:33 PM: Applying reduction Qp2SymbolicQp
+(CVXPY) Mar 31 03:02:33 PM: Applying reduction QpMatrixStuffing
+(CVXPY) Mar 31 03:02:33 PM: Applying reduction GUROBI
+(CVXPY) Mar 31 03:02:33 PM: Finished problem compilation (took 8.281e-02 seconds).
+-------------------------------------------------------------------------------
+                                Numerical solver                               
+-------------------------------------------------------------------------------
+(CVXPY) Mar 31 03:02:33 PM: Invoking solver GUROBI  to obtain a solution.
+Parameter OutputFlag unchanged
+   Value: 1  Min: 0  Max: 1  Default: 1
+Changed value of parameter QCPDual to 1
+   Prev: 0  Min: 0  Max: 1  Default: 0
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+Optimize a model with 140 rows, 1048 columns and 3144 nonzeros
+Model fingerprint: 0x0d11b374
+Model has 27765 quadratic objective terms
+Variable types: 0 continuous, 1048 integer (1048 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [0e+00, 0e+00]
+  QObjective range [4e+00, 8e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 8e+00]
+Found heuristic solution: objective 0.0000000
+Presolve removed 1 rows and 0 columns
+Presolve time: 0.07s
+Presolved: 826 rows, 1735 columns, 31235 nonzeros
+Variable types: 0 continuous, 1735 integer (1074 binary)
+
+Explored 0 nodes (0 simplex iterations) in 0.08 seconds
+Thread count was 32 (of 32 available processors)
+
+Solution count 1: 0 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+-------------------------------------------------------------------------------
+                                    Summary                                    
+-------------------------------------------------------------------------------
+(CVXPY) Mar 31 03:02:33 PM: Problem status: optimal
+(CVXPY) Mar 31 03:02:33 PM: Optimal value: 0.000e+00
+(CVXPY) Mar 31 03:02:33 PM: Compilation took 8.281e-02 seconds
+(CVXPY) Mar 31 03:02:33 PM: Solver (including time spent in interface) took 1.276e-01 seconds
+in compute graph score
+Solution is: {'data mining': b'Moshe Y. Vardi', 'databases': b'Kristian Kersting', 'algorithms and theory': b'Manuela M. Veloso', 'algorithms': b'Peter Stone', 'artificial intelligence': b'Rajeev Motwani', 'natural language processing': b'Chen Chen', 'robotics': b'Yi Yang', 'neural networks': b'Adish Singla'}
+Solution score for iqp graph truth is: 0
+Edges are: []
+Running time is: 0.6308166980743408
+Considering the following customized categories: {'software engineering': 1, 'operating systems': 1, 'high-performance computing': 1, 'distributed and parallel computing': 1}
+Creating graphs.
+in create_graph_gml_files
+in read_dict_to_list
+out read_dict_to_list
+in read_dict_to_pkl_file
+out read_dict_to_pkl_file
+in read_dict_to_pkl_file
+out read_dict_to_pkl_file
+in read_venue_assignments_csv
+out read_venue_assignments_csv
+in create_cat_venue_dictionary
+out create_cat_venue_dictionary
+in get_authors
+out get_authors
+Creating graphs.
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+Time required to create graphhs is: 8.914538145065308 sec
+Adding cross-edges to the graph.
+Category is: software engineering
+New number of nodes of graph: 19653
+New number of edges of graph: 387176
+Category is: operating systems
+New number of nodes of graph: 12160
+New number of edges of graph: 257811
+Category is: high-performance computing
+New number of nodes of graph: 14244
+New number of edges of graph: 307184
+Category is: distributed and parallel computing
+New number of nodes of graph: 29118
+New number of edges of graph: 604413
+Time required to add cross-edges is: 1.629673719406128 sec
+out create_graph_gml_files
+Cleaning graphs.
+in clean_graphs
+Creating core graph.
+Creating core graph.
+Creating core graph.
+Creating core graph.
+out clean_graphs
+Length of nodes list: 13829 length of nodes 0
+Length of nodes list: 9110 length of nodes 13829
+Length of nodes list: 10252 length of nodes 22939
+Length of nodes list: 23320 length of nodes 33191
+Number of unique nodes 37535 number of all nodes: 56511
+Avg End./Role: 373714.0
+Avg End./Expert: 39.825656054349274
+Max End./Expert 1606
+Number of overlapping nodes: 23320
+in get_overlapping_graph_nodes
+Number of intersecting nodes: 726
+out get_overlapping_graph_nodes
+Length of x is: 2904
+===============================================================================
+                                     CVXPY                                     
+                                    v1.1.12                                    
+===============================================================================
+(CVXPY) Mar 31 03:03:46 PM: Your problem has 2904 variables, 3 constraints, and 0 parameters.
+(CVXPY) Mar 31 03:03:49 PM: It is compliant with the following grammars: DCP, DQCP
+(CVXPY) Mar 31 03:03:49 PM: (If you need to solve this problem multiple times, but with different data, consider using parameters.)
+(CVXPY) Mar 31 03:03:49 PM: CVXPY will first compile your problem; then, it will invoke a numerical solver to obtain a solution.
+-------------------------------------------------------------------------------
+                                  Compilation                                  
+-------------------------------------------------------------------------------
+(CVXPY) Mar 31 03:03:49 PM: Compiling problem (target solver=GUROBI).
+(CVXPY) Mar 31 03:03:49 PM: Reduction chain: CvxAttr2Constr -> Qp2SymbolicQp -> QpMatrixStuffing -> GUROBI
+(CVXPY) Mar 31 03:03:49 PM: Applying reduction CvxAttr2Constr
+(CVXPY) Mar 31 03:03:49 PM: Applying reduction Qp2SymbolicQp
+(CVXPY) Mar 31 03:03:49 PM: Applying reduction QpMatrixStuffing
+(CVXPY) Mar 31 03:03:49 PM: Applying reduction GUROBI
+(CVXPY) Mar 31 03:03:49 PM: Finished problem compilation (took 2.250e-01 seconds).
+-------------------------------------------------------------------------------
+                                Numerical solver                               
+-------------------------------------------------------------------------------
+(CVXPY) Mar 31 03:03:49 PM: Invoking solver GUROBI  to obtain a solution.
+Parameter OutputFlag unchanged
+   Value: 1  Min: 0  Max: 1  Default: 1
+Changed value of parameter QCPDual to 1
+   Prev: 0  Min: 0  Max: 1  Default: 0
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+Optimize a model with 731 rows, 2904 columns and 8712 nonzeros
+Model fingerprint: 0x30e43e2e
+Model has 70922 quadratic objective terms
+Variable types: 0 continuous, 2904 integer (2904 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [0e+00, 0e+00]
+  QObjective range [4e+00, 8e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 4e+00]
+Found heuristic solution: objective 0.0000000
+Presolve removed 1 rows and 0 columns
+Presolve time: 0.23s
+Presolved: 2583 rows, 4757 columns, 80436 nonzeros
+Variable types: 0 continuous, 4757 integer (2923 binary)
+
+Explored 0 nodes (0 simplex iterations) in 0.25 seconds
+Thread count was 32 (of 32 available processors)
+
+Solution count 1: 0 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+-------------------------------------------------------------------------------
+                                    Summary                                    
+-------------------------------------------------------------------------------
+(CVXPY) Mar 31 03:03:50 PM: Problem status: optimal
+(CVXPY) Mar 31 03:03:50 PM: Optimal value: 0.000e+00
+(CVXPY) Mar 31 03:03:50 PM: Compilation took 2.250e-01 seconds
+(CVXPY) Mar 31 03:03:50 PM: Solver (including time spent in interface) took 3.073e-01 seconds
+in compute graph score
+Solution is: {'software engineering': b'Chunhua Liao', 'operating systems': b'Dirk Vogt', 'high-performance computing': b'Thu D. Nguyen', 'distributed and parallel computing': b'Nancy M. Amato'}
+Solution score for iqp graph truth is: 0
+Edges are: []
+Running time is: 3.833984136581421
+Considering the following customized categories: {'signal processing': 1, 'wireless networks and mobile computing': 1, 'computer networking': 1, 'information retrieval': 1}
+Creating graphs.
+in create_graph_gml_files
+in read_dict_to_list
+out read_dict_to_list
+in read_dict_to_pkl_file
+out read_dict_to_pkl_file
+in read_dict_to_pkl_file
+out read_dict_to_pkl_file
+in read_venue_assignments_csv
+out read_venue_assignments_csv
+in create_cat_venue_dictionary
+out create_cat_venue_dictionary
+in get_authors
+out get_authors
+Creating graphs.
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+Time required to create graphhs is: 13.72396206855774 sec
+Adding cross-edges to the graph.
+Category is: signal processing
+New number of nodes of graph: 24928
+New number of edges of graph: 478148
+Category is: wireless networks and mobile computing
+New number of nodes of graph: 14007
+New number of edges of graph: 261795
+Category is: computer networking
+New number of nodes of graph: 51372
+New number of edges of graph: 1524831
+Category is: information retrieval
+New number of nodes of graph: 5951
+New number of edges of graph: 156395
+Time required to add cross-edges is: 1.5747644901275635 sec
+out create_graph_gml_files
+Cleaning graphs.
+in clean_graphs
+Creating core graph.
+Creating core graph.
+Creating core graph.
+Creating core graph.
+out clean_graphs
+Length of nodes list: 18415 length of nodes 0
+Length of nodes list: 9645 length of nodes 18415
+Length of nodes list: 43221 length of nodes 28060
+Length of nodes list: 4660 length of nodes 71281
+Number of unique nodes 56754 number of all nodes: 75941
+Avg End./Role: 586495.5
+Avg End./Expert: 41.335976318849774
+Max End./Expert 3165
+Number of overlapping nodes: 4660
+in get_overlapping_graph_nodes
+Number of intersecting nodes: 159
+out get_overlapping_graph_nodes
+Length of x is: 636
+===============================================================================
+                                     CVXPY                                     
+                                    v1.1.12                                    
+===============================================================================
+(CVXPY) Mar 31 03:05:12 PM: Your problem has 636 variables, 3 constraints, and 0 parameters.
+(CVXPY) Mar 31 03:05:12 PM: It is compliant with the following grammars: DCP, DQCP
+(CVXPY) Mar 31 03:05:12 PM: (If you need to solve this problem multiple times, but with different data, consider using parameters.)
+(CVXPY) Mar 31 03:05:12 PM: CVXPY will first compile your problem; then, it will invoke a numerical solver to obtain a solution.
+-------------------------------------------------------------------------------
+                                  Compilation                                  
+-------------------------------------------------------------------------------
+(CVXPY) Mar 31 03:05:12 PM: Compiling problem (target solver=GUROBI).
+(CVXPY) Mar 31 03:05:12 PM: Reduction chain: CvxAttr2Constr -> Qp2SymbolicQp -> QpMatrixStuffing -> GUROBI
+(CVXPY) Mar 31 03:05:12 PM: Applying reduction CvxAttr2Constr
+(CVXPY) Mar 31 03:05:12 PM: Applying reduction Qp2SymbolicQp
+(CVXPY) Mar 31 03:05:12 PM: Applying reduction QpMatrixStuffing
+(CVXPY) Mar 31 03:05:12 PM: Applying reduction GUROBI
+(CVXPY) Mar 31 03:05:12 PM: Finished problem compilation (took 3.488e-02 seconds).
+-------------------------------------------------------------------------------
+                                Numerical solver                               
+-------------------------------------------------------------------------------
+(CVXPY) Mar 31 03:05:12 PM: Invoking solver GUROBI  to obtain a solution.
+Parameter OutputFlag unchanged
+   Value: 1  Min: 0  Max: 1  Default: 1
+Changed value of parameter QCPDual to 1
+   Prev: 0  Min: 0  Max: 1  Default: 0
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+Optimize a model with 164 rows, 636 columns and 1908 nonzeros
+Model fingerprint: 0x89dbec72
+Model has 5604 quadratic objective terms
+Variable types: 0 continuous, 636 integer (636 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [0e+00, 0e+00]
+  QObjective range [4e+00, 8e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 4e+00]
+Found heuristic solution: objective 0.0000000
+Presolve removed 1 rows and 0 columns
+Presolve time: 0.03s
+Presolved: 476 rows, 949 columns, 7502 nonzeros
+Variable types: 0 continuous, 949 integer (651 binary)
+
+Explored 0 nodes (0 simplex iterations) in 0.03 seconds
+Thread count was 32 (of 32 available processors)
+
+Solution count 1: 0 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+-------------------------------------------------------------------------------
+                                    Summary                                    
+-------------------------------------------------------------------------------
+(CVXPY) Mar 31 03:05:12 PM: Problem status: optimal
+(CVXPY) Mar 31 03:05:12 PM: Optimal value: 0.000e+00
+(CVXPY) Mar 31 03:05:12 PM: Compilation took 3.488e-02 seconds
+(CVXPY) Mar 31 03:05:12 PM: Solver (including time spent in interface) took 6.159e-02 seconds
+in compute graph score
+Solution is: {'signal processing': b'Ying He', 'wireless networks and mobile computing': b'Lihua Yin', 'computer networking': b'Xu Chen', 'information retrieval': b'Yue Cao'}
+Solution score for iqp graph truth is: 0
+Edges are: []
+Running time is: 0.381575345993042
+Considering the following customized categories: {'signal processing': 1, 'wireless networks and mobile computing': 1, 'computer networking': 1, 'information retrieval': 1, 'software engineering': 1, 'operating systems': 1, 'high-performance computing': 1, 'distributed and parallel computing': 1}
+Creating graphs.
+in create_graph_gml_files
+in read_dict_to_list
+out read_dict_to_list
+in read_dict_to_pkl_file
+out read_dict_to_pkl_file
+in read_dict_to_pkl_file
+out read_dict_to_pkl_file
+in read_venue_assignments_csv
+out read_venue_assignments_csv
+in create_cat_venue_dictionary
+out create_cat_venue_dictionary
+in get_authors
+out get_authors
+Creating graphs.
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+Time required to create graphhs is: 22.48538327217102 sec
+Adding cross-edges to the graph.
+Category is: signal processing
+New number of nodes of graph: 25560
+New number of edges of graph: 481729
+Category is: wireless networks and mobile computing
+New number of nodes of graph: 16296
+New number of edges of graph: 312068
+Category is: computer networking
+New number of nodes of graph: 58701
+New number of edges of graph: 1702478
+Category is: information retrieval
+New number of nodes of graph: 6951
+New number of edges of graph: 161829
+Category is: software engineering
+New number of nodes of graph: 21690
+New number of edges of graph: 398561
+Category is: operating systems
+New number of nodes of graph: 16239
+New number of edges of graph: 298947
+Category is: high-performance computing
+New number of nodes of graph: 15648
+New number of edges of graph: 316409
+Category is: distributed and parallel computing
+New number of nodes of graph: 39535
+New number of edges of graph: 720772
+Time required to add cross-edges is: 4.693572521209717 sec
+out create_graph_gml_files
+Cleaning graphs.
+in clean_graphs
+Creating core graph.
+Creating core graph.
+Creating core graph.
+Creating core graph.
+Creating core graph.
+Creating core graph.
+Creating core graph.
+Creating core graph.
+out clean_graphs
+Length of nodes list: 18668 length of nodes 0
+Length of nodes list: 11141 length of nodes 18668
+Length of nodes list: 48007 length of nodes 29809
+Length of nodes list: 5064 length of nodes 77816
+Length of nodes list: 14594 length of nodes 82880
+Length of nodes list: 11654 length of nodes 97474
+Length of nodes list: 10897 length of nodes 109128
+Length of nodes list: 29238 length of nodes 120025
+Number of unique nodes 90803 number of all nodes: 149263
+Avg End./Role: 527465.75
+Avg End./Expert: 46.47121791130249
+Max End./Expert 3258
+Number of overlapping nodes: 29238
+in get_overlapping_graph_nodes
+Number of intersecting nodes: 49
+out get_overlapping_graph_nodes
+Length of x is: 392
+===============================================================================
+                                     CVXPY                                     
+                                    v1.1.12                                    
+===============================================================================
+(CVXPY) Mar 31 03:07:19 PM: Your problem has 392 variables, 3 constraints, and 0 parameters.
+(CVXPY) Mar 31 03:07:19 PM: It is compliant with the following grammars: DCP, DQCP
+(CVXPY) Mar 31 03:07:19 PM: (If you need to solve this problem multiple times, but with different data, consider using parameters.)
+(CVXPY) Mar 31 03:07:19 PM: CVXPY will first compile your problem; then, it will invoke a numerical solver to obtain a solution.
+-------------------------------------------------------------------------------
+                                  Compilation                                  
+-------------------------------------------------------------------------------
+(CVXPY) Mar 31 03:07:19 PM: Compiling problem (target solver=GUROBI).
+(CVXPY) Mar 31 03:07:19 PM: Reduction chain: CvxAttr2Constr -> Qp2SymbolicQp -> QpMatrixStuffing -> GUROBI
+(CVXPY) Mar 31 03:07:19 PM: Applying reduction CvxAttr2Constr
+(CVXPY) Mar 31 03:07:19 PM: Applying reduction Qp2SymbolicQp
+(CVXPY) Mar 31 03:07:19 PM: Applying reduction QpMatrixStuffing
+(CVXPY) Mar 31 03:07:19 PM: Applying reduction GUROBI
+(CVXPY) Mar 31 03:07:19 PM: Finished problem compilation (took 2.545e-02 seconds).
+-------------------------------------------------------------------------------
+                                Numerical solver                               
+-------------------------------------------------------------------------------
+(CVXPY) Mar 31 03:07:19 PM: Invoking solver GUROBI  to obtain a solution.
+Parameter OutputFlag unchanged
+   Value: 1  Min: 0  Max: 1  Default: 1
+Changed value of parameter QCPDual to 1
+   Prev: 0  Min: 0  Max: 1  Default: 0
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+Optimize a model with 58 rows, 392 columns and 1176 nonzeros
+Model fingerprint: 0x97f9598e
+Model has 6015 quadratic objective terms
+Variable types: 0 continuous, 392 integer (392 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [0e+00, 0e+00]
+  QObjective range [4e+00, 8e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 8e+00]
+Found heuristic solution: objective 0.0000000
+Presolve removed 1 rows and 0 columns
+Presolve time: 0.01s
+Presolved: 271 rows, 606 columns, 7227 nonzeros
+Variable types: 0 continuous, 606 integer (395 binary)
+
+Explored 0 nodes (0 simplex iterations) in 0.02 seconds
+Thread count was 32 (of 32 available processors)
+
+Solution count 1: 0 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+-------------------------------------------------------------------------------
+                                    Summary                                    
+-------------------------------------------------------------------------------
+(CVXPY) Mar 31 03:07:19 PM: Problem status: optimal
+(CVXPY) Mar 31 03:07:19 PM: Optimal value: 0.000e+00
+(CVXPY) Mar 31 03:07:19 PM: Compilation took 2.545e-02 seconds
+(CVXPY) Mar 31 03:07:19 PM: Solver (including time spent in interface) took 3.389e-02 seconds
+in compute graph score
+has edge
+Solution is: {'signal processing': b'Min-You Wu', 'wireless networks and mobile computing': b'Qing Yang', 'computer networking': b'Xue Li', 'information retrieval': b'Yi Wang', 'software engineering': b'Hai Jin', 'operating systems': b'Tao Yang', 'high-performance computing': b'Yang Liu', 'distributed and parallel computing': b'Qi Zhang'}
+Solution score for iqp graph truth is: 1
+Edges are: [(b'Qi Zhang', b'Hai Jin')]
+Running time is: 0.18125247955322266
+Exiting main!

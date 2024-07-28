@@ -1,0 +1,154 @@
+Considering the following customized categories: {'artificial intelligence': 1, 'natural language processing': 1, 'robotics': 1, 'neural networks': 1}
+Creating graphs.
+in create_graph_gml_files
+in read_dict_to_list
+out read_dict_to_list
+in read_dict_to_pkl_file
+out read_dict_to_pkl_file
+in read_dict_to_pkl_file
+out read_dict_to_pkl_file
+in read_venue_assignments_csv
+out read_venue_assignments_csv
+in create_cat_venue_dictionary
+out create_cat_venue_dictionary
+in get_authors
+out get_authors
+Creating graphs.
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+Time required to create graphhs is: 16.63971972465515 sec
+Adding cross-edges to the graph.
+Category is: artificial intelligence
+New number of nodes of graph: 43716
+New number of edges of graph: 828114
+Category is: natural language processing
+New number of nodes of graph: 16749
+New number of edges of graph: 640203
+Category is: robotics
+New number of nodes of graph: 31188
+New number of edges of graph: 883725
+Category is: neural networks
+New number of nodes of graph: 39135
+New number of edges of graph: 671388
+Time required to add cross-edges is: 2.5063512325286865 sec
+out create_graph_gml_files
+Cleaning graphs.
+in clean_graphs
+Creating core graph.
+Creating core graph.
+Creating core graph.
+Creating core graph.
+out clean_graphs
+Length of nodes list: 30446 length of nodes 0
+Length of nodes list: 13068 length of nodes 30446
+Length of nodes list: 25796 length of nodes 43514
+Length of nodes list: 28473 length of nodes 69310
+Number of unique nodes 68978 number of all nodes: 97783
+Avg End./Role: 728726.0
+Avg End./Expert: 42.258459218881384
+Max End./Expert 4703
+Number of overlapping nodes: 28473
+in get_overlapping_graph_nodes
+Number of intersecting nodes: 599
+out get_overlapping_graph_nodes
+Length of x is: 2396
+===============================================================================
+                                     CVXPY                                     
+                                    v1.1.12                                    
+===============================================================================
+(CVXPY) Mar 31 12:06:04 PM: Your problem has 2396 variables, 3 constraints, and 0 parameters.
+(CVXPY) Mar 31 12:06:06 PM: It is compliant with the following grammars: DCP, DQCP
+(CVXPY) Mar 31 12:06:06 PM: (If you need to solve this problem multiple times, but with different data, consider using parameters.)
+(CVXPY) Mar 31 12:06:06 PM: CVXPY will first compile your problem; then, it will invoke a numerical solver to obtain a solution.
+-------------------------------------------------------------------------------
+                                  Compilation                                  
+-------------------------------------------------------------------------------
+(CVXPY) Mar 31 12:06:06 PM: Compiling problem (target solver=GUROBI).
+(CVXPY) Mar 31 12:06:06 PM: Reduction chain: CvxAttr2Constr -> Qp2SymbolicQp -> QpMatrixStuffing -> GUROBI
+(CVXPY) Mar 31 12:06:06 PM: Applying reduction CvxAttr2Constr
+(CVXPY) Mar 31 12:06:06 PM: Applying reduction Qp2SymbolicQp
+(CVXPY) Mar 31 12:06:06 PM: Applying reduction QpMatrixStuffing
+(CVXPY) Mar 31 12:06:06 PM: Applying reduction GUROBI
+(CVXPY) Mar 31 12:06:06 PM: Finished problem compilation (took 1.827e-01 seconds).
+-------------------------------------------------------------------------------
+                                Numerical solver                               
+-------------------------------------------------------------------------------
+(CVXPY) Mar 31 12:06:06 PM: Invoking solver GUROBI  to obtain a solution.
+Academic license - for non-commercial use only - expires 2022-12-18
+Using license file /home/pcs00440/gurobi.lic
+Parameter OutputFlag unchanged
+   Value: 1  Min: 0  Max: 1  Default: 1
+Changed value of parameter QCPDual to 1
+   Prev: 0  Min: 0  Max: 1  Default: 0
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+Optimize a model with 604 rows, 2396 columns and 7188 nonzeros
+Model fingerprint: 0xea47a328
+Model has 75937 quadratic objective terms
+Variable types: 0 continuous, 2396 integer (2396 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [0e+00, 0e+00]
+  QObjective range [4e+00, 8e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 4e+00]
+Found heuristic solution: objective 4.0000000
+Presolve removed 1 rows and 0 columns
+Presolve time: 0.20s
+Presolved: 2103 rows, 3896 columns, 83729 nonzeros
+Variable types: 0 continuous, 3896 integer (2445 binary)
+
+Root relaxation: objective 0.000000e+00, 6 iterations, 0.01 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+*    0     0               0       0.0000000    0.00000  0.00%     -    0s
+
+Explored 1 nodes (6 simplex iterations) in 0.49 seconds
+Thread count was 32 (of 32 available processors)
+
+Solution count 2: 0 4 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+-------------------------------------------------------------------------------
+                                    Summary                                    
+-------------------------------------------------------------------------------
+(CVXPY) Mar 31 12:06:07 PM: Problem status: optimal
+(CVXPY) Mar 31 12:06:07 PM: Optimal value: 0.000e+00
+(CVXPY) Mar 31 12:06:07 PM: Compilation took 1.827e-01 seconds
+(CVXPY) Mar 31 12:06:07 PM: Solver (including time spent in interface) took 5.633e-01 seconds
+in compute graph score
+Solution is: {'artificial intelligence': b'Andrei Barbu', 'natural language processing': b'Baoxin Li', 'robotics': b'Bo Wang', 'neural networks': b'Anurag Ajay'}
+Solution score for iqp graph truth is: 0
+Edges are: []
+Running time is: 2.625143527984619
+Considering the following customized categories: {'data mining': 1, 'databases': 1, 'algorithms and theory': 1, 'algorithms': 1}
+Creating graphs.
+in create_graph_gml_files
+in read_dict_to_list
+out read_dict_to_list
+in read_dict_to_pkl_file
+out read_dict_to_pkl_file
+in read_dict_to_pkl_file
+out read_dict_to_pkl_file
+in read_venue_assignments_csv
+Traceback (most recent call last):
+  File "method2_dblp.py", line 477, in <module>
+    main()
+  File "method2_dblp.py", line 390, in main
+    category_graph = create_graph_gml_files(file_name_pid_venue,file_name_venues_authors_citations,file_name_pid_authors,file_name_venues_assignment_csv,customized_categories)
+  File "method2_dblp.py", line 162, in create_graph_gml_files
+    venue_cat_dict = read_venue_assignments_csv(file_name_venues_assignment_csv)
+  File "method2_dblp.py", line 48, in read_venue_assignments_csv
+    for i, line in enumerate(reader):
+  File "/usr/lib/python3.6/encodings/ascii.py", line 26, in decode
+    return codecs.ascii_decode(input, self.errors)[0]
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xef in position 0: ordinal not in range(128)

@@ -1,0 +1,36 @@
+year is: 2010
+For year: 2010 number of players is: 14456 278
+Max score is: 110
+Max score solution: {'DBPM': ('Marcus Camby', 0), 'TRB': ('Zach Randolph', 1), 'BLK': ('Andrew Bogut', 1), 'AST': ('Steve Nash', 0), 'STL': ('Rajon Rondo', 0), 'VORP': ('Josh Smith', 4), '3P': ('Aaron Brooks', 0), 'OBPM': ('Manu Ginobili', 2), '2P': ("Amar'e Stoudemire", 0), 'FT': ('Carmelo Anthony', 4), 'FG': ('Kobe Bryant', 4)}
+created Weighted_m
+created M
+===============================================================================
+                                     CVXPY                                     
+                                    v1.1.12                                    
+===============================================================================
+(CVXPY) May 23 05:52:14 PM: Your problem has 3058 variables, 2 constraints, and 0 parameters.
+(CVXPY) May 23 05:52:15 PM: It is compliant with the following grammars: 
+(CVXPY) May 23 05:52:15 PM: (If you need to solve this problem multiple times, but with different data, consider using parameters.)
+(CVXPY) May 23 05:52:15 PM: CVXPY will first compile your problem; then, it will invoke a numerical solver to obtain a solution.
+Traceback (most recent call last):
+  File "weighted_nba.py", line 315, in <module>
+    main()
+  File "weighted_nba.py", line 291, in main
+    iqp_rank_solution, iqp_rank_score = iqp_rank_algorithm(M, B, C, nba_dataset_ranking, included_list, skill_author_index_dict)
+  File "weighted_nba.py", line 185, in iqp_rank_algorithm
+    prob.solve(solver=cp.GUROBI, verbose=True, TimeLimit=43200)
+  File "/home/pcs00440/initial_problem/initial_venv/lib/python3.6/site-packages/cvxpy/problems/problem.py", line 459, in solve
+    return solve_func(self, *args, **kwargs)
+  File "/home/pcs00440/initial_problem/initial_venv/lib/python3.6/site-packages/cvxpy/problems/problem.py", line 939, in _solve
+    solver, gp, enforce_dpp, verbose)
+  File "/home/pcs00440/initial_problem/initial_venv/lib/python3.6/site-packages/cvxpy/problems/problem.py", line 566, in get_problem_data
+    solver=solver, gp=gp, enforce_dpp=enforce_dpp)
+  File "/home/pcs00440/initial_problem/initial_venv/lib/python3.6/site-packages/cvxpy/problems/problem.py", line 792, in _construct_chain
+    enforce_dpp=enforce_dpp)
+  File "/home/pcs00440/initial_problem/initial_venv/lib/python3.6/site-packages/cvxpy/reductions/solvers/solving_chain.py", line 155, in construct_solving_chain
+    reductions = _reductions_for_problem_class(problem, candidates, gp)
+  File "/home/pcs00440/initial_problem/initial_venv/lib/python3.6/site-packages/cvxpy/reductions/solvers/solving_chain.py", line 92, in _reductions_for_problem_class
+    "Problem does not follow DCP rules. Specifically:\n" + append)
+cvxpy.error.DCPError: Problem does not follow DCP rules. Specifically:
+The objective is not DCP, even though each sub-expression is.
+You are trying to maximize a function that is convex.

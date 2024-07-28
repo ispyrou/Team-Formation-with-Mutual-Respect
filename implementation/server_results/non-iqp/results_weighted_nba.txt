@@ -1,0 +1,65 @@
+year is: 2010
+For year: 2010 number of players is: 14456 278
+Greedy solution is: {'DBPM': ('Theo Ratliff', 2393), 'BLK': ('Joel Anthony', 1944), 'OBPM': ('Nate Robinson', 1803), 'AST': ('Chris Duhon', 1743), 'TRB': ('Udonis Haslem', 1564), '3P': ('Peja Stojakovic', 1496), 'FT': ('Jerryd Bayless', 1332), 'STL': ('C.J. Watson', 1280), '2P': ('Chris Kaman', 1204), 'VORP': ('Ben Wallace', 980), 'FG': ("Amar'e Stoudemire", 875)}
+Solution score for greedy rank truth is: 16614
+Running time is: 0.0016736984252929688
+Hungarian solution is: {'VORP': 'Ben Wallace', 'STL': 'C.J. Watson', 'AST': 'Chris Duhon', 'FG': 'Chris Kaman', 'FT': 'Jerryd Bayless', 'BLK': 'Joel Anthony', 'OBPM': 'Nate Robinson', '3P': 'Peja Stojakovic', 'DBPM': 'Theo Ratliff', '2P': 'Tony Parker', 'TRB': 'Udonis Haslem'}
+Solution score for hungarian rank truth is: 16765.0
+Running time is: 165.24479866027832
+year is: 2011
+For year: 2011 number of players is: 15028 289
+Greedy solution is: {'DBPM': ('Erick Dampier', 2214), 'BLK': ('Ekpe Udoh', 2001), '3P': ('James Jones', 1706), 'AST': ('Jonny Flynn', 1679), 'FT': ('Corey Maggette', 1596), 'OBPM': ('Baron Davis', 1440), 'STL': ('Derek Fisher', 1439), 'TRB': ('Reggie Evans', 1438), '2P': ('J.J. Hickson', 1150), 'FG': ('DeMar DeRozan', 1078), 'VORP': ('Joel Anthony', 906)}
+Solution score for greedy rank truth is: 16647
+Running time is: 0.0015840530395507812
+Hungarian solution is: {'OBPM': 'Baron Davis', 'FT': 'Corey Maggette', 'STL': 'Derek Fisher', 'BLK': 'Ekpe Udoh', 'DBPM': 'Erick Dampier', '2P': 'J.J. Hickson', 'FG': 'DeMar DeRozan', '3P': 'James Jones', 'VORP': 'Joel Anthony', 'AST': 'Jonny Flynn', 'TRB': 'Reggie Evans'}
+Solution score for hungarian rank truth is: 16647.0
+Running time is: 177.510724067688
+year is: 2012
+For year: 2012 number of players is: 14872 286
+Greedy solution is: {'3P': ('Steve Novak', 2150), 'DBPM': ('Andris Biedrins', 2120), 'BLK': ('Bismack Biyombo', 1912), 'FT': ('Corey Maggette', 1875), 'OBPM': ('Jerryd Bayless', 1809), 'AST': ('Beno Udrih', 1721), 'TRB': ('Udonis Haslem', 1671), 'STL': ('Chris Singleton', 1315), '2P': ('Luis Scola', 1163), 'FG': ('DeMar DeRozan', 1079), 'VORP': ('Manu Ginobili', 952)}
+Solution score for greedy rank truth is: 17767
+Running time is: 0.0015833377838134766
+Hungarian solution is: {'DBPM': 'Andris Biedrins', 'AST': 'Beno Udrih', 'BLK': 'Bismack Biyombo', 'STL': 'Chris Singleton', 'FT': 'Corey Maggette', 'OBPM': 'Jerryd Bayless', 'VORP': 'Manu Ginobili', '3P': 'Steve Novak', 'TRB': 'Udonis Haslem', 'FG': 'DeMar DeRozan', '2P': 'Luis Scola'}
+Solution score for hungarian rank truth is: 17767.0
+Running time is: 178.050199508667
+year is: 2013
+For year: 2013 number of players is: 15132 291
+Greedy solution is: {'DBPM': ('Andrew Bogut', 2097), '3P': ('Steve Novak', 1975), 'TRB': ('Reggie Evans', 1930), 'BLK': ('Bismack Biyombo', 1917), 'OBPM': ('Jose Calderon', 1756), 'AST': ('Jamaal Tinsley', 1742), 'FT': ('Tyler Hansbrough', 1607), '2P': ('Kevin Seraphin', 1351), 'STL': ('Ricky Rubio', 1251), 'FG': ('DeMar DeRozan', 989), 'VORP': ('Jason Kidd', 963)}
+Solution score for greedy rank truth is: 17578
+Running time is: 0.001596689224243164
+Hungarian solution is: {'DBPM': 'Andrew Bogut', 'BLK': 'Bismack Biyombo', 'FG': 'DeMar DeRozan', 'AST': 'Jamaal Tinsley', 'VORP': 'Jason Kidd', 'OBPM': 'Jose Calderon', '2P': 'Kevin Seraphin', 'TRB': 'Reggie Evans', 'STL': 'Ricky Rubio', '3P': 'Steve Novak', 'FT': 'Tyler Hansbrough'}
+Solution score for hungarian rank truth is: 17578.0
+Running time is: 171.2034342288971
+year is: 2014
+For year: 2014 number of players is: 15288 294
+Greedy solution is: {'DBPM': ('Ronny Turiaf', 2350), 'AST': ('Kendall Marshall', 2194), 'OBPM': ('J.J. Redick', 1899), 'BLK': ('Ekpe Udoh', 1735), '3P': ('Mirza Teletovic', 1638), 'TRB': ('Omer Asik', 1487), '2P': ('Enes Kanter', 1451), 'STL': ('Phil Pressey', 1443), 'FT': ('Rodney Stuckey', 1391), 'FG': ('Carlos Boozer', 1056), 'VORP': ('Andrew Bogut', 1010)}
+Solution score for greedy rank truth is: 17654
+Running time is: 0.001622915267944336
+Hungarian solution is: {'VORP': 'Andrew Bogut', 'BLK': 'Ekpe Udoh', '2P': 'Enes Kanter', 'FG': 'Carlos Boozer', 'OBPM': 'J.J. Redick', 'AST': 'Kendall Marshall', '3P': 'Mirza Teletovic', 'TRB': 'Omer Asik', 'STL': 'Phil Pressey', 'FT': 'Rodney Stuckey', 'DBPM': 'Ronny Turiaf'}
+Solution score for hungarian rank truth is: 17654.0
+Running time is: 190.26698875427246
+year is: 2015
+For year: 2015 number of players is: 16588 319
+Greedy solution is: {'DBPM': ('Samuel Dalembert', 2558), 'AST': ('Steve Blake', 1948), 'OBPM': ('Shabazz Muhammad', 1945), 'BLK': ('Bismack Biyombo', 1915), 'STL': ('Shane Larkin', 1730), '3P': ('Tim Hardaway', 1728), 'TRB': ('Omer Asik', 1652), '2P': ('Carlos Boozer', 1556), 'FT': ('Nick Young', 1345), 'FG': ('Tony Parker', 1280), 'VORP': ('Andrew Bogut', 1043)}
+Solution score for greedy rank truth is: 18700
+Running time is: 0.001833200454711914
+Hungarian solution is: {'VORP': 'Andrew Bogut', 'BLK': 'Bismack Biyombo', 'FT': 'Nick Young', 'TRB': 'Omer Asik', 'DBPM': 'Samuel Dalembert', 'OBPM': 'Shabazz Muhammad', 'STL': 'Shane Larkin', 'AST': 'Steve Blake', '3P': 'Tim Hardaway', 'FG': 'Tony Parker', '2P': 'Carlos Boozer'}
+Solution score for hungarian rank truth is: 18700.0
+Running time is: 241.2424762248993
+year is: 2016
+For year: 2016 number of players is: 15548 299
+Greedy solution is: {'DBPM': ('Joakim Noah', 2255), 'OBPM': ('Carl Landry', 1965), 'AST': ('Steve Blake', 1867), 'BLK': ('John Henson', 1788), 'TRB': ('Omer Asik', 1756), '3P': ('Hollis Thompson', 1736), '2P': ('Jahlil Okafor', 1521), 'STL': ('T.J. McConnell', 1503), 'FT': ('Shabazz Muhammad', 1327), 'FG': ('Derrick Rose', 1248), 'VORP': ('Andrew Bogut', 1148)}
+Solution score for greedy rank truth is: 18114
+Running time is: 0.0017960071563720703
+Hungarian solution is: {'VORP': 'Andrew Bogut', 'OBPM': 'Carl Landry', 'FG': 'Derrick Rose', '3P': 'Hollis Thompson', '2P': 'Jahlil Okafor', 'DBPM': 'Joakim Noah', 'BLK': 'John Henson', 'TRB': 'Omer Asik', 'FT': 'Shabazz Muhammad', 'AST': 'Steve Blake', 'STL': 'T.J. McConnell'}
+Solution score for hungarian rank truth is: 18114.0
+Running time is: 197.94889545440674
+year is: 2017
+For year: 2017 number of players is: 16120 310
+Greedy solution is: {'DBPM': ('Ian Mahinmi', 2350), '3P': ('Troy Daniels', 2250), 'BLK': ('Jerami Grant', 2032), 'OBPM': ('J.J. Barea', 2001), 'AST': ('Sergio Rodriguez', 1994), 'TRB': ('Tyson Chandler', 1756), 'STL': ('T.J. McConnell', 1679), 'FT': ('Shabazz Muhammad', 1331), '2P': ('Zach Randolph', 1316), 'VORP': ('Lucas Nogueira', 1248), 'FG': ('Derrick Rose', 1110)}
+Solution score for greedy rank truth is: 19067
+Running time is: 0.0017788410186767578
+Hungarian solution is: {'2P': 'Derrick Rose', 'DBPM': 'Ian Mahinmi', 'OBPM': 'J.J. Barea', 'BLK': 'Jerami Grant', 'VORP': 'Lucas Nogueira', 'AST': 'Sergio Rodriguez', 'FT': 'Shabazz Muhammad', 'STL': 'T.J. McConnell', '3P': 'Troy Daniels', 'TRB': 'Tyson Chandler', 'FG': 'Zach Randolph'}
+Solution score for hungarian rank truth is: 19144.0
+Running time is: 213.53106999397278
+Exiting main!

@@ -1,0 +1,1647 @@
+Considering the following customized categories: {'artificial intelligence': 1, 'natural language processing': 1, 'robotics': 1, 'neural networks': 1}
+Creating graphs.
+in create_graph_gml_files
+in read_dict_to_list
+out read_dict_to_list
+in read_dict_to_pkl_file
+out read_dict_to_pkl_file
+in read_dict_to_pkl_file
+out read_dict_to_pkl_file
+in read_venue_assignments_csv
+out read_venue_assignments_csv
+in create_cat_venue_dictionary
+out create_cat_venue_dictionary
+in get_authors
+out get_authors
+Creating graphs.
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+Time required to create graphhs is: 15.66599178314209 sec
+Adding cross-edges to the graph.
+Category is: artificial intelligence
+New number of nodes of graph: 43716
+New number of edges of graph: 828114
+Category is: natural language processing
+New number of nodes of graph: 16749
+New number of edges of graph: 640203
+Category is: robotics
+New number of nodes of graph: 31188
+New number of edges of graph: 883725
+Category is: neural networks
+New number of nodes of graph: 39135
+New number of edges of graph: 671388
+Time required to add cross-edges is: 2.35978627204895 sec
+out create_graph_gml_files
+Cleaning graphs.
+in clean_graphs
+Creating core graph.
+Creating core graph.
+Creating core graph.
+Creating core graph.
+out clean_graphs
+Length of nodes list: 30446 length of nodes 0
+Length of nodes list: 13068 length of nodes 30446
+Length of nodes list: 25796 length of nodes 43514
+Length of nodes list: 28473 length of nodes 69310
+Number of unique nodes 68978 number of all nodes: 97783
+Avg End./Role: 728726.0
+Avg End./Expert: 42.258459218881384
+Max End./Expert 4703
+Number of overlapping nodes: 28473
+in get_overlapping_graph_nodes
+Number of intersecting nodes: 599
+out get_overlapping_graph_nodes
+Iteration number 1 for random greedy landmarks algorithm
+Iteration number 2 for random greedy landmarks algorithm
+Iteration number 3 for random greedy landmarks algorithm
+Iteration number 4 for random greedy landmarks algorithm
+Iteration number 5 for random greedy landmarks algorithm
+Iteration number 6 for random greedy landmarks algorithm
+Iteration number 7 for random greedy landmarks algorithm
+Iteration number 8 for random greedy landmarks algorithm
+Iteration number 9 for random greedy landmarks algorithm
+Iteration number 10 for random greedy landmarks algorithm
+Iteration number 11 for random greedy landmarks algorithm
+Iteration number 12 for random greedy landmarks algorithm
+Iteration number 13 for random greedy landmarks algorithm
+Iteration number 14 for random greedy landmarks algorithm
+Iteration number 15 for random greedy landmarks algorithm
+Iteration number 16 for random greedy landmarks algorithm
+Iteration number 17 for random greedy landmarks algorithm
+Iteration number 18 for random greedy landmarks algorithm
+Iteration number 19 for random greedy landmarks algorithm
+Iteration number 20 for random greedy landmarks algorithm
+Iteration number 21 for random greedy landmarks algorithm
+Iteration number 22 for random greedy landmarks algorithm
+Iteration number 23 for random greedy landmarks algorithm
+Iteration number 24 for random greedy landmarks algorithm
+Iteration number 25 for random greedy landmarks algorithm
+Iteration number 26 for random greedy landmarks algorithm
+Iteration number 27 for random greedy landmarks algorithm
+Iteration number 28 for random greedy landmarks algorithm
+Iteration number 29 for random greedy landmarks algorithm
+Iteration number 30 for random greedy landmarks algorithm
+Iteration number 31 for random greedy landmarks algorithm
+Iteration number 32 for random greedy landmarks algorithm
+Iteration number 33 for random greedy landmarks algorithm
+Iteration number 34 for random greedy landmarks algorithm
+Iteration number 35 for random greedy landmarks algorithm
+Iteration number 36 for random greedy landmarks algorithm
+Iteration number 37 for random greedy landmarks algorithm
+Iteration number 38 for random greedy landmarks algorithm
+Iteration number 39 for random greedy landmarks algorithm
+Iteration number 40 for random greedy landmarks algorithm
+Iteration number 41 for random greedy landmarks algorithm
+Iteration number 42 for random greedy landmarks algorithm
+Iteration number 43 for random greedy landmarks algorithm
+Iteration number 44 for random greedy landmarks algorithm
+Iteration number 45 for random greedy landmarks algorithm
+Iteration number 46 for random greedy landmarks algorithm
+Iteration number 47 for random greedy landmarks algorithm
+Iteration number 48 for random greedy landmarks algorithm
+Iteration number 49 for random greedy landmarks algorithm
+Iteration number 50 for random greedy landmarks algorithm
+Iteration number 51 for random greedy landmarks algorithm
+Iteration number 52 for random greedy landmarks algorithm
+Iteration number 53 for random greedy landmarks algorithm
+Iteration number 54 for random greedy landmarks algorithm
+Iteration number 55 for random greedy landmarks algorithm
+Iteration number 56 for random greedy landmarks algorithm
+Iteration number 57 for random greedy landmarks algorithm
+Iteration number 58 for random greedy landmarks algorithm
+Iteration number 59 for random greedy landmarks algorithm
+Iteration number 60 for random greedy landmarks algorithm
+Iteration number 61 for random greedy landmarks algorithm
+Iteration number 62 for random greedy landmarks algorithm
+Iteration number 63 for random greedy landmarks algorithm
+Iteration number 64 for random greedy landmarks algorithm
+Iteration number 65 for random greedy landmarks algorithm
+Iteration number 66 for random greedy landmarks algorithm
+Iteration number 67 for random greedy landmarks algorithm
+Iteration number 68 for random greedy landmarks algorithm
+Iteration number 69 for random greedy landmarks algorithm
+Iteration number 70 for random greedy landmarks algorithm
+Iteration number 71 for random greedy landmarks algorithm
+Iteration number 72 for random greedy landmarks algorithm
+Iteration number 73 for random greedy landmarks algorithm
+Iteration number 74 for random greedy landmarks algorithm
+Iteration number 75 for random greedy landmarks algorithm
+Iteration number 76 for random greedy landmarks algorithm
+Iteration number 77 for random greedy landmarks algorithm
+Iteration number 78 for random greedy landmarks algorithm
+Iteration number 79 for random greedy landmarks algorithm
+Iteration number 80 for random greedy landmarks algorithm
+Iteration number 81 for random greedy landmarks algorithm
+Iteration number 82 for random greedy landmarks algorithm
+Iteration number 83 for random greedy landmarks algorithm
+Iteration number 84 for random greedy landmarks algorithm
+Iteration number 85 for random greedy landmarks algorithm
+Iteration number 86 for random greedy landmarks algorithm
+Iteration number 87 for random greedy landmarks algorithm
+Iteration number 88 for random greedy landmarks algorithm
+Iteration number 89 for random greedy landmarks algorithm
+Iteration number 90 for random greedy landmarks algorithm
+Iteration number 91 for random greedy landmarks algorithm
+Iteration number 92 for random greedy landmarks algorithm
+Iteration number 93 for random greedy landmarks algorithm
+Iteration number 94 for random greedy landmarks algorithm
+Iteration number 95 for random greedy landmarks algorithm
+Iteration number 96 for random greedy landmarks algorithm
+Iteration number 97 for random greedy landmarks algorithm
+Iteration number 98 for random greedy landmarks algorithm
+Iteration number 99 for random greedy landmarks algorithm
+Iteration number 100 for random greedy landmarks algorithm
+Best greedy solution is: {'artificial intelligence': (b'Alexander I. Rudnicky', 17), 'robotics': (b'Tao Chen', 17), 'neural networks': (b'Jian Wang', 17), 'natural language processing': (b'Christophe Cerisara', 9)}
+Best greedy score is: 58
+Time for 100 iterations of greedy is: 7.465095520019531
+Iteration number 1 for random greedy landmarks algorithm
+Iteration number 2 for random greedy landmarks algorithm
+Iteration number 3 for random greedy landmarks algorithm
+Iteration number 4 for random greedy landmarks algorithm
+Iteration number 5 for random greedy landmarks algorithm
+Iteration number 6 for random greedy landmarks algorithm
+Iteration number 7 for random greedy landmarks algorithm
+Iteration number 8 for random greedy landmarks algorithm
+Iteration number 9 for random greedy landmarks algorithm
+Iteration number 10 for random greedy landmarks algorithm
+Iteration number 11 for random greedy landmarks algorithm
+Iteration number 12 for random greedy landmarks algorithm
+Iteration number 13 for random greedy landmarks algorithm
+Iteration number 14 for random greedy landmarks algorithm
+Iteration number 15 for random greedy landmarks algorithm
+Iteration number 16 for random greedy landmarks algorithm
+Iteration number 17 for random greedy landmarks algorithm
+Iteration number 18 for random greedy landmarks algorithm
+Iteration number 19 for random greedy landmarks algorithm
+Iteration number 20 for random greedy landmarks algorithm
+Iteration number 21 for random greedy landmarks algorithm
+Iteration number 22 for random greedy landmarks algorithm
+Iteration number 23 for random greedy landmarks algorithm
+Iteration number 24 for random greedy landmarks algorithm
+Iteration number 25 for random greedy landmarks algorithm
+Iteration number 26 for random greedy landmarks algorithm
+Iteration number 27 for random greedy landmarks algorithm
+Iteration number 28 for random greedy landmarks algorithm
+Iteration number 29 for random greedy landmarks algorithm
+Iteration number 30 for random greedy landmarks algorithm
+Iteration number 31 for random greedy landmarks algorithm
+Iteration number 32 for random greedy landmarks algorithm
+Iteration number 33 for random greedy landmarks algorithm
+Iteration number 34 for random greedy landmarks algorithm
+Iteration number 35 for random greedy landmarks algorithm
+Iteration number 36 for random greedy landmarks algorithm
+Iteration number 37 for random greedy landmarks algorithm
+Iteration number 38 for random greedy landmarks algorithm
+Iteration number 39 for random greedy landmarks algorithm
+Iteration number 40 for random greedy landmarks algorithm
+Iteration number 41 for random greedy landmarks algorithm
+Iteration number 42 for random greedy landmarks algorithm
+Iteration number 43 for random greedy landmarks algorithm
+Iteration number 44 for random greedy landmarks algorithm
+Iteration number 45 for random greedy landmarks algorithm
+Iteration number 46 for random greedy landmarks algorithm
+Iteration number 47 for random greedy landmarks algorithm
+Iteration number 48 for random greedy landmarks algorithm
+Iteration number 49 for random greedy landmarks algorithm
+Iteration number 50 for random greedy landmarks algorithm
+Iteration number 51 for random greedy landmarks algorithm
+Iteration number 52 for random greedy landmarks algorithm
+Iteration number 53 for random greedy landmarks algorithm
+Iteration number 54 for random greedy landmarks algorithm
+Iteration number 55 for random greedy landmarks algorithm
+Iteration number 56 for random greedy landmarks algorithm
+Iteration number 57 for random greedy landmarks algorithm
+Iteration number 58 for random greedy landmarks algorithm
+Iteration number 59 for random greedy landmarks algorithm
+Iteration number 60 for random greedy landmarks algorithm
+Iteration number 61 for random greedy landmarks algorithm
+Iteration number 62 for random greedy landmarks algorithm
+Iteration number 63 for random greedy landmarks algorithm
+Iteration number 64 for random greedy landmarks algorithm
+Iteration number 65 for random greedy landmarks algorithm
+Iteration number 66 for random greedy landmarks algorithm
+Iteration number 67 for random greedy landmarks algorithm
+Iteration number 68 for random greedy landmarks algorithm
+Iteration number 69 for random greedy landmarks algorithm
+Iteration number 70 for random greedy landmarks algorithm
+Iteration number 71 for random greedy landmarks algorithm
+Iteration number 72 for random greedy landmarks algorithm
+Iteration number 73 for random greedy landmarks algorithm
+Iteration number 74 for random greedy landmarks algorithm
+Iteration number 75 for random greedy landmarks algorithm
+Iteration number 76 for random greedy landmarks algorithm
+Iteration number 77 for random greedy landmarks algorithm
+Iteration number 78 for random greedy landmarks algorithm
+Iteration number 79 for random greedy landmarks algorithm
+Iteration number 80 for random greedy landmarks algorithm
+Iteration number 81 for random greedy landmarks algorithm
+Iteration number 82 for random greedy landmarks algorithm
+Iteration number 83 for random greedy landmarks algorithm
+Iteration number 84 for random greedy landmarks algorithm
+Iteration number 85 for random greedy landmarks algorithm
+Iteration number 86 for random greedy landmarks algorithm
+Iteration number 87 for random greedy landmarks algorithm
+Iteration number 88 for random greedy landmarks algorithm
+Iteration number 89 for random greedy landmarks algorithm
+Iteration number 90 for random greedy landmarks algorithm
+Iteration number 91 for random greedy landmarks algorithm
+Iteration number 92 for random greedy landmarks algorithm
+Iteration number 93 for random greedy landmarks algorithm
+Iteration number 94 for random greedy landmarks algorithm
+Iteration number 95 for random greedy landmarks algorithm
+Iteration number 96 for random greedy landmarks algorithm
+Iteration number 97 for random greedy landmarks algorithm
+Iteration number 98 for random greedy landmarks algorithm
+Iteration number 99 for random greedy landmarks algorithm
+Iteration number 100 for random greedy landmarks algorithm
+Best hungarian solution is: {'natural language processing': b'Christophe Cerisara', 'neural networks': b'Jian Wang', 'artificial intelligence': b'Alexander I. Rudnicky', 'robotics': b'Tao Chen'}
+Best hungarian score is: 58
+Time for 100 iterations of greedy is: 6661.463108062744
+Considering the following customized categories: {'data mining': 1, 'databases': 1, 'algorithms and theory': 1, 'algorithms': 1}
+Creating graphs.
+in create_graph_gml_files
+in read_dict_to_list
+out read_dict_to_list
+in read_dict_to_pkl_file
+out read_dict_to_pkl_file
+in read_dict_to_pkl_file
+out read_dict_to_pkl_file
+in read_venue_assignments_csv
+out read_venue_assignments_csv
+in create_cat_venue_dictionary
+out create_cat_venue_dictionary
+in get_authors
+out get_authors
+Creating graphs.
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+Time required to create graphhs is: 9.6663236618042 sec
+Adding cross-edges to the graph.
+Category is: data mining
+New number of nodes of graph: 18953
+New number of edges of graph: 497386
+Category is: databases
+New number of nodes of graph: 24693
+New number of edges of graph: 969093
+Category is: algorithms and theory
+New number of nodes of graph: 14324
+New number of edges of graph: 246467
+Category is: algorithms
+New number of nodes of graph: 9072
+New number of edges of graph: 113859
+Time required to add cross-edges is: 1.6211001873016357 sec
+out create_graph_gml_files
+Cleaning graphs.
+in clean_graphs
+Creating core graph.
+Creating core graph.
+Creating core graph.
+Creating core graph.
+out clean_graphs
+Length of nodes list: 15157 length of nodes 0
+Length of nodes list: 20295 length of nodes 15157
+Length of nodes list: 8997 length of nodes 35452
+Length of nodes list: 5449 length of nodes 44449
+Number of unique nodes 31701 number of all nodes: 49898
+Avg End./Role: 442794.25
+Avg End./Expert: 55.87132898015835
+Max End./Expert 3995
+Number of overlapping nodes: 5449
+in get_overlapping_graph_nodes
+Number of intersecting nodes: 1111
+out get_overlapping_graph_nodes
+Iteration number 1 for random greedy landmarks algorithm
+Iteration number 2 for random greedy landmarks algorithm
+Iteration number 3 for random greedy landmarks algorithm
+Iteration number 4 for random greedy landmarks algorithm
+Iteration number 5 for random greedy landmarks algorithm
+Iteration number 6 for random greedy landmarks algorithm
+Iteration number 7 for random greedy landmarks algorithm
+Iteration number 8 for random greedy landmarks algorithm
+Iteration number 9 for random greedy landmarks algorithm
+Iteration number 10 for random greedy landmarks algorithm
+Iteration number 11 for random greedy landmarks algorithm
+Iteration number 12 for random greedy landmarks algorithm
+Iteration number 13 for random greedy landmarks algorithm
+Iteration number 14 for random greedy landmarks algorithm
+Iteration number 15 for random greedy landmarks algorithm
+Iteration number 16 for random greedy landmarks algorithm
+Iteration number 17 for random greedy landmarks algorithm
+Iteration number 18 for random greedy landmarks algorithm
+Iteration number 19 for random greedy landmarks algorithm
+Iteration number 20 for random greedy landmarks algorithm
+Iteration number 21 for random greedy landmarks algorithm
+Iteration number 22 for random greedy landmarks algorithm
+Iteration number 23 for random greedy landmarks algorithm
+Iteration number 24 for random greedy landmarks algorithm
+Iteration number 25 for random greedy landmarks algorithm
+Iteration number 26 for random greedy landmarks algorithm
+Iteration number 27 for random greedy landmarks algorithm
+Iteration number 28 for random greedy landmarks algorithm
+Iteration number 29 for random greedy landmarks algorithm
+Iteration number 30 for random greedy landmarks algorithm
+Iteration number 31 for random greedy landmarks algorithm
+Iteration number 32 for random greedy landmarks algorithm
+Iteration number 33 for random greedy landmarks algorithm
+Iteration number 34 for random greedy landmarks algorithm
+Iteration number 35 for random greedy landmarks algorithm
+Iteration number 36 for random greedy landmarks algorithm
+Iteration number 37 for random greedy landmarks algorithm
+Iteration number 38 for random greedy landmarks algorithm
+Iteration number 39 for random greedy landmarks algorithm
+Iteration number 40 for random greedy landmarks algorithm
+Iteration number 41 for random greedy landmarks algorithm
+Iteration number 42 for random greedy landmarks algorithm
+Iteration number 43 for random greedy landmarks algorithm
+Iteration number 44 for random greedy landmarks algorithm
+Iteration number 45 for random greedy landmarks algorithm
+Iteration number 46 for random greedy landmarks algorithm
+Iteration number 47 for random greedy landmarks algorithm
+Iteration number 48 for random greedy landmarks algorithm
+Iteration number 49 for random greedy landmarks algorithm
+Iteration number 50 for random greedy landmarks algorithm
+Iteration number 51 for random greedy landmarks algorithm
+Iteration number 52 for random greedy landmarks algorithm
+Iteration number 53 for random greedy landmarks algorithm
+Iteration number 54 for random greedy landmarks algorithm
+Iteration number 55 for random greedy landmarks algorithm
+Iteration number 56 for random greedy landmarks algorithm
+Iteration number 57 for random greedy landmarks algorithm
+Iteration number 58 for random greedy landmarks algorithm
+Iteration number 59 for random greedy landmarks algorithm
+Iteration number 60 for random greedy landmarks algorithm
+Iteration number 61 for random greedy landmarks algorithm
+Iteration number 62 for random greedy landmarks algorithm
+Iteration number 63 for random greedy landmarks algorithm
+Iteration number 64 for random greedy landmarks algorithm
+Iteration number 65 for random greedy landmarks algorithm
+Iteration number 66 for random greedy landmarks algorithm
+Iteration number 67 for random greedy landmarks algorithm
+Iteration number 68 for random greedy landmarks algorithm
+Iteration number 69 for random greedy landmarks algorithm
+Iteration number 70 for random greedy landmarks algorithm
+Iteration number 71 for random greedy landmarks algorithm
+Iteration number 72 for random greedy landmarks algorithm
+Iteration number 73 for random greedy landmarks algorithm
+Iteration number 74 for random greedy landmarks algorithm
+Iteration number 75 for random greedy landmarks algorithm
+Iteration number 76 for random greedy landmarks algorithm
+Iteration number 77 for random greedy landmarks algorithm
+Iteration number 78 for random greedy landmarks algorithm
+Iteration number 79 for random greedy landmarks algorithm
+Iteration number 80 for random greedy landmarks algorithm
+Iteration number 81 for random greedy landmarks algorithm
+Iteration number 82 for random greedy landmarks algorithm
+Iteration number 83 for random greedy landmarks algorithm
+Iteration number 84 for random greedy landmarks algorithm
+Iteration number 85 for random greedy landmarks algorithm
+Iteration number 86 for random greedy landmarks algorithm
+Iteration number 87 for random greedy landmarks algorithm
+Iteration number 88 for random greedy landmarks algorithm
+Iteration number 89 for random greedy landmarks algorithm
+Iteration number 90 for random greedy landmarks algorithm
+Iteration number 91 for random greedy landmarks algorithm
+Iteration number 92 for random greedy landmarks algorithm
+Iteration number 93 for random greedy landmarks algorithm
+Iteration number 94 for random greedy landmarks algorithm
+Iteration number 95 for random greedy landmarks algorithm
+Iteration number 96 for random greedy landmarks algorithm
+Iteration number 97 for random greedy landmarks algorithm
+Iteration number 98 for random greedy landmarks algorithm
+Iteration number 99 for random greedy landmarks algorithm
+Iteration number 100 for random greedy landmarks algorithm
+Best greedy solution is: {'algorithms': (b'Blair D. Sullivan', 22), 'algorithms and theory': (b'Robert Bredereck', 21), 'data mining': (b'Daniel P. Miranker', 13), 'databases': (b'Yuval Shavitt', 12)}
+Best greedy score is: 54
+Time for 100 iterations of greedy is: 18.527690887451172
+Iteration number 1 for random greedy landmarks algorithm
+Iteration number 2 for random greedy landmarks algorithm
+Iteration number 3 for random greedy landmarks algorithm
+Iteration number 4 for random greedy landmarks algorithm
+Iteration number 5 for random greedy landmarks algorithm
+Iteration number 6 for random greedy landmarks algorithm
+Iteration number 7 for random greedy landmarks algorithm
+Iteration number 8 for random greedy landmarks algorithm
+Iteration number 9 for random greedy landmarks algorithm
+Iteration number 10 for random greedy landmarks algorithm
+Iteration number 11 for random greedy landmarks algorithm
+Iteration number 12 for random greedy landmarks algorithm
+Iteration number 13 for random greedy landmarks algorithm
+Iteration number 14 for random greedy landmarks algorithm
+Iteration number 15 for random greedy landmarks algorithm
+Iteration number 16 for random greedy landmarks algorithm
+Iteration number 17 for random greedy landmarks algorithm
+Iteration number 18 for random greedy landmarks algorithm
+Iteration number 19 for random greedy landmarks algorithm
+Iteration number 20 for random greedy landmarks algorithm
+Iteration number 21 for random greedy landmarks algorithm
+Iteration number 22 for random greedy landmarks algorithm
+Iteration number 23 for random greedy landmarks algorithm
+Iteration number 24 for random greedy landmarks algorithm
+Iteration number 25 for random greedy landmarks algorithm
+Iteration number 26 for random greedy landmarks algorithm
+Iteration number 27 for random greedy landmarks algorithm
+Iteration number 28 for random greedy landmarks algorithm
+Iteration number 29 for random greedy landmarks algorithm
+Iteration number 30 for random greedy landmarks algorithm
+Iteration number 31 for random greedy landmarks algorithm
+Iteration number 32 for random greedy landmarks algorithm
+Iteration number 33 for random greedy landmarks algorithm
+Iteration number 34 for random greedy landmarks algorithm
+Iteration number 35 for random greedy landmarks algorithm
+Iteration number 36 for random greedy landmarks algorithm
+Iteration number 37 for random greedy landmarks algorithm
+Iteration number 38 for random greedy landmarks algorithm
+Iteration number 39 for random greedy landmarks algorithm
+Iteration number 40 for random greedy landmarks algorithm
+Iteration number 41 for random greedy landmarks algorithm
+Iteration number 42 for random greedy landmarks algorithm
+Iteration number 43 for random greedy landmarks algorithm
+Iteration number 44 for random greedy landmarks algorithm
+Iteration number 45 for random greedy landmarks algorithm
+Iteration number 46 for random greedy landmarks algorithm
+Iteration number 47 for random greedy landmarks algorithm
+Iteration number 48 for random greedy landmarks algorithm
+Iteration number 49 for random greedy landmarks algorithm
+Iteration number 50 for random greedy landmarks algorithm
+Iteration number 51 for random greedy landmarks algorithm
+Iteration number 52 for random greedy landmarks algorithm
+Iteration number 53 for random greedy landmarks algorithm
+Iteration number 54 for random greedy landmarks algorithm
+Iteration number 55 for random greedy landmarks algorithm
+Iteration number 56 for random greedy landmarks algorithm
+Iteration number 57 for random greedy landmarks algorithm
+Iteration number 58 for random greedy landmarks algorithm
+Iteration number 59 for random greedy landmarks algorithm
+Iteration number 60 for random greedy landmarks algorithm
+Iteration number 61 for random greedy landmarks algorithm
+Iteration number 62 for random greedy landmarks algorithm
+Iteration number 63 for random greedy landmarks algorithm
+Iteration number 64 for random greedy landmarks algorithm
+Iteration number 65 for random greedy landmarks algorithm
+Iteration number 66 for random greedy landmarks algorithm
+Iteration number 67 for random greedy landmarks algorithm
+Iteration number 68 for random greedy landmarks algorithm
+Iteration number 69 for random greedy landmarks algorithm
+Iteration number 70 for random greedy landmarks algorithm
+Iteration number 71 for random greedy landmarks algorithm
+Iteration number 72 for random greedy landmarks algorithm
+Iteration number 73 for random greedy landmarks algorithm
+Iteration number 74 for random greedy landmarks algorithm
+Iteration number 75 for random greedy landmarks algorithm
+Iteration number 76 for random greedy landmarks algorithm
+Iteration number 77 for random greedy landmarks algorithm
+Iteration number 78 for random greedy landmarks algorithm
+Iteration number 79 for random greedy landmarks algorithm
+Iteration number 80 for random greedy landmarks algorithm
+Iteration number 81 for random greedy landmarks algorithm
+Iteration number 82 for random greedy landmarks algorithm
+Iteration number 83 for random greedy landmarks algorithm
+Iteration number 84 for random greedy landmarks algorithm
+Iteration number 85 for random greedy landmarks algorithm
+Iteration number 86 for random greedy landmarks algorithm
+Iteration number 87 for random greedy landmarks algorithm
+Iteration number 88 for random greedy landmarks algorithm
+Iteration number 89 for random greedy landmarks algorithm
+Iteration number 90 for random greedy landmarks algorithm
+Iteration number 91 for random greedy landmarks algorithm
+Iteration number 92 for random greedy landmarks algorithm
+Iteration number 93 for random greedy landmarks algorithm
+Iteration number 94 for random greedy landmarks algorithm
+Iteration number 95 for random greedy landmarks algorithm
+Iteration number 96 for random greedy landmarks algorithm
+Iteration number 97 for random greedy landmarks algorithm
+Iteration number 98 for random greedy landmarks algorithm
+Iteration number 99 for random greedy landmarks algorithm
+Iteration number 100 for random greedy landmarks algorithm
+Best hungarian solution is: {'data mining': b'Daniel P. Miranker', 'databases': b'Aleksandar Stupar', 'algorithms and theory': b'Andr Nichterlein', 'algorithms': b'Blair D. Sullivan'}
+Best hungarian score is: 54
+Time for 100 iterations of greedy is: 26408.922779798508
+Considering the following customized categories: {'data mining': 1, 'databases': 1, 'algorithms and theory': 1, 'algorithms': 1, 'artificial intelligence': 1, 'natural language processing': 1, 'robotics': 1, 'neural networks': 1}
+Creating graphs.
+in create_graph_gml_files
+in read_dict_to_list
+out read_dict_to_list
+in read_dict_to_pkl_file
+out read_dict_to_pkl_file
+in read_dict_to_pkl_file
+out read_dict_to_pkl_file
+in read_venue_assignments_csv
+out read_venue_assignments_csv
+in create_cat_venue_dictionary
+out create_cat_venue_dictionary
+in get_authors
+out get_authors
+Creating graphs.
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+Time required to create graphhs is: 25.42951989173889 sec
+Adding cross-edges to the graph.
+Category is: data mining
+New number of nodes of graph: 29275
+New number of edges of graph: 628167
+Category is: databases
+New number of nodes of graph: 31117
+New number of edges of graph: 1037344
+Category is: algorithms and theory
+New number of nodes of graph: 19888
+New number of edges of graph: 278766
+Category is: algorithms
+New number of nodes of graph: 11599
+New number of edges of graph: 126716
+Category is: artificial intelligence
+New number of nodes of graph: 54758
+New number of edges of graph: 1043585
+Category is: natural language processing
+New number of nodes of graph: 21415
+New number of edges of graph: 714800
+Category is: robotics
+New number of nodes of graph: 31713
+New number of edges of graph: 886838
+Category is: neural networks
+New number of nodes of graph: 45523
+New number of edges of graph: 780411
+Time required to add cross-edges is: 6.106236457824707 sec
+out create_graph_gml_files
+Cleaning graphs.
+in clean_graphs
+Creating core graph.
+Creating core graph.
+Creating core graph.
+Creating core graph.
+Creating core graph.
+Creating core graph.
+Creating core graph.
+Creating core graph.
+out clean_graphs
+Length of nodes list: 21330 length of nodes 0
+Length of nodes list: 23445 length of nodes 21330
+Length of nodes list: 10675 length of nodes 44775
+Length of nodes list: 6351 length of nodes 55450
+Length of nodes list: 37383 length of nodes 61801
+Length of nodes list: 16001 length of nodes 99184
+Length of nodes list: 26011 length of nodes 115185
+Length of nodes list: 32544 length of nodes 141196
+Number of unique nodes 95903 number of all nodes: 173740
+Avg End./Role: 659539.375
+Avg End./Expert: 55.017204884101645
+Max End./Expert 5971
+Number of overlapping nodes: 32544
+in get_overlapping_graph_nodes
+Number of intersecting nodes: 131
+out get_overlapping_graph_nodes
+Iteration number 1 for random greedy landmarks algorithm
+Iteration number 2 for random greedy landmarks algorithm
+Iteration number 3 for random greedy landmarks algorithm
+Iteration number 4 for random greedy landmarks algorithm
+Iteration number 5 for random greedy landmarks algorithm
+Iteration number 6 for random greedy landmarks algorithm
+Iteration number 7 for random greedy landmarks algorithm
+Iteration number 8 for random greedy landmarks algorithm
+Iteration number 9 for random greedy landmarks algorithm
+Iteration number 10 for random greedy landmarks algorithm
+Iteration number 11 for random greedy landmarks algorithm
+Iteration number 12 for random greedy landmarks algorithm
+Iteration number 13 for random greedy landmarks algorithm
+Iteration number 14 for random greedy landmarks algorithm
+Iteration number 15 for random greedy landmarks algorithm
+Iteration number 16 for random greedy landmarks algorithm
+Iteration number 17 for random greedy landmarks algorithm
+Iteration number 18 for random greedy landmarks algorithm
+Iteration number 19 for random greedy landmarks algorithm
+Iteration number 20 for random greedy landmarks algorithm
+Iteration number 21 for random greedy landmarks algorithm
+Iteration number 22 for random greedy landmarks algorithm
+Iteration number 23 for random greedy landmarks algorithm
+Iteration number 24 for random greedy landmarks algorithm
+Iteration number 25 for random greedy landmarks algorithm
+Iteration number 26 for random greedy landmarks algorithm
+Iteration number 27 for random greedy landmarks algorithm
+Iteration number 28 for random greedy landmarks algorithm
+Iteration number 29 for random greedy landmarks algorithm
+Iteration number 30 for random greedy landmarks algorithm
+Iteration number 31 for random greedy landmarks algorithm
+Iteration number 32 for random greedy landmarks algorithm
+Iteration number 33 for random greedy landmarks algorithm
+Iteration number 34 for random greedy landmarks algorithm
+Iteration number 35 for random greedy landmarks algorithm
+Iteration number 36 for random greedy landmarks algorithm
+Iteration number 37 for random greedy landmarks algorithm
+Iteration number 38 for random greedy landmarks algorithm
+Iteration number 39 for random greedy landmarks algorithm
+Iteration number 40 for random greedy landmarks algorithm
+Iteration number 41 for random greedy landmarks algorithm
+Iteration number 42 for random greedy landmarks algorithm
+Iteration number 43 for random greedy landmarks algorithm
+Iteration number 44 for random greedy landmarks algorithm
+Iteration number 45 for random greedy landmarks algorithm
+Iteration number 46 for random greedy landmarks algorithm
+Iteration number 47 for random greedy landmarks algorithm
+Iteration number 48 for random greedy landmarks algorithm
+Iteration number 49 for random greedy landmarks algorithm
+Iteration number 50 for random greedy landmarks algorithm
+Iteration number 51 for random greedy landmarks algorithm
+Iteration number 52 for random greedy landmarks algorithm
+Iteration number 53 for random greedy landmarks algorithm
+Iteration number 54 for random greedy landmarks algorithm
+Iteration number 55 for random greedy landmarks algorithm
+Iteration number 56 for random greedy landmarks algorithm
+Iteration number 57 for random greedy landmarks algorithm
+Iteration number 58 for random greedy landmarks algorithm
+Iteration number 59 for random greedy landmarks algorithm
+Iteration number 60 for random greedy landmarks algorithm
+Iteration number 61 for random greedy landmarks algorithm
+Iteration number 62 for random greedy landmarks algorithm
+Iteration number 63 for random greedy landmarks algorithm
+Iteration number 64 for random greedy landmarks algorithm
+Iteration number 65 for random greedy landmarks algorithm
+Iteration number 66 for random greedy landmarks algorithm
+Iteration number 67 for random greedy landmarks algorithm
+Iteration number 68 for random greedy landmarks algorithm
+Iteration number 69 for random greedy landmarks algorithm
+Iteration number 70 for random greedy landmarks algorithm
+Iteration number 71 for random greedy landmarks algorithm
+Iteration number 72 for random greedy landmarks algorithm
+Iteration number 73 for random greedy landmarks algorithm
+Iteration number 74 for random greedy landmarks algorithm
+Iteration number 75 for random greedy landmarks algorithm
+Iteration number 76 for random greedy landmarks algorithm
+Iteration number 77 for random greedy landmarks algorithm
+Iteration number 78 for random greedy landmarks algorithm
+Iteration number 79 for random greedy landmarks algorithm
+Iteration number 80 for random greedy landmarks algorithm
+Iteration number 81 for random greedy landmarks algorithm
+Iteration number 82 for random greedy landmarks algorithm
+Iteration number 83 for random greedy landmarks algorithm
+Iteration number 84 for random greedy landmarks algorithm
+Iteration number 85 for random greedy landmarks algorithm
+Iteration number 86 for random greedy landmarks algorithm
+Iteration number 87 for random greedy landmarks algorithm
+Iteration number 88 for random greedy landmarks algorithm
+Iteration number 89 for random greedy landmarks algorithm
+Iteration number 90 for random greedy landmarks algorithm
+Iteration number 91 for random greedy landmarks algorithm
+Iteration number 92 for random greedy landmarks algorithm
+Iteration number 93 for random greedy landmarks algorithm
+Iteration number 94 for random greedy landmarks algorithm
+Iteration number 95 for random greedy landmarks algorithm
+Iteration number 96 for random greedy landmarks algorithm
+Iteration number 97 for random greedy landmarks algorithm
+Iteration number 98 for random greedy landmarks algorithm
+Iteration number 99 for random greedy landmarks algorithm
+Iteration number 100 for random greedy landmarks algorithm
+Best greedy solution is: {'neural networks': (b'Sandeep Pandey', 44), 'data mining': (b'Weng-Keen Wong', 41), 'algorithms': (b'Deepak Agarwal', 40), 'robotics': (b'Tony Jebara', 38), 'databases': (b'Hao Zhang', 36), 'algorithms and theory': (b'John Langford', 32), 'natural language processing': (b'Xin Li', 30), 'artificial intelligence': (b'Yu Cheng', 14)}
+Best greedy score is: 137
+Time for 100 iterations of greedy is: 2.2189769744873047
+Iteration number 1 for random greedy landmarks algorithm
+Iteration number 2 for random greedy landmarks algorithm
+Iteration number 3 for random greedy landmarks algorithm
+Iteration number 4 for random greedy landmarks algorithm
+Iteration number 5 for random greedy landmarks algorithm
+Iteration number 6 for random greedy landmarks algorithm
+Iteration number 7 for random greedy landmarks algorithm
+Iteration number 8 for random greedy landmarks algorithm
+Iteration number 9 for random greedy landmarks algorithm
+Iteration number 10 for random greedy landmarks algorithm
+Iteration number 11 for random greedy landmarks algorithm
+Iteration number 12 for random greedy landmarks algorithm
+Iteration number 13 for random greedy landmarks algorithm
+Iteration number 14 for random greedy landmarks algorithm
+Iteration number 15 for random greedy landmarks algorithm
+Iteration number 16 for random greedy landmarks algorithm
+Iteration number 17 for random greedy landmarks algorithm
+Iteration number 18 for random greedy landmarks algorithm
+Iteration number 19 for random greedy landmarks algorithm
+Iteration number 20 for random greedy landmarks algorithm
+Iteration number 21 for random greedy landmarks algorithm
+Iteration number 22 for random greedy landmarks algorithm
+Iteration number 23 for random greedy landmarks algorithm
+Iteration number 24 for random greedy landmarks algorithm
+Iteration number 25 for random greedy landmarks algorithm
+Iteration number 26 for random greedy landmarks algorithm
+Iteration number 27 for random greedy landmarks algorithm
+Iteration number 28 for random greedy landmarks algorithm
+Iteration number 29 for random greedy landmarks algorithm
+Iteration number 30 for random greedy landmarks algorithm
+Iteration number 31 for random greedy landmarks algorithm
+Iteration number 32 for random greedy landmarks algorithm
+Iteration number 33 for random greedy landmarks algorithm
+Iteration number 34 for random greedy landmarks algorithm
+Iteration number 35 for random greedy landmarks algorithm
+Iteration number 36 for random greedy landmarks algorithm
+Iteration number 37 for random greedy landmarks algorithm
+Iteration number 38 for random greedy landmarks algorithm
+Iteration number 39 for random greedy landmarks algorithm
+Iteration number 40 for random greedy landmarks algorithm
+Iteration number 41 for random greedy landmarks algorithm
+Iteration number 42 for random greedy landmarks algorithm
+Iteration number 43 for random greedy landmarks algorithm
+Iteration number 44 for random greedy landmarks algorithm
+Iteration number 45 for random greedy landmarks algorithm
+Iteration number 46 for random greedy landmarks algorithm
+Iteration number 47 for random greedy landmarks algorithm
+Iteration number 48 for random greedy landmarks algorithm
+Iteration number 49 for random greedy landmarks algorithm
+Iteration number 50 for random greedy landmarks algorithm
+Iteration number 51 for random greedy landmarks algorithm
+Iteration number 52 for random greedy landmarks algorithm
+Iteration number 53 for random greedy landmarks algorithm
+Iteration number 54 for random greedy landmarks algorithm
+Iteration number 55 for random greedy landmarks algorithm
+Iteration number 56 for random greedy landmarks algorithm
+Iteration number 57 for random greedy landmarks algorithm
+Iteration number 58 for random greedy landmarks algorithm
+Iteration number 59 for random greedy landmarks algorithm
+Iteration number 60 for random greedy landmarks algorithm
+Iteration number 61 for random greedy landmarks algorithm
+Iteration number 62 for random greedy landmarks algorithm
+Iteration number 63 for random greedy landmarks algorithm
+Iteration number 64 for random greedy landmarks algorithm
+Iteration number 65 for random greedy landmarks algorithm
+Iteration number 66 for random greedy landmarks algorithm
+Iteration number 67 for random greedy landmarks algorithm
+Iteration number 68 for random greedy landmarks algorithm
+Iteration number 69 for random greedy landmarks algorithm
+Iteration number 70 for random greedy landmarks algorithm
+Iteration number 71 for random greedy landmarks algorithm
+Iteration number 72 for random greedy landmarks algorithm
+Iteration number 73 for random greedy landmarks algorithm
+Iteration number 74 for random greedy landmarks algorithm
+Iteration number 75 for random greedy landmarks algorithm
+Iteration number 76 for random greedy landmarks algorithm
+Iteration number 77 for random greedy landmarks algorithm
+Iteration number 78 for random greedy landmarks algorithm
+Iteration number 79 for random greedy landmarks algorithm
+Iteration number 80 for random greedy landmarks algorithm
+Iteration number 81 for random greedy landmarks algorithm
+Iteration number 82 for random greedy landmarks algorithm
+Iteration number 83 for random greedy landmarks algorithm
+Iteration number 84 for random greedy landmarks algorithm
+Iteration number 85 for random greedy landmarks algorithm
+Iteration number 86 for random greedy landmarks algorithm
+Iteration number 87 for random greedy landmarks algorithm
+Iteration number 88 for random greedy landmarks algorithm
+Iteration number 89 for random greedy landmarks algorithm
+Iteration number 90 for random greedy landmarks algorithm
+Iteration number 91 for random greedy landmarks algorithm
+Iteration number 92 for random greedy landmarks algorithm
+Iteration number 93 for random greedy landmarks algorithm
+Iteration number 94 for random greedy landmarks algorithm
+Iteration number 95 for random greedy landmarks algorithm
+Iteration number 96 for random greedy landmarks algorithm
+Iteration number 97 for random greedy landmarks algorithm
+Iteration number 98 for random greedy landmarks algorithm
+Iteration number 99 for random greedy landmarks algorithm
+Iteration number 100 for random greedy landmarks algorithm
+Best hungarian solution is: {'algorithms': b'Deepak Agarwal', 'algorithms and theory': b'John Langford', 'neural networks': b'Sandeep Pandey', 'data mining': b'Weng-Keen Wong', 'natural language processing': b'Xin Li', 'artificial intelligence': b'Yu Cheng', 'databases': b'Hao Zhang', 'robotics': b'Katia P. Sycara'}
+Best hungarian score is: 133
+Time for 100 iterations of greedy is: 378.9948379993439
+Considering the following customized categories: {'software engineering': 1, 'operating systems': 1, 'high-performance computing': 1, 'distributed and parallel computing': 1}
+Creating graphs.
+in create_graph_gml_files
+in read_dict_to_list
+out read_dict_to_list
+in read_dict_to_pkl_file
+out read_dict_to_pkl_file
+in read_dict_to_pkl_file
+out read_dict_to_pkl_file
+in read_venue_assignments_csv
+out read_venue_assignments_csv
+in create_cat_venue_dictionary
+out create_cat_venue_dictionary
+in get_authors
+out get_authors
+Creating graphs.
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+Time required to create graphhs is: 8.532265186309814 sec
+Adding cross-edges to the graph.
+Category is: software engineering
+New number of nodes of graph: 19653
+New number of edges of graph: 387176
+Category is: operating systems
+New number of nodes of graph: 12160
+New number of edges of graph: 257811
+Category is: high-performance computing
+New number of nodes of graph: 14244
+New number of edges of graph: 307184
+Category is: distributed and parallel computing
+New number of nodes of graph: 29118
+New number of edges of graph: 604413
+Time required to add cross-edges is: 1.5432937145233154 sec
+out create_graph_gml_files
+Cleaning graphs.
+in clean_graphs
+Creating core graph.
+Creating core graph.
+Creating core graph.
+Creating core graph.
+out clean_graphs
+Length of nodes list: 13829 length of nodes 0
+Length of nodes list: 9110 length of nodes 13829
+Length of nodes list: 10252 length of nodes 22939
+Length of nodes list: 23320 length of nodes 33191
+Number of unique nodes 37535 number of all nodes: 56511
+Avg End./Role: 373714.0
+Avg End./Expert: 39.825656054349274
+Max End./Expert 1606
+Number of overlapping nodes: 23320
+in get_overlapping_graph_nodes
+Number of intersecting nodes: 726
+out get_overlapping_graph_nodes
+Iteration number 1 for random greedy landmarks algorithm
+Iteration number 2 for random greedy landmarks algorithm
+Iteration number 3 for random greedy landmarks algorithm
+Iteration number 4 for random greedy landmarks algorithm
+Iteration number 5 for random greedy landmarks algorithm
+Iteration number 6 for random greedy landmarks algorithm
+Iteration number 7 for random greedy landmarks algorithm
+Iteration number 8 for random greedy landmarks algorithm
+Iteration number 9 for random greedy landmarks algorithm
+Iteration number 10 for random greedy landmarks algorithm
+Iteration number 11 for random greedy landmarks algorithm
+Iteration number 12 for random greedy landmarks algorithm
+Iteration number 13 for random greedy landmarks algorithm
+Iteration number 14 for random greedy landmarks algorithm
+Iteration number 15 for random greedy landmarks algorithm
+Iteration number 16 for random greedy landmarks algorithm
+Iteration number 17 for random greedy landmarks algorithm
+Iteration number 18 for random greedy landmarks algorithm
+Iteration number 19 for random greedy landmarks algorithm
+Iteration number 20 for random greedy landmarks algorithm
+Iteration number 21 for random greedy landmarks algorithm
+Iteration number 22 for random greedy landmarks algorithm
+Iteration number 23 for random greedy landmarks algorithm
+Iteration number 24 for random greedy landmarks algorithm
+Iteration number 25 for random greedy landmarks algorithm
+Iteration number 26 for random greedy landmarks algorithm
+Iteration number 27 for random greedy landmarks algorithm
+Iteration number 28 for random greedy landmarks algorithm
+Iteration number 29 for random greedy landmarks algorithm
+Iteration number 30 for random greedy landmarks algorithm
+Iteration number 31 for random greedy landmarks algorithm
+Iteration number 32 for random greedy landmarks algorithm
+Iteration number 33 for random greedy landmarks algorithm
+Iteration number 34 for random greedy landmarks algorithm
+Iteration number 35 for random greedy landmarks algorithm
+Iteration number 36 for random greedy landmarks algorithm
+Iteration number 37 for random greedy landmarks algorithm
+Iteration number 38 for random greedy landmarks algorithm
+Iteration number 39 for random greedy landmarks algorithm
+Iteration number 40 for random greedy landmarks algorithm
+Iteration number 41 for random greedy landmarks algorithm
+Iteration number 42 for random greedy landmarks algorithm
+Iteration number 43 for random greedy landmarks algorithm
+Iteration number 44 for random greedy landmarks algorithm
+Iteration number 45 for random greedy landmarks algorithm
+Iteration number 46 for random greedy landmarks algorithm
+Iteration number 47 for random greedy landmarks algorithm
+Iteration number 48 for random greedy landmarks algorithm
+Iteration number 49 for random greedy landmarks algorithm
+Iteration number 50 for random greedy landmarks algorithm
+Iteration number 51 for random greedy landmarks algorithm
+Iteration number 52 for random greedy landmarks algorithm
+Iteration number 53 for random greedy landmarks algorithm
+Iteration number 54 for random greedy landmarks algorithm
+Iteration number 55 for random greedy landmarks algorithm
+Iteration number 56 for random greedy landmarks algorithm
+Iteration number 57 for random greedy landmarks algorithm
+Iteration number 58 for random greedy landmarks algorithm
+Iteration number 59 for random greedy landmarks algorithm
+Iteration number 60 for random greedy landmarks algorithm
+Iteration number 61 for random greedy landmarks algorithm
+Iteration number 62 for random greedy landmarks algorithm
+Iteration number 63 for random greedy landmarks algorithm
+Iteration number 64 for random greedy landmarks algorithm
+Iteration number 65 for random greedy landmarks algorithm
+Iteration number 66 for random greedy landmarks algorithm
+Iteration number 67 for random greedy landmarks algorithm
+Iteration number 68 for random greedy landmarks algorithm
+Iteration number 69 for random greedy landmarks algorithm
+Iteration number 70 for random greedy landmarks algorithm
+Iteration number 71 for random greedy landmarks algorithm
+Iteration number 72 for random greedy landmarks algorithm
+Iteration number 73 for random greedy landmarks algorithm
+Iteration number 74 for random greedy landmarks algorithm
+Iteration number 75 for random greedy landmarks algorithm
+Iteration number 76 for random greedy landmarks algorithm
+Iteration number 77 for random greedy landmarks algorithm
+Iteration number 78 for random greedy landmarks algorithm
+Iteration number 79 for random greedy landmarks algorithm
+Iteration number 80 for random greedy landmarks algorithm
+Iteration number 81 for random greedy landmarks algorithm
+Iteration number 82 for random greedy landmarks algorithm
+Iteration number 83 for random greedy landmarks algorithm
+Iteration number 84 for random greedy landmarks algorithm
+Iteration number 85 for random greedy landmarks algorithm
+Iteration number 86 for random greedy landmarks algorithm
+Iteration number 87 for random greedy landmarks algorithm
+Iteration number 88 for random greedy landmarks algorithm
+Iteration number 89 for random greedy landmarks algorithm
+Iteration number 90 for random greedy landmarks algorithm
+Iteration number 91 for random greedy landmarks algorithm
+Iteration number 92 for random greedy landmarks algorithm
+Iteration number 93 for random greedy landmarks algorithm
+Iteration number 94 for random greedy landmarks algorithm
+Iteration number 95 for random greedy landmarks algorithm
+Iteration number 96 for random greedy landmarks algorithm
+Iteration number 97 for random greedy landmarks algorithm
+Iteration number 98 for random greedy landmarks algorithm
+Iteration number 99 for random greedy landmarks algorithm
+Iteration number 100 for random greedy landmarks algorithm
+Best greedy solution is: {'high-performance computing': (b'Radu Prodan', 21), 'operating systems': (b'Wei Dong', 20), 'software engineering': (b'Feng Zhang', 19), 'distributed and parallel computing': (b'Zhen Li', 18)}
+Best greedy score is: 63
+Time for 100 iterations of greedy is: 9.906221628189087
+Iteration number 1 for random greedy landmarks algorithm
+Iteration number 2 for random greedy landmarks algorithm
+Iteration number 3 for random greedy landmarks algorithm
+Iteration number 4 for random greedy landmarks algorithm
+Iteration number 5 for random greedy landmarks algorithm
+Iteration number 6 for random greedy landmarks algorithm
+Iteration number 7 for random greedy landmarks algorithm
+Iteration number 8 for random greedy landmarks algorithm
+Iteration number 9 for random greedy landmarks algorithm
+Iteration number 10 for random greedy landmarks algorithm
+Iteration number 11 for random greedy landmarks algorithm
+Iteration number 12 for random greedy landmarks algorithm
+Iteration number 13 for random greedy landmarks algorithm
+Iteration number 14 for random greedy landmarks algorithm
+Iteration number 15 for random greedy landmarks algorithm
+Iteration number 16 for random greedy landmarks algorithm
+Iteration number 17 for random greedy landmarks algorithm
+Iteration number 18 for random greedy landmarks algorithm
+Iteration number 19 for random greedy landmarks algorithm
+Iteration number 20 for random greedy landmarks algorithm
+Iteration number 21 for random greedy landmarks algorithm
+Iteration number 22 for random greedy landmarks algorithm
+Iteration number 23 for random greedy landmarks algorithm
+Iteration number 24 for random greedy landmarks algorithm
+Iteration number 25 for random greedy landmarks algorithm
+Iteration number 26 for random greedy landmarks algorithm
+Iteration number 27 for random greedy landmarks algorithm
+Iteration number 28 for random greedy landmarks algorithm
+Iteration number 29 for random greedy landmarks algorithm
+Iteration number 30 for random greedy landmarks algorithm
+Iteration number 31 for random greedy landmarks algorithm
+Iteration number 32 for random greedy landmarks algorithm
+Iteration number 33 for random greedy landmarks algorithm
+Iteration number 34 for random greedy landmarks algorithm
+Iteration number 35 for random greedy landmarks algorithm
+Iteration number 36 for random greedy landmarks algorithm
+Iteration number 37 for random greedy landmarks algorithm
+Iteration number 38 for random greedy landmarks algorithm
+Iteration number 39 for random greedy landmarks algorithm
+Iteration number 40 for random greedy landmarks algorithm
+Iteration number 41 for random greedy landmarks algorithm
+Iteration number 42 for random greedy landmarks algorithm
+Iteration number 43 for random greedy landmarks algorithm
+Iteration number 44 for random greedy landmarks algorithm
+Iteration number 45 for random greedy landmarks algorithm
+Iteration number 46 for random greedy landmarks algorithm
+Iteration number 47 for random greedy landmarks algorithm
+Iteration number 48 for random greedy landmarks algorithm
+Iteration number 49 for random greedy landmarks algorithm
+Iteration number 50 for random greedy landmarks algorithm
+Iteration number 51 for random greedy landmarks algorithm
+Iteration number 52 for random greedy landmarks algorithm
+Iteration number 53 for random greedy landmarks algorithm
+Iteration number 54 for random greedy landmarks algorithm
+Iteration number 55 for random greedy landmarks algorithm
+Iteration number 56 for random greedy landmarks algorithm
+Iteration number 57 for random greedy landmarks algorithm
+Iteration number 58 for random greedy landmarks algorithm
+Iteration number 59 for random greedy landmarks algorithm
+Iteration number 60 for random greedy landmarks algorithm
+Iteration number 61 for random greedy landmarks algorithm
+Iteration number 62 for random greedy landmarks algorithm
+Iteration number 63 for random greedy landmarks algorithm
+Iteration number 64 for random greedy landmarks algorithm
+Iteration number 65 for random greedy landmarks algorithm
+Iteration number 66 for random greedy landmarks algorithm
+Iteration number 67 for random greedy landmarks algorithm
+Iteration number 68 for random greedy landmarks algorithm
+Iteration number 69 for random greedy landmarks algorithm
+Iteration number 70 for random greedy landmarks algorithm
+Iteration number 71 for random greedy landmarks algorithm
+Iteration number 72 for random greedy landmarks algorithm
+Iteration number 73 for random greedy landmarks algorithm
+Iteration number 74 for random greedy landmarks algorithm
+Iteration number 75 for random greedy landmarks algorithm
+Iteration number 76 for random greedy landmarks algorithm
+Iteration number 77 for random greedy landmarks algorithm
+Iteration number 78 for random greedy landmarks algorithm
+Iteration number 79 for random greedy landmarks algorithm
+Iteration number 80 for random greedy landmarks algorithm
+Iteration number 81 for random greedy landmarks algorithm
+Iteration number 82 for random greedy landmarks algorithm
+Iteration number 83 for random greedy landmarks algorithm
+Iteration number 84 for random greedy landmarks algorithm
+Iteration number 85 for random greedy landmarks algorithm
+Iteration number 86 for random greedy landmarks algorithm
+Iteration number 87 for random greedy landmarks algorithm
+Iteration number 88 for random greedy landmarks algorithm
+Iteration number 89 for random greedy landmarks algorithm
+Iteration number 90 for random greedy landmarks algorithm
+Iteration number 91 for random greedy landmarks algorithm
+Iteration number 92 for random greedy landmarks algorithm
+Iteration number 93 for random greedy landmarks algorithm
+Iteration number 94 for random greedy landmarks algorithm
+Iteration number 95 for random greedy landmarks algorithm
+Iteration number 96 for random greedy landmarks algorithm
+Iteration number 97 for random greedy landmarks algorithm
+Iteration number 98 for random greedy landmarks algorithm
+Iteration number 99 for random greedy landmarks algorithm
+Iteration number 100 for random greedy landmarks algorithm
+Best hungarian solution is: {'high-performance computing': b'Radu Prodan', 'operating systems': b'Wei Dong', 'distributed and parallel computing': b'Zhen Li', 'software engineering': b'Feng Zhang'}
+Best hungarian score is: 63
+Time for 100 iterations of greedy is: 10744.916226148605
+Considering the following customized categories: {'signal processing': 1, 'wireless networks and mobile computing': 1, 'computer networking': 1, 'information retrieval': 1}
+Creating graphs.
+in create_graph_gml_files
+in read_dict_to_list
+out read_dict_to_list
+in read_dict_to_pkl_file
+out read_dict_to_pkl_file
+in read_dict_to_pkl_file
+out read_dict_to_pkl_file
+in read_venue_assignments_csv
+out read_venue_assignments_csv
+in create_cat_venue_dictionary
+out create_cat_venue_dictionary
+in get_authors
+out get_authors
+Creating graphs.
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+Time required to create graphhs is: 13.342875957489014 sec
+Adding cross-edges to the graph.
+Category is: signal processing
+New number of nodes of graph: 24928
+New number of edges of graph: 478148
+Category is: wireless networks and mobile computing
+New number of nodes of graph: 14007
+New number of edges of graph: 261795
+Category is: computer networking
+New number of nodes of graph: 51372
+New number of edges of graph: 1524831
+Category is: information retrieval
+New number of nodes of graph: 5951
+New number of edges of graph: 156395
+Time required to add cross-edges is: 1.5698020458221436 sec
+out create_graph_gml_files
+Cleaning graphs.
+in clean_graphs
+Creating core graph.
+Creating core graph.
+Creating core graph.
+Creating core graph.
+out clean_graphs
+Length of nodes list: 18415 length of nodes 0
+Length of nodes list: 9645 length of nodes 18415
+Length of nodes list: 43221 length of nodes 28060
+Length of nodes list: 4660 length of nodes 71281
+Number of unique nodes 56754 number of all nodes: 75941
+Avg End./Role: 586495.5
+Avg End./Expert: 41.335976318849774
+Max End./Expert 3165
+Number of overlapping nodes: 4660
+in get_overlapping_graph_nodes
+Number of intersecting nodes: 159
+out get_overlapping_graph_nodes
+Iteration number 1 for random greedy landmarks algorithm
+Iteration number 2 for random greedy landmarks algorithm
+Iteration number 3 for random greedy landmarks algorithm
+Iteration number 4 for random greedy landmarks algorithm
+Iteration number 5 for random greedy landmarks algorithm
+Iteration number 6 for random greedy landmarks algorithm
+Iteration number 7 for random greedy landmarks algorithm
+Iteration number 8 for random greedy landmarks algorithm
+Iteration number 9 for random greedy landmarks algorithm
+Iteration number 10 for random greedy landmarks algorithm
+Iteration number 11 for random greedy landmarks algorithm
+Iteration number 12 for random greedy landmarks algorithm
+Iteration number 13 for random greedy landmarks algorithm
+Iteration number 14 for random greedy landmarks algorithm
+Iteration number 15 for random greedy landmarks algorithm
+Iteration number 16 for random greedy landmarks algorithm
+Iteration number 17 for random greedy landmarks algorithm
+Iteration number 18 for random greedy landmarks algorithm
+Iteration number 19 for random greedy landmarks algorithm
+Iteration number 20 for random greedy landmarks algorithm
+Iteration number 21 for random greedy landmarks algorithm
+Iteration number 22 for random greedy landmarks algorithm
+Iteration number 23 for random greedy landmarks algorithm
+Iteration number 24 for random greedy landmarks algorithm
+Iteration number 25 for random greedy landmarks algorithm
+Iteration number 26 for random greedy landmarks algorithm
+Iteration number 27 for random greedy landmarks algorithm
+Iteration number 28 for random greedy landmarks algorithm
+Iteration number 29 for random greedy landmarks algorithm
+Iteration number 30 for random greedy landmarks algorithm
+Iteration number 31 for random greedy landmarks algorithm
+Iteration number 32 for random greedy landmarks algorithm
+Iteration number 33 for random greedy landmarks algorithm
+Iteration number 34 for random greedy landmarks algorithm
+Iteration number 35 for random greedy landmarks algorithm
+Iteration number 36 for random greedy landmarks algorithm
+Iteration number 37 for random greedy landmarks algorithm
+Iteration number 38 for random greedy landmarks algorithm
+Iteration number 39 for random greedy landmarks algorithm
+Iteration number 40 for random greedy landmarks algorithm
+Iteration number 41 for random greedy landmarks algorithm
+Iteration number 42 for random greedy landmarks algorithm
+Iteration number 43 for random greedy landmarks algorithm
+Iteration number 44 for random greedy landmarks algorithm
+Iteration number 45 for random greedy landmarks algorithm
+Iteration number 46 for random greedy landmarks algorithm
+Iteration number 47 for random greedy landmarks algorithm
+Iteration number 48 for random greedy landmarks algorithm
+Iteration number 49 for random greedy landmarks algorithm
+Iteration number 50 for random greedy landmarks algorithm
+Iteration number 51 for random greedy landmarks algorithm
+Iteration number 52 for random greedy landmarks algorithm
+Iteration number 53 for random greedy landmarks algorithm
+Iteration number 54 for random greedy landmarks algorithm
+Iteration number 55 for random greedy landmarks algorithm
+Iteration number 56 for random greedy landmarks algorithm
+Iteration number 57 for random greedy landmarks algorithm
+Iteration number 58 for random greedy landmarks algorithm
+Iteration number 59 for random greedy landmarks algorithm
+Iteration number 60 for random greedy landmarks algorithm
+Iteration number 61 for random greedy landmarks algorithm
+Iteration number 62 for random greedy landmarks algorithm
+Iteration number 63 for random greedy landmarks algorithm
+Iteration number 64 for random greedy landmarks algorithm
+Iteration number 65 for random greedy landmarks algorithm
+Iteration number 66 for random greedy landmarks algorithm
+Iteration number 67 for random greedy landmarks algorithm
+Iteration number 68 for random greedy landmarks algorithm
+Iteration number 69 for random greedy landmarks algorithm
+Iteration number 70 for random greedy landmarks algorithm
+Iteration number 71 for random greedy landmarks algorithm
+Iteration number 72 for random greedy landmarks algorithm
+Iteration number 73 for random greedy landmarks algorithm
+Iteration number 74 for random greedy landmarks algorithm
+Iteration number 75 for random greedy landmarks algorithm
+Iteration number 76 for random greedy landmarks algorithm
+Iteration number 77 for random greedy landmarks algorithm
+Iteration number 78 for random greedy landmarks algorithm
+Iteration number 79 for random greedy landmarks algorithm
+Iteration number 80 for random greedy landmarks algorithm
+Iteration number 81 for random greedy landmarks algorithm
+Iteration number 82 for random greedy landmarks algorithm
+Iteration number 83 for random greedy landmarks algorithm
+Iteration number 84 for random greedy landmarks algorithm
+Iteration number 85 for random greedy landmarks algorithm
+Iteration number 86 for random greedy landmarks algorithm
+Iteration number 87 for random greedy landmarks algorithm
+Iteration number 88 for random greedy landmarks algorithm
+Iteration number 89 for random greedy landmarks algorithm
+Iteration number 90 for random greedy landmarks algorithm
+Iteration number 91 for random greedy landmarks algorithm
+Iteration number 92 for random greedy landmarks algorithm
+Iteration number 93 for random greedy landmarks algorithm
+Iteration number 94 for random greedy landmarks algorithm
+Iteration number 95 for random greedy landmarks algorithm
+Iteration number 96 for random greedy landmarks algorithm
+Iteration number 97 for random greedy landmarks algorithm
+Iteration number 98 for random greedy landmarks algorithm
+Iteration number 99 for random greedy landmarks algorithm
+Iteration number 100 for random greedy landmarks algorithm
+Best greedy solution is: {'computer networking': (b'Yan Li', 22), 'information retrieval': (b'Yue Zhang', 20), 'signal processing': (b'Yu Chen', 13), 'wireless networks and mobile computing': (b'Rui Zhang', 11)}
+Best greedy score is: 53
+Time for 100 iterations of greedy is: 1.174185037612915
+Iteration number 1 for random greedy landmarks algorithm
+Iteration number 2 for random greedy landmarks algorithm
+Iteration number 3 for random greedy landmarks algorithm
+Iteration number 4 for random greedy landmarks algorithm
+Iteration number 5 for random greedy landmarks algorithm
+Iteration number 6 for random greedy landmarks algorithm
+Iteration number 7 for random greedy landmarks algorithm
+Iteration number 8 for random greedy landmarks algorithm
+Iteration number 9 for random greedy landmarks algorithm
+Iteration number 10 for random greedy landmarks algorithm
+Iteration number 11 for random greedy landmarks algorithm
+Iteration number 12 for random greedy landmarks algorithm
+Iteration number 13 for random greedy landmarks algorithm
+Iteration number 14 for random greedy landmarks algorithm
+Iteration number 15 for random greedy landmarks algorithm
+Iteration number 16 for random greedy landmarks algorithm
+Iteration number 17 for random greedy landmarks algorithm
+Iteration number 18 for random greedy landmarks algorithm
+Iteration number 19 for random greedy landmarks algorithm
+Iteration number 20 for random greedy landmarks algorithm
+Iteration number 21 for random greedy landmarks algorithm
+Iteration number 22 for random greedy landmarks algorithm
+Iteration number 23 for random greedy landmarks algorithm
+Iteration number 24 for random greedy landmarks algorithm
+Iteration number 25 for random greedy landmarks algorithm
+Iteration number 26 for random greedy landmarks algorithm
+Iteration number 27 for random greedy landmarks algorithm
+Iteration number 28 for random greedy landmarks algorithm
+Iteration number 29 for random greedy landmarks algorithm
+Iteration number 30 for random greedy landmarks algorithm
+Iteration number 31 for random greedy landmarks algorithm
+Iteration number 32 for random greedy landmarks algorithm
+Iteration number 33 for random greedy landmarks algorithm
+Iteration number 34 for random greedy landmarks algorithm
+Iteration number 35 for random greedy landmarks algorithm
+Iteration number 36 for random greedy landmarks algorithm
+Iteration number 37 for random greedy landmarks algorithm
+Iteration number 38 for random greedy landmarks algorithm
+Iteration number 39 for random greedy landmarks algorithm
+Iteration number 40 for random greedy landmarks algorithm
+Iteration number 41 for random greedy landmarks algorithm
+Iteration number 42 for random greedy landmarks algorithm
+Iteration number 43 for random greedy landmarks algorithm
+Iteration number 44 for random greedy landmarks algorithm
+Iteration number 45 for random greedy landmarks algorithm
+Iteration number 46 for random greedy landmarks algorithm
+Iteration number 47 for random greedy landmarks algorithm
+Iteration number 48 for random greedy landmarks algorithm
+Iteration number 49 for random greedy landmarks algorithm
+Iteration number 50 for random greedy landmarks algorithm
+Iteration number 51 for random greedy landmarks algorithm
+Iteration number 52 for random greedy landmarks algorithm
+Iteration number 53 for random greedy landmarks algorithm
+Iteration number 54 for random greedy landmarks algorithm
+Iteration number 55 for random greedy landmarks algorithm
+Iteration number 56 for random greedy landmarks algorithm
+Iteration number 57 for random greedy landmarks algorithm
+Iteration number 58 for random greedy landmarks algorithm
+Iteration number 59 for random greedy landmarks algorithm
+Iteration number 60 for random greedy landmarks algorithm
+Iteration number 61 for random greedy landmarks algorithm
+Iteration number 62 for random greedy landmarks algorithm
+Iteration number 63 for random greedy landmarks algorithm
+Iteration number 64 for random greedy landmarks algorithm
+Iteration number 65 for random greedy landmarks algorithm
+Iteration number 66 for random greedy landmarks algorithm
+Iteration number 67 for random greedy landmarks algorithm
+Iteration number 68 for random greedy landmarks algorithm
+Iteration number 69 for random greedy landmarks algorithm
+Iteration number 70 for random greedy landmarks algorithm
+Iteration number 71 for random greedy landmarks algorithm
+Iteration number 72 for random greedy landmarks algorithm
+Iteration number 73 for random greedy landmarks algorithm
+Iteration number 74 for random greedy landmarks algorithm
+Iteration number 75 for random greedy landmarks algorithm
+Iteration number 76 for random greedy landmarks algorithm
+Iteration number 77 for random greedy landmarks algorithm
+Iteration number 78 for random greedy landmarks algorithm
+Iteration number 79 for random greedy landmarks algorithm
+Iteration number 80 for random greedy landmarks algorithm
+Iteration number 81 for random greedy landmarks algorithm
+Iteration number 82 for random greedy landmarks algorithm
+Iteration number 83 for random greedy landmarks algorithm
+Iteration number 84 for random greedy landmarks algorithm
+Iteration number 85 for random greedy landmarks algorithm
+Iteration number 86 for random greedy landmarks algorithm
+Iteration number 87 for random greedy landmarks algorithm
+Iteration number 88 for random greedy landmarks algorithm
+Iteration number 89 for random greedy landmarks algorithm
+Iteration number 90 for random greedy landmarks algorithm
+Iteration number 91 for random greedy landmarks algorithm
+Iteration number 92 for random greedy landmarks algorithm
+Iteration number 93 for random greedy landmarks algorithm
+Iteration number 94 for random greedy landmarks algorithm
+Iteration number 95 for random greedy landmarks algorithm
+Iteration number 96 for random greedy landmarks algorithm
+Iteration number 97 for random greedy landmarks algorithm
+Iteration number 98 for random greedy landmarks algorithm
+Iteration number 99 for random greedy landmarks algorithm
+Iteration number 100 for random greedy landmarks algorithm
+Best hungarian solution is: {'wireless networks and mobile computing': b'Rui Zhang', 'computer networking': b'Yan Li', 'signal processing': b'Yu Chen', 'information retrieval': b'Yue Zhang'}
+Best hungarian score is: 53
+Time for 100 iterations of greedy is: 339.9591884613037
+Considering the following customized categories: {'signal processing': 1, 'wireless networks and mobile computing': 1, 'computer networking': 1, 'information retrieval': 1, 'software engineering': 1, 'operating systems': 1, 'high-performance computing': 1, 'distributed and parallel computing': 1}
+Creating graphs.
+in create_graph_gml_files
+in read_dict_to_list
+out read_dict_to_list
+in read_dict_to_pkl_file
+out read_dict_to_pkl_file
+in read_dict_to_pkl_file
+out read_dict_to_pkl_file
+in read_venue_assignments_csv
+out read_venue_assignments_csv
+in create_cat_venue_dictionary
+out create_cat_venue_dictionary
+in get_authors
+out get_authors
+Creating graphs.
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+Time required to create graphhs is: 21.755519151687622 sec
+Adding cross-edges to the graph.
+Category is: signal processing
+New number of nodes of graph: 25560
+New number of edges of graph: 481729
+Category is: wireless networks and mobile computing
+New number of nodes of graph: 16296
+New number of edges of graph: 312068
+Category is: computer networking
+New number of nodes of graph: 58701
+New number of edges of graph: 1702478
+Category is: information retrieval
+New number of nodes of graph: 6951
+New number of edges of graph: 161829
+Category is: software engineering
+New number of nodes of graph: 21690
+New number of edges of graph: 398561
+Category is: operating systems
+New number of nodes of graph: 16239
+New number of edges of graph: 298947
+Category is: high-performance computing
+New number of nodes of graph: 15648
+New number of edges of graph: 316409
+Category is: distributed and parallel computing
+New number of nodes of graph: 39535
+New number of edges of graph: 720772
+Time required to add cross-edges is: 4.524454116821289 sec
+out create_graph_gml_files
+Cleaning graphs.
+in clean_graphs
+Creating core graph.
+Creating core graph.
+Creating core graph.
+Creating core graph.
+Creating core graph.
+Creating core graph.
+Creating core graph.
+Creating core graph.
+out clean_graphs
+Length of nodes list: 18668 length of nodes 0
+Length of nodes list: 11141 length of nodes 18668
+Length of nodes list: 48007 length of nodes 29809
+Length of nodes list: 5064 length of nodes 77816
+Length of nodes list: 14594 length of nodes 82880
+Length of nodes list: 11654 length of nodes 97474
+Length of nodes list: 10897 length of nodes 109128
+Length of nodes list: 29238 length of nodes 120025
+Number of unique nodes 90803 number of all nodes: 149263
+Avg End./Role: 527465.75
+Avg End./Expert: 46.47121791130249
+Max End./Expert 3258
+Number of overlapping nodes: 29238
+in get_overlapping_graph_nodes
+Number of intersecting nodes: 49
+out get_overlapping_graph_nodes
+Iteration number 1 for random greedy landmarks algorithm
+Iteration number 2 for random greedy landmarks algorithm
+Iteration number 3 for random greedy landmarks algorithm
+Iteration number 4 for random greedy landmarks algorithm
+Iteration number 5 for random greedy landmarks algorithm
+Iteration number 6 for random greedy landmarks algorithm
+Iteration number 7 for random greedy landmarks algorithm
+Iteration number 8 for random greedy landmarks algorithm
+Iteration number 9 for random greedy landmarks algorithm
+Iteration number 10 for random greedy landmarks algorithm
+Iteration number 11 for random greedy landmarks algorithm
+Iteration number 12 for random greedy landmarks algorithm
+Iteration number 13 for random greedy landmarks algorithm
+Iteration number 14 for random greedy landmarks algorithm
+Iteration number 15 for random greedy landmarks algorithm
+Iteration number 16 for random greedy landmarks algorithm
+Iteration number 17 for random greedy landmarks algorithm
+Iteration number 18 for random greedy landmarks algorithm
+Iteration number 19 for random greedy landmarks algorithm
+Iteration number 20 for random greedy landmarks algorithm
+Iteration number 21 for random greedy landmarks algorithm
+Iteration number 22 for random greedy landmarks algorithm
+Iteration number 23 for random greedy landmarks algorithm
+Iteration number 24 for random greedy landmarks algorithm
+Iteration number 25 for random greedy landmarks algorithm
+Iteration number 26 for random greedy landmarks algorithm
+Iteration number 27 for random greedy landmarks algorithm
+Iteration number 28 for random greedy landmarks algorithm
+Iteration number 29 for random greedy landmarks algorithm
+Iteration number 30 for random greedy landmarks algorithm
+Iteration number 31 for random greedy landmarks algorithm
+Iteration number 32 for random greedy landmarks algorithm
+Iteration number 33 for random greedy landmarks algorithm
+Iteration number 34 for random greedy landmarks algorithm
+Iteration number 35 for random greedy landmarks algorithm
+Iteration number 36 for random greedy landmarks algorithm
+Iteration number 37 for random greedy landmarks algorithm
+Iteration number 38 for random greedy landmarks algorithm
+Iteration number 39 for random greedy landmarks algorithm
+Iteration number 40 for random greedy landmarks algorithm
+Iteration number 41 for random greedy landmarks algorithm
+Iteration number 42 for random greedy landmarks algorithm
+Iteration number 43 for random greedy landmarks algorithm
+Iteration number 44 for random greedy landmarks algorithm
+Iteration number 45 for random greedy landmarks algorithm
+Iteration number 46 for random greedy landmarks algorithm
+Iteration number 47 for random greedy landmarks algorithm
+Iteration number 48 for random greedy landmarks algorithm
+Iteration number 49 for random greedy landmarks algorithm
+Iteration number 50 for random greedy landmarks algorithm
+Iteration number 51 for random greedy landmarks algorithm
+Iteration number 52 for random greedy landmarks algorithm
+Iteration number 53 for random greedy landmarks algorithm
+Iteration number 54 for random greedy landmarks algorithm
+Iteration number 55 for random greedy landmarks algorithm
+Iteration number 56 for random greedy landmarks algorithm
+Iteration number 57 for random greedy landmarks algorithm
+Iteration number 58 for random greedy landmarks algorithm
+Iteration number 59 for random greedy landmarks algorithm
+Iteration number 60 for random greedy landmarks algorithm
+Iteration number 61 for random greedy landmarks algorithm
+Iteration number 62 for random greedy landmarks algorithm
+Iteration number 63 for random greedy landmarks algorithm
+Iteration number 64 for random greedy landmarks algorithm
+Iteration number 65 for random greedy landmarks algorithm
+Iteration number 66 for random greedy landmarks algorithm
+Iteration number 67 for random greedy landmarks algorithm
+Iteration number 68 for random greedy landmarks algorithm
+Iteration number 69 for random greedy landmarks algorithm
+Iteration number 70 for random greedy landmarks algorithm
+Iteration number 71 for random greedy landmarks algorithm
+Iteration number 72 for random greedy landmarks algorithm
+Iteration number 73 for random greedy landmarks algorithm
+Iteration number 74 for random greedy landmarks algorithm
+Iteration number 75 for random greedy landmarks algorithm
+Iteration number 76 for random greedy landmarks algorithm
+Iteration number 77 for random greedy landmarks algorithm
+Iteration number 78 for random greedy landmarks algorithm
+Iteration number 79 for random greedy landmarks algorithm
+Iteration number 80 for random greedy landmarks algorithm
+Iteration number 81 for random greedy landmarks algorithm
+Iteration number 82 for random greedy landmarks algorithm
+Iteration number 83 for random greedy landmarks algorithm
+Iteration number 84 for random greedy landmarks algorithm
+Iteration number 85 for random greedy landmarks algorithm
+Iteration number 86 for random greedy landmarks algorithm
+Iteration number 87 for random greedy landmarks algorithm
+Iteration number 88 for random greedy landmarks algorithm
+Iteration number 89 for random greedy landmarks algorithm
+Iteration number 90 for random greedy landmarks algorithm
+Iteration number 91 for random greedy landmarks algorithm
+Iteration number 92 for random greedy landmarks algorithm
+Iteration number 93 for random greedy landmarks algorithm
+Iteration number 94 for random greedy landmarks algorithm
+Iteration number 95 for random greedy landmarks algorithm
+Iteration number 96 for random greedy landmarks algorithm
+Iteration number 97 for random greedy landmarks algorithm
+Iteration number 98 for random greedy landmarks algorithm
+Iteration number 99 for random greedy landmarks algorithm
+Iteration number 100 for random greedy landmarks algorithm
+Best greedy solution is: {'computer networking': (b'Ying Zhang', 34), 'wireless networks and mobile computing': (b'Wei Li', 31), 'distributed and parallel computing': (b'Li Zhang', 19), 'signal processing': (b'Rui Zhang', 14), 'operating systems': (b'Xin Li', 13), 'information retrieval': (b'Yan Zhang', 5), 'software engineering': (b'Chao Wang', 5), 'high-performance computing': (b'Yan Li', 5)}
+Best greedy score is: 107
+Time for 100 iterations of greedy is: 0.735706090927124
+Iteration number 1 for random greedy landmarks algorithm
+Iteration number 2 for random greedy landmarks algorithm
+Iteration number 3 for random greedy landmarks algorithm
+Iteration number 4 for random greedy landmarks algorithm
+Iteration number 5 for random greedy landmarks algorithm
+Iteration number 6 for random greedy landmarks algorithm
+Iteration number 7 for random greedy landmarks algorithm
+Iteration number 8 for random greedy landmarks algorithm
+Iteration number 9 for random greedy landmarks algorithm
+Iteration number 10 for random greedy landmarks algorithm
+Iteration number 11 for random greedy landmarks algorithm
+Iteration number 12 for random greedy landmarks algorithm
+Iteration number 13 for random greedy landmarks algorithm
+Iteration number 14 for random greedy landmarks algorithm
+Iteration number 15 for random greedy landmarks algorithm
+Iteration number 16 for random greedy landmarks algorithm
+Iteration number 17 for random greedy landmarks algorithm
+Iteration number 18 for random greedy landmarks algorithm
+Iteration number 19 for random greedy landmarks algorithm
+Iteration number 20 for random greedy landmarks algorithm
+Iteration number 21 for random greedy landmarks algorithm
+Iteration number 22 for random greedy landmarks algorithm
+Iteration number 23 for random greedy landmarks algorithm
+Iteration number 24 for random greedy landmarks algorithm
+Iteration number 25 for random greedy landmarks algorithm
+Iteration number 26 for random greedy landmarks algorithm
+Iteration number 27 for random greedy landmarks algorithm
+Iteration number 28 for random greedy landmarks algorithm
+Iteration number 29 for random greedy landmarks algorithm
+Iteration number 30 for random greedy landmarks algorithm
+Iteration number 31 for random greedy landmarks algorithm
+Iteration number 32 for random greedy landmarks algorithm
+Iteration number 33 for random greedy landmarks algorithm
+Iteration number 34 for random greedy landmarks algorithm
+Iteration number 35 for random greedy landmarks algorithm
+Iteration number 36 for random greedy landmarks algorithm
+Iteration number 37 for random greedy landmarks algorithm
+Iteration number 38 for random greedy landmarks algorithm
+Iteration number 39 for random greedy landmarks algorithm
+Iteration number 40 for random greedy landmarks algorithm
+Iteration number 41 for random greedy landmarks algorithm
+Iteration number 42 for random greedy landmarks algorithm
+Iteration number 43 for random greedy landmarks algorithm
+Iteration number 44 for random greedy landmarks algorithm
+Iteration number 45 for random greedy landmarks algorithm
+Iteration number 46 for random greedy landmarks algorithm
+Iteration number 47 for random greedy landmarks algorithm
+Iteration number 48 for random greedy landmarks algorithm
+Iteration number 49 for random greedy landmarks algorithm
+Iteration number 50 for random greedy landmarks algorithm
+Iteration number 51 for random greedy landmarks algorithm
+Iteration number 52 for random greedy landmarks algorithm
+Iteration number 53 for random greedy landmarks algorithm
+Iteration number 54 for random greedy landmarks algorithm
+Iteration number 55 for random greedy landmarks algorithm
+Iteration number 56 for random greedy landmarks algorithm
+Iteration number 57 for random greedy landmarks algorithm
+Iteration number 58 for random greedy landmarks algorithm
+Iteration number 59 for random greedy landmarks algorithm
+Iteration number 60 for random greedy landmarks algorithm
+Iteration number 61 for random greedy landmarks algorithm
+Iteration number 62 for random greedy landmarks algorithm
+Iteration number 63 for random greedy landmarks algorithm
+Iteration number 64 for random greedy landmarks algorithm
+Iteration number 65 for random greedy landmarks algorithm
+Iteration number 66 for random greedy landmarks algorithm
+Iteration number 67 for random greedy landmarks algorithm
+Iteration number 68 for random greedy landmarks algorithm
+Iteration number 69 for random greedy landmarks algorithm
+Iteration number 70 for random greedy landmarks algorithm
+Iteration number 71 for random greedy landmarks algorithm
+Iteration number 72 for random greedy landmarks algorithm
+Iteration number 73 for random greedy landmarks algorithm
+Iteration number 74 for random greedy landmarks algorithm
+Iteration number 75 for random greedy landmarks algorithm
+Iteration number 76 for random greedy landmarks algorithm
+Iteration number 77 for random greedy landmarks algorithm
+Iteration number 78 for random greedy landmarks algorithm
+Iteration number 79 for random greedy landmarks algorithm
+Iteration number 80 for random greedy landmarks algorithm
+Iteration number 81 for random greedy landmarks algorithm
+Iteration number 82 for random greedy landmarks algorithm
+Iteration number 83 for random greedy landmarks algorithm
+Iteration number 84 for random greedy landmarks algorithm
+Iteration number 85 for random greedy landmarks algorithm
+Iteration number 86 for random greedy landmarks algorithm
+Iteration number 87 for random greedy landmarks algorithm
+Iteration number 88 for random greedy landmarks algorithm
+Iteration number 89 for random greedy landmarks algorithm
+Iteration number 90 for random greedy landmarks algorithm
+Iteration number 91 for random greedy landmarks algorithm
+Iteration number 92 for random greedy landmarks algorithm
+Iteration number 93 for random greedy landmarks algorithm
+Iteration number 94 for random greedy landmarks algorithm
+Iteration number 95 for random greedy landmarks algorithm
+Iteration number 96 for random greedy landmarks algorithm
+Iteration number 97 for random greedy landmarks algorithm
+Iteration number 98 for random greedy landmarks algorithm
+Iteration number 99 for random greedy landmarks algorithm
+Iteration number 100 for random greedy landmarks algorithm
+Best hungarian solution is: {'distributed and parallel computing': b'Li Zhang', 'signal processing': b'Rui Zhang', 'wireless networks and mobile computing': b'Wei Li', 'operating systems': b'Xin Li', 'computer networking': b'Ying Zhang', 'information retrieval': b'Chao Wang', 'software engineering': b'Yan Li', 'high-performance computing': b'Yan Zhang'}
+Best hungarian score is: 107
+Time for 100 iterations of greedy is: 30.940638780593872
+Exiting main!

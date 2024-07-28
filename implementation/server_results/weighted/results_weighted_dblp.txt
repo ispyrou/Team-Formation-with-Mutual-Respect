@@ -1,0 +1,1383 @@
+Considering the following customized categories: {'artificial intelligence': 1, 'natural language processing': 1, 'robotics': 1, 'neural networks': 1}
+Creating graphs.
+in create_graph_gml_files
+in read_dict_to_list
+out read_dict_to_list
+in read_dict_to_pkl_file
+out read_dict_to_pkl_file
+in read_dict_to_pkl_file
+out read_dict_to_pkl_file
+in read_venue_assignments_csv
+out read_venue_assignments_csv
+in create_cat_venue_dictionary
+out create_cat_venue_dictionary
+in get_authors
+out get_authors
+Creating graphs.
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+Time required to create graphhs is: 16.521315097808838 sec
+Adding cross-edges to the graph.
+Category is: artificial intelligence
+New number of nodes of graph: 43716
+New number of edges of graph: 828114
+Category is: natural language processing
+New number of nodes of graph: 16749
+New number of edges of graph: 640203
+Category is: robotics
+New number of nodes of graph: 31188
+New number of edges of graph: 883725
+Category is: neural networks
+New number of nodes of graph: 39135
+New number of edges of graph: 671388
+Time required to add cross-edges is: 2.388139486312866 sec
+out create_graph_gml_files
+Cleaning graphs.
+in clean_graphs
+Creating core graph.
+Creating core graph.
+Creating core graph.
+Creating core graph.
+out clean_graphs
+Length of nodes list: 30446 length of nodes 0
+Length of nodes list: 13068 length of nodes 30446
+Length of nodes list: 25796 length of nodes 43514
+Length of nodes list: 28473 length of nodes 69310
+Number of unique nodes 68978 number of all nodes: 97783
+Avg End./Role: 728726.0
+Avg End./Expert: 42.258459218881384
+Max End./Expert 4703
+Number of overlapping nodes: 28473
+in get_overlapping_graph_nodes
+Number of intersecting nodes: 599
+out get_overlapping_graph_nodes
+Time to create weighted matrices:  0.8491077423095703
+===============================================================================
+                                     CVXPY                                     
+                                    v1.1.12                                    
+===============================================================================
+(CVXPY) Mar 31 01:55:41 PM: Your problem has 2396 variables, 2 constraints, and 0 parameters.
+(CVXPY) Mar 31 01:55:42 PM: It is compliant with the following grammars: DCP, DQCP
+(CVXPY) Mar 31 01:55:42 PM: (If you need to solve this problem multiple times, but with different data, consider using parameters.)
+(CVXPY) Mar 31 01:55:42 PM: CVXPY will first compile your problem; then, it will invoke a numerical solver to obtain a solution.
+-------------------------------------------------------------------------------
+                                  Compilation                                  
+-------------------------------------------------------------------------------
+(CVXPY) Mar 31 01:55:42 PM: Compiling problem (target solver=GUROBI).
+(CVXPY) Mar 31 01:55:42 PM: Reduction chain: FlipObjective -> CvxAttr2Constr -> Qp2SymbolicQp -> QpMatrixStuffing -> GUROBI
+(CVXPY) Mar 31 01:55:42 PM: Applying reduction FlipObjective
+(CVXPY) Mar 31 01:55:42 PM: Applying reduction CvxAttr2Constr
+(CVXPY) Mar 31 01:55:42 PM: Applying reduction Qp2SymbolicQp
+(CVXPY) Mar 31 01:55:42 PM: Applying reduction QpMatrixStuffing
+(CVXPY) Mar 31 01:55:42 PM: Applying reduction GUROBI
+(CVXPY) Mar 31 01:55:42 PM: Finished problem compilation (took 1.833e-01 seconds).
+-------------------------------------------------------------------------------
+                                Numerical solver                               
+-------------------------------------------------------------------------------
+(CVXPY) Mar 31 01:55:42 PM: Invoking solver GUROBI  to obtain a solution.
+Academic license - for non-commercial use only - expires 2022-12-18
+Using license file /home/pcs00440/gurobi.lic
+Parameter OutputFlag unchanged
+   Value: 1  Min: 0  Max: 1  Default: 1
+Changed value of parameter QCPDual to 1
+   Prev: 0  Min: 0  Max: 1  Default: 0
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+Optimize a model with 603 rows, 2396 columns and 4792 nonzeros
+Model fingerprint: 0xaee3c511
+Model has 75937 quadratic objective terms
+Variable types: 0 continuous, 2396 integer (2396 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [0e+00, 0e+00]
+  QObjective range [4e+00, 5e+02]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 0.0000000
+Presolve time: 0.20s
+Presolved: 1877 rows, 3670 columns, 83277 nonzeros
+Variable types: 0 continuous, 3670 integer (2439 binary)
+
+Root relaxation: objective -3.668320e+03, 574 iterations, 0.08 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 -3668.3203    0   89    0.00000 -3668.3203      -     -    0s
+H    0     0                    -340.0000000 -3668.3203   979%     -    0s
+H    0     0                    -342.0000000 -3668.3203   973%     -    0s
+H    0     0                    -656.0000000 -2605.1984   297%     -    0s
+     0     0 -2278.2945    0  132 -656.00000 -2278.2945   247%     -    0s
+H    0     0                    -680.0000000 -2278.2945   235%     -    1s
+H    0     0                    -700.0000000 -2122.4839   203%     -    1s
+     0     0 -2122.4839    0  139 -700.00000 -2122.4839   203%     -    1s
+     0     0 -2101.8377    0  142 -700.00000 -2101.8377   200%     -    1s
+     0     0 -2101.8377    0  143 -700.00000 -2101.8377   200%     -    1s
+     0     0 -1784.7566    0  157 -700.00000 -1784.7566   155%     -    1s
+     0     0 -1769.7762    0  157 -700.00000 -1769.7762   153%     -    1s
+     0     2 -1769.7762    0  157 -700.00000 -1769.7762   153%     -    2s
+  2077   633     cutoff   71      -700.00000 -1521.8028   117%  29.3    5s
+
+Cutting planes:
+  Gomory: 1
+  MIR: 176
+  StrongCG: 3
+  Zero half: 12
+  RLT: 66
+
+Explored 3368 nodes (104408 simplex iterations) in 5.89 seconds
+Thread count was 32 (of 32 available processors)
+
+Solution count 6: -700 -680 -656 ... 0
+No other solutions better than -700
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective -7.000000000000e+02, best bound -7.000000000000e+02, gap 0.0000%
+-------------------------------------------------------------------------------
+                                    Summary                                    
+-------------------------------------------------------------------------------
+(CVXPY) Mar 31 01:55:48 PM: Problem status: optimal
+(CVXPY) Mar 31 01:55:48 PM: Optimal value: 7.000e+02
+(CVXPY) Mar 31 01:55:48 PM: Compilation took 1.833e-01 seconds
+(CVXPY) Mar 31 01:55:48 PM: Solver (including time spent in interface) took 5.979e+00 seconds
+in compute graph score
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+Solution is: {'artificial intelligence': b'Sebastian Thrun', 'natural language processing': b'Armin B. Cremers', 'robotics': b'Dieter Fox', 'neural networks': b'Dirk Hhnel'}
+Weighted solution score for iqp graph truth is: 350
+Solution score for iqp graph truth is: 9
+Edges are: [(b'Sebastian Thrun', b'Armin B. Cremers'), (b'Sebastian Thrun', b'Dieter Fox'), (b'Sebastian Thrun', b'Dirk Hhnel'), (b'Dieter Fox', b'Sebastian Thrun'), (b'Dieter Fox', b'Armin B. Cremers'), (b'Dieter Fox', b'Dirk Hhnel'), (b'Dirk Hhnel', b'Sebastian Thrun'), (b'Dirk Hhnel', b'Armin B. Cremers'), (b'Dirk Hhnel', b'Dieter Fox')]
+Running time is: 7.669450759887695
+Considering the following customized categories: {'data mining': 1, 'databases': 1, 'algorithms and theory': 1, 'algorithms': 1}
+Creating graphs.
+in create_graph_gml_files
+in read_dict_to_list
+out read_dict_to_list
+in read_dict_to_pkl_file
+out read_dict_to_pkl_file
+in read_dict_to_pkl_file
+out read_dict_to_pkl_file
+in read_venue_assignments_csv
+out read_venue_assignments_csv
+in create_cat_venue_dictionary
+out create_cat_venue_dictionary
+in get_authors
+out get_authors
+Creating graphs.
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+Time required to create graphhs is: 10.416369915008545 sec
+Adding cross-edges to the graph.
+Category is: data mining
+New number of nodes of graph: 18953
+New number of edges of graph: 497386
+Category is: databases
+New number of nodes of graph: 24693
+New number of edges of graph: 969093
+Category is: algorithms and theory
+New number of nodes of graph: 14324
+New number of edges of graph: 246467
+Category is: algorithms
+New number of nodes of graph: 9072
+New number of edges of graph: 113859
+Time required to add cross-edges is: 1.7095327377319336 sec
+out create_graph_gml_files
+Cleaning graphs.
+in clean_graphs
+Creating core graph.
+Creating core graph.
+Creating core graph.
+Creating core graph.
+out clean_graphs
+Length of nodes list: 15157 length of nodes 0
+Length of nodes list: 20295 length of nodes 15157
+Length of nodes list: 8997 length of nodes 35452
+Length of nodes list: 5449 length of nodes 44449
+Number of unique nodes 31701 number of all nodes: 49898
+Avg End./Role: 442794.25
+Avg End./Expert: 55.87132898015835
+Max End./Expert 3995
+Number of overlapping nodes: 5449
+in get_overlapping_graph_nodes
+Number of intersecting nodes: 1111
+out get_overlapping_graph_nodes
+Time to create weighted matrices:  0.823589563369751
+===============================================================================
+                                     CVXPY                                     
+                                    v1.1.12                                    
+===============================================================================
+(CVXPY) Mar 31 01:59:44 PM: Your problem has 4444 variables, 2 constraints, and 0 parameters.
+(CVXPY) Mar 31 01:59:48 PM: It is compliant with the following grammars: DCP, DQCP
+(CVXPY) Mar 31 01:59:48 PM: (If you need to solve this problem multiple times, but with different data, consider using parameters.)
+(CVXPY) Mar 31 01:59:48 PM: CVXPY will first compile your problem; then, it will invoke a numerical solver to obtain a solution.
+-------------------------------------------------------------------------------
+                                  Compilation                                  
+-------------------------------------------------------------------------------
+(CVXPY) Mar 31 01:59:48 PM: Compiling problem (target solver=GUROBI).
+(CVXPY) Mar 31 01:59:48 PM: Reduction chain: FlipObjective -> CvxAttr2Constr -> Qp2SymbolicQp -> QpMatrixStuffing -> GUROBI
+(CVXPY) Mar 31 01:59:48 PM: Applying reduction FlipObjective
+(CVXPY) Mar 31 01:59:48 PM: Applying reduction CvxAttr2Constr
+(CVXPY) Mar 31 01:59:48 PM: Applying reduction Qp2SymbolicQp
+(CVXPY) Mar 31 01:59:48 PM: Applying reduction QpMatrixStuffing
+(CVXPY) Mar 31 01:59:49 PM: Applying reduction GUROBI
+(CVXPY) Mar 31 01:59:49 PM: Finished problem compilation (took 5.083e-01 seconds).
+-------------------------------------------------------------------------------
+                                Numerical solver                               
+-------------------------------------------------------------------------------
+(CVXPY) Mar 31 01:59:49 PM: Invoking solver GUROBI  to obtain a solution.
+Parameter OutputFlag unchanged
+   Value: 1  Min: 0  Max: 1  Default: 1
+Changed value of parameter QCPDual to 1
+   Prev: 0  Min: 0  Max: 1  Default: 0
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+Optimize a model with 1115 rows, 4444 columns and 8888 nonzeros
+Model fingerprint: 0x29f7e11f
+Model has 355537 quadratic objective terms
+Variable types: 0 continuous, 4444 integer (4444 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [0e+00, 0e+00]
+  QObjective range [4e+00, 5e+02]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 0.0000000
+Presolve time: 0.65s
+Presolved: 4051 rows, 7380 columns, 370297 nonzeros
+Variable types: 0 continuous, 7380 integer (4653 binary)
+
+Root relaxation: objective -5.439482e+03, 1233 iterations, 0.32 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 -5439.4818    0  200    0.00000 -5439.4818      -     -    2s
+H    0     0                    -700.0000000 -5439.4818   677%     -    2s
+     0     0 -4309.8548    0  215 -700.00000 -4309.8548   516%     -    4s
+     0     0 -3782.0210    0  251 -700.00000 -3782.0210   440%     -    5s
+     0     0 -3777.2964    0  275 -700.00000 -3777.2964   440%     -    5s
+     0     0 -3713.0542    0  278 -700.00000 -3713.0542   430%     -    5s
+     0     0 -3713.0542    0  279 -700.00000 -3713.0542   430%     -    5s
+     0     0 -3713.0542    0  282 -700.00000 -3713.0542   430%     -    5s
+     0     0 -3479.4633    0  294 -700.00000 -3479.4633   397%     -    7s
+     0     0 -3424.2169    0  322 -700.00000 -3424.2169   389%     -    8s
+     0     0 -3359.7791    0  318 -700.00000 -3359.7791   380%     -    8s
+     0     0 -3352.4246    0  333 -700.00000 -3352.4246   379%     -    8s
+     0     0 -3318.8861    0  351 -700.00000 -3318.8861   374%     -    8s
+     0     0 -3256.0048    0  333 -700.00000 -3256.0048   365%     -    8s
+     0     0 -3241.9329    0  350 -700.00000 -3241.9329   363%     -    9s
+     0     0 -3241.5133    0  368 -700.00000 -3241.5133   363%     -    9s
+     0     0 -3241.3265    0  364 -700.00000 -3241.3265   363%     -    9s
+     0     0 -3054.7969    0  343 -700.00000 -3054.7969   336%     -   12s
+     0     0 -3051.8865    0  343 -700.00000 -3051.8865   336%     -   12s
+     0     2 -3051.8865    0  343 -700.00000 -3051.8865   336%     -   13s
+    32    14 -3051.8865    6  359 -700.00000 -3051.8865   336%   152   15s
+  1092   774 -2611.7670   41  476 -700.00000 -3051.8865   336%  37.9   25s
+  2139  1700 -898.49004   13 2026 -700.00000 -3051.8865   336%  30.4   32s
+  2141  1701 -1072.4434   98  200 -700.00000 -3051.8865   336%  30.4   38s
+  2143  1703 -1526.0649   25  230 -700.00000 -3051.8865   336%  30.4   40s
+  2159  1713 -1391.0441   31  397 -700.00000 -3051.8865   336%  30.2   47s
+  2161  1715 -2513.8284   47  375 -700.00000 -3051.8865   336%  30.1   51s
+  2165  1721 -3051.8865   15  376 -700.00000 -3051.8865   336%  31.4   57s
+  2196  1730 -3051.8865   19  443 -700.00000 -3051.8865   336%  33.0   61s
+  2401  1748 -3024.6495   26  478 -700.00000 -3025.2484   332%  37.0   69s
+  2514  1809 -1847.8843   28  308 -700.00000 -2960.1033   323%  38.0   70s
+  3609  2052 -2681.0460   38  565 -700.00000 -2812.5591   302%  36.3   75s
+  4169  2118 -1682.4313   42  284 -700.00000 -2812.5591   302%  36.2   80s
+  5271  2274 -1591.0172   50  413 -700.00000 -2812.5591   302%  39.4   85s
+  6746  2759 -2393.3390   56  597 -700.00000 -2812.5591   302%  39.9   90s
+  7596  2966 -2343.0949   60  598 -700.00000 -2812.5591   302%  41.6   95s
+  8458  3233 -2288.8109   64  617 -700.00000 -2812.5591   302%  42.8  100s
+  9309  3923 -2228.4469   68  622 -700.00000 -2812.5591   302%  44.3  105s
+ 10276  4204 -1426.3703   74  433 -700.00000 -2812.5591   302%  47.1  110s
+ 10992  4487 -1182.6492   78  400 -700.00000 -2812.5591   302%  49.3  115s
+ 11923  4982 -2088.9746   83  649 -700.00000 -2812.5591   302%  50.7  121s
+ 12831  5432 -2049.9484   87  627 -700.00000 -2812.5591   302%  51.1  125s
+ 13798  5748 -2004.6104   92  630 -700.00000 -2812.5591   302%  52.3  130s
+ 14563  6127 -1102.6798   97  415 -700.00000 -2812.5591   302%  55.4  136s
+ 15462  6426 -1241.7320  102  436 -700.00000 -2812.5591   302%  56.3  140s
+ 16273  6821 -1910.0203  108  638 -700.00000 -2812.5591   302%  58.2  145s
+ 17092  7053 -1184.4382  112  362 -700.00000 -2812.5591   302%  60.1  150s
+ 18211  7565 -1848.0779  119  634 -700.00000 -2812.5591   302%  61.0  155s
+ 19279  8013 -1821.9518  126  649 -700.00000 -2812.5591   302%  62.3  161s
+ 20207  8316 -1789.6877  132  619 -700.00000 -2812.5591   302%  64.3  167s
+ 20835  8585 -1771.8479  136  625 -700.00000 -2812.5591   302%  65.0  175s
+ 22196  8867 -1726.4568  146  633 -700.00000 -2812.5591   302%  67.1  184s
+ 22977  9056 -1075.0423  150  373 -700.00000 -2812.5591   302%  67.5  189s
+ 23785  9455 -1688.5120  155  608 -700.00000 -2812.5591   302%  68.1  194s
+ 24900  9457 -1658.1535  162  610 -700.00000 -2812.5591   302%  68.4  200s
+ 25519  9604 -1627.6833  169  601 -700.00000 -2812.5591   302%  69.8  212s
+ 26241  9965 -1611.4472  176  609 -700.00000 -2812.5591   302%  70.5  220s
+ 27351 10125 -1583.3337  184  613 -700.00000 -2812.5591   302%  71.1  227s
+ 28396 10368 -1545.6854  194  602 -700.00000 -2812.5591   302%  72.4  234s
+ 29946 10208 -1512.1165  205  610 -700.00000 -2812.5591   302%  72.6  240s
+ 31176 10125 -1482.7560  216  621 -700.00000 -2812.5591   302%  73.7  247s
+ 32585 10038 -1450.0352  226  624 -700.00000 -2812.5591   302%  74.3  254s
+ 34204  9737 -1423.0063  236  619 -700.00000 -2812.5591   302%  74.5  261s
+ 35583  9665 -1390.5876  247  622 -700.00000 -2812.5591   302%  75.2  269s
+ 37349  9071 -1369.0567  258  617 -700.00000 -2812.5591   302%  75.0  275s
+ 38921  8496     cutoff  269      -700.00000 -2812.5591   302%  75.5  283s
+ 40624  7798 -1313.5539  280  625 -700.00000 -2812.5591   302%  75.6  290s
+ 42288  6818 -1287.9574  289  607 -700.00000 -2812.5591   302%  75.6  298s
+ 44234  5583 -1258.7315  301  624 -700.00000 -2812.5591   302%  75.6  305s
+ 46069  4208 -1227.6071  313  635 -700.00000 -2812.5591   302%  75.6  312s
+ 47740  2589 -1216.2564  319  626 -700.00000 -2812.5591   302%  75.6  319s
+ 49483  1087 -1188.7713  331  653 -700.00000 -2812.5591   302%  75.7  326s
+ 51166    73 -1177.5003  335  628 -700.00000 -2812.5591   302%  75.0  331s
+ 52267   143     cutoff  346      -700.00000 -2300.7713   229%  74.4  335s
+ 52527   435 -809.81503   85  137 -700.00000 -2233.1315   219%  74.4  342s
+ 53939   436 -748.93447  415 2026 -700.00000 -2137.9783   205%  74.1  497s
+ 53941   437 -1602.7722   95  200 -700.00000 -2137.9783   205%  74.1  504s
+ 53942   438 -782.33254  386  202 -700.00000 -2137.9783   205%  74.1  505s
+ 53954   446 -1744.2059   64  480 -700.00000 -2137.9783   205%  74.1  510s
+ 53958   449 -751.71382   42  509 -700.00000 -2137.9783   205%  74.1  515s
+ 53964   453 -717.05636  340  547 -700.00000 -2137.9783   205%  74.1  531s
+ 53969   456 -1457.9685  109  587 -700.00000 -2137.9783   205%  74.1  546s
+ 53977   461 -917.83232   62  587 -700.00000 -2137.9783   205%  74.1  563s
+ 53983   465 -870.85634  363  589 -700.00000 -2137.9783   205%  74.1  565s
+ 53985   467 -933.09917  411  597 -700.00000 -2137.9783   205%  74.1  575s
+ 53995   473 -1358.0453  161  639 -700.00000 -2137.9783   205%  74.0  592s
+ 54001   477 -1013.1010   45  654 -700.00000 -2137.9783   205%  74.0  595s
+ 54014   486 -787.98060  412  667 -700.00000 -2137.9783   205%  74.0  612s
+ 54017   488 -880.11082  367  670 -700.00000 -2137.9783   205%  74.0  615s
+ 54024   493 -759.17917  388  682 -700.00000 -2137.9783   205%  74.0  629s
+ 54025   493 -824.62446  413  655 -700.00000 -2137.9783   205%  74.0  632s
+ 54029   496 -1341.5913  144  668 -700.00000 -2137.9783   205%  74.0  635s
+ 54042   505 -782.33254  386  728 -700.00000 -2137.9783   205%  74.0  651s
+ 54052   511 -837.76298  455  703 -700.00000 -2137.9783   205%  74.0  666s
+ 54061   517 -1367.7788  146  708 -700.00000 -2137.9783   205%  74.0  681s
+ 54066   521 -870.09477  363  738 -700.00000 -2137.9783   205%  73.9  696s
+ 54074   526 -807.93222  399  727 -700.00000 -2137.9783   205%  73.9  710s
+ 54083   532 -870.85634  363  743 -700.00000 -2137.9783   205%  73.9  724s
+ 54084   533 -774.88783  357  727 -700.00000 -2137.9783   205%  73.9  725s
+ 54100   543 -966.17046   47  757 -700.00000 -2137.9783   205%  73.9  730s
+ 54103   545 -1358.0453  161  756 -700.00000 -2137.9783   205%  73.9  749s
+ 54105   547 -908.00142  451  744 -700.00000 -2137.9783   205%  73.9  750s
+ 54116   554 -823.13578  397  802 -700.00000 -2137.9783   205%  73.9  773s
+ 54118   555 -917.83232   62  790 -700.00000 -2137.9783   205%  73.9  775s
+ 54123   559 -1363.5422   75  806 -700.00000 -2137.9783   205%  73.9  784s
+ 54124   559 -759.17917  388  778 -700.00000 -2137.9783   205%  73.9  785s
+ 54137   568 -813.04968  378  785 -700.00000 -2137.9783   205%  73.9  798s
+ 54138   569 -931.28735  335  777 -700.00000 -2137.9783   205%  73.8  800s
+ 54148   575 -830.95644  381  798 -700.00000 -2137.9783   205%  73.8  811s
+ 54159   583 -818.61894  386  826 -700.00000 -2137.9783   205%  73.8  815s
+ 54165   587 -959.09595   62  820 -700.00000 -2137.9783   205%  73.8  825s
+ 54176   594 -1487.7357   82  825 -700.00000 -2137.9783   205%  73.8  840s
+ 54185   600 -933.09917  411  827 -700.00000 -2137.9783   205%  73.8  850s
+ 54196   607 -921.17793  370  844 -700.00000 -2137.9783   205%  73.8  862s
+ 54200   610 -966.17046   47  849 -700.00000 -2137.9783   205%  73.8  865s
+ 54207   615 -948.10366  458  832 -700.00000 -2137.9783   205%  73.8  875s
+ 54219   623 -842.33168  384  858 -700.00000 -2137.9783   205%  73.7  888s
+ 54221   624 -1596.5841  100  847 -700.00000 -2137.9783   205%  73.7  890s
+ 54230   630 -953.37862  406  867 -700.00000 -2137.9783   205%  73.7  901s
+ 54234   633 -824.89992  391  864 -700.00000 -2137.9783   205%  73.7  910s
+ 54245   640 -993.45168  428  878 -700.00000 -2137.9783   205%  73.7  915s
+ 54253   645 -1458.6310  128  880 -700.00000 -2137.9783   205%  73.7  925s
+ 54262   651 -772.70366  442  887 -700.00000 -2137.9783   205%  73.7  930s
+ 54269   656 -1457.9685  109  880 -700.00000 -2137.9783   205%  73.7  940s
+ 54275   660 -838.08212  371  845 -700.00000 -2137.9783   205%  73.7  949s
+ 54276   661 -1487.7357   82  861 -700.00000 -2137.9783   205%  73.7  950s
+ 54281   664 -959.02335  400  850 -700.00000 -2137.9783   205%  73.7  960s
+ 54288   669 -1177.4086   93  858 -700.00000 -2137.9783   205%  73.6  969s
+ 54290   670 -816.30347  375  854 -700.00000 -2137.9783   205%  73.6  970s
+ 54298   675 -984.85021  434  856 -700.00000 -2137.9783   205%  73.6  980s
+ 54304   679 -801.68774  373  870 -700.00000 -2137.9783   205%  73.6  991s
+ 54311   684 -1015.3376  411  863 -700.00000 -2137.9783   205%  73.6 1001s
+ 54316   687 -823.13578  397  847 -700.00000 -2137.9783   205%  73.6 1010s
+ 54322   691 -1431.6196  137  871 -700.00000 -2137.9783   205%  73.6 1020s
+ 54328   695 -870.09477  363  869 -700.00000 -2137.9783   205%  73.6 1029s
+ 54329   696 -1341.5913  144  859 -700.00000 -2137.9783   205%  73.6 1030s
+ 54332   698 -1606.6713   92  866 -700.00000 -2137.9783   205%  73.6 1038s
+ 54335   700 -1388.6506  153  872 -700.00000 -2137.9783   205%  73.6 1040s
+ 54338   702 -931.28735  335  877 -700.00000 -2137.9783   205%  73.6 1047s
+ 54342   705 -782.33254  386  880 -700.00000 -2137.9783   205%  73.6 1057s
+ 54347   708 -1275.7756  142  883 -700.00000 -2137.9783   205%  73.6 1067s
+ 54354   713 -1744.2059   64  876 -700.00000 -2137.9783   205%  73.6 1070s
+ 54362   718 -772.70366  442  856 -700.00000 -2137.9783   205%  73.5 1078s
+ 54367   721 -820.73863  380  895 -700.00000 -2137.9783   205%  73.5 1080s
+ 54370   723 -1002.1317  388  891 -700.00000 -2137.9783   205%  73.5 1089s
+ 54371   724 -843.17558  372  883 -700.00000 -2137.9783   205%  73.5 1090s
+ 54374   726 -807.93222  399  881 -700.00000 -2137.9783   205%  73.5 1096s
+ 54380   730 -817.29824  387  849 -700.00000 -2137.9783   205%  73.5 1104s
+ 54382   731 -1006.8697  413  874 -700.00000 -2137.9783   205%  73.5 1105s
+ 54385   733 -933.09917  411  891 -700.00000 -2137.9783   205%  73.5 1110s
+ 54388   735 -1177.4086   93  896 -700.00000 -2137.9783   205%  73.5 1119s
+ 54389   736 -782.33254  386  898 -700.00000 -2137.9783   205%  73.5 1120s
+ 54392   738 -1458.6310  128  905 -700.00000 -2137.9783   205%  73.5 1128s
+ 54396   741 -921.17793  370  863 -700.00000 -2137.9783   205%  73.5 1130s
+ 54397   741 -1015.4889  409  874 -700.00000 -2137.9783   205%  73.5 1138s
+ 54401   744 -1013.1010   45  913 -700.00000 -2137.9783   205%  73.5 1140s
+ 54402   745 -819.70311  405  891 -700.00000 -2137.9783   205%  73.5 1148s
+ 54407   748 -948.10366  458  900 -700.00000 -2137.9783   205%  73.5 1150s
+ 54414   753 -787.98060  412  904 -700.00000 -2137.9783   205%  73.5 1160s
+ 54417   755 -880.11082  367  885 -700.00000 -2137.9783   205%  73.5 1167s
+ 54421   757 -1596.5841  100  905 -700.00000 -2137.9783   205%  73.5 1175s
+ 54427   761 -1058.4985  392  891 -700.00000 -2137.9783   205%  73.5 1182s
+ 54432   765 -1606.6713   92  892 -700.00000 -2137.9783   205%  73.5 1190s
+ 54440   770 -804.83217   59  887 -700.00000 -2137.9783   205%  73.4 1198s
+ 54443   772 -922.23604  408  855 -700.00000 -2137.9783   205%  73.4 1200s
+ 54445   773 -993.45168  428  886 -700.00000 -2137.9783   205%  73.4 1207s
+ 54449   776 -788.96834  447  882 -700.00000 -2137.9783   205%  73.4 1217s
+ 54453   779 -1458.6310  128  889 -700.00000 -2137.9783   205%  73.4 1226s
+ 54460   783 -921.34513   51  913 -700.00000 -2137.9783   205%  73.4 1237s
+ 54466   787 -870.09477  363  873 -700.00000 -2137.9783   205%  73.4 1248s
+ 54470   790 -1002.1317  388  881 -700.00000 -2137.9783   205%  73.4 1254s
+ 54472   791 -819.70311  405  907 -700.00000 -2137.9783   205%  73.4 1255s
+ 54474   793 -807.93222  399  908 -700.00000 -2137.9783   205%  73.4 1261s
+ 54478   795 -959.86681  412  908 -700.00000 -2137.9783   205%  73.4 1268s
+ 54483   799 -870.85634  363  891 -700.00000 -2137.9783   205%  73.4 1270s
+ 54485   800 -933.09917  411  904 -700.00000 -2137.9783   205%  73.4 1275s
+ 54488   802 -1177.4086   93  892 -700.00000 -2137.9783   205%  73.4 1282s
+ 54490   803 -816.30347  375  879 -700.00000 -2137.9783   205%  73.4 1289s
+ 54491   804 -1379.6502  160  862 -700.00000 -2137.9783   205%  73.4 1291s
+ 54500   810 -966.17046   47  870 -700.00000 -2137.9783   205%  73.4 1301s
+ 54504   813 -801.68774  373  897 -700.00000 -2137.9783   205%  73.4 1309s
+ 54505   813 -908.00142  451  903 -700.00000 -2137.9783   205%  73.4 1310s
+ 54511   817 -1015.3376  411  903 -700.00000 -2137.9783   205%  73.3 1318s
+ 54513   819 -927.01919  389  917 -700.00000 -2137.9783   205%  73.3 1320s
+ 54516   821 -823.13578  397  927 -700.00000 -2137.9783   205%  73.3 1328s
+ 54519   823 -842.33168  384  896 -700.00000 -2137.9783   205%  73.3 1330s
+ 54520   823 -824.89992  391  899 -700.00000 -2137.9783   205%  73.3 1336s
+ 54526   827 -966.82155  447  889 -700.00000 -2137.9783   205%  73.3 1346s
+ 54529   829 -1341.5913  144  900 -700.00000 -2110.2549   201%  73.3 1351s
+ 54535   833 -1388.6506  153  904 -700.00000 -2101.2504   200%  73.3 1356s
+ 54538   835 -931.28735  335  884 -700.00000 -2056.5362   194%  73.3 1361s
+ 54543   839 -922.23604  408  881 -700.00000 -2035.8244   191%  73.3 1368s
+ 54545   840 -993.45168  428  903 -700.00000 -2024.8494   189%  73.3 1374s
+ 54546   841 -952.33337  432  914 -700.00000 -2024.8494   189%  73.3 1375s
+ 54547   841 -1275.7756  142  897 -700.00000 -1997.8867   185%  73.3 1380s
+ 54551   844 -911.61621  383  870 -700.00000 -1968.2889   181%  73.3 1385s
+ 54555   847 -797.97747  384  889 -700.00000 -1955.2068   179%  73.3 1391s
+ 54557   848 -900.73006  421  904 -700.00000 -1934.2225   176%  73.3 1397s
+ 54561   851 -1367.7788  146  906 -700.00000 -1932.5992   176%  73.3 1405s
+ 54564   853 -717.05636  340  908 -700.00000 -1924.0968   175%  73.3 1412s
+ 54568   855 -758.73288  456  912 -700.00000 -1903.3074   172%  73.3 1421s
+ 54571   857 -843.17558  372  926 -700.00000 -1887.2267   170%  73.3 1429s
+ 54573   859 -892.02765  391  936 -700.00000 -1887.2267   170%  73.3 1430s
+ 54574   859 -807.93222  399  932 -700.00000 -1879.2178   168%  73.3 1436s
+ 54577   861 -917.83232   62  880 -700.00000 -1862.9417   166%  73.3 1443s
+ 54580   863 -817.29824  387  914 -700.00000 -1853.4483   165%  73.3 1447s
+ 54583   865 -870.85634  363  916 -700.00000 -1849.4816   164%  73.2 1452s
+ 54585   867 -933.09917  411  923 -700.00000 -1839.7385   163%  73.2 1456s
+ 54587   868 -1543.6733  101  934 -700.00000 -1835.2243   162%  73.2 1462s
+ 54590   870 -816.30347  375  947 -700.00000 -1817.5219   160%  73.2 1470s
+ 54593   872 -1409.1353  140  938 -700.00000 -1810.0543   159%  73.2 1475s
+ 54595   873 -1358.0453  161  949 -700.00000 -1788.2429   155%  73.2 1480s
+ 54598   875 -984.85021  434  940 -700.00000 -1788.0084   155%  73.2 1486s
+ 54600   877 -966.17046   47  943 -700.00000 -1781.5652   155%  73.2 1491s
+ 54602   878 -819.70311  405  947 -700.00000 -1781.5652   155%  73.2 1496s
+ 54603   879 -1358.0453  161  942 -700.00000 -1781.5652   155%  73.2 1503s
+ 54604   879 -801.68774  373  942 -700.00000 -1781.5652   155%  73.2 1524s
+ 54605   883 -1781.5652   27  902 -700.00000 -1781.5652   155%  74.5 1548s
+ 54607   884 -1781.5652   28  881 -700.00000 -1781.5652   155%  74.8 1562s
+ 54611   885 -1781.5652   29  935 -700.00000 -1781.5652   155%  75.0 1570s
+ 54617   885 -1781.5652   30  924 -700.00000 -1781.5652   155%  75.0 1577s
+ 54625   884 -1781.5652   31  916 -700.00000 -1781.5652   155%  75.1 1583s
+ 54635   883 -1781.5652   32  924 -700.00000 -1781.5652   155%  75.1 1586s
+ 54647   881 -1781.5652   33  908 -700.00000 -1781.5652   155%  75.1 1590s
+ 54661   878 -1781.5652   34  892 -700.00000 -1781.5652   155%  75.2 1595s
+ 54677   877 -1781.5652   35  900 -700.00000 -1781.5652   155%  75.2 1604s
+ 54693   885 -1781.5652   36  888 -700.00000 -1781.5652   155%  75.3 1609s
+ 54716   884 -1781.5652   37  921 -700.00000 -1781.5652   155%  75.3 1612s
+ 54737   887 -1243.7206   37  424 -700.00000 -1781.5652   155%  75.4 1617s
+ 54763   889 -1781.5652   38  927 -700.00000 -1781.5652   155%  75.4 1620s
+ 54819   891 -1781.5652   39  922 -700.00000 -1781.5652   155%  75.6 1626s
+ 54900   874 -1781.5652   41  904 -700.00000 -1781.5652   155%  75.7 1632s
+ 54986   875 -1781.5652   42  912 -700.00000 -1781.5652   155%  75.8 1636s
+ 55200   885 -1200.0350   43  531 -700.00000 -1781.5652   155%  75.9 1640s
+ 55606   861 -1781.5652   47  940 -700.00000 -1781.5652   155%  75.9 1646s
+ 55835   867 -1781.5652   48  961 -700.00000 -1781.5652   155%  76.0 1650s
+ 56132   881 -1781.5652   50  944 -700.00000 -1781.5652   155%  76.2 1655s
+ 56417   867 -1087.9927   51  544 -700.00000 -1781.5652   155%  76.5 1660s
+ 56738   893 -1015.5993   55  522 -700.00000 -1781.5652   155%  77.0 1666s
+ 57101   830     cutoff   81      -700.00000 -1781.5652   155%  77.3 1670s
+ 57506   778     cutoff   59      -700.00000 -1781.5652   155%  77.9 1676s
+ 57799   757     cutoff   87      -700.00000 -1781.5652   155%  78.4 1681s
+ 58157   808 -945.64663   73  509 -700.00000 -1722.4225   146%  78.9 1686s
+ 58485   806     cutoff   70      -700.00000 -1716.0369   145%  79.4 1692s
+ 58822   816 -1558.1778   69  819 -700.00000 -1713.1039   145%  80.0 1700s
+ 59120   874 -1413.9511   84  831 -700.00000 -1713.1039   145%  80.7 1706s
+ 59278   938 -1386.4099   89  838 -700.00000 -1713.1039   145%  81.0 1710s
+ 59588  1026 -1318.1736  101  843 -700.00000 -1713.1039   145%  81.9 1716s
+ 59700  1107 -1293.6986  105  857 -700.00000 -1713.1039   145%  82.4 1720s
+ 60059  1200 -1203.0988  132  858 -700.00000 -1713.1039   145%  83.4 1728s
+ 60210  1229 -1171.0033  139  862 -700.00000 -1713.1039   145%  84.0 1732s
+ 60318  1343 -1154.8440  144  856 -700.00000 -1713.1039   145%  84.4 1737s
+ 60575  1432 -1148.1245  149  855 -700.00000 -1713.1039   145%  84.9 1743s
+ 60785  1540 -1108.6075  165  857 -700.00000 -1713.1039   145%  85.4 1748s
+ 61012  1694     cutoff  181      -700.00000 -1620.3374   131%  85.9 1753s
+ 61291  1803 -1553.5291   69  777 -700.00000 -1620.1041   131%  86.3 1758s
+ 61501  2073 -1500.2532   78  787 -700.00000 -1620.1041   131%  86.8 1762s
+ 61888  2305 -1395.9186   97  797 -700.00000 -1620.1041   131%  87.1 1768s
+ 62288  2502 -1280.0767  118  812 -700.00000 -1620.1041   131%  87.4 1773s
+ 62670  2672 -1175.4044  148  813 -700.00000 -1620.1041   131%  87.9 1779s
+ 63044  2897 -1069.0830  191  793 -700.00000 -1620.1041   131%  88.4 1785s
+ 63447  2990 -957.43949  237  761 -700.00000 -1620.1041   131%  88.8 1790s
+ 63630  3192 -924.75557  254  740 -700.00000 -1620.1041   131%  89.2 1797s
+ 63995  3302     cutoff  314      -700.00000 -1441.4246   106%  89.8 1803s
+ 64297  3496 -792.83690   94  559 -700.00000 -1397.1364   100%  90.5 1809s
+ 64721  3791 -1251.0790  145  803 -700.00000 -1397.1364   100%  91.1 1815s
+ 65283  3852 -1124.5134  178  823 -700.00000 -1397.1364   100%  91.6 1822s
+ 65611  4001 -1016.9190  211  808 -700.00000 -1397.1364   100%  92.6 1828s
+ 66031  4112 -889.15731  270  790 -700.00000 -1262.8179  80.4%  93.4 1836s
+ 66511  4168     cutoff  270      -700.00000 -1245.5380  77.9%  94.2 1843s
+ 66987  4236     cutoff   85      -700.00000 -1210.0498  72.9%  95.1 1850s
+ 67424  4267 -884.75268  286  754 -700.00000 -1164.3089  66.3%  96.0 1858s
+ 67887  4186     cutoff  149      -700.00000 -1134.7582  62.1%  97.0 1866s
+ 68323  4061     cutoff   86      -700.00000 -1109.3689  58.5%  98.1 1874s
+ 68841  3860     cutoff  268      -700.00000 -1055.8831  50.8%  99.2 1883s
+ 69368  3512 -760.12799  341  710 -700.00000 -1028.3499  46.9%   100 1893s
+ 70053  2714     cutoff   95      -700.00000 -987.66189  41.1%   101 1902s
+ 71070  1393     cutoff   94      -700.00000 -939.08350  34.2%   102 1912s
+ 72559   119     cutoff   89      -700.00000 -890.21791  27.2%   102 1920s
+ 73887     0     cutoff  475      -700.00000 -843.54153  20.5%   101 1926s
+
+Cutting planes:
+  Implied bound: 2
+  MIR: 167
+  Flow cover: 857
+  Zero half: 2
+  RLT: 676
+  Relax-and-lift: 2
+
+Explored 74027 nodes (7463166 simplex iterations) in 1926.38 seconds
+Thread count was 32 (of 32 available processors)
+
+Solution count 2: -700 0 
+No other solutions better than -700
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective -7.000000000000e+02, best bound -7.000000000000e+02, gap 0.0000%
+-------------------------------------------------------------------------------
+                                    Summary                                    
+-------------------------------------------------------------------------------
+(CVXPY) Mar 31 02:31:55 PM: Problem status: optimal
+(CVXPY) Mar 31 02:31:55 PM: Optimal value: 7.000e+02
+(CVXPY) Mar 31 02:31:55 PM: Compilation took 5.083e-01 seconds
+(CVXPY) Mar 31 02:31:55 PM: Solver (including time spent in interface) took 1.927e+03 seconds
+in compute graph score
+has edge
+has edge
+has edge
+has edge
+has edge
+Solution is: {'data mining': b'Jiawei Han', 'databases': b'Rakesh Agrawal', 'algorithms and theory': b'Philip S. Yu', 'algorithms': b'Charu C. Aggarwal'}
+Weighted solution score for iqp graph truth is: 350
+Solution score for iqp graph truth is: 5
+Edges are: [(b'Jiawei Han', b'Philip S. Yu'), (b'Jiawei Han', b'Charu C. Aggarwal'), (b'Rakesh Agrawal', b'Jiawei Han'), (b'Rakesh Agrawal', b'Philip S. Yu'), (b'Rakesh Agrawal', b'Charu C. Aggarwal')]
+Running time is: 1931.5893189907074
+Considering the following customized categories: {'data mining': 1, 'databases': 1, 'algorithms and theory': 1, 'algorithms': 1, 'artificial intelligence': 1, 'natural language processing': 1, 'robotics': 1, 'neural networks': 1}
+Creating graphs.
+in create_graph_gml_files
+in read_dict_to_list
+out read_dict_to_list
+in read_dict_to_pkl_file
+out read_dict_to_pkl_file
+in read_dict_to_pkl_file
+out read_dict_to_pkl_file
+in read_venue_assignments_csv
+out read_venue_assignments_csv
+in create_cat_venue_dictionary
+out create_cat_venue_dictionary
+in get_authors
+out get_authors
+Creating graphs.
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+Time required to create graphhs is: 29.33118176460266 sec
+Adding cross-edges to the graph.
+Category is: data mining
+New number of nodes of graph: 29275
+New number of edges of graph: 628167
+Category is: databases
+New number of nodes of graph: 31117
+New number of edges of graph: 1037344
+Category is: algorithms and theory
+New number of nodes of graph: 19888
+New number of edges of graph: 278766
+Category is: algorithms
+New number of nodes of graph: 11599
+New number of edges of graph: 126716
+Category is: artificial intelligence
+New number of nodes of graph: 54758
+New number of edges of graph: 1043585
+Category is: natural language processing
+New number of nodes of graph: 21415
+New number of edges of graph: 714800
+Category is: robotics
+New number of nodes of graph: 31713
+New number of edges of graph: 886838
+Category is: neural networks
+New number of nodes of graph: 45523
+New number of edges of graph: 780411
+Time required to add cross-edges is: 6.173195123672485 sec
+out create_graph_gml_files
+Cleaning graphs.
+in clean_graphs
+Creating core graph.
+Creating core graph.
+Creating core graph.
+Creating core graph.
+Creating core graph.
+Creating core graph.
+Creating core graph.
+Creating core graph.
+out clean_graphs
+Length of nodes list: 21330 length of nodes 0
+Length of nodes list: 23445 length of nodes 21330
+Length of nodes list: 10675 length of nodes 44775
+Length of nodes list: 6351 length of nodes 55450
+Length of nodes list: 37383 length of nodes 61801
+Length of nodes list: 16001 length of nodes 99184
+Length of nodes list: 26011 length of nodes 115185
+Length of nodes list: 32544 length of nodes 141196
+Number of unique nodes 95903 number of all nodes: 173740
+Avg End./Role: 659539.375
+Avg End./Expert: 55.017204884101645
+Max End./Expert 5971
+Number of overlapping nodes: 32544
+in get_overlapping_graph_nodes
+Number of intersecting nodes: 131
+out get_overlapping_graph_nodes
+Time to create weighted matrices:  0.02079463005065918
+===============================================================================
+                                     CVXPY                                     
+                                    v1.1.12                                    
+===============================================================================
+(CVXPY) Mar 31 02:34:25 PM: Your problem has 1048 variables, 2 constraints, and 0 parameters.
+(CVXPY) Mar 31 02:34:26 PM: It is compliant with the following grammars: DCP, DQCP
+(CVXPY) Mar 31 02:34:26 PM: (If you need to solve this problem multiple times, but with different data, consider using parameters.)
+(CVXPY) Mar 31 02:34:26 PM: CVXPY will first compile your problem; then, it will invoke a numerical solver to obtain a solution.
+-------------------------------------------------------------------------------
+                                  Compilation                                  
+-------------------------------------------------------------------------------
+(CVXPY) Mar 31 02:34:26 PM: Compiling problem (target solver=GUROBI).
+(CVXPY) Mar 31 02:34:26 PM: Reduction chain: FlipObjective -> CvxAttr2Constr -> Qp2SymbolicQp -> QpMatrixStuffing -> GUROBI
+(CVXPY) Mar 31 02:34:26 PM: Applying reduction FlipObjective
+(CVXPY) Mar 31 02:34:26 PM: Applying reduction CvxAttr2Constr
+(CVXPY) Mar 31 02:34:26 PM: Applying reduction Qp2SymbolicQp
+(CVXPY) Mar 31 02:34:26 PM: Applying reduction QpMatrixStuffing
+(CVXPY) Mar 31 02:34:26 PM: Applying reduction GUROBI
+(CVXPY) Mar 31 02:34:26 PM: Finished problem compilation (took 7.059e-02 seconds).
+-------------------------------------------------------------------------------
+                                Numerical solver                               
+-------------------------------------------------------------------------------
+(CVXPY) Mar 31 02:34:26 PM: Invoking solver GUROBI  to obtain a solution.
+Parameter OutputFlag unchanged
+   Value: 1  Min: 0  Max: 1  Default: 1
+Changed value of parameter QCPDual to 1
+   Prev: 0  Min: 0  Max: 1  Default: 0
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+Optimize a model with 139 rows, 1048 columns and 2096 nonzeros
+Model fingerprint: 0x20c9d329
+Model has 27765 quadratic objective terms
+Variable types: 0 continuous, 1048 integer (1048 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [0e+00, 0e+00]
+  QObjective range [4e+00, 2e+02]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 0.0000000
+Presolve time: 0.03s
+Presolved: 641 rows, 1550 columns, 30865 nonzeros
+Variable types: 0 continuous, 1550 integer (1055 binary)
+
+Root relaxation: objective -2.517879e+03, 433 iterations, 0.03 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 -2517.8785    0  137    0.00000 -2517.8785      -     -    0s
+H    0     0                     -44.0000000 -2517.8785  5622%     -    0s
+H    0     0                    -102.0000000 -2517.8785  2369%     -    0s
+H    0     0                    -188.0000000 -2517.8785  1239%     -    0s
+H    0     0                    -326.0000000 -2517.8785   672%     -    0s
+H    0     0                    -332.0000000 -2517.8785   658%     -    0s
+     0     0 -1889.4337    0  175 -332.00000 -1889.4337   469%     -    0s
+     0     0 -1741.2863    0  220 -332.00000 -1741.2863   424%     -    0s
+     0     0 -1723.3999    0  221 -332.00000 -1723.3999   419%     -    0s
+     0     0 -1570.4065    0  252 -332.00000 -1570.4065   373%     -    0s
+     0     0 -1570.4065    0  252 -332.00000 -1570.4065   373%     -    1s
+     0     2 -1568.7946    0  252 -332.00000 -1568.7946   373%     -    1s
+H  708   629                    -348.0000000 -1453.4332   318%  17.6    1s
+  2403  2083 -870.34734   32  338 -348.00000 -1363.4373   292%  14.7    5s
+  2463  2123 -718.41606   54  523 -348.00000 -1243.1326   257%  14.3   10s
+H 2474  2021                    -352.0000000 -1225.7969   248%  14.3   11s
+H 2475  1919                    -418.0000000 -1225.7969   193%  14.3   11s
+  2508  1941 -590.83355  102  545 -418.00000 -1180.4383   182%  14.1   15s
+  2815  2085 -986.51279   23  280 -418.00000 -1152.4930   176%  35.5   20s
+  4131  2582 -795.87063   34  320 -418.00000 -1152.4930   176%  60.5   25s
+  4466  2660 -958.63395   37  486 -418.00000 -1152.4930   176%  65.7   31s
+  5622  3167 -850.42707   45  494 -418.00000 -1152.4930   176%  80.2   35s
+  7110  3536 -788.66592   54  478 -418.00000 -1152.4930   176%  93.8   40s
+  9107  4153 -697.95065   68  460 -418.00000 -1152.4930   176%   100   45s
+ 10938  5266 -494.74593   82  331 -418.00000 -1152.4930   176%   104   50s
+ 13235  6568 -570.54225  106  395 -418.00000 -1152.4930   176%   106   55s
+ 15350  7757 -508.53621  131  367 -418.00000 -1152.4930   176%   106   60s
+ 16472  8223     cutoff  158      -418.00000 -1091.6194   161%   106   65s
+ 18923  9391 -429.35247   39  224 -418.00000 -1009.6772   142%   107   71s
+ 20749 10686 -687.94620   30  312 -418.00000 -830.08774  98.6%   108   76s
+ 22428 11557 -647.28949   45  260 -418.00000 -743.71740  77.9%   107   80s
+ 24825 12700 -557.77096   52  295 -418.00000 -728.67014  74.3%   107   85s
+ 27401 13465     cutoff   36      -418.00000 -726.62581  73.8%   107   91s
+ 29172 14124 -617.42284   60  339 -418.00000 -711.03180  70.1%   108   96s
+ 31621 15213 -426.68929   52  258 -418.00000 -700.59541  67.6%   108  101s
+ 33819 16034 -426.18138   48  236 -418.00000 -697.39605  66.8%   108  107s
+ 36675 17273 -466.30550   59  277 -418.00000 -685.89985  64.1%   107  112s
+ 38001 17706 -479.13064   25  256 -418.00000 -683.65832  63.6%   107  115s
+ 40971 18788 -434.74793   55  248 -418.00000 -675.05650  61.5%   107  122s
+ 42134 19416 -566.69337   45  279 -418.00000 -670.06515  60.3%   107  161s
+ 43763 19790 -613.49418   53  365 -418.00000 -669.14058  60.1%   107  165s
+ 46343 20823 -467.71676   43  101 -418.00000 -661.43500  58.2%   108  173s
+ 48075 21261 -428.72600   32  170 -418.00000 -657.45302  57.3%   109  177s
+ 49532 21581 -462.02907   34  256 -418.00000 -653.10381  56.2%   109  181s
+ 51296 21655 -478.07827   35  210 -418.00000 -646.45155  54.7%   110  193s
+ 51456 22305 -477.49588   36  207 -418.00000 -645.89830  54.5%   110  198s
+ 53266 22582 -501.79477   74  374 -418.00000 -642.94916  53.8%   110  203s
+ 54481 23187 -478.48231   80  378 -418.00000 -641.78141  53.5%   110  207s
+ 56282 23669 -514.23144   36  198 -418.00000 -636.38044  52.2%   110  212s
+ 57989 23899 -436.39569   56  264 -418.00000 -633.50635  51.6%   111  216s
+ 59647 24305 -588.76769   46  357 -418.00000 -628.23835  50.3%   111  220s
+ 61526 24667 -471.24156   59  254 -418.00000 -620.78497  48.5%   111  225s
+ 64648 25549 -501.48329   97  362 -418.00000 -613.99953  46.9%   112  233s
+ 66467 25732 -476.56942   54  249 -418.00000 -607.51858  45.3%   112  237s
+ 68043 26030     cutoff   61      -418.00000 -603.30350  44.3%   112  241s
+ 69697 26202 -450.67758   91  301 -418.00000 -598.36924  43.2%   113  245s
+ 72974 26695     cutoff   35      -418.00000 -591.45247  41.5%   113  253s
+ 74475 26942 -498.28418   46  138 -418.00000 -587.20977  40.5%   113  257s
+ 76033 27163 -432.38146   57  223 -418.00000 -582.35618  39.3%   113  261s
+ 77533 27195 -461.36041   51  187 -418.00000 -581.70129  39.2%   113  265s
+ 80604 27368     cutoff   57      -418.00000 -575.17705  37.6%   114  273s
+ 82034 27372     cutoff  133      -418.00000 -570.27181  36.4%   114  278s
+ 83569 27338     cutoff   35      -418.00000 -566.96940  35.6%   114  282s
+ 84836 27304     cutoff   43      -418.00000 -562.19415  34.5%   115  287s
+ 86788 27268     cutoff   58      -418.00000 -560.23335  34.0%   115  292s
+ 88435 27084     cutoff   57      -418.00000 -555.00099  32.8%   115  296s
+ 90279 26832     cutoff   63      -418.00000 -548.23750  31.2%   115  300s
+ 91825 26510     cutoff   43      -418.00000 -544.20283  30.2%   116  305s
+ 95038 25949 -467.37393   50  236 -418.00000 -536.99353  28.5%   116  313s
+ 96689 25425 -451.89100   37  134 -418.00000 -533.38422  27.6%   116  318s
+ 98233 25102     cutoff   57      -418.00000 -527.95339  26.3%   116  322s
+ 99830 24501     cutoff   60      -418.00000 -527.04101  26.1%   117  327s
+ 101492 23771     cutoff   51      -418.00000 -520.92984  24.6%   117  331s
+ 103134 23155 -432.19144   50  213 -418.00000 -516.52647  23.6%   117  335s
+ 106665 21411     cutoff   32      -418.00000 -509.37884  21.9%   117  344s
+ 108339 20250     cutoff   74      -418.00000 -505.69298  21.0%   117  348s
+ 110293 18842     cutoff   60      -418.00000 -501.14713  19.9%   116  352s
+ 112377 17361     cutoff   51      -418.00000 -496.07715  18.7%   116  356s
+ 114536 15954 -458.10157   46  123 -418.00000 -490.36178  17.3%   115  360s
+ 118761 12398     cutoff   93      -418.00000 -483.13169  15.6%   114  368s
+ 121051 10225 -451.31782   63  271 -418.00000 -476.28650  13.9%   113  371s
+ 123550  7970     cutoff   69      -418.00000 -471.87718  12.9%   112  375s
+ 129008  1989     cutoff   37      -418.00000 -454.88519  8.82%   109  380s
+
+Cutting planes:
+  Implied bound: 10
+  MIR: 277
+  StrongCG: 1
+  Flow cover: 1277
+  Zero half: 3
+  RLT: 1395
+  Relax-and-lift: 5
+
+Explored 134425 nodes (14213971 simplex iterations) in 382.22 seconds
+Thread count was 32 (of 32 available processors)
+
+Solution count 9: -418 -352 -348 ... 0
+No other solutions better than -418
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective -4.180000000000e+02, best bound -4.180000000000e+02, gap 0.0000%
+-------------------------------------------------------------------------------
+                                    Summary                                    
+-------------------------------------------------------------------------------
+(CVXPY) Mar 31 02:40:48 PM: Problem status: optimal
+(CVXPY) Mar 31 02:40:48 PM: Optimal value: 4.180e+02
+(CVXPY) Mar 31 02:40:48 PM: Compilation took 7.059e-02 seconds
+(CVXPY) Mar 31 02:40:48 PM: Solver (including time spent in interface) took 3.823e+02 seconds
+in compute graph score
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+Solution is: {'data mining': b'Sorin Achim', 'databases': b'Daniel J. Hsu', 'algorithms and theory': b'Robert E. Schapire', 'algorithms': b'Peter Stone', 'artificial intelligence': b'John Langford', 'natural language processing': b'Kwun Han', 'robotics': b'Manuela M. Veloso', 'neural networks': b'Michael H. Bowling'}
+Weighted solution score for iqp graph truth is: 209
+Solution score for iqp graph truth is: 19
+Edges are: [(b'Robert E. Schapire', b'Daniel J. Hsu'), (b'Robert E. Schapire', b'John Langford'), (b'Robert E. Schapire', b'Kwun Han'), (b'Robert E. Schapire', b'Manuela M. Veloso'), (b'Robert E. Schapire', b'Michael H. Bowling'), (b'John Langford', b'Daniel J. Hsu'), (b'John Langford', b'Robert E. Schapire'), (b'Manuela M. Veloso', b'Sorin Achim'), (b'Manuela M. Veloso', b'Daniel J. Hsu'), (b'Manuela M. Veloso', b'Robert E. Schapire'), (b'Manuela M. Veloso', b'Peter Stone'), (b'Manuela M. Veloso', b'John Langford'), (b'Manuela M. Veloso', b'Kwun Han'), (b'Manuela M. Veloso', b'Michael H. Bowling'), (b'Michael H. Bowling', b'Sorin Achim'), (b'Michael H. Bowling', b'Robert E. Schapire'), (b'Michael H. Bowling', b'Peter Stone'), (b'Michael H. Bowling', b'Kwun Han'), (b'Michael H. Bowling', b'Manuela M. Veloso')]
+Running time is: 382.8766634464264
+Considering the following customized categories: {'software engineering': 1, 'operating systems': 1, 'high-performance computing': 1, 'distributed and parallel computing': 1}
+Creating graphs.
+in create_graph_gml_files
+in read_dict_to_list
+out read_dict_to_list
+in read_dict_to_pkl_file
+out read_dict_to_pkl_file
+in read_dict_to_pkl_file
+out read_dict_to_pkl_file
+in read_venue_assignments_csv
+out read_venue_assignments_csv
+in create_cat_venue_dictionary
+out create_cat_venue_dictionary
+in get_authors
+out get_authors
+Creating graphs.
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+Time required to create graphhs is: 8.800426006317139 sec
+Adding cross-edges to the graph.
+Category is: software engineering
+New number of nodes of graph: 19653
+New number of edges of graph: 387176
+Category is: operating systems
+New number of nodes of graph: 12160
+New number of edges of graph: 257811
+Category is: high-performance computing
+New number of nodes of graph: 14244
+New number of edges of graph: 307184
+Category is: distributed and parallel computing
+New number of nodes of graph: 29118
+New number of edges of graph: 604413
+Time required to add cross-edges is: 1.5410525798797607 sec
+out create_graph_gml_files
+Cleaning graphs.
+in clean_graphs
+Creating core graph.
+Creating core graph.
+Creating core graph.
+Creating core graph.
+out clean_graphs
+Length of nodes list: 13829 length of nodes 0
+Length of nodes list: 9110 length of nodes 13829
+Length of nodes list: 10252 length of nodes 22939
+Length of nodes list: 23320 length of nodes 33191
+Number of unique nodes 37535 number of all nodes: 56511
+Avg End./Role: 373714.0
+Avg End./Expert: 39.825656054349274
+Max End./Expert 1606
+Number of overlapping nodes: 23320
+in get_overlapping_graph_nodes
+Number of intersecting nodes: 726
+out get_overlapping_graph_nodes
+Time to create weighted matrices:  0.2545297145843506
+===============================================================================
+                                     CVXPY                                     
+                                    v1.1.12                                    
+===============================================================================
+(CVXPY) Mar 31 02:42:30 PM: Your problem has 2904 variables, 2 constraints, and 0 parameters.
+(CVXPY) Mar 31 02:42:32 PM: It is compliant with the following grammars: DCP, DQCP
+(CVXPY) Mar 31 02:42:32 PM: (If you need to solve this problem multiple times, but with different data, consider using parameters.)
+(CVXPY) Mar 31 02:42:32 PM: CVXPY will first compile your problem; then, it will invoke a numerical solver to obtain a solution.
+-------------------------------------------------------------------------------
+                                  Compilation                                  
+-------------------------------------------------------------------------------
+(CVXPY) Mar 31 02:42:32 PM: Compiling problem (target solver=GUROBI).
+(CVXPY) Mar 31 02:42:32 PM: Reduction chain: FlipObjective -> CvxAttr2Constr -> Qp2SymbolicQp -> QpMatrixStuffing -> GUROBI
+(CVXPY) Mar 31 02:42:32 PM: Applying reduction FlipObjective
+(CVXPY) Mar 31 02:42:32 PM: Applying reduction CvxAttr2Constr
+(CVXPY) Mar 31 02:42:32 PM: Applying reduction Qp2SymbolicQp
+(CVXPY) Mar 31 02:42:32 PM: Applying reduction QpMatrixStuffing
+(CVXPY) Mar 31 02:42:32 PM: Applying reduction GUROBI
+(CVXPY) Mar 31 02:42:32 PM: Finished problem compilation (took 2.244e-01 seconds).
+-------------------------------------------------------------------------------
+                                Numerical solver                               
+-------------------------------------------------------------------------------
+(CVXPY) Mar 31 02:42:32 PM: Invoking solver GUROBI  to obtain a solution.
+Parameter OutputFlag unchanged
+   Value: 1  Min: 0  Max: 1  Default: 1
+Changed value of parameter QCPDual to 1
+   Prev: 0  Min: 0  Max: 1  Default: 0
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+Optimize a model with 730 rows, 2904 columns and 5808 nonzeros
+Model fingerprint: 0xb1781ff0
+Model has 70922 quadratic objective terms
+Variable types: 0 continuous, 2904 integer (2904 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [0e+00, 0e+00]
+  QObjective range [4e+00, 2e+02]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 0.0000000
+Presolve time: 0.23s
+Presolved: 2304 rows, 4478 columns, 79878 nonzeros
+Variable types: 0 continuous, 4478 integer (2936 binary)
+
+Root relaxation: objective -1.185521e+03, 1179 iterations, 0.15 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 -1185.5207    0  212    0.00000 -1185.5207      -     -    0s
+H    0     0                     -88.0000000 -1185.5207  1247%     -    0s
+H    0     0                    -156.0000000 -1185.5207   660%     -    1s
+     0     0 -1025.3662    0  266 -156.00000 -1025.3662   557%     -    1s
+H    0     0                    -170.0000000 -1025.3662   503%     -    1s
+     0     0 -917.91523    0  276 -170.00000 -917.91523   440%     -    2s
+     0     0 -917.91523    0  279 -170.00000 -917.91523   440%     -    2s
+     0     0 -917.91523    0  279 -170.00000 -917.91523   440%     -    2s
+H    0     0                    -226.0000000 -908.26343   302%     -    2s
+     0     0 -893.45676    0  280 -226.00000 -893.45676   295%     -    2s
+     0     0 -893.45676    0  280 -226.00000 -893.45676   295%     -    2s
+     0     2 -893.17188    0  280 -226.00000 -893.17188   295%     -    3s
+   232   119 -756.50678   19  281 -226.00000 -893.17188   295%  59.4    5s
+  3842  1687 -323.83155   93  234 -226.00000 -893.17188   295%  34.0   10s
+  6735  1835 -315.41454   17   83 -226.00000 -782.95284   246%  48.7   15s
+  7395  2020 -254.15736  127  212 -226.00000 -778.06065   244%  50.4   20s
+  7404  2029 -778.06065   14  326 -226.00000 -778.06065   244%  50.6   26s
+  7442  2039 -778.06065   19  341 -226.00000 -778.06065   244%  51.2   30s
+  7834  1969 -526.89749   29  276 -226.00000 -778.06065   244%  53.2   35s
+  9933  2136 -688.93264   37  464 -226.00000 -753.61472   233%  53.4   40s
+ 12121  2606 -420.99665   49  205 -226.00000 -728.88398   223%  57.9   45s
+ 12779  2778 -378.66601   63  232 -226.00000 -728.88398   223%  58.2   50s
+ 15312  4204 -429.60977   50  169 -226.00000 -516.66695   129%  59.1   55s
+ 18316  4845     cutoff   75      -226.00000 -388.70463  72.0%  63.2   60s
+ 21051  4829     cutoff   53      -226.00000 -351.87622  55.7%  65.1   67s
+ 24116  4760     cutoff  118      -226.00000 -315.49725  39.6%  64.0   70s
+ 28190  2647     cutoff  116      -226.00000 -285.69024  26.4%  62.9   75s
+
+Cutting planes:
+  MIR: 171
+  StrongCG: 4
+  Flow cover: 131
+  Zero half: 5
+  RLT: 131
+
+Explored 31756 nodes (1938827 simplex iterations) in 77.21 seconds
+Thread count was 32 (of 32 available processors)
+
+Solution count 5: -226 -170 -156 ... 0
+No other solutions better than -226
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective -2.260000000000e+02, best bound -2.260000000000e+02, gap 0.0000%
+-------------------------------------------------------------------------------
+                                    Summary                                    
+-------------------------------------------------------------------------------
+(CVXPY) Mar 31 02:43:49 PM: Problem status: optimal
+(CVXPY) Mar 31 02:43:49 PM: Optimal value: 2.260e+02
+(CVXPY) Mar 31 02:43:49 PM: Compilation took 2.244e-01 seconds
+(CVXPY) Mar 31 02:43:49 PM: Solver (including time spent in interface) took 7.727e+01 seconds
+in compute graph score
+has edge
+has edge
+has edge
+has edge
+has edge
+Solution is: {'software engineering': b'Changsheng Xie', 'operating systems': b'James S. Plank', 'high-performance computing': b'Shenggang Wan', 'distributed and parallel computing': b'Qiang Cao'}
+Weighted solution score for iqp graph truth is: 113
+Solution score for iqp graph truth is: 5
+Edges are: [(b'James S. Plank', b'Changsheng Xie'), (b'James S. Plank', b'Shenggang Wan'), (b'James S. Plank', b'Qiang Cao'), (b'Qiang Cao', b'Changsheng Xie'), (b'Qiang Cao', b'Shenggang Wan')]
+Running time is: 79.55347442626953
+Considering the following customized categories: {'signal processing': 1, 'wireless networks and mobile computing': 1, 'computer networking': 1, 'information retrieval': 1}
+Creating graphs.
+in create_graph_gml_files
+in read_dict_to_list
+out read_dict_to_list
+in read_dict_to_pkl_file
+out read_dict_to_pkl_file
+in read_dict_to_pkl_file
+out read_dict_to_pkl_file
+in read_venue_assignments_csv
+out read_venue_assignments_csv
+in create_cat_venue_dictionary
+out create_cat_venue_dictionary
+in get_authors
+out get_authors
+Creating graphs.
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+Time required to create graphhs is: 13.28763484954834 sec
+Adding cross-edges to the graph.
+Category is: signal processing
+New number of nodes of graph: 24928
+New number of edges of graph: 478148
+Category is: wireless networks and mobile computing
+New number of nodes of graph: 14007
+New number of edges of graph: 261795
+Category is: computer networking
+New number of nodes of graph: 51372
+New number of edges of graph: 1524831
+Category is: information retrieval
+New number of nodes of graph: 5951
+New number of edges of graph: 156395
+Time required to add cross-edges is: 1.570967435836792 sec
+out create_graph_gml_files
+Cleaning graphs.
+in clean_graphs
+Creating core graph.
+Creating core graph.
+Creating core graph.
+Creating core graph.
+out clean_graphs
+Length of nodes list: 18415 length of nodes 0
+Length of nodes list: 9645 length of nodes 18415
+Length of nodes list: 43221 length of nodes 28060
+Length of nodes list: 4660 length of nodes 71281
+Number of unique nodes 56754 number of all nodes: 75941
+Avg End./Role: 586495.5
+Avg End./Expert: 41.335976318849774
+Max End./Expert 3165
+Number of overlapping nodes: 4660
+in get_overlapping_graph_nodes
+Number of intersecting nodes: 159
+out get_overlapping_graph_nodes
+Time to create weighted matrices:  0.01377248764038086
+===============================================================================
+                                     CVXPY                                     
+                                    v1.1.12                                    
+===============================================================================
+(CVXPY) Mar 31 02:45:10 PM: Your problem has 636 variables, 2 constraints, and 0 parameters.
+(CVXPY) Mar 31 02:45:10 PM: It is compliant with the following grammars: DCP, DQCP
+(CVXPY) Mar 31 02:45:10 PM: (If you need to solve this problem multiple times, but with different data, consider using parameters.)
+(CVXPY) Mar 31 02:45:10 PM: CVXPY will first compile your problem; then, it will invoke a numerical solver to obtain a solution.
+-------------------------------------------------------------------------------
+                                  Compilation                                  
+-------------------------------------------------------------------------------
+(CVXPY) Mar 31 02:45:10 PM: Compiling problem (target solver=GUROBI).
+(CVXPY) Mar 31 02:45:10 PM: Reduction chain: FlipObjective -> CvxAttr2Constr -> Qp2SymbolicQp -> QpMatrixStuffing -> GUROBI
+(CVXPY) Mar 31 02:45:10 PM: Applying reduction FlipObjective
+(CVXPY) Mar 31 02:45:10 PM: Applying reduction CvxAttr2Constr
+(CVXPY) Mar 31 02:45:10 PM: Applying reduction Qp2SymbolicQp
+(CVXPY) Mar 31 02:45:10 PM: Applying reduction QpMatrixStuffing
+(CVXPY) Mar 31 02:45:10 PM: Applying reduction GUROBI
+(CVXPY) Mar 31 02:45:10 PM: Finished problem compilation (took 3.389e-02 seconds).
+-------------------------------------------------------------------------------
+                                Numerical solver                               
+-------------------------------------------------------------------------------
+(CVXPY) Mar 31 02:45:10 PM: Invoking solver GUROBI  to obtain a solution.
+Parameter OutputFlag unchanged
+   Value: 1  Min: 0  Max: 1  Default: 1
+Changed value of parameter QCPDual to 1
+   Prev: 0  Min: 0  Max: 1  Default: 0
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+Optimize a model with 163 rows, 636 columns and 1272 nonzeros
+Model fingerprint: 0xf8c9d93e
+Model has 5604 quadratic objective terms
+Variable types: 0 continuous, 636 integer (636 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [0e+00, 0e+00]
+  QObjective range [4e+00, 6e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 0.0000000
+Presolve time: 0.02s
+Presolved: 435 rows, 908 columns, 7420 nonzeros
+Variable types: 0 continuous, 908 integer (660 binary)
+
+Root relaxation: objective -3.141422e+02, 244 iterations, 0.01 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 -314.14219    0   71    0.00000 -314.14219      -     -    0s
+H    0     0                      -8.0000000 -314.14219  3827%     -    0s
+H    0     0                     -50.0000000 -314.14219   528%     -    0s
+H    0     0                     -56.0000000 -314.14219   461%     -    0s
+     0     0 -245.49258    0   93  -56.00000 -245.49258   338%     -    0s
+     0     0 -220.55578    0   93  -56.00000 -220.55578   294%     -    0s
+     0     0 -175.47122    0  122  -56.00000 -175.47122   213%     -    0s
+     0     0 -175.47122    0  122  -56.00000 -175.47122   213%     -    0s
+     0     2 -175.47122    0  122  -56.00000 -175.47122   213%     -    0s
+*  232   133              16     -58.0000000 -175.47122   203%  19.5    0s
+*  513   298              18     -62.0000000 -175.47122   183%  19.3    0s
+*  517   298              19     -68.0000000 -175.47122   158%  19.2    0s
+*  619   342              21     -72.0000000 -175.47122   144%  19.3    0s
+* 1754    25              31     -76.0000000  -99.12633  30.4%  21.6    0s
+
+Cutting planes:
+  Gomory: 2
+  MIR: 100
+  StrongCG: 14
+  Zero half: 1
+  RLT: 71
+
+Explored 1938 nodes (40185 simplex iterations) in 1.00 seconds
+Thread count was 32 (of 32 available processors)
+
+Solution count 9: -76 -72 -68 ... 0
+No other solutions better than -76
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective -7.600000000000e+01, best bound -7.600000000000e+01, gap 0.0000%
+-------------------------------------------------------------------------------
+                                    Summary                                    
+-------------------------------------------------------------------------------
+(CVXPY) Mar 31 02:45:11 PM: Problem status: optimal
+(CVXPY) Mar 31 02:45:11 PM: Optimal value: 7.600e+01
+(CVXPY) Mar 31 02:45:11 PM: Compilation took 3.389e-02 seconds
+(CVXPY) Mar 31 02:45:11 PM: Solver (including time spent in interface) took 1.031e+00 seconds
+in compute graph score
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+Solution is: {'signal processing': b'Yanjiao Chen', 'wireless networks and mobile computing': b'Qian Zhang', 'computer networking': b'Jin Zhang', 'information retrieval': b'Fan Yang'}
+Weighted solution score for iqp graph truth is: 38
+Solution score for iqp graph truth is: 6
+Edges are: [(b'Qian Zhang', b'Yanjiao Chen'), (b'Qian Zhang', b'Jin Zhang'), (b'Qian Zhang', b'Fan Yang'), (b'Jin Zhang', b'Yanjiao Chen'), (b'Jin Zhang', b'Qian Zhang'), (b'Jin Zhang', b'Fan Yang')]
+Running time is: 1.3097569942474365
+Considering the following customized categories: {'signal processing': 1, 'wireless networks and mobile computing': 1, 'computer networking': 1, 'information retrieval': 1, 'software engineering': 1, 'operating systems': 1, 'high-performance computing': 1, 'distributed and parallel computing': 1}
+Creating graphs.
+in create_graph_gml_files
+in read_dict_to_list
+out read_dict_to_list
+in read_dict_to_pkl_file
+out read_dict_to_pkl_file
+in read_dict_to_pkl_file
+out read_dict_to_pkl_file
+in read_venue_assignments_csv
+out read_venue_assignments_csv
+in create_cat_venue_dictionary
+out create_cat_venue_dictionary
+in get_authors
+out get_authors
+Creating graphs.
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+Time required to create graphhs is: 24.954944372177124 sec
+Adding cross-edges to the graph.
+Category is: signal processing
+New number of nodes of graph: 25560
+New number of edges of graph: 481729
+Category is: wireless networks and mobile computing
+New number of nodes of graph: 16296
+New number of edges of graph: 312068
+Category is: computer networking
+New number of nodes of graph: 58701
+New number of edges of graph: 1702478
+Category is: information retrieval
+New number of nodes of graph: 6951
+New number of edges of graph: 161829
+Category is: software engineering
+New number of nodes of graph: 21690
+New number of edges of graph: 398561
+Category is: operating systems
+New number of nodes of graph: 16239
+New number of edges of graph: 298947
+Category is: high-performance computing
+New number of nodes of graph: 15648
+New number of edges of graph: 316409
+Category is: distributed and parallel computing
+New number of nodes of graph: 39535
+New number of edges of graph: 720772
+Time required to add cross-edges is: 4.4409918785095215 sec
+out create_graph_gml_files
+Cleaning graphs.
+in clean_graphs
+Creating core graph.
+Creating core graph.
+Creating core graph.
+Creating core graph.
+Creating core graph.
+Creating core graph.
+Creating core graph.
+Creating core graph.
+out clean_graphs
+Length of nodes list: 18668 length of nodes 0
+Length of nodes list: 11141 length of nodes 18668
+Length of nodes list: 48007 length of nodes 29809
+Length of nodes list: 5064 length of nodes 77816
+Length of nodes list: 14594 length of nodes 82880
+Length of nodes list: 11654 length of nodes 97474
+Length of nodes list: 10897 length of nodes 109128
+Length of nodes list: 29238 length of nodes 120025
+Number of unique nodes 90803 number of all nodes: 149263
+Avg End./Role: 527465.75
+Avg End./Expert: 46.47121791130249
+Max End./Expert 3258
+Number of overlapping nodes: 29238
+in get_overlapping_graph_nodes
+Number of intersecting nodes: 49
+out get_overlapping_graph_nodes
+Time to create weighted matrices:  0.0033426284790039062
+===============================================================================
+                                     CVXPY                                     
+                                    v1.1.12                                    
+===============================================================================
+(CVXPY) Mar 31 02:47:03 PM: Your problem has 392 variables, 2 constraints, and 0 parameters.
+(CVXPY) Mar 31 02:47:03 PM: It is compliant with the following grammars: DCP, DQCP
+(CVXPY) Mar 31 02:47:03 PM: (If you need to solve this problem multiple times, but with different data, consider using parameters.)
+(CVXPY) Mar 31 02:47:03 PM: CVXPY will first compile your problem; then, it will invoke a numerical solver to obtain a solution.
+-------------------------------------------------------------------------------
+                                  Compilation                                  
+-------------------------------------------------------------------------------
+(CVXPY) Mar 31 02:47:03 PM: Compiling problem (target solver=GUROBI).
+(CVXPY) Mar 31 02:47:03 PM: Reduction chain: FlipObjective -> CvxAttr2Constr -> Qp2SymbolicQp -> QpMatrixStuffing -> GUROBI
+(CVXPY) Mar 31 02:47:03 PM: Applying reduction FlipObjective
+(CVXPY) Mar 31 02:47:03 PM: Applying reduction CvxAttr2Constr
+(CVXPY) Mar 31 02:47:03 PM: Applying reduction Qp2SymbolicQp
+(CVXPY) Mar 31 02:47:03 PM: Applying reduction QpMatrixStuffing
+(CVXPY) Mar 31 02:47:04 PM: Applying reduction GUROBI
+(CVXPY) Mar 31 02:47:04 PM: Finished problem compilation (took 2.770e-02 seconds).
+-------------------------------------------------------------------------------
+                                Numerical solver                               
+-------------------------------------------------------------------------------
+(CVXPY) Mar 31 02:47:04 PM: Invoking solver GUROBI  to obtain a solution.
+Parameter OutputFlag unchanged
+   Value: 1  Min: 0  Max: 1  Default: 1
+Changed value of parameter QCPDual to 1
+   Prev: 0  Min: 0  Max: 1  Default: 0
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+Optimize a model with 57 rows, 392 columns and 784 nonzeros
+Model fingerprint: 0x16b5f40a
+Model has 6015 quadratic objective terms
+Variable types: 0 continuous, 392 integer (392 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [0e+00, 0e+00]
+  QObjective range [4e+00, 4e+02]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective -2.0000000
+Presolve time: 0.01s
+Presolved: 262 rows, 597 columns, 7209 nonzeros
+Variable types: 0 continuous, 597 integer (398 binary)
+
+Root relaxation: objective -2.985323e+03, 230 iterations, 0.02 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 -2985.3226    0   61   -2.00000 -2985.3226      -     -    0s
+H    0     0                    -252.0000000 -2985.3226  1085%     -    0s
+H    0     0                    -390.0000000 -2985.3226   665%     -    0s
+H    0     0                    -498.0000000 -2985.3226   499%     -    0s
+H    0     0                    -622.0000000 -2985.3226   380%     -    0s
+H    0     0                    -634.0000000 -2985.3226   371%     -    0s
+H    0     0                    -736.0000000 -1930.5813   162%     -    0s
+     0     0 -1930.5813    0   79 -736.00000 -1930.5813   162%     -    0s
+H    0     0                    -748.0000000 -1878.6089   151%     -    0s
+     0     0 -1878.6089    0   79 -748.00000 -1878.6089   151%     -    0s
+H    0     0                    -768.0000000 -1878.6089   145%     -    0s
+     0     2 -1878.6089    0   79 -768.00000 -1878.6089   145%     -    0s
+H  241    91                    -774.0000000 -1553.6730   101%  21.0    0s
+
+Cutting planes:
+  Gomory: 11
+  MIR: 25
+  RLT: 25
+
+Explored 674 nodes (12525 simplex iterations) in 0.82 seconds
+Thread count was 32 (of 32 available processors)
+
+Solution count 10: -774 -768 -748 ... -2
+No other solutions better than -774
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective -7.740000000000e+02, best bound -7.740000000000e+02, gap 0.0000%
+-------------------------------------------------------------------------------
+                                    Summary                                    
+-------------------------------------------------------------------------------
+(CVXPY) Mar 31 02:47:04 PM: Problem status: optimal
+(CVXPY) Mar 31 02:47:04 PM: Optimal value: 7.740e+02
+(CVXPY) Mar 31 02:47:04 PM: Compilation took 2.770e-02 seconds
+(CVXPY) Mar 31 02:47:04 PM: Solver (including time spent in interface) took 8.459e-01 seconds
+in compute graph score
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+Solution is: {'signal processing': b'Cheng Li', 'wireless networks and mobile computing': b'Ying Zhang', 'computer networking': b'Yunhao Liu', 'information retrieval': b'Mo Li', 'software engineering': b'Jinsong Han', 'operating systems': b'Zheng Yang', 'high-performance computing': b'Zhenjiang Li', 'distributed and parallel computing': b'Xiang-Yang Li'}
+Weighted solution score for iqp graph truth is: 387
+Solution score for iqp graph truth is: 20
+Edges are: [(b'Ying Zhang', b'Cheng Li'), (b'Ying Zhang', b'Yunhao Liu'), (b'Ying Zhang', b'Mo Li'), (b'Ying Zhang', b'Jinsong Han'), (b'Ying Zhang', b'Zheng Yang'), (b'Ying Zhang', b'Zhenjiang Li'), (b'Ying Zhang', b'Xiang-Yang Li'), (b'Yunhao Liu', b'Cheng Li'), (b'Yunhao Liu', b'Mo Li'), (b'Yunhao Liu', b'Jinsong Han'), (b'Yunhao Liu', b'Zheng Yang'), (b'Yunhao Liu', b'Zhenjiang Li'), (b'Yunhao Liu', b'Xiang-Yang Li'), (b'Xiang-Yang Li', b'Cheng Li'), (b'Xiang-Yang Li', b'Ying Zhang'), (b'Xiang-Yang Li', b'Yunhao Liu'), (b'Xiang-Yang Li', b'Mo Li'), (b'Xiang-Yang Li', b'Jinsong Han'), (b'Xiang-Yang Li', b'Zheng Yang'), (b'Xiang-Yang Li', b'Zhenjiang Li')]
+Running time is: 1.0070583820343018
+Exiting main!

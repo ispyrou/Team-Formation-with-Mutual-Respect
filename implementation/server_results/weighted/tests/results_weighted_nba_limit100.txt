@@ -1,0 +1,828 @@
+year is: 2010
+For year: 2010 number of players is: 14456 278
+Max score is: 110
+Max score solution: {'DBPM': ('Marcus Camby', 0), 'TRB': ('Zach Randolph', 1), 'BLK': ('Andrew Bogut', 1), 'AST': ('Steve Nash', 0), 'STL': ('Rajon Rondo', 0), 'VORP': ('Josh Smith', 4), '3P': ('Aaron Brooks', 0), 'OBPM': ('Manu Ginobili', 2), '2P': ("Amar'e Stoudemire", 0), 'FT': ('Carmelo Anthony', 4), 'FG': ('Kobe Bryant', 4)}
+created Weighted_m
+created M
+===============================================================================
+                                     CVXPY                                     
+                                    v1.1.12                                    
+===============================================================================
+(CVXPY) Mar 04 06:52:11 PM: Your problem has 3058 variables, 2 constraints, and 0 parameters.
+(CVXPY) Mar 04 06:52:12 PM: It is compliant with the following grammars: DCP, DQCP
+(CVXPY) Mar 04 06:52:12 PM: (If you need to solve this problem multiple times, but with different data, consider using parameters.)
+(CVXPY) Mar 04 06:52:12 PM: CVXPY will first compile your problem; then, it will invoke a numerical solver to obtain a solution.
+-------------------------------------------------------------------------------
+                                  Compilation                                  
+-------------------------------------------------------------------------------
+(CVXPY) Mar 04 06:52:12 PM: Compiling problem (target solver=GUROBI).
+(CVXPY) Mar 04 06:52:12 PM: Reduction chain: FlipObjective -> CvxAttr2Constr -> Qp2SymbolicQp -> QpMatrixStuffing -> GUROBI
+(CVXPY) Mar 04 06:52:12 PM: Applying reduction FlipObjective
+(CVXPY) Mar 04 06:52:12 PM: Applying reduction CvxAttr2Constr
+(CVXPY) Mar 04 06:52:12 PM: Applying reduction Qp2SymbolicQp
+(CVXPY) Mar 04 06:52:12 PM: Applying reduction QpMatrixStuffing
+(CVXPY) Mar 04 06:52:15 PM: Applying reduction GUROBI
+(CVXPY) Mar 04 06:52:15 PM: Finished problem compilation (took 2.579e+00 seconds).
+-------------------------------------------------------------------------------
+                                Numerical solver                               
+-------------------------------------------------------------------------------
+(CVXPY) Mar 04 06:52:15 PM: Invoking solver GUROBI  to obtain a solution.
+Academic license - for non-commercial use only - expires 2022-12-18
+Using license file /home/pcs00440/gurobi.lic
+Parameter OutputFlag unchanged
+   Value: 1  Min: 0  Max: 1  Default: 1
+Changed value of parameter QCPDual to 1
+   Prev: 0  Min: 0  Max: 1  Default: 0
+Changed value of parameter TimeLimit to 100.0
+   Prev: inf  Min: 0.0  Max: inf  Default: inf
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+Optimize a model with 289 rows, 3058 columns and 6116 nonzeros
+Model fingerprint: 0x7978a9a6
+Model has 4224408 quadratic objective terms
+Variable types: 0 continuous, 3058 integer (3058 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [0e+00, 0e+00]
+  QObjective range [1e-13, 3e+03]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Warning: Model contains large quadratic objective coefficient range
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Found heuristic solution: objective -1363.333333
+Presolve time: 2.27s
+Presolved: 289 rows, 3058 columns, 6116 nonzeros
+Presolved model has 4227466 quadratic objective terms
+Variable types: 0 continuous, 3058 integer (3058 binary)
+
+Root relaxation: objective -2.697360e+06, 215 iterations, 0.43 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 -2697359.8    0  161 -1363.3333 -2697359.8      -     -    4s
+H    0     0                    -11511.30000 -2697359.8      -     -    4s
+H    0     0                    -13331.40000 -2697359.8      -     -    6s
+     0     0 -2697359.8    0  161 -13331.400 -2697359.8      -     -    8s
+H    0     0                    -18634.20000 -2648658.0      -     -    9s
+     0     2 -2648658.0    0  161 -18634.200 -2648658.0      -     -   11s
+H   47    64                    -19775.90000 -2567615.1      -  11.1   15s
+H   48    64                    -20048.80000 -2546360.5      -  11.0   15s
+H   63    80                    -20182.50000 -2546360.5      -  10.4   21s
+H   64    80                    -20188.93333 -2528857.2      -  10.3   21s
+H   73    80                    -20203.80000 -2528857.2      -  10.0   21s
+H   77    80                    -20434.60000 -2528857.2      -  10.5   21s
+  1019   807 -2205929.9   49  191 -20434.600 -2497290.1      -   6.2   25s
+  2632  2144 -1954623.6  124  204 -20434.600 -2497290.1      -   4.6   30s
+  3800  3336 -1782368.5  188  241 -20434.600 -2497290.1      -   4.3   35s
+  5148  4586 -1673825.9  255  266 -20434.600 -2497290.1      -   4.1   40s
+  6139  5593 -1593001.7  311  290 -20434.600 -2497290.1      -   4.0   45s
+H 7056  6385                    -20589.60000 -2497290.1      -   3.9   51s
+  7750  7261 -1509504.2  396  339 -20589.600 -2497290.1      -   3.8   55s
+  8676  8198 -1484379.6  439  347 -20589.600 -2497290.1      -   3.8   61s
+  9451  9005 -1461748.0  480  360 -20589.600 -2497290.1      -   3.7   66s
+ 10383  9562 -152277.47  131  161 -20589.600 -2497290.1      -   3.7   72s
+ 10385  9563 -1049702.2  219  161 -20589.600 -2497290.1      -   3.7   81s
+ 10388  9568 -2497290.1   12  162 -20589.600 -2497290.1      -   3.7   89s
+H10390  9093                    -21254.50000 -2497290.1      -   3.7   91s
+ 10450  9161 -2497290.1   17  166 -21254.500 -2497290.1      -   3.8   95s
+ 11524  9854 -2421589.4   28  166 -21254.500 -2421589.4      -   4.1  100s
+
+Explored 11609 nodes (47615 simplex iterations) in 100.52 seconds
+Thread count was 32 (of 32 available processors)
+
+Solution count 10: -21254.5 -20589.6 -20434.6 ... -13331.4
+
+Time limit reached
+Best objective -2.125450000000e+04, best bound -2.411356814769e+06, gap 11245.1590%
+-------------------------------------------------------------------------------
+                                    Summary                                    
+-------------------------------------------------------------------------------
+(CVXPY) Mar 04 06:53:56 PM: Problem status: user_limit
+(CVXPY) Mar 04 06:53:56 PM: Optimal value: 2.125e+04
+(CVXPY) Mar 04 06:53:56 PM: Compilation took 2.579e+00 seconds
+(CVXPY) Mar 04 06:53:56 PM: Solver (including time spent in interface) took 1.013e+02 seconds
+Solution is: {'3P': ('Dwight Howard', 0.0), 'TRB': ('Jason Terry', 136.0), 'AST': ("Amar'e Stoudemire", 1.0), 'STL': ('Chris Bosh', 8.0), 'BLK': ('David Lee', 0.0), 'FG': ('Joel Przybilla', 0.0), '2P': ('Jason Kidd', 176.0), 'FT': ('Chuck Hayes', 0.0), 'OBPM': ('Kevin Durant', 128.0), 'DBPM': ('LeBron James', 129.0), 'VORP': ('Dwyane Wade', 73.0)}
+Solution score for iqp rank truth is: 32
+Running time is: 105.74516892433167
+year is: 2011
+For year: 2011 number of players is: 15028 289
+Max score is: 110
+Max score solution: {'AST': ('Steve Nash', 0), 'TRB': ('Kevin Love', 0), 'BLK': ('Serge Ibaka', 0), 'DBPM': ('Marcus Camby', 0), 'FT': ('Kevin Durant', 0), 'FG': ('Kobe Bryant', 2), '3P': ('Dorell Wright', 0), 'OBPM': ('Manu Ginobili', 3), 'VORP': ('Dwyane Wade', 3), 'STL': ('Monta Ellis', 1), '2P': ('LaMarcus Aldridge', 1)}
+created Weighted_m
+created M
+===============================================================================
+                                     CVXPY                                     
+                                    v1.1.12                                    
+===============================================================================
+(CVXPY) Mar 04 06:54:45 PM: Your problem has 3179 variables, 2 constraints, and 0 parameters.
+(CVXPY) Mar 04 06:54:47 PM: It is compliant with the following grammars: DCP, DQCP
+(CVXPY) Mar 04 06:54:47 PM: (If you need to solve this problem multiple times, but with different data, consider using parameters.)
+(CVXPY) Mar 04 06:54:47 PM: CVXPY will first compile your problem; then, it will invoke a numerical solver to obtain a solution.
+-------------------------------------------------------------------------------
+                                  Compilation                                  
+-------------------------------------------------------------------------------
+(CVXPY) Mar 04 06:54:47 PM: Compiling problem (target solver=GUROBI).
+(CVXPY) Mar 04 06:54:47 PM: Reduction chain: FlipObjective -> CvxAttr2Constr -> Qp2SymbolicQp -> QpMatrixStuffing -> GUROBI
+(CVXPY) Mar 04 06:54:47 PM: Applying reduction FlipObjective
+(CVXPY) Mar 04 06:54:47 PM: Applying reduction CvxAttr2Constr
+(CVXPY) Mar 04 06:54:47 PM: Applying reduction Qp2SymbolicQp
+(CVXPY) Mar 04 06:54:47 PM: Applying reduction QpMatrixStuffing
+(CVXPY) Mar 04 06:54:50 PM: Applying reduction GUROBI
+(CVXPY) Mar 04 06:54:50 PM: Finished problem compilation (took 2.919e+00 seconds).
+-------------------------------------------------------------------------------
+                                Numerical solver                               
+-------------------------------------------------------------------------------
+(CVXPY) Mar 04 06:54:50 PM: Invoking solver GUROBI  to obtain a solution.
+Parameter OutputFlag unchanged
+   Value: 1  Min: 0  Max: 1  Default: 1
+Changed value of parameter QCPDual to 1
+   Prev: 0  Min: 0  Max: 1  Default: 0
+Changed value of parameter TimeLimit to 100.0
+   Prev: inf  Min: 0.0  Max: inf  Default: inf
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+Optimize a model with 300 rows, 3179 columns and 6358 nonzeros
+Model fingerprint: 0xc315a183
+Model has 4564882 quadratic objective terms
+Variable types: 0 continuous, 3179 integer (3179 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [0e+00, 0e+00]
+  QObjective range [1e-13, 3e+03]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Warning: Model contains large quadratic objective coefficient range
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Found heuristic solution: objective -7834.400000
+Presolve time: 7885.19s
+
+Explored 0 nodes (0 simplex iterations) in 7885.27 seconds
+Thread count was 1 (of 32 available processors)
+
+Solution count 1: -7834.4 
+No other solutions better than 0
+
+Time limit reached
+Best objective -7.834400000000e+03, best bound -, gap -
+-------------------------------------------------------------------------------
+                                    Summary                                    
+-------------------------------------------------------------------------------
+(CVXPY) Mar 04 09:06:16 PM: Problem status: user_limit
+(CVXPY) Mar 04 09:06:16 PM: Optimal value: 7.834e+03
+(CVXPY) Mar 04 09:06:16 PM: Compilation took 2.919e+00 seconds
+(CVXPY) Mar 04 09:06:16 PM: Solver (including time spent in interface) took 7.886e+03 seconds
+Solution is: {'3P': ('Paul Pierce', 111.0), 'TRB': ('Devin Harris', 38.666666666666664), 'AST': ('Zach Randolph', 8.0), 'STL': ('Antonio McDyess', 0.0), 'BLK': ('Kevin Martin', 176.0), 'FG': ('Al-Farouq Aminu', 45.0), '2P': ('Joey Graham', 9.0), 'FT': ('Jason Thompson', 0.0), 'OBPM': ('Gerald Wallace', 41.333333333333336), 'DBPM': ('DeAndre Jordan', 0.0), 'VORP': ('Luis Scola', 0.0)}
+Solution score for iqp rank truth is: 46
+Running time is: 7891.370819330215
+year is: 2012
+For year: 2012 number of players is: 14872 286
+Max score is: 110
+Max score solution: {'BLK': ('Serge Ibaka', 0), 'TRB': ('Dwight Howard', 0), 'FT': ('Kobe Bryant', 2), '2P': ('Blake Griffin', 1), 'AST': ('Steve Nash', 0), 'STL': ('Mike Conley', 1), 'OBPM': ('Manu Ginobili', 2), 'VORP': ('Joakim Noah', 3), '3P': ('Ryan Anderson', 0), 'DBPM': ('Marcus Camby', 0), 'FG': ('Russell Westbrook', 2)}
+created Weighted_m
+created M
+===============================================================================
+                                     CVXPY                                     
+                                    v1.1.12                                    
+===============================================================================
+(CVXPY) Mar 04 09:07:03 PM: Your problem has 3146 variables, 2 constraints, and 0 parameters.
+(CVXPY) Mar 04 09:07:05 PM: It is compliant with the following grammars: DCP, DQCP
+(CVXPY) Mar 04 09:07:05 PM: (If you need to solve this problem multiple times, but with different data, consider using parameters.)
+(CVXPY) Mar 04 09:07:05 PM: CVXPY will first compile your problem; then, it will invoke a numerical solver to obtain a solution.
+-------------------------------------------------------------------------------
+                                  Compilation                                  
+-------------------------------------------------------------------------------
+(CVXPY) Mar 04 09:07:05 PM: Compiling problem (target solver=GUROBI).
+(CVXPY) Mar 04 09:07:05 PM: Reduction chain: FlipObjective -> CvxAttr2Constr -> Qp2SymbolicQp -> QpMatrixStuffing -> GUROBI
+(CVXPY) Mar 04 09:07:05 PM: Applying reduction FlipObjective
+(CVXPY) Mar 04 09:07:05 PM: Applying reduction CvxAttr2Constr
+(CVXPY) Mar 04 09:07:05 PM: Applying reduction Qp2SymbolicQp
+(CVXPY) Mar 04 09:07:05 PM: Applying reduction QpMatrixStuffing
+(CVXPY) Mar 04 09:07:08 PM: Applying reduction GUROBI
+(CVXPY) Mar 04 09:07:08 PM: Finished problem compilation (took 2.778e+00 seconds).
+-------------------------------------------------------------------------------
+                                Numerical solver                               
+-------------------------------------------------------------------------------
+(CVXPY) Mar 04 09:07:08 PM: Invoking solver GUROBI  to obtain a solution.
+Parameter OutputFlag unchanged
+   Value: 1  Min: 0  Max: 1  Default: 1
+Changed value of parameter QCPDual to 1
+   Prev: 0  Min: 0  Max: 1  Default: 0
+Changed value of parameter TimeLimit to 100.0
+   Prev: inf  Min: 0.0  Max: inf  Default: inf
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+Optimize a model with 297 rows, 3146 columns and 6292 nonzeros
+Model fingerprint: 0x0c25d91f
+Model has 4467078 quadratic objective terms
+Variable types: 0 continuous, 3146 integer (3146 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [0e+00, 0e+00]
+  QObjective range [1e-13, 2e+03]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Warning: Model contains large quadratic objective coefficient range
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Found heuristic solution: objective 4577.7333333
+Presolve time: 2.36s
+Presolved: 297 rows, 3146 columns, 6292 nonzeros
+Presolved model has 4470224 quadratic objective terms
+Variable types: 0 continuous, 3146 integer (3146 binary)
+
+Root relaxation: objective -2.077382e+06, 229 iterations, 0.52 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 -2077381.8    0  158 4577.73333 -2077381.8      -     -    5s
+H    0     0                    -5234.300000 -2077381.8      -     -    5s
+H    0     0                    -12683.50000 -2077381.8      -     -    7s
+H    0     0                    -12731.00000 -2077381.8      -     -    8s
+     0     0 -2077381.8    0  158 -12731.000 -2077381.8      -     -    9s
+H    0     0                    -16154.10000 -2045607.7      -     -   10s
+     0     2 -2045607.7    0  158 -16154.100 -2045607.7      -     -   13s
+     7    16 -2026135.7    3  160 -16154.100 -2026135.7      -  11.6   15s
+H   48    64                    -16258.90000 -1975859.0      -  10.2   18s
+H   52    64                    -16293.10000 -1975859.0      -   9.7   18s
+H   59    64                    -16305.90000 -1975859.0      -   9.4   18s
+    63    80 -1972313.6    7  163 -16305.900 -1972313.6      -   9.6   24s
+    95   126 -1941026.2    9  163 -16305.900 -1941026.2      -   9.4   25s
+  1706  1169 -1599072.7   80  206 -16305.900 -1929769.5      -   5.0   30s
+  3004  2305 -1466961.1  141  218 -16305.900 -1929769.5      -   4.4   35s
+  4390  3508 -1366907.5  199  249 -16305.900 -1929769.5      -   4.0   40s
+  5397  4513 -1296291.7  253  263 -16305.900 -1929769.5      -   4.0   45s
+  6577  5455 -1243791.3  310  283 -16305.900 -1929769.5      -   3.9   50s
+  7304  6042 -1212716.9  352  290 -16305.900 -1929769.5      -   3.9   55s
+  8142  7055 -1176459.9  401  325 -16305.900 -1929769.5      -   3.8   60s
+  8797  7734 -1155604.2  438  340 -16305.900 -1929769.5      -   3.8   65s
+  9761  8719 -1127675.6  491  366 -16305.900 -1929769.5      -   3.7   71s
+ 10281  8984 -955002.54  481  158 -16305.900 -1929769.5      -   3.7   76s
+ 10283  8985 -1347575.7   51  158 -16305.900 -1929769.5      -   3.7   85s
+ 10286  8990 -1929769.5   11  159 -16305.900 -1929769.5      -   3.7   94s
+ 10288  8994 -1929769.5   12  160 -16305.900 -1929769.5      -   3.7   96s
+ 10316  9040 -1929769.5   15  160 -16305.900 -1929769.5      -   3.7  100s
+H10343  8581                    -16342.20000 -1929769.5      -   3.8  100s
+
+Explored 10348 nodes (39421 simplex iterations) in 100.60 seconds
+Thread count was 32 (of 32 available processors)
+
+Solution count 9: -16342.2 -16305.9 -16293.1 ... 4577.73
+
+Time limit reached
+Best objective -1.634220000000e+04, best bound -1.929769496981e+06, gap 11708.5050%
+-------------------------------------------------------------------------------
+                                    Summary                                    
+-------------------------------------------------------------------------------
+(CVXPY) Mar 04 09:08:49 PM: Problem status: user_limit
+(CVXPY) Mar 04 09:08:49 PM: Optimal value: 1.634e+04
+(CVXPY) Mar 04 09:08:49 PM: Compilation took 2.778e+00 seconds
+(CVXPY) Mar 04 09:08:49 PM: Solver (including time spent in interface) took 1.015e+02 seconds
+Solution is: {'3P': ('Blake Griffin', 2.0), 'TRB': ('Devin Harris', 77.0), 'AST': ('Marcin Gortat', 0.0), 'STL': ('Andrew Bynum', 1.0), 'BLK': ('Russell Westbrook', 62.0), 'FG': ('Ben Wallace', 1.0), '2P': ('Jason Kidd', 79.0), 'FT': ('Carlos Boozer', 0.0), 'OBPM': ('Josh Smith', 28.0), 'DBPM': ('LeBron James', 54.0), 'VORP': ('Kevin Durant', 133.0)}
+Solution score for iqp rank truth is: 27
+Running time is: 106.71691751480103
+year is: 2013
+For year: 2013 number of players is: 15132 291
+Max score is: 110
+Max score solution: {'TRB': ('Omer Asik', 0), 'STL': ('Mike Conley', 0), 'BLK': ('Serge Ibaka', 0), 'DBPM': ('Joakim Noah', 0), 'AST': ('Greivis Vasquez', 0), 'VORP': ('Marc Gasol', 3), 'FT': ('DeMar DeRozan', 6), 'OBPM': ('Chris Paul', 1), '2P': ('Al Horford', 7), 'FG': ('Monta Ellis', 9), '3P': ('Ryan Anderson', 1)}
+created Weighted_m
+created M
+===============================================================================
+                                     CVXPY                                     
+                                    v1.1.12                                    
+===============================================================================
+(CVXPY) Mar 04 09:09:39 PM: Your problem has 3201 variables, 2 constraints, and 0 parameters.
+(CVXPY) Mar 04 09:09:41 PM: It is compliant with the following grammars: DCP, DQCP
+(CVXPY) Mar 04 09:09:41 PM: (If you need to solve this problem multiple times, but with different data, consider using parameters.)
+(CVXPY) Mar 04 09:09:41 PM: CVXPY will first compile your problem; then, it will invoke a numerical solver to obtain a solution.
+-------------------------------------------------------------------------------
+                                  Compilation                                  
+-------------------------------------------------------------------------------
+(CVXPY) Mar 04 09:09:41 PM: Compiling problem (target solver=GUROBI).
+(CVXPY) Mar 04 09:09:41 PM: Reduction chain: FlipObjective -> CvxAttr2Constr -> Qp2SymbolicQp -> QpMatrixStuffing -> GUROBI
+(CVXPY) Mar 04 09:09:41 PM: Applying reduction FlipObjective
+(CVXPY) Mar 04 09:09:41 PM: Applying reduction CvxAttr2Constr
+(CVXPY) Mar 04 09:09:41 PM: Applying reduction Qp2SymbolicQp
+(CVXPY) Mar 04 09:09:41 PM: Applying reduction QpMatrixStuffing
+(CVXPY) Mar 04 09:09:43 PM: Applying reduction GUROBI
+(CVXPY) Mar 04 09:09:44 PM: Finished problem compilation (took 2.826e+00 seconds).
+-------------------------------------------------------------------------------
+                                Numerical solver                               
+-------------------------------------------------------------------------------
+(CVXPY) Mar 04 09:09:44 PM: Invoking solver GUROBI  to obtain a solution.
+Parameter OutputFlag unchanged
+   Value: 1  Min: 0  Max: 1  Default: 1
+Changed value of parameter QCPDual to 1
+   Prev: 0  Min: 0  Max: 1  Default: 0
+Changed value of parameter TimeLimit to 100.0
+   Prev: inf  Min: 0.0  Max: inf  Default: inf
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+Optimize a model with 302 rows, 3201 columns and 6402 nonzeros
+Model fingerprint: 0xca6fc6d6
+Model has 4628082 quadratic objective terms
+Variable types: 0 continuous, 3201 integer (3201 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [0e+00, 0e+00]
+  QObjective range [1e-13, 3e+03]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Warning: Model contains large quadratic objective coefficient range
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Found heuristic solution: objective -4745.200000
+Presolve time: 2.34s
+Presolved: 302 rows, 3201 columns, 6402 nonzeros
+Presolved model has 4631283 quadratic objective terms
+Variable types: 0 continuous, 3201 integer (3201 binary)
+
+Root relaxation: objective -2.603595e+06, 218 iterations, 0.52 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 -2603595.3    0  157 -4745.2000 -2603595.3      -     -    4s
+H    0     0                    -14198.50000 -2603595.3      -     -    5s
+H    0     0                    -14224.90000 -2603595.3      -     -    8s
+     0     0 -2603595.3    0  157 -14224.900 -2603595.3      -     -    8s
+     0     2 -2575759.3    0  157 -14224.900 -2575759.3      -     -   13s
+     7    16 -2512031.4    3  161 -14224.900 -2512031.4      -   7.9   15s
+H   87    96                    -14720.30000 -2422209.4      -   9.4   17s
+   659   582 -2190148.6   34  190 -14720.300 -2386471.2      -   7.9   21s
+H  880   742                    -20403.70000 -2386471.2      -   6.8   22s
+H  888   742                    -20476.90000 -2386471.2      -   6.8   22s
+  1774  1377 -1990625.6   78  214 -20476.900 -2386471.2      -   5.6   25s
+  3095  2624 -1833569.8  142  256 -20476.900 -2386471.2      -   4.8   30s
+  4132  3535 -1774749.4  184  266 -20476.900 -2386471.2      -   4.5   35s
+  5180  4640 -1706911.4  237  277 -20476.900 -2386471.2      -   4.2   40s
+  6307  5717 -1648585.8  293  287 -20476.900 -2386471.2      -   4.1   45s
+H 6813  5962                    -20513.80000 -2386471.2      -   4.0   47s
+  7094  6357 -1622798.4  325  306 -20513.800 -2386471.2      -   4.0   50s
+  7875  7105 -1590698.8  361  309 -20513.800 -2386471.2      -   3.9   55s
+  8614  7867 -1566374.0  402  305 -20513.800 -2386471.2      -   3.8   60s
+  9425  8705 -1537936.9  448  305 -20513.800 -2386471.2      -   3.7   65s
+ 10326  9317 -938362.14  376  157 -20513.800 -2386471.2      -   3.7   71s
+ 10328  9318 -1324582.8  308  157 -20513.800 -2386471.2      -   3.7   79s
+ 10330  9320 -1039749.1  277  157 -20513.800 -2386471.2      -   3.7   80s
+ 10331  9323 -2386471.2   11  160 -20513.800 -2386471.2      -   3.7   89s
+ 10333  9327 -2386471.2   12  159 -20513.800 -2386471.2      -   3.7   91s
+ 10393  9395 -2386471.2   16  163 -20513.800 -2386471.2      -   3.8   95s
+ 11022  9771 -2354088.9   24  168 -20513.800 -2354088.9      -   4.0  100s
+
+Explored 11054 nodes (44402 simplex iterations) in 101.09 seconds
+Thread count was 32 (of 32 available processors)
+
+Solution count 7: -20513.8 -20476.9 -20403.7 ... -4745.2
+
+Time limit reached
+Best objective -2.051380000000e+04, best bound -2.354088944461e+06, gap 11375.6356%
+-------------------------------------------------------------------------------
+                                    Summary                                    
+-------------------------------------------------------------------------------
+(CVXPY) Mar 04 09:11:26 PM: Problem status: user_limit
+(CVXPY) Mar 04 09:11:26 PM: Optimal value: 2.051e+04
+(CVXPY) Mar 04 09:11:26 PM: Compilation took 2.826e+00 seconds
+(CVXPY) Mar 04 09:11:26 PM: Solver (including time spent in interface) took 1.020e+02 seconds
+Solution is: {'3P': ('David Lee', 0.0), 'TRB': ('Jamal Crawford', 149.0), 'AST': ('Serge Ibaka', 20.0), 'STL': ('Carmelo Anthony', 157.0), 'BLK': ('Russell Westbrook', 97.0), 'FG': ('Reggie Evans', 0.0), '2P': ('Jason Kidd', 114.0), 'FT': ('Nikola Vucevic', 0.0), 'OBPM': ('Kevin Durant', 139.0), 'DBPM': ('LeBron James', 103.0), 'VORP': ('Kobe Bryant', 132.0)}
+Solution score for iqp rank truth is: 33
+Running time is: 106.64752459526062
+year is: 2014
+For year: 2014 number of players is: 15288 294
+Max score is: 110
+Max score solution: {'STL': ('Ricky Rubio', 0), 'AST': ('John Wall', 0), 'TRB': ('DeAndre Jordan', 0), '2P': ('Blake Griffin', 0), 'FT': ('James Harden', 1), 'BLK': ('Serge Ibaka', 0), 'VORP': ('Joakim Noah', 4), 'DBPM': ('Andrew Bogut', 0), '3P': ('Klay Thompson', 1), 'FG': ('Carmelo Anthony', 2), 'OBPM': ('Chris Paul', 4)}
+created Weighted_m
+created M
+===============================================================================
+                                     CVXPY                                     
+                                    v1.1.12                                    
+===============================================================================
+(CVXPY) Mar 04 09:12:16 PM: Your problem has 3234 variables, 2 constraints, and 0 parameters.
+(CVXPY) Mar 04 09:12:18 PM: It is compliant with the following grammars: DCP, DQCP
+(CVXPY) Mar 04 09:12:18 PM: (If you need to solve this problem multiple times, but with different data, consider using parameters.)
+(CVXPY) Mar 04 09:12:18 PM: CVXPY will first compile your problem; then, it will invoke a numerical solver to obtain a solution.
+-------------------------------------------------------------------------------
+                                  Compilation                                  
+-------------------------------------------------------------------------------
+(CVXPY) Mar 04 09:12:18 PM: Compiling problem (target solver=GUROBI).
+(CVXPY) Mar 04 09:12:18 PM: Reduction chain: FlipObjective -> CvxAttr2Constr -> Qp2SymbolicQp -> QpMatrixStuffing -> GUROBI
+(CVXPY) Mar 04 09:12:18 PM: Applying reduction FlipObjective
+(CVXPY) Mar 04 09:12:18 PM: Applying reduction CvxAttr2Constr
+(CVXPY) Mar 04 09:12:18 PM: Applying reduction Qp2SymbolicQp
+(CVXPY) Mar 04 09:12:18 PM: Applying reduction QpMatrixStuffing
+(CVXPY) Mar 04 09:12:21 PM: Applying reduction GUROBI
+(CVXPY) Mar 04 09:12:22 PM: Finished problem compilation (took 3.063e+00 seconds).
+-------------------------------------------------------------------------------
+                                Numerical solver                               
+-------------------------------------------------------------------------------
+(CVXPY) Mar 04 09:12:22 PM: Invoking solver GUROBI  to obtain a solution.
+Parameter OutputFlag unchanged
+   Value: 1  Min: 0  Max: 1  Default: 1
+Changed value of parameter QCPDual to 1
+   Prev: 0  Min: 0  Max: 1  Default: 0
+Changed value of parameter TimeLimit to 100.0
+   Prev: inf  Min: 0.0  Max: inf  Default: inf
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+Optimize a model with 305 rows, 3234 columns and 6468 nonzeros
+Model fingerprint: 0x244b825d
+Model has 4724568 quadratic objective terms
+Variable types: 0 continuous, 3234 integer (3234 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [0e+00, 0e+00]
+  QObjective range [1e-13, 3e+03]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Warning: Model contains large quadratic objective coefficient range
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Found heuristic solution: objective 1625.6333333
+Presolve time: 2.36s
+Presolved: 305 rows, 3234 columns, 6468 nonzeros
+Presolved model has 4727802 quadratic objective terms
+Variable types: 0 continuous, 3234 integer (3234 binary)
+
+Root relaxation: objective -2.730695e+06, 187 iterations, 0.50 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 -2730695.3    0  140 1625.63333 -2730695.3      -     -    5s
+H    0     0                    -13310.23333 -2730695.3      -     -    5s
+H    0     0                    -13645.93333 -2730695.3      -     -    6s
+     0     0 -2571638.7    0  140 -13645.933 -2571638.7      -     -    8s
+     0     2 -2571638.7    0  140 -13645.933 -2571638.7      -     -   13s
+    15    32 -2555631.2    4  144 -13645.933 -2555631.2      -  12.7   15s
+H   95   112                    -21262.76667 -2530417.8      -  10.0   17s
+H  107   112                    -21367.26667 -2530417.8      -   9.9   17s
+   847   729 -2185732.4   47  186 -21367.267 -2530417.8      -   8.5   20s
+H  850   729                    -21451.33333 -2530417.8      -   8.5   20s
+  1542  1444 -2057567.1   81  213 -21451.333 -2530417.8      -   6.7   25s
+  2775  2628 -1865485.3  137  242 -21451.333 -2530417.8      -   5.3   30s
+  3870  3769 -1769765.0  191  255 -21451.333 -2530417.8      -   4.7   35s
+  5041  4960 -1698920.6  245  279 -21451.333 -2530417.8      -   4.4   40s
+  6034  5863 -1647846.6  292  286 -21451.333 -2530417.8      -   4.2   45s
+  6846  6693 -1597223.2  335  309 -21451.333 -2530417.8      -   4.1   50s
+  7500  7208 -1571492.0  370  321 -21451.333 -2530417.8      -   4.1   55s
+  8298  8204 -1550824.5  408  345 -21451.333 -2530417.8      -   4.0   61s
+  8870  8807 -1538922.2  434  355 -21451.333 -2530417.8      -   3.9   65s
+  9790  9706 -1518715.8  477  356 -21451.333 -2530417.8      -   3.9   70s
+ 10467 10010 -781771.10  535  140 -21451.333 -2530417.8      -   3.8   75s
+ 10469 10011 -57636.575  534  140 -21451.333 -2530417.8      -   3.8   82s
+ 10472 10016 -2530417.8   14  143 -21451.333 -2530417.8      -   3.9   91s
+ 10486 10040 -2530417.8   17  144 -21451.333 -2530417.8      -   3.9   95s
+ 10863 10309 -2490206.9   24  145 -21451.333 -2490206.9      -   4.1  100s
+
+Explored 10905 nodes (45299 simplex iterations) in 100.74 seconds
+Thread count was 32 (of 32 available processors)
+
+Solution count 6: -21451.3 -21367.3 -21262.8 ... 1625.63
+
+Time limit reached
+Best objective -2.145133333333e+04, best bound -2.482741975489e+06, gap 11473.8352%
+-------------------------------------------------------------------------------
+                                    Summary                                    
+-------------------------------------------------------------------------------
+(CVXPY) Mar 04 09:14:03 PM: Problem status: user_limit
+(CVXPY) Mar 04 09:14:03 PM: Optimal value: 2.145e+04
+(CVXPY) Mar 04 09:14:03 PM: Compilation took 3.063e+00 seconds
+(CVXPY) Mar 04 09:14:03 PM: Solver (including time spent in interface) took 1.017e+02 seconds
+Solution is: {'3P': ('DeMarcus Cousins', 0.0), 'TRB': ('Tony Parker', 25.0), 'AST': ('Andre Drummond', 0.0), 'STL': ('Kevin Love', 190.0), 'BLK': ('LeBron James', 116.0), 'FG': ('Reggie Evans', 0.0), '2P': ('Pablo Prigioni', 65.0), 'FT': ('Andrew Bogut', 0.0), 'OBPM': ('Blake Griffin', 12.0), 'DBPM': ('Kevin Durant', 192.0), 'VORP': ('Carmelo Anthony', 167.0)}
+Solution score for iqp rank truth is: 26
+Running time is: 107.2162253856659
+year is: 2015
+For year: 2015 number of players is: 16588 319
+Max score is: 110
+Max score solution: {'BLK': ('Rudy Gobert', 1), '3P': ('Klay Thompson', 1), 'DBPM': ('Andrew Bogut', 0), 'TRB': ('DeAndre Jordan', 0), '2P': ('Nikola Vucevic', 1), 'STL': ('Trevor Ariza', 3), 'FG': ('LaMarcus Aldridge', 0), 'VORP': ('LeBron James', 4), 'OBPM': ('Kevin Durant', 4), 'AST': ('John Wall', 1), 'FT': ('DeMarcus Cousins', 2)}
+created Weighted_m
+created M
+===============================================================================
+                                     CVXPY                                     
+                                    v1.1.12                                    
+===============================================================================
+(CVXPY) Mar 04 09:15:10 PM: Your problem has 3509 variables, 2 constraints, and 0 parameters.
+(CVXPY) Mar 04 09:15:12 PM: It is compliant with the following grammars: DCP, DQCP
+(CVXPY) Mar 04 09:15:12 PM: (If you need to solve this problem multiple times, but with different data, consider using parameters.)
+(CVXPY) Mar 04 09:15:12 PM: CVXPY will first compile your problem; then, it will invoke a numerical solver to obtain a solution.
+-------------------------------------------------------------------------------
+                                  Compilation                                  
+-------------------------------------------------------------------------------
+(CVXPY) Mar 04 09:15:12 PM: Compiling problem (target solver=GUROBI).
+(CVXPY) Mar 04 09:15:12 PM: Reduction chain: FlipObjective -> CvxAttr2Constr -> Qp2SymbolicQp -> QpMatrixStuffing -> GUROBI
+(CVXPY) Mar 04 09:15:12 PM: Applying reduction FlipObjective
+(CVXPY) Mar 04 09:15:12 PM: Applying reduction CvxAttr2Constr
+(CVXPY) Mar 04 09:15:12 PM: Applying reduction Qp2SymbolicQp
+(CVXPY) Mar 04 09:15:12 PM: Applying reduction QpMatrixStuffing
+(CVXPY) Mar 04 09:15:15 PM: Applying reduction GUROBI
+(CVXPY) Mar 04 09:15:15 PM: Finished problem compilation (took 3.367e+00 seconds).
+-------------------------------------------------------------------------------
+                                Numerical solver                               
+-------------------------------------------------------------------------------
+(CVXPY) Mar 04 09:15:15 PM: Invoking solver GUROBI  to obtain a solution.
+Parameter OutputFlag unchanged
+   Value: 1  Min: 0  Max: 1  Default: 1
+Changed value of parameter QCPDual to 1
+   Prev: 0  Min: 0  Max: 1  Default: 0
+Changed value of parameter TimeLimit to 100.0
+   Prev: inf  Min: 0.0  Max: inf  Default: inf
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+Optimize a model with 330 rows, 3509 columns and 7018 nonzeros
+Model fingerprint: 0xd041b33b
+Model has 5564906 quadratic objective terms
+Variable types: 0 continuous, 3509 integer (3509 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [0e+00, 0e+00]
+  QObjective range [1e-13, 3e+03]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Warning: Model contains large quadratic objective coefficient range
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Found heuristic solution: objective 4411.8333333
+Presolve time: 2.96s
+Presolved: 330 rows, 3509 columns, 7018 nonzeros
+Presolved model has 5568415 quadratic objective terms
+Variable types: 0 continuous, 3509 integer (3509 binary)
+
+Root relaxation: objective -2.945291e+06, 186 iterations, 0.54 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 -2945290.7    0  140 4411.83333 -2945290.7      -     -    5s
+H    0     0                    -7781.000000 -2945290.7      -     -    6s
+H    0     0                    -11097.80000 -2945290.7      -     -    6s
+     0     0 -2945290.7    0  140 -11097.800 -2945290.7      -     -    9s
+H    0     0                    -11186.60000 -2898267.4      -     -   10s
+     0     2 -2898267.4    0  140 -11186.600 -2898267.4      -     -   14s
+     1     4 -2831117.1    1  142 -11186.600 -2831117.1      -   5.0   15s
+H   95   112                    -20066.10000 -2645828.9      -   9.7   20s
+H   96   112                    -20077.10000 -2643312.4      -   9.7   20s
+H  686   590                    -20248.70000 -2558449.1      -   7.5   23s
+H  690   590                    -20257.00000 -2558449.1      -   7.5   23s
+  1121   813 -2211862.8   53  175 -20257.000 -2558449.1      -   7.1   25s
+  2233  1864 -1977211.0  112  227 -20257.000 -2558449.1      -   5.6   30s
+  3392  2849 -1858109.2  166  234 -20257.000 -2558449.1      -   4.8   35s
+  4457  3892 -1771536.9  219  264 -20257.000 -2558449.1      -   4.4   40s
+  5387  4844 -1707191.1  270  266 -20257.000 -2558449.1      -   4.2   45s
+  5959  5438 -1676573.9  300  266 -20257.000 -2558449.1      -   4.1   50s
+  6931  6428 -1612995.6  357  279 -20257.000 -2558449.1      -   4.0   56s
+  7568  7078 -1572536.1  394  300 -20257.000 -2558449.1      -   4.0   60s
+  7979  7363 -1547799.6  419  323 -20257.000 -2558449.1      -   3.9   66s
+  8569  8121 -1522767.1  448  325 -20257.000 -2558449.1      -   3.9   71s
+  9099  8670 -1504362.4  478  329 -20257.000 -2558449.1      -   3.8   75s
+  9963  9564 -1476826.7  526  346 -20257.000 -2558449.1      -   3.8   81s
+ 10274  9565 -741443.19  583  140 -20257.000 -2558449.1      -   3.8   85s
+ 10276  9566 -1205373.2  118  140 -20257.000 -2558449.1      -   3.8   93s
+ 10279  9571 -2558449.1   12  142 -20257.000 -2558449.1      -   3.8  100s
+
+Explored 10281 nodes (39023 simplex iterations) in 101.25 seconds
+Thread count was 32 (of 32 available processors)
+
+Solution count 8: -20257 -20248.7 -20077.1 ... 4411.83
+
+Time limit reached
+Best objective -2.025700000000e+04, best bound -2.558449077880e+06, gap 12529.9505%
+-------------------------------------------------------------------------------
+                                    Summary                                    
+-------------------------------------------------------------------------------
+(CVXPY) Mar 04 09:16:58 PM: Problem status: user_limit
+(CVXPY) Mar 04 09:16:58 PM: Optimal value: 2.026e+04
+(CVXPY) Mar 04 09:16:58 PM: Compilation took 3.367e+00 seconds
+(CVXPY) Mar 04 09:16:58 PM: Solver (including time spent in interface) took 1.023e+02 seconds
+Solution is: {'3P': ('Anthony Davis', 1.0), 'TRB': ('Monta Ellis', 81.0), 'AST': ('Andre Drummond', 0.0), 'STL': ('Pau Gasol', 12.0), 'BLK': ('Russell Westbrook', 86.0), 'FG': ('Reggie Evans', 0.0), '2P': ('Kyle Korver', 221.0), 'FT': ('Andrew Bogut', 0.0), 'OBPM': ('James Harden', 208.0), 'DBPM': ('Stephen Curry', 286.0), 'VORP': ('Chris Paul', 139.0)}
+Solution score for iqp rank truth is: 25
+Running time is: 108.5280590057373
+year is: 2016
+For year: 2016 number of players is: 15548 299
+Max score is: 110
+Max score solution: {'BLK': ('Hassan Whiteside', 0), 'AST': ('Rajon Rondo', 0), '2P': ('Karl-Anthony Towns', 1), 'STL': ('Ricky Rubio', 2), 'TRB': ('Andre Drummond', 0), 'OBPM': ('Chris Paul', 2), 'VORP': ('Kyle Lowry', 5), 'FG': ('C.J. McCollum', 6), '3P': ('Damian Lillard', 3), 'DBPM': ('Andrew Bogut', 0), 'FT': ('DeMar DeRozan', 1)}
+created Weighted_m
+created M
+===============================================================================
+                                     CVXPY                                     
+                                    v1.1.12                                    
+===============================================================================
+(CVXPY) Mar 04 09:17:50 PM: Your problem has 3289 variables, 2 constraints, and 0 parameters.
+(CVXPY) Mar 04 09:17:53 PM: It is compliant with the following grammars: DCP, DQCP
+(CVXPY) Mar 04 09:17:53 PM: (If you need to solve this problem multiple times, but with different data, consider using parameters.)
+(CVXPY) Mar 04 09:17:53 PM: CVXPY will first compile your problem; then, it will invoke a numerical solver to obtain a solution.
+-------------------------------------------------------------------------------
+                                  Compilation                                  
+-------------------------------------------------------------------------------
+(CVXPY) Mar 04 09:17:53 PM: Compiling problem (target solver=GUROBI).
+(CVXPY) Mar 04 09:17:53 PM: Reduction chain: FlipObjective -> CvxAttr2Constr -> Qp2SymbolicQp -> QpMatrixStuffing -> GUROBI
+(CVXPY) Mar 04 09:17:53 PM: Applying reduction FlipObjective
+(CVXPY) Mar 04 09:17:53 PM: Applying reduction CvxAttr2Constr
+(CVXPY) Mar 04 09:17:53 PM: Applying reduction Qp2SymbolicQp
+(CVXPY) Mar 04 09:17:53 PM: Applying reduction QpMatrixStuffing
+(CVXPY) Mar 04 09:17:56 PM: Applying reduction GUROBI
+(CVXPY) Mar 04 09:17:56 PM: Finished problem compilation (took 3.186e+00 seconds).
+-------------------------------------------------------------------------------
+                                Numerical solver                               
+-------------------------------------------------------------------------------
+(CVXPY) Mar 04 09:17:56 PM: Invoking solver GUROBI  to obtain a solution.
+Parameter OutputFlag unchanged
+   Value: 1  Min: 0  Max: 1  Default: 1
+Changed value of parameter QCPDual to 1
+   Prev: 0  Min: 0  Max: 1  Default: 0
+Changed value of parameter TimeLimit to 100.0
+   Prev: inf  Min: 0.0  Max: inf  Default: inf
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+Optimize a model with 310 rows, 3289 columns and 6578 nonzeros
+Model fingerprint: 0x70fe920c
+Model has 4888402 quadratic objective terms
+Variable types: 0 continuous, 3289 integer (3289 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [0e+00, 0e+00]
+  QObjective range [1e-13, 3e+03]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Warning: Model contains large quadratic objective coefficient range
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Found heuristic solution: objective 3791.1000000
+Presolve time: 2.69s
+Presolved: 310 rows, 3289 columns, 6578 nonzeros
+Presolved model has 4891691 quadratic objective terms
+Variable types: 0 continuous, 3289 integer (3289 binary)
+
+Root relaxation: objective -2.838855e+06, 193 iterations, 0.51 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 -2838855.4    0  141 3791.10000 -2838855.4      -     -    5s
+H    0     0                    -11807.70000 -2838855.4      -     -    6s
+     0     0 -2838855.4    0  141 -11807.700 -2838855.4      -     -    8s
+     0     2 -2800615.5    0  141 -11807.700 -2800615.5      -     -   13s
+     7    16 -2649696.0    3  145 -11807.700 -2649696.0      -   9.7   15s
+H   79    96                    -20949.70000 -2567407.6      -  10.9   18s
+H   95   112                    -21012.00000 -2546180.6      -  11.3   19s
+H  100   112                    -21018.20000 -2535957.9      -  11.4   19s
+   306   311 -2389513.6   18  160 -21018.200 -2429638.4      -   8.2   20s
+  1980  1473 -2078198.0   80  203 -21018.200 -2429638.4      -   5.1   25s
+  3153  2652 -1885008.1  142  234 -21018.200 -2429638.4      -   4.5   30s
+  4183  3717 -1788176.3  196  245 -21018.200 -2429638.4      -   4.2   35s
+  5206  4772 -1700910.2  252  263 -21018.200 -2429638.4      -   4.0   40s
+H 5965  5368                    -21062.40000 -2429638.4      -   3.9   44s
+  5975  5542 -1650804.9  290  272 -21062.400 -2429638.4      -   3.9   46s
+  6513  6095 -1618106.0  321  278 -21062.400 -2429638.4      -   3.9   50s
+  7095  6514 -1581496.5  355  294 -21062.400 -2429638.4      -   3.8   55s
+  7751  7363 -1544265.7  393  304 -21062.400 -2429638.4      -   3.8   61s
+  8254  7883 -1525329.9  420  318 -21062.400 -2429638.4      -   3.7   66s
+  8978  8627 -1491695.1  462  325 -21062.400 -2429638.4      -   3.7   71s
+  9497  9161 -1477100.7  492  338 -21062.400 -2429638.4      -   3.7   75s
+ 10332  9725 -76273.137  397  141 -21062.400 -2429638.4      -   3.6   81s
+ 10334  9726 -457611.12   38  141 -21062.400 -2429638.4      -   3.6   89s
+ 10336  9728 -1263084.6  475  141 -21062.400 -2429638.4      -   3.6   90s
+ 10337  9731 -2429638.4   10  144 -21062.400 -2429638.4      -   3.7   98s
+ 10339  9735 -2429638.4   11  143 -21062.400 -2429638.4      -   3.7  100s
+
+Explored 10343 nodes (37999 simplex iterations) in 100.40 seconds
+Thread count was 32 (of 32 available processors)
+
+Solution count 6: -21062.4 -21018.2 -21012 ... 3791.1
+
+Time limit reached
+Best objective -2.106240000000e+04, best bound -2.429638373453e+06, gap 11435.4298%
+-------------------------------------------------------------------------------
+                                    Summary                                    
+-------------------------------------------------------------------------------
+(CVXPY) Mar 04 09:19:37 PM: Problem status: user_limit
+(CVXPY) Mar 04 09:19:37 PM: Optimal value: 2.106e+04
+(CVXPY) Mar 04 09:19:37 PM: Compilation took 3.186e+00 seconds
+(CVXPY) Mar 04 09:19:37 PM: Solver (including time spent in interface) took 1.014e+02 seconds
+Solution is: {'3P': ('Andre Drummond', 2.0), 'TRB': ('Isaiah Thomas', 167.0), 'AST': ('Hassan Whiteside', 0.0), 'STL': ('Kevin Durant', 186.0), 'BLK': ('Stephen Curry', 402.0), 'FG': ('Joakim Noah', 0.0), '2P': ('Anthony Tolliver', 98.0), 'FT': ('Rajon Rondo', 62.0), 'OBPM': ('LeBron James', 87.0), 'DBPM': ('James Harden', 236.0), 'VORP': ('Russell Westbrook', 101.0)}
+Solution score for iqp rank truth is: 26
+Running time is: 107.19138240814209
+year is: 2017
+For year: 2017 number of players is: 16120 310
+Max score is: 110
+Max score solution: {'TRB': ('Andre Drummond', 0), '2P': ('Anthony Davis', 0), 'AST': ('Ricky Rubio', 3), '3P': ('Stephen Curry', 0), 'BLK': ('Rudy Gobert', 0), 'OBPM': ('Chris Paul', 3), 'FG': ('Karl-Anthony Towns', 1), 'FT': ('Jimmy Butler', 3), 'VORP': ('LeBron James', 2), 'DBPM': ('Lucas Nogueira', 0), 'STL': ('Draymond Green', 1)}
+created Weighted_m
+created M
+===============================================================================
+                                     CVXPY                                     
+                                    v1.1.12                                    
+===============================================================================
+(CVXPY) Mar 04 09:20:38 PM: Your problem has 3410 variables, 2 constraints, and 0 parameters.
+(CVXPY) Mar 04 09:20:39 PM: It is compliant with the following grammars: DCP, DQCP
+(CVXPY) Mar 04 09:20:39 PM: (If you need to solve this problem multiple times, but with different data, consider using parameters.)
+(CVXPY) Mar 04 09:20:39 PM: CVXPY will first compile your problem; then, it will invoke a numerical solver to obtain a solution.
+-------------------------------------------------------------------------------
+                                  Compilation                                  
+-------------------------------------------------------------------------------
+(CVXPY) Mar 04 09:20:39 PM: Compiling problem (target solver=GUROBI).
+(CVXPY) Mar 04 09:20:39 PM: Reduction chain: FlipObjective -> CvxAttr2Constr -> Qp2SymbolicQp -> QpMatrixStuffing -> GUROBI
+(CVXPY) Mar 04 09:20:39 PM: Applying reduction FlipObjective
+(CVXPY) Mar 04 09:20:39 PM: Applying reduction CvxAttr2Constr
+(CVXPY) Mar 04 09:20:39 PM: Applying reduction Qp2SymbolicQp
+(CVXPY) Mar 04 09:20:39 PM: Applying reduction QpMatrixStuffing
+(CVXPY) Mar 04 09:20:42 PM: Applying reduction GUROBI
+(CVXPY) Mar 04 09:20:42 PM: Finished problem compilation (took 3.198e+00 seconds).
+-------------------------------------------------------------------------------
+                                Numerical solver                               
+-------------------------------------------------------------------------------
+(CVXPY) Mar 04 09:20:42 PM: Invoking solver GUROBI  to obtain a solution.
+Parameter OutputFlag unchanged
+   Value: 1  Min: 0  Max: 1  Default: 1
+Changed value of parameter QCPDual to 1
+   Prev: 0  Min: 0  Max: 1  Default: 0
+Changed value of parameter TimeLimit to 100.0
+   Prev: inf  Min: 0.0  Max: inf  Default: inf
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+Optimize a model with 321 rows, 3410 columns and 6820 nonzeros
+Model fingerprint: 0x054a7984
+Model has 5254916 quadratic objective terms
+Variable types: 0 continuous, 3410 integer (3410 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [0e+00, 0e+00]
+  QObjective range [1e-13, 3e+03]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Warning: Model contains large quadratic objective coefficient range
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Found heuristic solution: objective -1146.800000
+Presolve time: 2.69s
+Presolved: 321 rows, 3410 columns, 6820 nonzeros
+Presolved model has 5258326 quadratic objective terms
+Variable types: 0 continuous, 3410 integer (3410 binary)
+
+Root relaxation: objective -3.366233e+06, 161 iterations, 0.50 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 -3366233.4    0  132 -1146.8000 -3366233.4      -     -    5s
+H    0     0                    -9089.900000 -3366233.4      -     -    6s
+H    0     0                    -12148.10000 -3366233.4      -     -    6s
+     0     0 -3366233.4    0  132 -12148.100 -3366233.4      -     -    9s
+H    0     0                    -16665.70000 -3309488.6      -     -   11s
+     0     2 -3309488.6    0  132 -16665.700 -3309488.6      -     -   14s
+     1     4 -3309488.6    1  134 -16665.700 -3309488.6      -   5.0   15s
+H   79    96                    -19188.90000 -3054079.7      -  10.1   19s
+   280   280 -2836509.0   18  144 -19188.900 -3054079.7      -   8.0   20s
+H  370   345                    -23480.90000 -3054079.7      -   8.1   21s
+  1505  1150 -2391517.2   72  156 -23480.900 -3054079.7      -   6.4   25s
+  3082  2216 -2018795.8  142  232 -23480.900 -3054079.7      -   5.1   30s
+  4292  3321 -1887436.7  196  269 -23480.900 -3054079.7      -   4.6   35s
+  5500  4553 -1815006.0  254  262 -23480.900 -3054079.7      -   4.3   40s
+  6382  5462 -1755971.9  299  282 -23480.900 -3054079.7      -   4.1   45s
+  7397  6504 -1692321.4  352  282 -23480.900 -3054079.7      -   4.0   50s
+  8331  7481 -1643327.5  403  282 -23480.900 -3054079.7      -   3.9   55s
+  8983  8087 -1620319.9  433  293 -23480.900 -3054079.7      -   3.9   60s
+  9865  8905 -1581238.7  477  307 -23480.900 -3054079.7      -   3.9   65s
+ 10432  9190 -1950136.9   71  132 -23480.900 -3054079.7      -   3.8   70s
+ 10434  9191 -1264388.4  129  132 -23480.900 -3054079.7      -   3.8   78s
+ 10436  9193 -84856.291  592  132 -23480.900 -3054079.7      -   3.8   80s
+ 10437  9196 -3054079.7   15  134 -23480.900 -3054079.7      -   3.8   89s
+ 10439  9200 -3054079.7   16  133 -23480.900 -3054079.7      -   3.8   91s
+ 10531  9289 -2444377.2   20  129 -23480.900 -3023940.6      -   3.9   96s
+ 10859  9502 -2929040.7   25  143 -23480.900 -2929040.7      -   4.0  100s
+
+Explored 10891 nodes (44231 simplex iterations) in 100.62 seconds
+Thread count was 32 (of 32 available processors)
+
+Solution count 6: -23480.9 -19188.9 -16665.7 ... -1146.8
+
+Time limit reached
+Best objective -2.348090000000e+04, best bound -2.929040664561e+06, gap 12374.1414%
+-------------------------------------------------------------------------------
+                                    Summary                                    
+-------------------------------------------------------------------------------
+(CVXPY) Mar 04 09:22:24 PM: Problem status: user_limit
+(CVXPY) Mar 04 09:22:24 PM: Optimal value: 2.348e+04
+(CVXPY) Mar 04 09:22:24 PM: Compilation took 3.198e+00 seconds
+(CVXPY) Mar 04 09:22:24 PM: Solver (including time spent in interface) took 1.016e+02 seconds
+/home/pcs00440/initial_problem/initial_venv/lib/python3.6/site-packages/cvxpy/problems/problem.py:1268: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  "Solution may be inaccurate. Try another solver, "
+/home/pcs00440/initial_problem/initial_venv/lib/python3.6/site-packages/cvxpy/problems/problem.py:1268: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  "Solution may be inaccurate. Try another solver, "
+/home/pcs00440/initial_problem/initial_venv/lib/python3.6/site-packages/cvxpy/problems/problem.py:1268: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  "Solution may be inaccurate. Try another solver, "
+/home/pcs00440/initial_problem/initial_venv/lib/python3.6/site-packages/cvxpy/problems/problem.py:1268: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  "Solution may be inaccurate. Try another solver, "
+/home/pcs00440/initial_problem/initial_venv/lib/python3.6/site-packages/cvxpy/problems/problem.py:1268: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  "Solution may be inaccurate. Try another solver, "
+/home/pcs00440/initial_problem/initial_venv/lib/python3.6/site-packages/cvxpy/problems/problem.py:1268: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  "Solution may be inaccurate. Try another solver, "
+/home/pcs00440/initial_problem/initial_venv/lib/python3.6/site-packages/cvxpy/problems/problem.py:1268: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  "Solution may be inaccurate. Try another solver, "
+/home/pcs00440/initial_problem/initial_venv/lib/python3.6/site-packages/cvxpy/problems/problem.py:1268: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  "Solution may be inaccurate. Try another solver, "
+Solution is: {'3P': ('Anthony Davis', 40.0), 'TRB': ('Isaiah Thomas', 245.0), 'AST': ('Hassan Whiteside', 0.0), 'STL': ('Karl-Anthony Towns', 101.0), 'BLK': ('Russell Westbrook', 200.0), 'FG': ('Omer Asik', 0.0), '2P': ('Danny Green', 118.0), 'FT': ('Rajon Rondo', 50.0), 'OBPM': ('Giannis Antetokounmpo', 49.0), 'DBPM': ('James Harden', 262.0), 'VORP': ('LeBron James', 124.0)}
+Solution score for iqp rank truth is: 28
+Running time is: 106.57482123374939
+Exiting main!

@@ -1,0 +1,912 @@
+Considering the following customized categories: {'artificial intelligence': 1, 'natural language processing': 1, 'robotics': 1, 'neural networks': 1}
+Creating graphs.
+Creating graphs.
+Time required to create graphhs is: 15.763591051101685 sec
+Adding cross-edges to the graph.
+Category is: artificial intelligence
+New number of nodes of graph: 43716
+New number of edges of graph: 828114
+Category is: natural language processing
+New number of nodes of graph: 16749
+New number of edges of graph: 640203
+Category is: robotics
+New number of nodes of graph: 31188
+New number of edges of graph: 883725
+Category is: neural networks
+New number of nodes of graph: 39135
+New number of edges of graph: 671388
+Time required to add cross-edges is: 2.2725894451141357 sec
+Cleaning graphs.
+Creating core graph.
+Creating core graph.
+Creating core graph.
+Creating core graph.
+Length of nodes list: 30446 length of nodes 0
+Length of nodes list: 13068 length of nodes 30446
+Length of nodes list: 25796 length of nodes 43514
+Length of nodes list: 28473 length of nodes 69310
+Number of unique nodes 68978 number of all nodes: 97783
+Avg End./Role: 728726.0
+Avg End./Expert: 42.258459218881384
+Max End./Expert 4703
+Number of overlapping nodes: 28473
+Number of intersecting nodes: 599
+Iteration of graph random: 0
+Found best solution in algorithms random: 47
+Time to run one loop of graph algorithm random: 2.682398796081543
+Iteration of graph random: 1
+Found best solution in algorithms random: 50
+Time to run one loop of graph algorithm random: 2.5475995540618896
+Iteration of graph random: 2
+Found best solution in algorithms random: 60
+Time to run one loop of graph algorithm random: 2.4088313579559326
+Iteration of graph random: 3
+Found best solution in algorithms random: 62
+Time to run one loop of graph algorithm random: 2.4141876697540283
+Iteration of graph random: 4
+Time to run one loop of graph algorithm random: 2.245203971862793
+Iteration of graph random: 5
+Time to run one loop of graph algorithm random: 1.6680216789245605
+Iteration of graph random: 6
+Time to run one loop of graph algorithm random: 2.537169933319092
+Iteration of graph random: 7
+Time to run one loop of graph algorithm random: 2.5523691177368164
+Iteration of graph random: 8
+Time to run one loop of graph algorithm random: 2.537440299987793
+Iteration of graph random: 9
+Time to run one loop of graph algorithm random: 1.6615114212036133
+Iteration of graph random: 10
+Time to run one loop of graph algorithm random: 2.5168161392211914
+Iteration of graph random: 11
+Time to run one loop of graph algorithm random: 2.3852546215057373
+Iteration of graph random: 12
+Time to run one loop of graph algorithm random: 2.39699125289917
+Iteration of graph random: 13
+Time to run one loop of graph algorithm random: 1.6467540264129639
+Iteration of graph random: 14
+Time to run one loop of graph algorithm random: 1.6677398681640625
+Iteration of graph random: 15
+Time to run one loop of graph algorithm random: 2.5219478607177734
+Iteration of graph random: 16
+Time to run one loop of graph algorithm random: 2.246204137802124
+Iteration of graph random: 17
+Time to run one loop of graph algorithm random: 1.6635165214538574
+Iteration of graph random: 18
+Time to run one loop of graph algorithm random: 2.394644260406494
+Iteration of graph random: 19
+Time to run one loop of graph algorithm random: 2.3983817100524902
+Iteration of graph random: 20
+Time to run one loop of graph algorithm random: 2.526578187942505
+Iteration of graph random: 21
+Time to run one loop of graph algorithm random: 2.399505138397217
+Iteration of graph random: 22
+Time to run one loop of graph algorithm random: 2.255540132522583
+Iteration of graph random: 23
+Time to run one loop of graph algorithm random: 2.4166336059570312
+Iteration of graph random: 24
+Time to run one loop of graph algorithm random: 2.547255039215088
+Iteration of graph random: 25
+Time to run one loop of graph algorithm random: 2.262032985687256
+Iteration of graph random: 26
+Time to run one loop of graph algorithm random: 2.5571329593658447
+Iteration of graph random: 27
+Time to run one loop of graph algorithm random: 2.6606693267822266
+Iteration of graph random: 28
+Time to run one loop of graph algorithm random: 2.5239760875701904
+Iteration of graph random: 29
+Time to run one loop of graph algorithm random: 2.4099559783935547
+Iteration of graph random: 30
+Time to run one loop of graph algorithm random: 2.5284247398376465
+Iteration of graph random: 31
+Time to run one loop of graph algorithm random: 2.282536745071411
+Iteration of graph random: 32
+Time to run one loop of graph algorithm random: 2.2493896484375
+Iteration of graph random: 33
+Time to run one loop of graph algorithm random: 2.5305793285369873
+Iteration of graph random: 34
+Time to run one loop of graph algorithm random: 2.407970428466797
+Iteration of graph random: 35
+Time to run one loop of graph algorithm random: 2.4126265048980713
+Iteration of graph random: 36
+Time to run one loop of graph algorithm random: 2.2520241737365723
+Iteration of graph random: 37
+Time to run one loop of graph algorithm random: 2.2581369876861572
+Iteration of graph random: 38
+Time to run one loop of graph algorithm random: 1.6792855262756348
+Iteration of graph random: 39
+Time to run one loop of graph algorithm random: 2.524585247039795
+Iteration of graph random: 40
+Time to run one loop of graph algorithm random: 2.52933931350708
+Iteration of graph random: 41
+Time to run one loop of graph algorithm random: 1.649226427078247
+Iteration of graph random: 42
+Time to run one loop of graph algorithm random: 2.3925609588623047
+Iteration of graph random: 43
+Time to run one loop of graph algorithm random: 2.256544828414917
+Iteration of graph random: 44
+Time to run one loop of graph algorithm random: 2.2341959476470947
+Iteration of graph random: 45
+Time to run one loop of graph algorithm random: 2.5467119216918945
+Iteration of graph random: 46
+Time to run one loop of graph algorithm random: 2.392184257507324
+Iteration of graph random: 47
+Time to run one loop of graph algorithm random: 2.555921792984009
+Iteration of graph random: 48
+Time to run one loop of graph algorithm random: 2.5532264709472656
+Iteration of graph random: 49
+Time to run one loop of graph algorithm random: 2.535295009613037
+Best Random solution is: {'artificial intelligence': (b'Alexander I. Rudnicky', 12.5), 'neural networks': (b'Yu Zhao', 12.0), 'natural language processing': (b'Christophe Cerisara', 19.5), 'robotics': (b'Tao Chen', 33.0)}
+Solution score for antisymmetric random truth is: 62 mean is: 50.02 standard deviation is: 7.1119336329861795
+Running time is: 119.02587938308716
+
+Time to run one loop of graph algorithm greedy: 3.8853437900543213
+Best Greedy solution is: {'artificial intelligence': (b'Yuan Wang', 2703.0), 'neural networks': (b'Yu Zhao', 12.0), 'natural language processing': (b'Christophe Cerisara', 18.5), 'robotics': (b'Tao Chen', 28.0)}
+Solution score for antisymmetric greedy truth is: 55 mean is: 55.0 standard deviation is: 0.0
+Running time is: 6.497807264328003
+
+Considering the following customized categories: {'data mining': 1, 'databases': 1, 'algorithms and theory': 1, 'algorithms': 1}
+Creating graphs.
+Creating graphs.
+Time required to create graphhs is: 9.750040531158447 sec
+Adding cross-edges to the graph.
+Category is: data mining
+New number of nodes of graph: 18953
+New number of edges of graph: 497386
+Category is: databases
+New number of nodes of graph: 24693
+New number of edges of graph: 969093
+Category is: algorithms and theory
+New number of nodes of graph: 14324
+New number of edges of graph: 246467
+Category is: algorithms
+New number of nodes of graph: 9072
+New number of edges of graph: 113859
+Time required to add cross-edges is: 1.5998518466949463 sec
+Cleaning graphs.
+Creating core graph.
+Creating core graph.
+Creating core graph.
+Creating core graph.
+Length of nodes list: 15157 length of nodes 0
+Length of nodes list: 20295 length of nodes 15157
+Length of nodes list: 8997 length of nodes 35452
+Length of nodes list: 5449 length of nodes 44449
+Number of unique nodes 31701 number of all nodes: 49898
+Avg End./Role: 442794.25
+Avg End./Expert: 55.87132898015835
+Max End./Expert 3995
+Number of overlapping nodes: 5449
+Number of intersecting nodes: 1111
+Iteration of graph random: 0
+Found best solution in algorithms random: 53
+Time to run one loop of graph algorithm random: 7.992778301239014
+Iteration of graph random: 1
+Time to run one loop of graph algorithm random: 7.998339414596558
+Iteration of graph random: 2
+Time to run one loop of graph algorithm random: 5.888193130493164
+Iteration of graph random: 3
+Time to run one loop of graph algorithm random: 8.432031393051147
+Iteration of graph random: 4
+Time to run one loop of graph algorithm random: 8.459542274475098
+Iteration of graph random: 5
+Time to run one loop of graph algorithm random: 7.987728595733643
+Iteration of graph random: 6
+Time to run one loop of graph algorithm random: 5.869990110397339
+Iteration of graph random: 7
+Time to run one loop of graph algorithm random: 6.011107921600342
+Iteration of graph random: 8
+Time to run one loop of graph algorithm random: 8.077161073684692
+Iteration of graph random: 9
+Time to run one loop of graph algorithm random: 7.987719297409058
+Iteration of graph random: 10
+Time to run one loop of graph algorithm random: 5.843727350234985
+Iteration of graph random: 11
+Time to run one loop of graph algorithm random: 9.030664205551147
+Iteration of graph random: 12
+Time to run one loop of graph algorithm random: 8.437471628189087
+Iteration of graph random: 13
+Time to run one loop of graph algorithm random: 7.9495463371276855
+Iteration of graph random: 14
+Time to run one loop of graph algorithm random: 5.815169095993042
+Iteration of graph random: 15
+Time to run one loop of graph algorithm random: 8.53442931175232
+Iteration of graph random: 16
+Time to run one loop of graph algorithm random: 8.538536548614502
+Iteration of graph random: 17
+Time to run one loop of graph algorithm random: 9.026624202728271
+Iteration of graph random: 18
+Time to run one loop of graph algorithm random: 8.40250849723816
+Iteration of graph random: 19
+Time to run one loop of graph algorithm random: 8.907560110092163
+Iteration of graph random: 20
+Time to run one loop of graph algorithm random: 8.469270467758179
+Iteration of graph random: 21
+Time to run one loop of graph algorithm random: 8.922284364700317
+Iteration of graph random: 22
+Time to run one loop of graph algorithm random: 9.049862146377563
+Iteration of graph random: 23
+Time to run one loop of graph algorithm random: 8.590116500854492
+Iteration of graph random: 24
+Time to run one loop of graph algorithm random: 8.509117841720581
+Iteration of graph random: 25
+Time to run one loop of graph algorithm random: 8.904775142669678
+Iteration of graph random: 26
+Time to run one loop of graph algorithm random: 8.44214415550232
+Iteration of graph random: 27
+Time to run one loop of graph algorithm random: 9.191283702850342
+Iteration of graph random: 28
+Time to run one loop of graph algorithm random: 7.936690330505371
+Iteration of graph random: 29
+Time to run one loop of graph algorithm random: 8.965079069137573
+Iteration of graph random: 30
+Time to run one loop of graph algorithm random: 8.996151208877563
+Iteration of graph random: 31
+Time to run one loop of graph algorithm random: 8.954775094985962
+Iteration of graph random: 32
+Time to run one loop of graph algorithm random: 8.039867639541626
+Iteration of graph random: 33
+Time to run one loop of graph algorithm random: 9.014137029647827
+Iteration of graph random: 34
+Time to run one loop of graph algorithm random: 5.883447170257568
+Iteration of graph random: 35
+Found best solution in algorithms random: 54
+Time to run one loop of graph algorithm random: 5.887647390365601
+Iteration of graph random: 36
+Time to run one loop of graph algorithm random: 8.596121072769165
+Iteration of graph random: 37
+Time to run one loop of graph algorithm random: 8.633207559585571
+Iteration of graph random: 38
+Time to run one loop of graph algorithm random: 5.834035873413086
+Iteration of graph random: 39
+Time to run one loop of graph algorithm random: 9.031017303466797
+Iteration of graph random: 40
+Time to run one loop of graph algorithm random: 9.059720516204834
+Iteration of graph random: 41
+Time to run one loop of graph algorithm random: 8.513535261154175
+Iteration of graph random: 42
+Time to run one loop of graph algorithm random: 5.929660081863403
+Iteration of graph random: 43
+Time to run one loop of graph algorithm random: 5.823528051376343
+Iteration of graph random: 44
+Time to run one loop of graph algorithm random: 5.871198892593384
+Iteration of graph random: 45
+Time to run one loop of graph algorithm random: 7.971131801605225
+Iteration of graph random: 46
+Time to run one loop of graph algorithm random: 9.1139657497406
+Iteration of graph random: 47
+Time to run one loop of graph algorithm random: 8.39889669418335
+Iteration of graph random: 48
+Time to run one loop of graph algorithm random: 7.92238974571228
+Iteration of graph random: 49
+Time to run one loop of graph algorithm random: 7.946784257888794
+Best Random solution is: {'databases': (b'Yuval Shavitt', 4130.666666666667), 'algorithms and theory': (b'Andr Nichterlein', 10.0), 'algorithms': (b'Blair D. Sullivan', 17.5), 'data mining': (b'Daniel P. Miranker', 27.0)}
+Solution score for antisymmetric random truth is: 54 mean is: 49.24 standard deviation is: 4.17880365655052
+Running time is: 406.88666820526123
+
+Time to run one loop of graph algorithm greedy: 13.08020281791687
+Best Greedy solution is: {'algorithms': (b'Jukka Kohonen', 5826.666666666667), 'data mining': (b'Qinming He', 10.0), 'algorithms and theory': (b'Robert Bredereck', 18.0), 'databases': (b'Aleksandar Stupar', 25.0)}
+Solution score for antisymmetric greedy truth is: 53 mean is: 53.0 standard deviation is: 0.0
+Running time is: 22.199857711791992
+
+Considering the following customized categories: {'data mining': 1, 'databases': 1, 'algorithms and theory': 1, 'algorithms': 1, 'artificial intelligence': 1, 'natural language processing': 1, 'robotics': 1, 'neural networks': 1}
+Creating graphs.
+Creating graphs.
+Time required to create graphhs is: 25.418898820877075 sec
+Adding cross-edges to the graph.
+Category is: data mining
+New number of nodes of graph: 29275
+New number of edges of graph: 628167
+Category is: databases
+New number of nodes of graph: 31117
+New number of edges of graph: 1037344
+Category is: algorithms and theory
+New number of nodes of graph: 19888
+New number of edges of graph: 278766
+Category is: algorithms
+New number of nodes of graph: 11599
+New number of edges of graph: 126716
+Category is: artificial intelligence
+New number of nodes of graph: 54758
+New number of edges of graph: 1043585
+Category is: natural language processing
+New number of nodes of graph: 21415
+New number of edges of graph: 714800
+Category is: robotics
+New number of nodes of graph: 31713
+New number of edges of graph: 886838
+Category is: neural networks
+New number of nodes of graph: 45523
+New number of edges of graph: 780411
+Time required to add cross-edges is: 5.994609355926514 sec
+Cleaning graphs.
+Creating core graph.
+Creating core graph.
+Creating core graph.
+Creating core graph.
+Creating core graph.
+Creating core graph.
+Creating core graph.
+Creating core graph.
+Length of nodes list: 21330 length of nodes 0
+Length of nodes list: 23445 length of nodes 21330
+Length of nodes list: 10675 length of nodes 44775
+Length of nodes list: 6351 length of nodes 55450
+Length of nodes list: 37383 length of nodes 61801
+Length of nodes list: 16001 length of nodes 99184
+Length of nodes list: 26011 length of nodes 115185
+Length of nodes list: 32544 length of nodes 141196
+Number of unique nodes 95903 number of all nodes: 173740
+Avg End./Role: 659539.375
+Avg End./Expert: 55.017204884101645
+Max End./Expert 5971
+Number of overlapping nodes: 32544
+Number of intersecting nodes: 131
+Iteration of graph random: 0
+Found best solution in algorithms random: 118
+Time to run one loop of graph algorithm random: 0.5276525020599365
+Iteration of graph random: 1
+Found best solution in algorithms random: 120
+Time to run one loop of graph algorithm random: 0.5345244407653809
+Iteration of graph random: 2
+Found best solution in algorithms random: 129
+Time to run one loop of graph algorithm random: 0.5260818004608154
+Iteration of graph random: 3
+Found best solution in algorithms random: 159
+Time to run one loop of graph algorithm random: 0.5296118259429932
+Iteration of graph random: 4
+Time to run one loop of graph algorithm random: 0.5171129703521729
+Iteration of graph random: 5
+Time to run one loop of graph algorithm random: 0.535090446472168
+Iteration of graph random: 6
+Time to run one loop of graph algorithm random: 0.5465505123138428
+Iteration of graph random: 7
+Time to run one loop of graph algorithm random: 0.45379066467285156
+Iteration of graph random: 8
+Time to run one loop of graph algorithm random: 0.5178303718566895
+Iteration of graph random: 9
+Time to run one loop of graph algorithm random: 0.45628881454467773
+Iteration of graph random: 10
+Time to run one loop of graph algorithm random: 0.5302395820617676
+Iteration of graph random: 11
+Time to run one loop of graph algorithm random: 0.5372686386108398
+Iteration of graph random: 12
+Time to run one loop of graph algorithm random: 0.5357685089111328
+Iteration of graph random: 13
+Time to run one loop of graph algorithm random: 0.5331728458404541
+Iteration of graph random: 14
+Time to run one loop of graph algorithm random: 0.521956205368042
+Iteration of graph random: 15
+Time to run one loop of graph algorithm random: 0.5469090938568115
+Iteration of graph random: 16
+Time to run one loop of graph algorithm random: 0.5367465019226074
+Iteration of graph random: 17
+Time to run one loop of graph algorithm random: 0.5276718139648438
+Iteration of graph random: 18
+Time to run one loop of graph algorithm random: 0.5286476612091064
+Iteration of graph random: 19
+Time to run one loop of graph algorithm random: 0.45827364921569824
+Iteration of graph random: 20
+Time to run one loop of graph algorithm random: 0.457751989364624
+Iteration of graph random: 21
+Time to run one loop of graph algorithm random: 0.5415174961090088
+Iteration of graph random: 22
+Time to run one loop of graph algorithm random: 0.5300772190093994
+Iteration of graph random: 23
+Time to run one loop of graph algorithm random: 0.5384900569915771
+Iteration of graph random: 24
+Time to run one loop of graph algorithm random: 0.5318741798400879
+Iteration of graph random: 25
+Time to run one loop of graph algorithm random: 0.5236556529998779
+Iteration of graph random: 26
+Time to run one loop of graph algorithm random: 0.4573178291320801
+Iteration of graph random: 27
+Time to run one loop of graph algorithm random: 0.5296807289123535
+Iteration of graph random: 28
+Time to run one loop of graph algorithm random: 0.4652061462402344
+Iteration of graph random: 29
+Time to run one loop of graph algorithm random: 0.5435237884521484
+Iteration of graph random: 30
+Time to run one loop of graph algorithm random: 0.538053035736084
+Iteration of graph random: 31
+Time to run one loop of graph algorithm random: 0.5308563709259033
+Iteration of graph random: 32
+Time to run one loop of graph algorithm random: 0.5339241027832031
+Iteration of graph random: 33
+Time to run one loop of graph algorithm random: 0.5464935302734375
+Iteration of graph random: 34
+Time to run one loop of graph algorithm random: 0.520383358001709
+Iteration of graph random: 35
+Time to run one loop of graph algorithm random: 0.5458667278289795
+Iteration of graph random: 36
+Time to run one loop of graph algorithm random: 0.5327033996582031
+Iteration of graph random: 37
+Time to run one loop of graph algorithm random: 0.5287027359008789
+Iteration of graph random: 38
+Time to run one loop of graph algorithm random: 0.5391967296600342
+Iteration of graph random: 39
+Time to run one loop of graph algorithm random: 0.5381145477294922
+Iteration of graph random: 40
+Time to run one loop of graph algorithm random: 0.5272212028503418
+Iteration of graph random: 41
+Time to run one loop of graph algorithm random: 0.5294792652130127
+Iteration of graph random: 42
+Time to run one loop of graph algorithm random: 0.5302639007568359
+Iteration of graph random: 43
+Time to run one loop of graph algorithm random: 0.4575233459472656
+Iteration of graph random: 44
+Time to run one loop of graph algorithm random: 0.5348875522613525
+Iteration of graph random: 45
+Time to run one loop of graph algorithm random: 0.5310337543487549
+Iteration of graph random: 46
+Time to run one loop of graph algorithm random: 0.5234119892120361
+Iteration of graph random: 47
+Time to run one loop of graph algorithm random: 0.5343136787414551
+Iteration of graph random: 48
+Time to run one loop of graph algorithm random: 0.5340855121612549
+Iteration of graph random: 49
+Time to run one loop of graph algorithm random: 0.5463266372680664
+Best Random solution is: {'algorithms': (b'Deepak Agarwal', 28.0), 'data mining': (b'John Langford', 5.166666666666667), 'robotics': (b'Tim Roughgarden', 9.666666666666666), 'neural networks': (b'Yi Li', 24.166666666666668), 'natural language processing': (b'Michael I. Jordan', 17.333333333333332), 'algorithms and theory': (b'John Langford', 27.0), 'databases': (b'Hao Zhang', 33.166666666666664), 'artificial intelligence': (b'Tim Roughgarden', 34.0)}
+Solution score for antisymmetric random truth is: 159 mean is: 131.66 standard deviation is: 11.441346074653978
+Running time is: 26.614436864852905
+
+Time to run one loop of graph algorithm greedy: 1.9692201614379883
+Best Greedy solution is: {'neural networks': (b'Sandeep Pandey', 562.8571428571429), 'artificial intelligence': (b'Shie Mannor', 8.5), 'data mining': (b'Gang Li', 14.0), 'databases': (b'Jan Vondrk', 19.333333333333332), 'algorithms': (b'Yue Wang', 20.0), 'algorithms and theory': (b'Amin Karbasi', 27.0), 'natural language processing': (b'Shie Mannor', 21.0), 'robotics': (b'Shie Mannor', 21.0)}
+Solution score for antisymmetric greedy truth is: 131 mean is: 131.0 standard deviation is: 0.0
+Running time is: 2.4565012454986572
+
+Considering the following customized categories: {'software engineering': 1, 'operating systems': 1, 'high-performance computing': 1, 'distributed and parallel computing': 1}
+Creating graphs.
+Creating graphs.
+Time required to create graphhs is: 8.566681146621704 sec
+Adding cross-edges to the graph.
+Category is: software engineering
+New number of nodes of graph: 19653
+New number of edges of graph: 387176
+Category is: operating systems
+New number of nodes of graph: 12160
+New number of edges of graph: 257811
+Category is: high-performance computing
+New number of nodes of graph: 14244
+New number of edges of graph: 307184
+Category is: distributed and parallel computing
+New number of nodes of graph: 29118
+New number of edges of graph: 604413
+Time required to add cross-edges is: 1.5518269538879395 sec
+Cleaning graphs.
+Creating core graph.
+Creating core graph.
+Creating core graph.
+Creating core graph.
+Length of nodes list: 13829 length of nodes 0
+Length of nodes list: 9110 length of nodes 13829
+Length of nodes list: 10252 length of nodes 22939
+Length of nodes list: 23320 length of nodes 33191
+Number of unique nodes 37535 number of all nodes: 56511
+Avg End./Role: 373714.0
+Avg End./Expert: 39.825656054349274
+Max End./Expert 1606
+Number of overlapping nodes: 23320
+Number of intersecting nodes: 726
+Iteration of graph random: 0
+Found best solution in algorithms random: 61
+Time to run one loop of graph algorithm random: 2.439761161804199
+Iteration of graph random: 1
+Time to run one loop of graph algorithm random: 3.5326929092407227
+Iteration of graph random: 2
+Time to run one loop of graph algorithm random: 3.5661890506744385
+Iteration of graph random: 3
+Time to run one loop of graph algorithm random: 2.429529905319214
+Iteration of graph random: 4
+Time to run one loop of graph algorithm random: 3.753689765930176
+Iteration of graph random: 5
+Time to run one loop of graph algorithm random: 3.520019054412842
+Iteration of graph random: 6
+Time to run one loop of graph algorithm random: 3.7074739933013916
+Iteration of graph random: 7
+Time to run one loop of graph algorithm random: 3.5234055519104004
+Iteration of graph random: 8
+Time to run one loop of graph algorithm random: 3.7709267139434814
+Iteration of graph random: 9
+Time to run one loop of graph algorithm random: 3.536200761795044
+Iteration of graph random: 10
+Time to run one loop of graph algorithm random: 3.3013734817504883
+Iteration of graph random: 11
+Time to run one loop of graph algorithm random: 3.8050167560577393
+Iteration of graph random: 12
+Time to run one loop of graph algorithm random: 3.555021047592163
+Iteration of graph random: 13
+Time to run one loop of graph algorithm random: 3.3557052612304688
+Iteration of graph random: 14
+Time to run one loop of graph algorithm random: 3.5524234771728516
+Iteration of graph random: 15
+Time to run one loop of graph algorithm random: 3.7891345024108887
+Iteration of graph random: 16
+Found best solution in algorithms random: 63
+Time to run one loop of graph algorithm random: 2.451493740081787
+Iteration of graph random: 17
+Time to run one loop of graph algorithm random: 3.3342885971069336
+Iteration of graph random: 18
+Time to run one loop of graph algorithm random: 3.5362532138824463
+Iteration of graph random: 19
+Time to run one loop of graph algorithm random: 3.3415703773498535
+Iteration of graph random: 20
+Time to run one loop of graph algorithm random: 3.325792074203491
+Iteration of graph random: 21
+Time to run one loop of graph algorithm random: 3.4187917709350586
+Iteration of graph random: 22
+Time to run one loop of graph algorithm random: 3.9108946323394775
+Iteration of graph random: 23
+Time to run one loop of graph algorithm random: 3.5432004928588867
+Iteration of graph random: 24
+Time to run one loop of graph algorithm random: 3.33499813079834
+Iteration of graph random: 25
+Time to run one loop of graph algorithm random: 3.309065580368042
+Iteration of graph random: 26
+Time to run one loop of graph algorithm random: 3.798396587371826
+Iteration of graph random: 27
+Time to run one loop of graph algorithm random: 3.5335144996643066
+Iteration of graph random: 28
+Time to run one loop of graph algorithm random: 3.7901649475097656
+Iteration of graph random: 29
+Time to run one loop of graph algorithm random: 2.4670417308807373
+Iteration of graph random: 30
+Time to run one loop of graph algorithm random: 3.5426151752471924
+Iteration of graph random: 31
+Time to run one loop of graph algorithm random: 3.5314669609069824
+Iteration of graph random: 32
+Time to run one loop of graph algorithm random: 2.4403388500213623
+Iteration of graph random: 33
+Time to run one loop of graph algorithm random: 2.446852445602417
+Iteration of graph random: 34
+Time to run one loop of graph algorithm random: 3.743640422821045
+Iteration of graph random: 35
+Time to run one loop of graph algorithm random: 3.548469066619873
+Iteration of graph random: 36
+Time to run one loop of graph algorithm random: 2.460113286972046
+Iteration of graph random: 37
+Time to run one loop of graph algorithm random: 3.3211894035339355
+Iteration of graph random: 38
+Time to run one loop of graph algorithm random: 3.544487714767456
+Iteration of graph random: 39
+Time to run one loop of graph algorithm random: 3.71332049369812
+Iteration of graph random: 40
+Time to run one loop of graph algorithm random: 2.4454245567321777
+Iteration of graph random: 41
+Time to run one loop of graph algorithm random: 3.8051085472106934
+Iteration of graph random: 42
+Time to run one loop of graph algorithm random: 2.4457857608795166
+Iteration of graph random: 43
+Time to run one loop of graph algorithm random: 2.456296443939209
+Iteration of graph random: 44
+Time to run one loop of graph algorithm random: 3.775519371032715
+Iteration of graph random: 45
+Time to run one loop of graph algorithm random: 3.336873769760132
+Iteration of graph random: 46
+Time to run one loop of graph algorithm random: 3.774940252304077
+Iteration of graph random: 47
+Time to run one loop of graph algorithm random: 3.725615978240967
+Iteration of graph random: 48
+Time to run one loop of graph algorithm random: 3.318502902984619
+Iteration of graph random: 49
+Time to run one loop of graph algorithm random: 2.447328805923462
+Best Random solution is: {'software engineering': (b'Feng Zhang', 3347.0), 'operating systems': (b'Sang Lyul Min', 11.5), 'high-performance computing': (b'Radu Prodan', 21.0), 'distributed and parallel computing': (b'Bharath Balasubramanian', 27.0)}
+Solution score for antisymmetric random truth is: 63 mean is: 51.84 standard deviation is: 8.082969751273353
+Running time is: 169.90999054908752
+
+Time to run one loop of graph algorithm greedy: 5.381521701812744
+Best Greedy solution is: {'operating systems': (b'Wei Dong', 3847.0), 'software engineering': (b'Anna Liu', 11.0), 'high-performance computing': (b'Radu Prodan', 20.0), 'distributed and parallel computing': (b'Bharath Balasubramanian', 28.0)}
+Solution score for antisymmetric greedy truth is: 61 mean is: 61.0 standard deviation is: 0.0
+Running time is: 9.220821619033813
+
+Considering the following customized categories: {'signal processing': 1, 'wireless networks and mobile computing': 1, 'computer networking': 1, 'information retrieval': 1}
+Creating graphs.
+Creating graphs.
+Time required to create graphhs is: 13.108749866485596 sec
+Adding cross-edges to the graph.
+Category is: signal processing
+New number of nodes of graph: 24928
+New number of edges of graph: 478148
+Category is: wireless networks and mobile computing
+New number of nodes of graph: 14007
+New number of edges of graph: 261795
+Category is: computer networking
+New number of nodes of graph: 51372
+New number of edges of graph: 1524831
+Category is: information retrieval
+New number of nodes of graph: 5951
+New number of edges of graph: 156395
+Time required to add cross-edges is: 1.567047119140625 sec
+Cleaning graphs.
+Creating core graph.
+Creating core graph.
+Creating core graph.
+Creating core graph.
+Length of nodes list: 18415 length of nodes 0
+Length of nodes list: 9645 length of nodes 18415
+Length of nodes list: 43221 length of nodes 28060
+Length of nodes list: 4660 length of nodes 71281
+Number of unique nodes 56754 number of all nodes: 75941
+Avg End./Role: 586495.5
+Avg End./Expert: 41.335976318849774
+Max End./Expert 3165
+Number of overlapping nodes: 4660
+Number of intersecting nodes: 159
+Iteration of graph random: 0
+Found best solution in algorithms random: 17
+Time to run one loop of graph algorithm random: 0.1737515926361084
+Iteration of graph random: 1
+Found best solution in algorithms random: 59
+Time to run one loop of graph algorithm random: 0.11618757247924805
+Iteration of graph random: 2
+Time to run one loop of graph algorithm random: 0.16621708869934082
+Iteration of graph random: 3
+Time to run one loop of graph algorithm random: 0.1664273738861084
+Iteration of graph random: 4
+Time to run one loop of graph algorithm random: 0.17430377006530762
+Iteration of graph random: 5
+Time to run one loop of graph algorithm random: 0.15557336807250977
+Iteration of graph random: 6
+Time to run one loop of graph algorithm random: 0.16666388511657715
+Iteration of graph random: 7
+Time to run one loop of graph algorithm random: 0.15824246406555176
+Iteration of graph random: 8
+Time to run one loop of graph algorithm random: 0.1156458854675293
+Iteration of graph random: 9
+Time to run one loop of graph algorithm random: 0.1667647361755371
+Iteration of graph random: 10
+Time to run one loop of graph algorithm random: 0.11430191993713379
+Iteration of graph random: 11
+Time to run one loop of graph algorithm random: 0.16901731491088867
+Iteration of graph random: 12
+Time to run one loop of graph algorithm random: 0.17489290237426758
+Iteration of graph random: 13
+Time to run one loop of graph algorithm random: 0.1158285140991211
+Iteration of graph random: 14
+Time to run one loop of graph algorithm random: 0.1578834056854248
+Iteration of graph random: 15
+Time to run one loop of graph algorithm random: 0.15539145469665527
+Iteration of graph random: 16
+Time to run one loop of graph algorithm random: 0.17500877380371094
+Iteration of graph random: 17
+Time to run one loop of graph algorithm random: 0.16732454299926758
+Iteration of graph random: 18
+Time to run one loop of graph algorithm random: 0.16611933708190918
+Iteration of graph random: 19
+Time to run one loop of graph algorithm random: 0.17353510856628418
+Iteration of graph random: 20
+Time to run one loop of graph algorithm random: 0.16726422309875488
+Iteration of graph random: 21
+Time to run one loop of graph algorithm random: 0.17652344703674316
+Iteration of graph random: 22
+Time to run one loop of graph algorithm random: 0.16714048385620117
+Iteration of graph random: 23
+Time to run one loop of graph algorithm random: 0.16563653945922852
+Iteration of graph random: 24
+Time to run one loop of graph algorithm random: 0.15779471397399902
+Iteration of graph random: 25
+Time to run one loop of graph algorithm random: 0.11523580551147461
+Iteration of graph random: 26
+Time to run one loop of graph algorithm random: 0.1693260669708252
+Iteration of graph random: 27
+Time to run one loop of graph algorithm random: 0.16593289375305176
+Iteration of graph random: 28
+Time to run one loop of graph algorithm random: 0.1752336025238037
+Iteration of graph random: 29
+Time to run one loop of graph algorithm random: 0.11521291732788086
+Iteration of graph random: 30
+Time to run one loop of graph algorithm random: 0.17462897300720215
+Iteration of graph random: 31
+Time to run one loop of graph algorithm random: 0.17380380630493164
+Iteration of graph random: 32
+Time to run one loop of graph algorithm random: 0.1562638282775879
+Iteration of graph random: 33
+Time to run one loop of graph algorithm random: 0.1568460464477539
+Iteration of graph random: 34
+Time to run one loop of graph algorithm random: 0.16758203506469727
+Iteration of graph random: 35
+Time to run one loop of graph algorithm random: 0.17589592933654785
+Iteration of graph random: 36
+Time to run one loop of graph algorithm random: 0.16580867767333984
+Iteration of graph random: 37
+Time to run one loop of graph algorithm random: 0.11533808708190918
+Iteration of graph random: 38
+Time to run one loop of graph algorithm random: 0.17546916007995605
+Iteration of graph random: 39
+Time to run one loop of graph algorithm random: 0.16613388061523438
+Iteration of graph random: 40
+Time to run one loop of graph algorithm random: 0.1754608154296875
+Iteration of graph random: 41
+Time to run one loop of graph algorithm random: 0.17576098442077637
+Iteration of graph random: 42
+Time to run one loop of graph algorithm random: 0.15871906280517578
+Iteration of graph random: 43
+Time to run one loop of graph algorithm random: 0.16710638999938965
+Iteration of graph random: 44
+Time to run one loop of graph algorithm random: 0.1169137954711914
+Iteration of graph random: 45
+Time to run one loop of graph algorithm random: 0.11535453796386719
+Iteration of graph random: 46
+Time to run one loop of graph algorithm random: 0.15749645233154297
+Iteration of graph random: 47
+Time to run one loop of graph algorithm random: 0.15582275390625
+Iteration of graph random: 48
+Time to run one loop of graph algorithm random: 0.11597943305969238
+Iteration of graph random: 49
+Time to run one loop of graph algorithm random: 0.1597309112548828
+Best Random solution is: {'information retrieval': (b'Yue Zhang', 502.66666666666663), 'wireless networks and mobile computing': (b'Dong Wang', 14.5), 'signal processing': (b'Kai Wang', 18.5), 'computer networking': (b'Yan Li', 23.0)}
+Solution score for antisymmetric random truth is: 59 mean is: 38.6 standard deviation is: 12.250714264890844
+Running time is: 8.012125253677368
+
+Time to run one loop of graph algorithm greedy: 0.26082921028137207
+Best Greedy solution is: {'wireless networks and mobile computing': (b'Lance M. Kaplan', 652.6666666666666), 'computer networking': (b'H. Vincent Poor', 14.0), 'signal processing': (b'Yu Chen', 15.0), 'information retrieval': (b'Yi Zhang', 17.0)}
+Solution score for antisymmetric greedy truth is: 46 mean is: 46.0 standard deviation is: 0.0
+Running time is: 0.44371819496154785
+
+Considering the following customized categories: {'signal processing': 1, 'wireless networks and mobile computing': 1, 'computer networking': 1, 'information retrieval': 1, 'software engineering': 1, 'operating systems': 1, 'high-performance computing': 1, 'distributed and parallel computing': 1}
+Creating graphs.
+Creating graphs.
+Time required to create graphhs is: 21.580695629119873 sec
+Adding cross-edges to the graph.
+Category is: signal processing
+New number of nodes of graph: 25560
+New number of edges of graph: 481729
+Category is: wireless networks and mobile computing
+New number of nodes of graph: 16296
+New number of edges of graph: 312068
+Category is: computer networking
+New number of nodes of graph: 58701
+New number of edges of graph: 1702478
+Category is: information retrieval
+New number of nodes of graph: 6951
+New number of edges of graph: 161829
+Category is: software engineering
+New number of nodes of graph: 21690
+New number of edges of graph: 398561
+Category is: operating systems
+New number of nodes of graph: 16239
+New number of edges of graph: 298947
+Category is: high-performance computing
+New number of nodes of graph: 15648
+New number of edges of graph: 316409
+Category is: distributed and parallel computing
+New number of nodes of graph: 39535
+New number of edges of graph: 720772
+Time required to add cross-edges is: 4.5642170906066895 sec
+Cleaning graphs.
+Creating core graph.
+Creating core graph.
+Creating core graph.
+Creating core graph.
+Creating core graph.
+Creating core graph.
+Creating core graph.
+Creating core graph.
+Length of nodes list: 18668 length of nodes 0
+Length of nodes list: 11141 length of nodes 18668
+Length of nodes list: 48007 length of nodes 29809
+Length of nodes list: 5064 length of nodes 77816
+Length of nodes list: 14594 length of nodes 82880
+Length of nodes list: 11654 length of nodes 97474
+Length of nodes list: 10897 length of nodes 109128
+Length of nodes list: 29238 length of nodes 120025
+Number of unique nodes 90803 number of all nodes: 149263
+Avg End./Role: 527465.75
+Avg End./Expert: 46.47121791130249
+Max End./Expert 3258
+Number of overlapping nodes: 29238
+Number of intersecting nodes: 49
+Iteration of graph random: 0
+Found best solution in algorithms random: 99
+Time to run one loop of graph algorithm random: 0.07245659828186035
+Iteration of graph random: 1
+Found best solution in algorithms random: 112
+Time to run one loop of graph algorithm random: 0.07135820388793945
+Iteration of graph random: 2
+Time to run one loop of graph algorithm random: 0.06261014938354492
+Iteration of graph random: 3
+Found best solution in algorithms random: 120
+Time to run one loop of graph algorithm random: 0.06290602684020996
+Iteration of graph random: 4
+Time to run one loop of graph algorithm random: 0.07009053230285645
+Iteration of graph random: 5
+Time to run one loop of graph algorithm random: 0.0737752914428711
+Iteration of graph random: 6
+Time to run one loop of graph algorithm random: 0.07038164138793945
+Iteration of graph random: 7
+Time to run one loop of graph algorithm random: 0.07207012176513672
+Iteration of graph random: 8
+Time to run one loop of graph algorithm random: 0.07246160507202148
+Iteration of graph random: 9
+Time to run one loop of graph algorithm random: 0.07221102714538574
+Iteration of graph random: 10
+Time to run one loop of graph algorithm random: 0.0718681812286377
+Iteration of graph random: 11
+Found best solution in algorithms random: 124
+Time to run one loop of graph algorithm random: 0.07442045211791992
+Iteration of graph random: 12
+Time to run one loop of graph algorithm random: 0.062285423278808594
+Iteration of graph random: 13
+Time to run one loop of graph algorithm random: 0.07266926765441895
+Iteration of graph random: 14
+Time to run one loop of graph algorithm random: 0.07182073593139648
+Iteration of graph random: 15
+Time to run one loop of graph algorithm random: 0.07417964935302734
+Iteration of graph random: 16
+Time to run one loop of graph algorithm random: 0.07144331932067871
+Iteration of graph random: 17
+Time to run one loop of graph algorithm random: 0.07234978675842285
+Iteration of graph random: 18
+Time to run one loop of graph algorithm random: 0.07135701179504395
+Iteration of graph random: 19
+Time to run one loop of graph algorithm random: 0.07177948951721191
+Iteration of graph random: 20
+Time to run one loop of graph algorithm random: 0.07046031951904297
+Iteration of graph random: 21
+Time to run one loop of graph algorithm random: 0.07160639762878418
+Iteration of graph random: 22
+Time to run one loop of graph algorithm random: 0.07647395133972168
+Iteration of graph random: 23
+Time to run one loop of graph algorithm random: 0.07336783409118652
+Iteration of graph random: 24
+Time to run one loop of graph algorithm random: 0.0718388557434082
+Iteration of graph random: 25
+Time to run one loop of graph algorithm random: 0.0733342170715332
+Iteration of graph random: 26
+Time to run one loop of graph algorithm random: 0.07250642776489258
+Iteration of graph random: 27
+Time to run one loop of graph algorithm random: 0.06286907196044922
+Iteration of graph random: 28
+Time to run one loop of graph algorithm random: 0.07407426834106445
+Iteration of graph random: 29
+Time to run one loop of graph algorithm random: 0.07267045974731445
+Iteration of graph random: 30
+Time to run one loop of graph algorithm random: 0.0738983154296875
+Iteration of graph random: 31
+Time to run one loop of graph algorithm random: 0.07236433029174805
+Iteration of graph random: 32
+Time to run one loop of graph algorithm random: 0.07465004920959473
+Iteration of graph random: 33
+Time to run one loop of graph algorithm random: 0.0722496509552002
+Iteration of graph random: 34
+Time to run one loop of graph algorithm random: 0.07087516784667969
+Iteration of graph random: 35
+Time to run one loop of graph algorithm random: 0.0740199089050293
+Iteration of graph random: 36
+Time to run one loop of graph algorithm random: 0.07046079635620117
+Iteration of graph random: 37
+Time to run one loop of graph algorithm random: 0.07281732559204102
+Iteration of graph random: 38
+Time to run one loop of graph algorithm random: 0.06187772750854492
+Iteration of graph random: 39
+Time to run one loop of graph algorithm random: 0.07075190544128418
+Iteration of graph random: 40
+Time to run one loop of graph algorithm random: 0.07344245910644531
+Iteration of graph random: 41
+Time to run one loop of graph algorithm random: 0.0719749927520752
+Iteration of graph random: 42
+Time to run one loop of graph algorithm random: 0.0725395679473877
+Iteration of graph random: 43
+Time to run one loop of graph algorithm random: 0.07230353355407715
+Iteration of graph random: 44
+Found best solution in algorithms random: 126
+Time to run one loop of graph algorithm random: 0.07278084754943848
+Iteration of graph random: 45
+Time to run one loop of graph algorithm random: 0.07195305824279785
+Iteration of graph random: 46
+Time to run one loop of graph algorithm random: 0.06197714805603027
+Iteration of graph random: 47
+Time to run one loop of graph algorithm random: 0.073211669921875
+Iteration of graph random: 48
+Time to run one loop of graph algorithm random: 0.07204604148864746
+Iteration of graph random: 49
+Time to run one loop of graph algorithm random: 0.07040905952453613
+Best Random solution is: {'operating systems': (b'Yan Zhang', 13.166666666666666), 'wireless networks and mobile computing': (b'Wei Li', 4.333333333333333), 'information retrieval': (b'Yue Zhang', 8.333333333333334), 'signal processing': (b'Rui Zhang', 8.5), 'software engineering': (b'Yan Zhang', 13.166666666666666), 'high-performance computing': (b'Yan Zhang', 13.166666666666666), 'distributed and parallel computing': (b'Li Zhang', 24.0), 'computer networking': (b'Ying Zhang', 48.0)}
+Solution score for antisymmetric random truth is: 126 mean is: 105.26 standard deviation is: 10.902862009582622
+Running time is: 3.6283538341522217
+
+Time to run one loop of graph algorithm greedy: 0.2622551918029785
+Best Greedy solution is: {'computer networking': (b'Ying Zhang', 232.42857142857142), 'wireless networks and mobile computing': (b'Yi Yang', 11.0), 'distributed and parallel computing': (b'Li Zhang', 14.0), 'information retrieval': (b'Yue Zhang', 17.0), 'signal processing': (b'Rui Zhang', 15.0), 'software engineering': (b'Yan Zhang', 19.0), 'operating systems': (b'Yan Zhang', 19.0), 'high-performance computing': (b'Yan Zhang', 19.0)}
+Solution score for antisymmetric greedy truth is: 114 mean is: 114.0 standard deviation is: 0.0
+Running time is: 0.328749418258667
+
+Exiting main!

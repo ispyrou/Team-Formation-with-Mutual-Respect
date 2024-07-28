@@ -1,0 +1,173 @@
+Considering the following customized categories: {'software engineering': 1, 'operating systems': 1, 'high-performance computing': 1, 'distributed and parallel computing': 1}
+Creating graphs.
+in create_graph_gml_files
+in read_dict_to_list
+out read_dict_to_list
+in read_dict_to_pkl_file
+out read_dict_to_pkl_file
+in read_dict_to_pkl_file
+out read_dict_to_pkl_file
+in read_venue_assignments_csv
+out read_venue_assignments_csv
+in create_cat_venue_dictionary
+out create_cat_venue_dictionary
+in get_authors
+out get_authors
+Creating graphs.
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+Time required to create graphhs is: 8.564018726348877 sec
+Adding cross-edges to the graph.
+Category is: software engineering
+New number of nodes of graph: 19653
+New number of edges of graph: 387176
+Category is: operating systems
+New number of nodes of graph: 12160
+New number of edges of graph: 257811
+Category is: high-performance computing
+New number of nodes of graph: 14244
+New number of edges of graph: 307184
+Category is: distributed and parallel computing
+New number of nodes of graph: 29118
+New number of edges of graph: 604413
+Time required to add cross-edges is: 1.6548502445220947 sec
+out create_graph_gml_files
+Cleaning graphs.
+in clean_graphs
+Creating core graph.
+Creating core graph.
+Creating core graph.
+Creating core graph.
+out clean_graphs
+Length of nodes list: 13829 length of nodes 0
+Length of nodes list: 9110 length of nodes 13829
+Length of nodes list: 10252 length of nodes 22939
+Length of nodes list: 23320 length of nodes 33191
+Number of unique nodes 37535 number of all nodes: 56511
+Avg End./Role: 373714.0
+Avg End./Expert: 39.825656054349274
+Max End./Expert 1606
+Number of overlapping nodes: 23320
+in get_overlapping_graph_nodes
+Number of intersecting nodes: 726
+out get_overlapping_graph_nodes
+Time to create weighted matrices:  0.26557230949401855
+===============================================================================
+                                     CVXPY                                     
+                                    v1.1.12                                    
+===============================================================================
+(CVXPY) Jan 27 11:54:59 PM: Your problem has 2904 variables, 2 constraints, and 0 parameters.
+(CVXPY) Jan 27 11:55:01 PM: It is compliant with the following grammars: DCP, DQCP
+(CVXPY) Jan 27 11:55:01 PM: (If you need to solve this problem multiple times, but with different data, consider using parameters.)
+(CVXPY) Jan 27 11:55:01 PM: CVXPY will first compile your problem; then, it will invoke a numerical solver to obtain a solution.
+-------------------------------------------------------------------------------
+                                  Compilation                                  
+-------------------------------------------------------------------------------
+(CVXPY) Jan 27 11:55:01 PM: Compiling problem (target solver=GUROBI).
+(CVXPY) Jan 27 11:55:01 PM: Reduction chain: FlipObjective -> CvxAttr2Constr -> Qp2SymbolicQp -> QpMatrixStuffing -> GUROBI
+(CVXPY) Jan 27 11:55:01 PM: Applying reduction FlipObjective
+(CVXPY) Jan 27 11:55:01 PM: Applying reduction CvxAttr2Constr
+(CVXPY) Jan 27 11:55:01 PM: Applying reduction Qp2SymbolicQp
+(CVXPY) Jan 27 11:55:01 PM: Applying reduction QpMatrixStuffing
+(CVXPY) Jan 27 11:55:01 PM: Applying reduction GUROBI
+(CVXPY) Jan 27 11:55:01 PM: Finished problem compilation (took 2.145e-01 seconds).
+-------------------------------------------------------------------------------
+                                Numerical solver                               
+-------------------------------------------------------------------------------
+(CVXPY) Jan 27 11:55:01 PM: Invoking solver GUROBI  to obtain a solution.
+Academic license - for non-commercial use only - expires 2022-12-18
+Using license file /home/pcs00440/gurobi.lic
+Parameter OutputFlag unchanged
+   Value: 1  Min: 0  Max: 1  Default: 1
+Changed value of parameter QCPDual to 1
+   Prev: 0  Min: 0  Max: 1  Default: 0
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+Optimize a model with 730 rows, 2904 columns and 5808 nonzeros
+Model fingerprint: 0xb1781ff0
+Model has 70922 quadratic objective terms
+Variable types: 0 continuous, 2904 integer (2904 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [0e+00, 0e+00]
+  QObjective range [4e+00, 2e+02]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 0.0000000
+Presolve time: 0.21s
+Presolved: 2304 rows, 4478 columns, 79878 nonzeros
+Variable types: 0 continuous, 4478 integer (2936 binary)
+
+Root relaxation: objective -1.185521e+03, 1179 iterations, 0.15 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 -1185.5207    0  212    0.00000 -1185.5207      -     -    0s
+H    0     0                     -88.0000000 -1185.5207  1247%     -    0s
+H    0     0                    -156.0000000 -1185.5207   660%     -    1s
+     0     0 -1025.3662    0  266 -156.00000 -1025.3662   557%     -    1s
+H    0     0                    -170.0000000 -1025.3662   503%     -    1s
+     0     0 -917.91523    0  276 -170.00000 -917.91523   440%     -    1s
+     0     0 -917.91523    0  279 -170.00000 -917.91523   440%     -    1s
+     0     0 -917.91523    0  279 -170.00000 -917.91523   440%     -    2s
+H    0     0                    -226.0000000 -908.26343   302%     -    2s
+     0     0 -893.45676    0  280 -226.00000 -893.45676   295%     -    2s
+     0     0 -893.45676    0  280 -226.00000 -893.45676   295%     -    2s
+     0     2 -893.17188    0  280 -226.00000 -893.17188   295%     -    3s
+   232   119 -756.50678   19  281 -226.00000 -893.17188   295%  59.4    5s
+  4080  1715 -306.76426  105  240 -226.00000 -893.17188   295%  35.0   10s
+  7051  1925 -693.85801   25  405 -226.00000 -778.06065   244%  49.8   15s
+  7395  2020 -254.15736  127  212 -226.00000 -778.06065   244%  50.4   20s
+  7404  2029 -778.06065   14  326 -226.00000 -778.06065   244%  50.6   25s
+  7474  2036 -778.06065   21  360 -226.00000 -778.06065   244%  51.6   30s
+  7834  1969 -526.89749   29  276 -226.00000 -778.06065   244%  53.2   35s
+ 10338  2153 -659.00735   43  474 -226.00000 -753.61472   233%  53.9   40s
+ 12351  2575 -407.45504   52  222 -226.00000 -728.88398   223%  58.0   46s
+ 13634  3104     cutoff  104      -226.00000 -658.02866   191%  57.9   50s
+ 16047  4553 -289.24153   99  400 -226.00000 -516.05203   128%  59.5   55s
+ 18723  4773     cutoff   35      -226.00000 -379.92472  68.1%  64.0   60s
+ 21051  4829     cutoff   53      -226.00000 -351.87622  55.7%  65.1   66s
+ 24116  4760     cutoff  118      -226.00000 -315.49725  39.6%  64.0   70s
+ 29064  1688     cutoff   71      -226.00000 -276.29514  22.3%  62.6   75s
+
+Cutting planes:
+  MIR: 171
+  StrongCG: 4
+  Flow cover: 131
+  Zero half: 5
+  RLT: 131
+
+Explored 31756 nodes (1938827 simplex iterations) in 76.64 seconds
+Thread count was 32 (of 32 available processors)
+
+Solution count 5: -226 -170 -156 ... 0
+No other solutions better than -226
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective -2.260000000000e+02, best bound -2.260000000000e+02, gap 0.0000%
+-------------------------------------------------------------------------------
+                                    Summary                                    
+-------------------------------------------------------------------------------
+(CVXPY) Jan 27 11:56:18 PM: Problem status: optimal
+(CVXPY) Jan 27 11:56:18 PM: Optimal value: 2.260e+02
+(CVXPY) Jan 27 11:56:18 PM: Compilation took 2.145e-01 seconds
+(CVXPY) Jan 27 11:56:18 PM: Solver (including time spent in interface) took 7.671e+01 seconds
+in compute graph score
+has edge
+has edge
+has edge
+has edge
+has edge
+Solution is: {'software engineering': b'Changsheng Xie', 'operating systems': b'James S. Plank', 'high-performance computing': b'Shenggang Wan', 'distributed and parallel computing': b'Qiang Cao'}
+Weighted solution score for iqp graph truth is: 113
+Solution score for iqp graph truth is: 5
+Edges are: [(b'James S. Plank', b'Changsheng Xie'), (b'James S. Plank', b'Shenggang Wan'), (b'James S. Plank', b'Qiang Cao'), (b'Qiang Cao', b'Changsheng Xie'), (b'Qiang Cao', b'Shenggang Wan')]
+Running time is: 79.15010643005371
+Exiting main!
