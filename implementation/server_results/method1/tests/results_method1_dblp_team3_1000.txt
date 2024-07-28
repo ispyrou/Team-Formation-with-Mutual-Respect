@@ -1,0 +1,406 @@
+Considering the following customized categories: {'data mining': 1, 'databases': 1, 'algorithms and theory': 1, 'algorithms': 1, 'artificial intelligence': 1, 'natural language processing': 1, 'robotics': 1, 'neural networks': 1}
+Creating graphs.
+in create_graph_gml_files
+in read_dict_to_list
+out read_dict_to_list
+in read_dict_to_pkl_file
+out read_dict_to_pkl_file
+in read_dict_to_pkl_file
+out read_dict_to_pkl_file
+in read_venue_assignments_csv
+out read_venue_assignments_csv
+in create_cat_venue_dictionary
+out create_cat_venue_dictionary
+in get_authors
+out get_authors
+Creating graphs.
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+Time required to create graphhs is: 26.284533739089966 sec
+Adding cross-edges to the graph.
+Category is: data mining
+New number of nodes of graph: 29275
+New number of edges of graph: 628167
+Category is: databases
+New number of nodes of graph: 31117
+New number of edges of graph: 1037344
+Category is: algorithms and theory
+New number of nodes of graph: 19888
+New number of edges of graph: 278766
+Category is: algorithms
+New number of nodes of graph: 11599
+New number of edges of graph: 126716
+Category is: artificial intelligence
+New number of nodes of graph: 54758
+New number of edges of graph: 1043585
+Category is: natural language processing
+New number of nodes of graph: 21415
+New number of edges of graph: 714800
+Category is: robotics
+New number of nodes of graph: 31713
+New number of edges of graph: 886838
+Category is: neural networks
+New number of nodes of graph: 45523
+New number of edges of graph: 780411
+Time required to add cross-edges is: 9.76924204826355 sec
+out create_graph_gml_files
+Cleaning graphs.
+in clean_graphs
+Creating core graph.
+Creating core graph.
+Creating core graph.
+Creating core graph.
+Creating core graph.
+Creating core graph.
+Creating core graph.
+Creating core graph.
+out clean_graphs
+Length of nodes list: 21330 length of nodes 0
+Length of nodes list: 23445 length of nodes 21330
+Length of nodes list: 10675 length of nodes 44775
+Length of nodes list: 6351 length of nodes 55450
+Length of nodes list: 37383 length of nodes 61801
+Length of nodes list: 16001 length of nodes 99184
+Length of nodes list: 26011 length of nodes 115185
+Length of nodes list: 32544 length of nodes 141196
+Number of unique nodes 95903 number of all nodes: 173740
+Avg End./Role: 659539.375
+Avg End./Expert: 55.017204884101645
+Max End./Expert 5971
+Number of overlapping nodes: 32544
+in get_overlapping_graph_nodes
+Number of intersecting nodes: 131
+out get_overlapping_graph_nodes
+===============================================================================
+                                     CVXPY                                     
+                                    v1.1.12                                    
+===============================================================================
+(CVXPY) Mar 16 01:38:54 PM: Your problem has 1048 variables, 2 constraints, and 0 parameters.
+(CVXPY) Mar 16 01:38:55 PM: It is compliant with the following grammars: DCP, DQCP
+(CVXPY) Mar 16 01:38:55 PM: (If you need to solve this problem multiple times, but with different data, consider using parameters.)
+(CVXPY) Mar 16 01:38:55 PM: CVXPY will first compile your problem; then, it will invoke a numerical solver to obtain a solution.
+-------------------------------------------------------------------------------
+                                  Compilation                                  
+-------------------------------------------------------------------------------
+(CVXPY) Mar 16 01:38:55 PM: Compiling problem (target solver=GUROBI).
+(CVXPY) Mar 16 01:38:55 PM: Reduction chain: FlipObjective -> CvxAttr2Constr -> Qp2SymbolicQp -> QpMatrixStuffing -> GUROBI
+(CVXPY) Mar 16 01:38:55 PM: Applying reduction FlipObjective
+(CVXPY) Mar 16 01:38:55 PM: Applying reduction CvxAttr2Constr
+(CVXPY) Mar 16 01:38:55 PM: Applying reduction Qp2SymbolicQp
+(CVXPY) Mar 16 01:38:55 PM: Applying reduction QpMatrixStuffing
+(CVXPY) Mar 16 01:38:55 PM: Applying reduction GUROBI
+(CVXPY) Mar 16 01:38:55 PM: Finished problem compilation (took 7.119e-02 seconds).
+-------------------------------------------------------------------------------
+                                Numerical solver                               
+-------------------------------------------------------------------------------
+(CVXPY) Mar 16 01:38:55 PM: Invoking solver GUROBI  to obtain a solution.
+Academic license - for non-commercial use only - expires 2022-12-18
+Using license file /home/pcs00440/gurobi.lic
+Parameter OutputFlag unchanged
+   Value: 1  Min: 0  Max: 1  Default: 1
+Changed value of parameter QCPDual to 1
+   Prev: 0  Min: 0  Max: 1  Default: 0
+Changed value of parameter TimeLimit to 1000.0
+   Prev: inf  Min: 0.0  Max: inf  Default: inf
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+Optimize a model with 139 rows, 1048 columns and 2096 nonzeros
+Model fingerprint: 0x9cfeb5fe
+Model has 27765 quadratic objective terms
+Variable types: 0 continuous, 1048 integer (1048 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [0e+00, 0e+00]
+  QObjective range [4e+00, 8e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 0.0000000
+Presolve time: 0.03s
+Presolved: 641 rows, 1550 columns, 30865 nonzeros
+Variable types: 0 continuous, 1550 integer (1055 binary)
+
+Root relaxation: objective -9.569231e+02, 519 iterations, 0.06 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 -956.92310    0  207    0.00000 -956.92310      -     -    0s
+H    0     0                     -16.0000000 -956.92310  5881%     -    0s
+H    0     0                     -36.0000000 -956.92310  2558%     -    0s
+H    0     0                     -66.0000000 -956.92310  1350%     -    0s
+     0     0 -775.55238    0  276  -66.00000 -775.55238  1075%     -    0s
+     0     0 -764.59424    0  291  -66.00000 -764.59424  1058%     -    0s
+     0     0 -764.25389    0  292  -66.00000 -764.25389  1058%     -    0s
+     0     0 -710.71287    0  324  -66.00000 -710.71287   977%     -    1s
+     0     0 -710.71287    0  324  -66.00000 -710.71287   977%     -    1s
+     0     2 -710.71287    0  324  -66.00000 -710.71287   977%     -    1s
+  4578  4158 -150.74756  158  321  -66.00000 -676.92663   926%  15.0    5s
+  4616  4183 -322.50051    7  513  -66.00000 -609.59379   824%  14.8   10s
+  4662  4214 -168.32883  220  670  -66.00000 -588.14727   791%  14.7   15s
+  4689  4232 -395.47891   31  723  -66.00000 -576.53333   774%  14.6   20s
+  4720  4253 -213.74076  104  727  -66.00000 -572.95174   768%  14.5   25s
+  4752  4274 -103.97415  175  724  -66.00000 -566.47556   758%  14.4   30s
+  4764  4285 -566.47556   13  664  -66.00000 -566.47556   758%  22.6   35s
+  4924  4402 -536.40971   20  375  -66.00000 -566.47556   758%  31.5   40s
+  5729  4792 -501.19311   28  402  -66.00000 -566.47556   758%  43.0   45s
+  7124  5721 -425.88135   35  428  -66.00000 -566.47556   758%  55.3   50s
+  8169  6189 -477.70468   39  648  -66.00000 -566.47556   758%  63.0   55s
+  8738  6585 -318.68255   42  457  -66.00000 -566.47556   758%  73.4   61s
+  8935  6725 -461.20446   44  625  -66.00000 -566.47556   758%  75.3   65s
+  9828  7111 -451.38674   47  632  -66.00000 -566.47556   758%  82.3   76s
+ 10515  7719 -446.69159   50  628  -66.00000 -566.47556   758%  87.0   80s
+ 10798  7835 -446.44170   51  626  -66.00000 -566.47556   758%  87.6   91s
+ 11924  8463 -432.38754   55  630  -66.00000 -566.47556   758%  91.0   95s
+ 12962  9239 -429.22089   59  607  -66.00000 -566.47556   758%  96.1  100s
+ 13733  9374 -423.48142   61  614  -66.00000 -566.47556   758%  97.4  105s
+ 15005 10114 -338.81515   65  419  -66.00000 -566.47556   758%   103  110s
+ 15930 10858 -387.99972   70  569  -66.00000 -566.47556   758%   108  115s
+ 16955 11424 -375.57167   74  549  -66.00000 -566.47556   758%   109  120s
+ 18324 12614 -367.13166   79  543  -66.00000 -566.47556   758%   112  125s
+ 19103 12775 -359.86518   81  516  -66.00000 -566.47556   758%   112  153s
+ 19332 13233 -313.27759   81  360  -66.00000 -566.47556   758%   113  155s
+ 20014 14013 -260.30416   85  422  -66.00000 -566.47556   758%   114  161s
+ 21503 15112 -328.24440   92  514  -66.00000 -566.47556   758%   117  167s
+ 22397 15738 -307.30394  100  513  -66.00000 -566.47556   758%   123  172s
+ 22836 16387 -250.54365  106  380  -66.00000 -566.47556   758%   127  175s
+ 23586 17219 -277.26205  117  449  -66.00000 -566.47556   758%   131  180s
+ 25310 19165 -237.34162  146  402  -66.00000 -566.47556   758%   134  188s
+ 26672 20461 -213.82156  167  376  -66.00000 -566.47556   758%   134  192s
+ 28080 21468 -158.34548  184  316  -66.00000 -566.47556   758%   133  196s
+ 29169 22492 -171.33310  208  293  -66.00000 -566.47556   758%   134  200s
+ 31678 24484 -112.34171  284  198  -66.00000 -503.74949   663%   134  209s
+ 32483 25663 -448.01544   19  481  -66.00000 -503.74949   663%   134  214s
+ 33759 27351 -267.98881   32  290  -66.00000 -456.05910   591%   135  219s
+ 35584 28534 -384.02753   35  468  -66.00000 -447.98842   579%   134  224s
+ 36991 29667 -352.24704   32  362  -66.00000 -439.53898   566%   134  228s
+ 38428 31218 -211.28789   22  216  -66.00000 -425.74210   545%   135  233s
+ 40171 32580  -94.32633   67  215  -66.00000 -410.11104   521%   134  238s
+ 41813 32581 -262.95448   82  321  -66.00000 -409.66368   521%   134  311s
+ 41823 32588 -218.30541   99  659  -66.00000 -409.66368   521%   134  315s
+ 41866 32616  -79.93696   39  674  -66.00000 -409.66368   521%   134  320s
+ 41882 32627 -299.32576   50  717  -66.00000 -409.66368   521%   134  325s
+ 41905 32642 -245.86071   92  691  -66.00000 -409.66368   521%   134  330s
+ 41930 32659 -193.73551  122  700  -66.00000 -409.66368   521%   134  335s
+ 41947 32670  -86.36707  146  709  -66.00000 -409.66368   521%   134  340s
+ 41970 32686 -229.13038   80  709  -66.00000 -409.66368   521%   134  345s
+ 41986 32696 -110.94943  237  704  -66.00000 -409.66368   521%   134  350s
+ 42011 32713  -76.14664  240  708  -66.00000 -409.66368   521%   134  355s
+ 42031 32726 -283.52924   25  698  -66.00000 -409.66368   521%   134  360s
+ 42053 32741 -184.74659  105  734  -66.00000 -409.66368   521%   134  365s
+ 42071 32753 -281.25406   48  725  -66.00000 -409.66368   521%   134  370s
+ 42085 32762 -318.64295   80  715  -66.00000 -409.66368   521%   133  375s
+ 42103 32774 -191.22571   97  728  -66.00000 -409.66368   521%   133  380s
+ 42119 32785 -159.53288   60  727  -66.00000 -409.66368   521%   133  385s
+ 42131 32793 -283.52924   25  770  -66.00000 -409.66368   521%   133  390s
+ 42142 32800 -326.07317   48  761  -66.00000 -409.66368   521%   133  395s
+ 42160 32812 -136.17532   41  752  -66.00000 -409.66368   521%   133  400s
+ 42177 32824 -129.83346   90  714  -66.00000 -409.66368   521%   133  405s
+ 42188 32831  -89.71996  277  713  -66.00000 -409.66368   521%   133  410s
+ 42206 32843 -153.60369   42  730  -66.00000 -409.66368   521%   133  415s
+ 42215 32849 -179.53006  165  731  -66.00000 -409.66368   521%   133  420s
+ 42226 32856 -296.97376   31  768  -66.00000 -409.66368   521%   133  425s
+ 42236 32863 -326.53858   36  748  -66.00000 -409.66368   521%   133  431s
+ 42243 32868  -71.75714  152  741  -66.00000 -409.66368   521%   133  435s
+ 42253 32874 -184.74659  105  730  -66.00000 -409.66368   521%   133  440s
+ 42269 32885 -209.90652   32  726  -66.00000 -409.66368   521%   133  445s
+ 42282 32894 -299.32576   50  740  -66.00000 -409.66368   521%   133  450s
+ 42293 32901 -349.46642   61  740  -66.00000 -409.66368   521%   133  455s
+ 42301 32906  -74.34201  123  735  -66.00000 -409.66368   521%   133  460s
+ 42318 32918 -251.27465   84  757  -66.00000 -409.66368   521%   133  465s
+ 42329 32925 -194.49592   83  723  -66.00000 -409.66368   521%   133  470s
+ 42331 32929 -409.66368   25  665  -66.00000 -409.66368   521%   135  478s
+ 42333 32933 -409.66368   26  625  -66.00000 -409.66368   521%   135  480s
+ 42345 32953 -409.66368   28  597  -66.00000 -409.66368   521%   136  485s
+ 42469 33039 -409.66368   32  540  -66.00000 -409.66368   521%   136  490s
+ 42710 33189 -409.66368   35  427  -66.00000 -409.66368   521%   136  495s
+ 43396 33667 -391.42721   40  464  -66.00000 -409.66368   521%   137  500s
+ 44421 34242 -409.66368   45  598  -66.00000 -409.66368   521%   138  505s
+ 45212 34600 -287.29615   48  479  -66.00000 -409.66368   521%   139  510s
+ 45773 35005 -409.66368   53  587  -66.00000 -409.66368   521%   141  515s
+ 47301 35969 -409.66368   59  565  -66.00000 -409.66368   521%   142  520s
+ 48277 36642 -400.66610   64  546  -66.00000 -409.66368   521%   144  525s
+ 49575 37460 -383.64082   70  535  -66.00000 -409.66368   521%   146  530s
+ 50465 37730 -361.83554   75  551  -66.00000 -409.66368   521%   147  547s
+ 51134 38473 -348.94766   79  530  -66.00000 -409.66368   521%   148  551s
+ 52354 39198 -329.96689   86  503  -66.00000 -409.66368   521%   150  555s
+ 53705 39677 -227.30169   95  427  -66.00000 -409.66368   521%   152  560s
+ 54340 40152 -299.12376  102  465  -66.00000 -409.66368   521%   153  565s
+ 55712 41020 -277.05794  115  445  -66.00000 -409.66368   521%   156  570s
+ 57017 41716 -258.64045  128  435  -66.00000 -409.66368   521%   156  575s
+ 58459 42564 -230.58449  147  400  -66.00000 -409.66368   521%   160  581s
+ 58955 42793 -221.76362  155  368  -66.00000 -409.66368   521%   161  605s
+ 60111 43793 -194.66250  178  389  -66.00000 -409.66368   521%   163  610s
+ 61821 44790 -139.78961  205  264  -66.00000 -409.66368   521%   164  616s
+ 62984 45405  -97.51803  153  240  -66.00000 -409.66368   521%   165  620s
+ 64632 46462  -92.73111  279  194  -66.00000 -409.66368   521%   167  625s
+ 66566 47532 -409.66368   33  576  -66.00000 -409.66368   521%   167  631s
+ 68690 48316 -377.89783   47  544  -66.00000 -409.66368   521%   168  637s
+ 69480 48732 -348.17172   56  518  -66.00000 -409.66368   521%   169  640s
+ 71298 50231 -240.74979  110  400  -66.00000 -409.66368   521%   170  647s
+ 72596 50889 -115.13828  221  251  -66.00000 -373.41387   466%   170  651s
+ 73911 51644 -186.30156   38  223  -66.00000 -363.28219   450%   171  655s
+ 76817 53427  -83.60781  123  194  -66.00000 -359.69052   445%   171  663s
+ 78460 53947 -264.06496   58  417  -66.00000 -359.69052   445%   171  667s
+ 79651 55145 -182.71118   97  349  -66.00000 -359.69052   445%   172  671s
+ 81362 56185  -86.02854  196  192  -66.00000 -352.07489   433%   172  676s
+ 83121 57456  -80.57661  128  191  -66.00000 -350.50408   431%   172  682s
+ 85306 57618  -91.30020   56  155  -66.00000 -348.02626   427%   172  686s
+ 86512 58540 -152.32499   77  337  -66.00000 -345.61381   424%   173  690s
+ 88039 59304 -206.71096   40  210  -66.00000 -343.12360   420%   173  695s
+ 91040 61037 -170.44731   78  331  -66.00000 -339.73386   415%   174  704s
+ 92806 61625  -90.46924   56  149  -66.00000 -336.77798   410%   174  709s
+ 94389 62542  -93.43390  112  196  -66.00000 -335.80439   409%   174  714s
+ 95987 63434 -109.08915  104  223  -66.00000 -334.52514   407%   174  718s
+ 97591 64268 -234.53704   43  304  -66.00000 -333.76076   406%   175  723s
+ 99230 64815 -188.53340   66  338  -66.00000 -330.66828   401%   175  727s
+ 100508 65445 -185.13712   76  206  -66.00000 -330.09630   400%   176  733s
+ 101627 66098 -119.87402  129  224  -66.00000 -328.93542   398%   177  738s
+ 103020 66854 -188.25005   62  327  -66.00000 -328.76173   398%   178  743s
+ 104481 67490 -115.66683   80  281  -66.00000 -328.28659   397%   179  749s
+ 106022 68319 -307.89507   77  481  -66.00000 -328.28659   397%   179  755s
+ 107507 69098 -202.51083  140  339  -66.00000 -326.69057   395%   180  761s
+ 108872 69752 -224.25875   59  301  -66.00000 -324.86839   392%   182  767s
+ 110621 70638 -130.95189   58  241  -66.00000 -324.42992   392%   182  774s
+ 112369 71735  -71.58858  129  151  -66.00000 -323.40974   390%   183  780s
+ 114309 72545 -122.50383   62  203  -66.00000 -322.59810   389%   183  786s
+ 116076 73310  -75.14349  125  213  -66.00000 -320.69177   386%   184  791s
+ 118035 73619 -180.05290   49  239  -66.00000 -318.53308   383%   184  797s
+ 119158 75271  -98.66158   97  244  -66.00000 -318.39588   382%   184  803s
+ 121394 75827  -94.39444  109  205  -66.00000 -316.35523   379%   183  808s
+ 122971 76573  -69.14425  133  116  -66.00000 -315.59132   378%   184  813s
+ 124494 78018 -137.55185   74  267  -66.00000 -313.80624   375%   184  819s
+ 126705 78861 -166.08272  100  340  -66.00000 -312.80526   374%   183  824s
+ 128474 79563 -172.73962   59  274  -66.00000 -311.61754   372%   183  829s
+ 130030 80853 -193.38407   68  346  -66.00000 -309.89165   370%   184  834s
+ 132030 81420 -215.42369   59  324  -66.00000 -308.85415   368%   183  839s
+ 133471 82202 -140.72644   94  328  -66.00000 -308.50684   367%   183  843s
+ 134882 83395 -216.33997   61  348  -66.00000 -307.67983   366%   183  848s
+ 136742 83964 -220.37020   59  341  -66.00000 -306.23407   364%   183  853s
+ 138075 84614  -76.43006  153  198  -66.00000 -305.75510   363%   184  858s
+ 139357 85219 -133.91340   65  274  -66.00000 -305.55951   363%   184  862s
+ 140548 86085 -143.77090  116  265  -66.00000 -305.03137   362%   185  867s
+ 142134 87050 -209.21079   82  404  -66.00000 -304.87563   362%   185  872s
+ 143622 88697 -119.60034  155  284  -66.00000 -304.21222   361%   186  877s
+ 145495 90192 -144.97168   86  302  -66.00000 -303.54243   360%   186  882s
+ 147159 91758 -195.13053   77  275  -66.00000 -302.02694   358%   186  888s
+ 149031 92827 -201.02477   49  303  -66.00000 -301.55904   357%   185  892s
+ 150318 94386 -161.31816   47  267  -66.00000 -301.55904   357%   186  897s
+ 152040 95518     cutoff  129       -66.00000 -300.22796   355%   186  902s
+ 153317 97143  -97.61019   96  245  -66.00000 -300.11023   355%   185  907s
+ 155156 98523 -109.53119   94  216  -66.00000 -298.63600   352%   185  912s
+ 156772 99849 -191.58036   50  288  -66.00000 -298.29446   352%   185  917s
+ 158430 101117  -70.29112   81  159  -66.00000 -296.81327   350%   185  922s
+ 159860 102396 -206.85724   94  334  -66.00000 -296.27384   349%   186  927s
+ 161394 103661 -192.64209   50  318  -66.00000 -295.62024   348%   186  933s
+ 162847 104482 -142.32832   58  272  -66.00000 -294.67523   346%   186  938s
+ 163681 105308  -99.46240   91  241  -66.00000 -294.67048   346%   187  943s
+ 164775 105723 -199.79597   81  413  -66.00000 -294.67048   346%   188  953s
+ 165256 107061 -178.19885   96  374  -66.00000 -294.66131   346%   188  959s
+ 166987 108682 -109.67963   79  257  -66.00000 -294.33422   346%   188  965s
+ 169093 110208 -222.80188   84  382  -66.00000 -293.91117   345%   188  971s
+ 170930 111625 -172.36404   93  260  -66.00000 -292.42568   343%   188  975s
+ 172617 112946  -92.59713   72  183  -66.00000 -291.89092   342%   188  980s
+ 174117 114289 -173.18553  114  319  -66.00000 -290.74308   341%   188  985s
+ 175734 115782  -77.46392  215  202  -66.00000 -289.97071   339%   188  990s
+ 177436 117046  -83.97711  123  234  -66.00000 -289.29326   338%   188  995s
+ 180255 118109  -77.32887  186  221  -66.00000 -288.76148   338%   188 1000s
+
+Cutting planes:
+  Gomory: 3
+  MIR: 139
+  StrongCG: 5
+  Flow cover: 1113
+  Zero half: 4
+  RLT: 1269
+  Relax-and-lift: 6
+
+Explored 180287 nodes (33902044 simplex iterations) in 1000.02 seconds
+Thread count was 32 (of 32 available processors)
+
+Solution count 4: -66 -36 -16 0 
+
+Time limit reached
+Best objective -6.600000000000e+01, best bound -2.880000000000e+02, gap 336.3636%
+-------------------------------------------------------------------------------
+                                    Summary                                    
+-------------------------------------------------------------------------------
+(CVXPY) Mar 16 01:55:35 PM: Problem status: user_limit
+(CVXPY) Mar 16 01:55:35 PM: Optimal value: 6.600e+01
+(CVXPY) Mar 16 01:55:35 PM: Compilation took 7.119e-02 seconds
+(CVXPY) Mar 16 01:55:35 PM: Solver (including time spent in interface) took 1.000e+03 seconds
+/home/pcs00440/initial_problem/initial_venv/lib/python3.6/site-packages/cvxpy/problems/problem.py:1268: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  "Solution may be inaccurate. Try another solver, "
+in compute graph score
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+Solution is: {'data mining': b'Eamonn J. Keogh', 'databases': b'Graham Cormode', 'algorithms and theory': b'Rajeev Motwani', 'algorithms': b'Suresh Venkatasubramanian', 'artificial intelligence': b'Qiang Yang', 'natural language processing': b'Ying Zhang', 'robotics': b'Wei Wang', 'neural networks': b'Michael I. Jordan'}
+Solution score for iqp graph truth is: 33
+Edges are: [(b'Eamonn J. Keogh', b'Graham Cormode'), (b'Eamonn J. Keogh', b'Qiang Yang'), (b'Eamonn J. Keogh', b'Ying Zhang'), (b'Eamonn J. Keogh', b'Wei Wang'), (b'Eamonn J. Keogh', b'Michael I. Jordan'), (b'Graham Cormode', b'Eamonn J. Keogh'), (b'Graham Cormode', b'Rajeev Motwani'), (b'Graham Cormode', b'Suresh Venkatasubramanian'), (b'Graham Cormode', b'Qiang Yang'), (b'Graham Cormode', b'Ying Zhang'), (b'Graham Cormode', b'Wei Wang'), (b'Graham Cormode', b'Michael I. Jordan'), (b'Rajeev Motwani', b'Eamonn J. Keogh'), (b'Rajeev Motwani', b'Graham Cormode'), (b'Rajeev Motwani', b'Ying Zhang'), (b'Rajeev Motwani', b'Wei Wang'), (b'Rajeev Motwani', b'Michael I. Jordan'), (b'Suresh Venkatasubramanian', b'Eamonn J. Keogh'), (b'Suresh Venkatasubramanian', b'Graham Cormode'), (b'Suresh Venkatasubramanian', b'Rajeev Motwani'), (b'Suresh Venkatasubramanian', b'Ying Zhang'), (b'Suresh Venkatasubramanian', b'Wei Wang'), (b'Qiang Yang', b'Eamonn J. Keogh'), (b'Qiang Yang', b'Ying Zhang'), (b'Qiang Yang', b'Wei Wang'), (b'Ying Zhang', b'Suresh Venkatasubramanian'), (b'Ying Zhang', b'Qiang Yang'), (b'Michael I. Jordan', b'Eamonn J. Keogh'), (b'Michael I. Jordan', b'Graham Cormode'), (b'Michael I. Jordan', b'Suresh Venkatasubramanian'), (b'Michael I. Jordan', b'Qiang Yang'), (b'Michael I. Jordan', b'Ying Zhang'), (b'Michael I. Jordan', b'Wei Wang')]
+Running time is: 1000.880912065506
+Considering the following customized categories: {'software engineering': 1, 'operating systems': 1, 'high-performance computing': 1, 'distributed and parallel computing': 1}
+Creating graphs.
+in create_graph_gml_files
+in read_dict_to_list
+out read_dict_to_list
+in read_dict_to_pkl_file
+out read_dict_to_pkl_file
+in read_dict_to_pkl_file
+out read_dict_to_pkl_file
+in read_venue_assignments_csv
+Traceback (most recent call last):
+  File "method1_dblp.py", line 478, in <module>
+    main()
+  File "method1_dblp.py", line 393, in main
+    category_graph = create_graph_gml_files(file_name_pid_venue,file_name_venues_authors_citations,file_name_pid_authors,file_name_venues_assignment_csv,customized_categories)
+  File "method1_dblp.py", line 167, in create_graph_gml_files
+    venue_cat_dict = read_venue_assignments_csv(file_name_venues_assignment_csv)
+  File "method1_dblp.py", line 53, in read_venue_assignments_csv
+    for i, line in enumerate(reader):
+  File "/usr/lib/python3.6/encodings/ascii.py", line 26, in decode
+    return codecs.ascii_decode(input, self.errors)[0]
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xef in position 0: ordinal not in range(128)

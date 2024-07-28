@@ -1,0 +1,214 @@
+Considering the following customized categories: {'data mining': 1, 'databases': 1, 'algorithms and theory': 1, 'algorithms': 1}
+Creating graphs.
+in create_graph_gml_files
+in read_dict_to_list
+out read_dict_to_list
+in read_dict_to_pkl_file
+out read_dict_to_pkl_file
+in read_dict_to_pkl_file
+out read_dict_to_pkl_file
+in read_venue_assignments_csv
+out read_venue_assignments_csv
+in create_cat_venue_dictionary
+out create_cat_venue_dictionary
+in get_authors
+out get_authors
+Creating graphs.
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+Time required to create graphhs is: 12.798804521560669 sec
+Adding cross-edges to the graph.
+Category is: data mining
+New number of nodes of graph: 18953
+New number of edges of graph: 497386
+Category is: databases
+New number of nodes of graph: 24693
+New number of edges of graph: 969093
+Category is: algorithms and theory
+New number of nodes of graph: 14324
+New number of edges of graph: 246467
+Category is: algorithms
+New number of nodes of graph: 9072
+New number of edges of graph: 113859
+Time required to add cross-edges is: 2.0727410316467285 sec
+out create_graph_gml_files
+Cleaning graphs.
+in clean_graphs
+Creating core graph.
+Creating core graph.
+Creating core graph.
+Creating core graph.
+out clean_graphs
+Length of nodes list: 15157 length of nodes 0
+Length of nodes list: 20295 length of nodes 15157
+Length of nodes list: 8997 length of nodes 35452
+Length of nodes list: 5449 length of nodes 44449
+Number of unique nodes 31701 number of all nodes: 49898
+Avg End./Role: 442794.25
+Avg End./Expert: 55.87132898015835
+Max End./Expert 3995
+Number of overlapping nodes: 5449
+in get_overlapping_graph_nodes
+Number of intersecting nodes: 1111
+out get_overlapping_graph_nodes
+===============================================================================
+                                     CVXPY                                     
+                                    v1.1.12                                    
+===============================================================================
+(CVXPY) Mar 14 01:52:31 PM: Your problem has 4444 variables, 2 constraints, and 0 parameters.
+(CVXPY) Mar 14 01:52:38 PM: It is compliant with the following grammars: DCP, DQCP
+(CVXPY) Mar 14 01:52:38 PM: (If you need to solve this problem multiple times, but with different data, consider using parameters.)
+(CVXPY) Mar 14 01:52:38 PM: CVXPY will first compile your problem; then, it will invoke a numerical solver to obtain a solution.
+-------------------------------------------------------------------------------
+                                  Compilation                                  
+-------------------------------------------------------------------------------
+(CVXPY) Mar 14 01:52:38 PM: Compiling problem (target solver=GUROBI).
+(CVXPY) Mar 14 01:52:38 PM: Reduction chain: FlipObjective -> CvxAttr2Constr -> Qp2SymbolicQp -> QpMatrixStuffing -> GUROBI
+(CVXPY) Mar 14 01:52:38 PM: Applying reduction FlipObjective
+(CVXPY) Mar 14 01:52:38 PM: Applying reduction CvxAttr2Constr
+(CVXPY) Mar 14 01:52:38 PM: Applying reduction Qp2SymbolicQp
+(CVXPY) Mar 14 01:52:38 PM: Applying reduction QpMatrixStuffing
+(CVXPY) Mar 14 01:52:39 PM: Applying reduction GUROBI
+(CVXPY) Mar 14 01:52:39 PM: Finished problem compilation (took 5.627e-01 seconds).
+-------------------------------------------------------------------------------
+                                Numerical solver                               
+-------------------------------------------------------------------------------
+(CVXPY) Mar 14 01:52:39 PM: Invoking solver GUROBI  to obtain a solution.
+Academic license - for non-commercial use only - expires 2022-12-18
+Using license file /home/pcs00440/gurobi.lic
+Parameter OutputFlag unchanged
+   Value: 1  Min: 0  Max: 1  Default: 1
+Changed value of parameter QCPDual to 1
+   Prev: 0  Min: 0  Max: 1  Default: 0
+Changed value of parameter TimeLimit to 100.0
+   Prev: inf  Min: 0.0  Max: inf  Default: inf
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+Optimize a model with 1115 rows, 4444 columns and 8888 nonzeros
+Model fingerprint: 0x8b271279
+Model has 355537 quadratic objective terms
+Variable types: 0 continuous, 4444 integer (4444 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [0e+00, 0e+00]
+  QObjective range [4e+00, 8e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 0.0000000
+Presolve time: 0.74s
+Presolved: 4051 rows, 7380 columns, 370297 nonzeros
+Variable types: 0 continuous, 7380 integer (4653 binary)
+
+Root relaxation: objective -1.795756e+03, 1657 iterations, 0.67 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 -1795.7561    0  568    0.00000 -1795.7561      -     -    4s
+H    0     0                     -10.0000000 -1795.7561      -     -    4s
+H    0     0                     -14.0000000 -1795.7561      -     -    4s
+H    0     0                     -24.0000000 -1795.7561  7382%     -    6s
+     0     0 -1739.4465    0  571  -24.00000 -1739.4465  7148%     -    7s
+     0     0 -1677.7027    0  576  -24.00000 -1677.7027  6890%     -   10s
+     0     0 -1674.0764    0  586  -24.00000 -1674.0764  6875%     -   10s
+     0     0 -1673.7537    0  585  -24.00000 -1673.7537  6874%     -   10s
+     0     0 -1673.5621    0  587  -24.00000 -1673.5621  6873%     -   11s
+     0     0 -1642.9841    0  616  -24.00000 -1642.9841  6746%     -   14s
+     0     0 -1624.2757    0  626  -24.00000 -1624.2757  6668%     -   14s
+     0     0 -1619.0711    0  606  -24.00000 -1619.0711  6646%     -   14s
+     0     0 -1611.4846    0  603  -24.00000 -1611.4846  6615%     -   15s
+     0     0 -1609.1214    0  589  -24.00000 -1609.1214  6605%     -   15s
+     0     0 -1604.4493    0  606  -24.00000 -1604.4493  6585%     -   15s
+     0     0 -1600.8084    0  608  -24.00000 -1600.8084  6570%     -   15s
+     0     0 -1598.0330    0  609  -24.00000 -1598.0330  6558%     -   15s
+     0     0 -1594.3198    0  605  -24.00000 -1594.3198  6543%     -   16s
+     0     0 -1591.0064    0  617  -24.00000 -1591.0064  6529%     -   16s
+     0     0 -1587.6798    0  606  -24.00000 -1587.6798  6515%     -   16s
+     0     0 -1584.4904    0  623  -24.00000 -1584.4904  6502%     -   16s
+     0     0 -1582.2624    0  615  -24.00000 -1582.2624  6493%     -   16s
+     0     0 -1580.8651    0  622  -24.00000 -1580.8651  6487%     -   17s
+     0     0 -1572.4026    0  640  -24.00000 -1572.4026  6452%     -   22s
+     0     0 -1562.7304    0  689  -24.00000 -1562.7304  6411%     -   23s
+     0     0 -1560.8435    0  675  -24.00000 -1560.8435  6404%     -   23s
+     0     0 -1540.4857    0  706  -24.00000 -1540.4857  6319%     -   30s
+     0     0 -1537.4510    0  703  -24.00000 -1537.4510  6306%     -   30s
+     0     0 -1523.3912    0  702  -24.00000 -1523.3912  6247%     -   34s
+     0     0 -1522.6528    0  702  -24.00000 -1522.6528  6244%     -   34s
+     0     2 -1522.5920    0  702  -24.00000 -1522.5920  6244%     -   36s
+     7    14 -1520.7720    3  698  -24.00000 -1520.7720  6237%   603   40s
+    29    42 -1513.1924    5  713  -24.00000 -1513.1924  6205%   295   45s
+   173   165 -1481.3815   12  698  -24.00000 -1481.3815  6072%  91.6   54s
+   445   438 -1459.2141   20  673  -24.00000 -1466.3580  6010%  48.8   55s
+  2402  1973 -1338.0043   56  706  -24.00000 -1466.3580  6010%  23.3   60s
+  3994  3272 -1226.3642   85  727  -24.00000 -1466.3580  6010%  21.0   67s
+  4590  3959 -1201.3575   93  722  -24.00000 -1466.3580  6010%  21.5   70s
+  5908  5164 -1135.8191  110  763  -24.00000 -1466.3580  6010%  23.7   75s
+  6429  5420  -26.52742  126 2026  -24.00000 -1466.3580  6010%  24.1   83s
+  6431  5421 -315.43659  274  568  -24.00000 -1466.3580  6010%  24.1   98s
+
+Cutting planes:
+  MIR: 4
+  Flow cover: 2
+  Zero half: 5
+
+Explored 6431 nodes (160821 simplex iterations) in 100.12 seconds
+Thread count was 32 (of 32 available processors)
+
+Solution count 4: -24 -14 -10 0 
+
+Time limit reached
+Best objective -2.400000000000e+01, best bound -1.466000000000e+03, gap 6008.3333%
+-------------------------------------------------------------------------------
+                                    Summary                                    
+-------------------------------------------------------------------------------
+(CVXPY) Mar 14 01:54:19 PM: Problem status: user_limit
+(CVXPY) Mar 14 01:54:19 PM: Optimal value: 2.400e+01
+(CVXPY) Mar 14 01:54:19 PM: Compilation took 5.627e-01 seconds
+(CVXPY) Mar 14 01:54:19 PM: Solver (including time spent in interface) took 1.003e+02 seconds
+/home/pcs00440/initial_problem/initial_venv/lib/python3.6/site-packages/cvxpy/problems/problem.py:1268: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  "Solution may be inaccurate. Try another solver, "
+in compute graph score
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+Solution is: {'data mining': b'Philip S. Yu', 'databases': b'Aristides Gionis', 'algorithms and theory': b'Piotr Indyk', 'algorithms': b'S. Muthukrishnan'}
+Solution score for iqp graph truth is: 12
+Edges are: [(b'Philip S. Yu', b'Aristides Gionis'), (b'Philip S. Yu', b'Piotr Indyk'), (b'Philip S. Yu', b'S. Muthukrishnan'), (b'Aristides Gionis', b'Philip S. Yu'), (b'Aristides Gionis', b'Piotr Indyk'), (b'Aristides Gionis', b'S. Muthukrishnan'), (b'Piotr Indyk', b'Philip S. Yu'), (b'Piotr Indyk', b'Aristides Gionis'), (b'Piotr Indyk', b'S. Muthukrishnan'), (b'S. Muthukrishnan', b'Philip S. Yu'), (b'S. Muthukrishnan', b'Aristides Gionis'), (b'S. Muthukrishnan', b'Piotr Indyk')]
+Running time is: 109.02897024154663
+Considering the following customized categories: {'data mining': 1, 'databases': 1, 'algorithms and theory': 1, 'algorithms': 1, 'artificial intelligence': 1, 'natural language processing': 1, 'robotics': 1, 'neural networks': 1}
+Creating graphs.
+in create_graph_gml_files
+in read_dict_to_list
+out read_dict_to_list
+in read_dict_to_pkl_file
+out read_dict_to_pkl_file
+in read_dict_to_pkl_file
+out read_dict_to_pkl_file
+in read_venue_assignments_csv
+Traceback (most recent call last):
+  File "method1_dblp.py", line 478, in <module>
+    main()
+  File "method1_dblp.py", line 393, in main
+    category_graph = create_graph_gml_files(file_name_pid_venue,file_name_venues_authors_citations,file_name_pid_authors,file_name_venues_assignment_csv,customized_categories)
+  File "method1_dblp.py", line 167, in create_graph_gml_files
+    venue_cat_dict = read_venue_assignments_csv(file_name_venues_assignment_csv)
+  File "method1_dblp.py", line 53, in read_venue_assignments_csv
+    for i, line in enumerate(reader):
+  File "/usr/lib/python3.6/encodings/ascii.py", line 26, in decode
+    return codecs.ascii_decode(input, self.errors)[0]
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xef in position 0: ordinal not in range(128)

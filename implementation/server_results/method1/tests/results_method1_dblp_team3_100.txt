@@ -1,0 +1,254 @@
+Considering the following customized categories: {'data mining': 1, 'databases': 1, 'algorithms and theory': 1, 'algorithms': 1, 'artificial intelligence': 1, 'natural language processing': 1, 'robotics': 1, 'neural networks': 1}
+Creating graphs.
+in create_graph_gml_files
+in read_dict_to_list
+out read_dict_to_list
+in read_dict_to_pkl_file
+out read_dict_to_pkl_file
+in read_dict_to_pkl_file
+out read_dict_to_pkl_file
+in read_venue_assignments_csv
+out read_venue_assignments_csv
+in create_cat_venue_dictionary
+out create_cat_venue_dictionary
+in get_authors
+out get_authors
+Creating graphs.
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+Time required to create graphhs is: 33.18868350982666 sec
+Adding cross-edges to the graph.
+Category is: data mining
+New number of nodes of graph: 29275
+New number of edges of graph: 628167
+Category is: databases
+New number of nodes of graph: 31117
+New number of edges of graph: 1037344
+Category is: algorithms and theory
+New number of nodes of graph: 19888
+New number of edges of graph: 278766
+Category is: algorithms
+New number of nodes of graph: 11599
+New number of edges of graph: 126716
+Category is: artificial intelligence
+New number of nodes of graph: 54758
+New number of edges of graph: 1043585
+Category is: natural language processing
+New number of nodes of graph: 21415
+New number of edges of graph: 714800
+Category is: robotics
+New number of nodes of graph: 31713
+New number of edges of graph: 886838
+Category is: neural networks
+New number of nodes of graph: 45523
+New number of edges of graph: 780411
+Time required to add cross-edges is: 12.101312160491943 sec
+out create_graph_gml_files
+Cleaning graphs.
+in clean_graphs
+Creating core graph.
+Creating core graph.
+Creating core graph.
+Creating core graph.
+Creating core graph.
+Creating core graph.
+Creating core graph.
+Creating core graph.
+out clean_graphs
+Length of nodes list: 21330 length of nodes 0
+Length of nodes list: 23445 length of nodes 21330
+Length of nodes list: 10675 length of nodes 44775
+Length of nodes list: 6351 length of nodes 55450
+Length of nodes list: 37383 length of nodes 61801
+Length of nodes list: 16001 length of nodes 99184
+Length of nodes list: 26011 length of nodes 115185
+Length of nodes list: 32544 length of nodes 141196
+Number of unique nodes 95903 number of all nodes: 173740
+Avg End./Role: 659539.375
+Avg End./Expert: 55.017204884101645
+Max End./Expert 5971
+Number of overlapping nodes: 32544
+in get_overlapping_graph_nodes
+Number of intersecting nodes: 131
+out get_overlapping_graph_nodes
+===============================================================================
+                                     CVXPY                                     
+                                    v1.1.12                                    
+===============================================================================
+(CVXPY) Mar 14 02:08:17 PM: Your problem has 1048 variables, 2 constraints, and 0 parameters.
+(CVXPY) Mar 14 02:08:19 PM: It is compliant with the following grammars: DCP, DQCP
+(CVXPY) Mar 14 02:08:19 PM: (If you need to solve this problem multiple times, but with different data, consider using parameters.)
+(CVXPY) Mar 14 02:08:19 PM: CVXPY will first compile your problem; then, it will invoke a numerical solver to obtain a solution.
+-------------------------------------------------------------------------------
+                                  Compilation                                  
+-------------------------------------------------------------------------------
+(CVXPY) Mar 14 02:08:19 PM: Compiling problem (target solver=GUROBI).
+(CVXPY) Mar 14 02:08:19 PM: Reduction chain: FlipObjective -> CvxAttr2Constr -> Qp2SymbolicQp -> QpMatrixStuffing -> GUROBI
+(CVXPY) Mar 14 02:08:19 PM: Applying reduction FlipObjective
+(CVXPY) Mar 14 02:08:19 PM: Applying reduction CvxAttr2Constr
+(CVXPY) Mar 14 02:08:19 PM: Applying reduction Qp2SymbolicQp
+(CVXPY) Mar 14 02:08:19 PM: Applying reduction QpMatrixStuffing
+(CVXPY) Mar 14 02:08:19 PM: Applying reduction GUROBI
+(CVXPY) Mar 14 02:08:19 PM: Finished problem compilation (took 7.106e-02 seconds).
+-------------------------------------------------------------------------------
+                                Numerical solver                               
+-------------------------------------------------------------------------------
+(CVXPY) Mar 14 02:08:19 PM: Invoking solver GUROBI  to obtain a solution.
+Academic license - for non-commercial use only - expires 2022-12-18
+Using license file /home/pcs00440/gurobi.lic
+Parameter OutputFlag unchanged
+   Value: 1  Min: 0  Max: 1  Default: 1
+Changed value of parameter QCPDual to 1
+   Prev: 0  Min: 0  Max: 1  Default: 0
+Changed value of parameter TimeLimit to 100.0
+   Prev: inf  Min: 0.0  Max: inf  Default: inf
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+Optimize a model with 139 rows, 1048 columns and 2096 nonzeros
+Model fingerprint: 0x9cfeb5fe
+Model has 27765 quadratic objective terms
+Variable types: 0 continuous, 1048 integer (1048 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [0e+00, 0e+00]
+  QObjective range [4e+00, 8e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 0.0000000
+Presolve time: 0.03s
+Presolved: 641 rows, 1550 columns, 30865 nonzeros
+Variable types: 0 continuous, 1550 integer (1055 binary)
+
+Root relaxation: objective -9.569231e+02, 519 iterations, 0.06 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 -956.92310    0  207    0.00000 -956.92310      -     -    0s
+H    0     0                     -16.0000000 -956.92310  5881%     -    0s
+H    0     0                     -36.0000000 -956.92310  2558%     -    0s
+H    0     0                     -66.0000000 -956.92310  1350%     -    0s
+     0     0 -775.55238    0  276  -66.00000 -775.55238  1075%     -    0s
+     0     0 -764.59424    0  291  -66.00000 -764.59424  1058%     -    0s
+     0     0 -764.25389    0  292  -66.00000 -764.25389  1058%     -    0s
+     0     0 -710.71287    0  324  -66.00000 -710.71287   977%     -    1s
+     0     0 -710.71287    0  324  -66.00000 -710.71287   977%     -    1s
+     0     2 -710.71287    0  324  -66.00000 -710.71287   977%     -    1s
+  2210  2156 -433.07329   73  247  -66.00000 -676.92663   926%  17.3    5s
+  4598  4171 -306.89198   38  403  -66.00000 -651.51909   887%  14.9   10s
+  4637  4197  -78.67429  191  574  -66.00000 -594.61980   801%  14.8   15s
+  4669  4219 -349.02150   38  688  -66.00000 -579.31146   778%  14.7   20s
+  4695  4236 -295.68395  123  750  -66.00000 -576.03607   773%  14.6   25s
+  4720  4253 -213.74076  104  727  -66.00000 -572.95174   768%  14.5   30s
+  4750  4273 -220.31103   74  730  -66.00000 -566.47556   758%  14.4   35s
+  4763  4281 -349.03663   11  725  -66.00000 -566.47556   758%  14.4   40s
+  4826  4340 -562.52057   18  652  -66.00000 -566.47556   758%  27.7   45s
+  5086  4489 -545.71996   23  558  -66.00000 -566.47556   758%  35.3   50s
+  5729  4792 -501.19311   28  402  -66.00000 -566.47556   758%  43.0   55s
+  6729  5499 -497.81747   34  585  -66.00000 -566.47556   758%  52.7   60s
+  7327  5893 -456.44954   36  433  -66.00000 -566.47556   758%  56.9   65s
+  8223  6241 -325.81569   39  403  -66.00000 -566.47556   758%  64.5   70s
+  8698  6428 -464.23128   42  641  -66.00000 -566.47556   758%  71.8   75s
+  8918  6542 -462.76728   43  631  -66.00000 -566.47556   758%  74.5   82s
+  9288  6985 -392.02717   45  438  -66.00000 -566.47556   758%  78.0   85s
+  9828  7111 -451.38674   47  632  -66.00000 -566.47556   758%  82.3   97s
+ 10116  7344 -449.71320   48  623  -66.00000 -566.47556   758%  84.5  100s
+
+Cutting planes:
+  Gomory: 3
+  MIR: 103
+  StrongCG: 1
+  Flow cover: 610
+  Zero half: 6
+  RLT: 809
+
+Explored 10287 nodes (882399 simplex iterations) in 100.01 seconds
+Thread count was 32 (of 32 available processors)
+
+Solution count 4: -66 -36 -16 0 
+
+Time limit reached
+Best objective -6.600000000000e+01, best bound -5.660000000000e+02, gap 757.5758%
+-------------------------------------------------------------------------------
+                                    Summary                                    
+-------------------------------------------------------------------------------
+(CVXPY) Mar 14 02:09:59 PM: Problem status: user_limit
+(CVXPY) Mar 14 02:09:59 PM: Optimal value: 6.600e+01
+(CVXPY) Mar 14 02:09:59 PM: Compilation took 7.106e-02 seconds
+(CVXPY) Mar 14 02:09:59 PM: Solver (including time spent in interface) took 1.001e+02 seconds
+/home/pcs00440/initial_problem/initial_venv/lib/python3.6/site-packages/cvxpy/problems/problem.py:1268: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  "Solution may be inaccurate. Try another solver, "
+in compute graph score
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+Solution is: {'data mining': b'Eamonn J. Keogh', 'databases': b'Graham Cormode', 'algorithms and theory': b'Rajeev Motwani', 'algorithms': b'Suresh Venkatasubramanian', 'artificial intelligence': b'Qiang Yang', 'natural language processing': b'Ying Zhang', 'robotics': b'Wei Wang', 'neural networks': b'Michael I. Jordan'}
+Solution score for iqp graph truth is: 33
+Edges are: [(b'Eamonn J. Keogh', b'Graham Cormode'), (b'Eamonn J. Keogh', b'Qiang Yang'), (b'Eamonn J. Keogh', b'Ying Zhang'), (b'Eamonn J. Keogh', b'Wei Wang'), (b'Eamonn J. Keogh', b'Michael I. Jordan'), (b'Graham Cormode', b'Eamonn J. Keogh'), (b'Graham Cormode', b'Rajeev Motwani'), (b'Graham Cormode', b'Suresh Venkatasubramanian'), (b'Graham Cormode', b'Qiang Yang'), (b'Graham Cormode', b'Ying Zhang'), (b'Graham Cormode', b'Wei Wang'), (b'Graham Cormode', b'Michael I. Jordan'), (b'Rajeev Motwani', b'Eamonn J. Keogh'), (b'Rajeev Motwani', b'Graham Cormode'), (b'Rajeev Motwani', b'Ying Zhang'), (b'Rajeev Motwani', b'Wei Wang'), (b'Rajeev Motwani', b'Michael I. Jordan'), (b'Suresh Venkatasubramanian', b'Eamonn J. Keogh'), (b'Suresh Venkatasubramanian', b'Graham Cormode'), (b'Suresh Venkatasubramanian', b'Rajeev Motwani'), (b'Suresh Venkatasubramanian', b'Ying Zhang'), (b'Suresh Venkatasubramanian', b'Wei Wang'), (b'Qiang Yang', b'Eamonn J. Keogh'), (b'Qiang Yang', b'Ying Zhang'), (b'Qiang Yang', b'Wei Wang'), (b'Ying Zhang', b'Suresh Venkatasubramanian'), (b'Ying Zhang', b'Qiang Yang'), (b'Michael I. Jordan', b'Eamonn J. Keogh'), (b'Michael I. Jordan', b'Graham Cormode'), (b'Michael I. Jordan', b'Suresh Venkatasubramanian'), (b'Michael I. Jordan', b'Qiang Yang'), (b'Michael I. Jordan', b'Ying Zhang'), (b'Michael I. Jordan', b'Wei Wang')]
+Running time is: 101.58772420883179
+Considering the following customized categories: {'software engineering': 1, 'operating systems': 1, 'high-performance computing': 1, 'distributed and parallel computing': 1}
+Creating graphs.
+in create_graph_gml_files
+in read_dict_to_list
+out read_dict_to_list
+in read_dict_to_pkl_file
+out read_dict_to_pkl_file
+in read_dict_to_pkl_file
+out read_dict_to_pkl_file
+in read_venue_assignments_csv
+Traceback (most recent call last):
+  File "method1_dblp.py", line 478, in <module>
+    main()
+  File "method1_dblp.py", line 393, in main
+    category_graph = create_graph_gml_files(file_name_pid_venue,file_name_venues_authors_citations,file_name_pid_authors,file_name_venues_assignment_csv,customized_categories)
+  File "method1_dblp.py", line 167, in create_graph_gml_files
+    venue_cat_dict = read_venue_assignments_csv(file_name_venues_assignment_csv)
+  File "method1_dblp.py", line 53, in read_venue_assignments_csv
+    for i, line in enumerate(reader):
+  File "/usr/lib/python3.6/encodings/ascii.py", line 26, in decode
+    return codecs.ascii_decode(input, self.errors)[0]
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xef in position 0: ordinal not in range(128)

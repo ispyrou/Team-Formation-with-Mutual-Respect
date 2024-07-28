@@ -1,0 +1,226 @@
+Considering the following customized categories: {'signal processing': 1, 'wireless networks and mobile computing': 1, 'computer networking': 1, 'information retrieval': 1, 'software engineering': 1, 'operating systems': 1, 'high-performance computing': 1, 'distributed and parallel computing': 1}
+Creating graphs.
+in create_graph_gml_files
+in read_dict_to_list
+out read_dict_to_list
+in read_dict_to_pkl_file
+out read_dict_to_pkl_file
+in read_dict_to_pkl_file
+out read_dict_to_pkl_file
+in read_venue_assignments_csv
+out read_venue_assignments_csv
+in create_cat_venue_dictionary
+out create_cat_venue_dictionary
+in get_authors
+out get_authors
+Creating graphs.
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+Time required to create graphhs is: 21.617302417755127 sec
+Adding cross-edges to the graph.
+Category is: signal processing
+New number of nodes of graph: 25560
+New number of edges of graph: 481729
+Category is: wireless networks and mobile computing
+New number of nodes of graph: 16296
+New number of edges of graph: 312068
+Category is: computer networking
+New number of nodes of graph: 58701
+New number of edges of graph: 1702478
+Category is: information retrieval
+New number of nodes of graph: 6951
+New number of edges of graph: 161829
+Category is: software engineering
+New number of nodes of graph: 21690
+New number of edges of graph: 398561
+Category is: operating systems
+New number of nodes of graph: 16239
+New number of edges of graph: 298947
+Category is: high-performance computing
+New number of nodes of graph: 15648
+New number of edges of graph: 316409
+Category is: distributed and parallel computing
+New number of nodes of graph: 39535
+New number of edges of graph: 720772
+Time required to add cross-edges is: 4.5854811668396 sec
+out create_graph_gml_files
+Cleaning graphs.
+in clean_graphs
+Creating core graph.
+Creating core graph.
+Creating core graph.
+Creating core graph.
+Creating core graph.
+Creating core graph.
+Creating core graph.
+Creating core graph.
+out clean_graphs
+Length of nodes list: 18668 length of nodes 0
+Length of nodes list: 11141 length of nodes 18668
+Length of nodes list: 48007 length of nodes 29809
+Length of nodes list: 5064 length of nodes 77816
+Length of nodes list: 14594 length of nodes 82880
+Length of nodes list: 11654 length of nodes 97474
+Length of nodes list: 10897 length of nodes 109128
+Length of nodes list: 29238 length of nodes 120025
+Number of unique nodes 90803 number of all nodes: 149263
+Avg End./Role: 527465.75
+Avg End./Expert: 46.47121791130249
+Max End./Expert 3258
+Number of overlapping nodes: 29238
+in get_overlapping_graph_nodes
+Number of intersecting nodes: 49
+out get_overlapping_graph_nodes
+===============================================================================
+                                     CVXPY                                     
+                                    v1.1.12                                    
+===============================================================================
+(CVXPY) Mar 27 12:44:54 PM: Your problem has 392 variables, 2 constraints, and 0 parameters.
+(CVXPY) Mar 27 12:44:55 PM: It is compliant with the following grammars: DCP, DQCP
+(CVXPY) Mar 27 12:44:55 PM: (If you need to solve this problem multiple times, but with different data, consider using parameters.)
+(CVXPY) Mar 27 12:44:55 PM: CVXPY will first compile your problem; then, it will invoke a numerical solver to obtain a solution.
+-------------------------------------------------------------------------------
+                                  Compilation                                  
+-------------------------------------------------------------------------------
+(CVXPY) Mar 27 12:44:55 PM: Compiling problem (target solver=GUROBI).
+(CVXPY) Mar 27 12:44:55 PM: Reduction chain: FlipObjective -> CvxAttr2Constr -> Qp2SymbolicQp -> QpMatrixStuffing -> GUROBI
+(CVXPY) Mar 27 12:44:55 PM: Applying reduction FlipObjective
+(CVXPY) Mar 27 12:44:55 PM: Applying reduction CvxAttr2Constr
+(CVXPY) Mar 27 12:44:55 PM: Applying reduction Qp2SymbolicQp
+(CVXPY) Mar 27 12:44:55 PM: Applying reduction QpMatrixStuffing
+(CVXPY) Mar 27 12:44:55 PM: Applying reduction GUROBI
+(CVXPY) Mar 27 12:44:55 PM: Finished problem compilation (took 2.614e-02 seconds).
+-------------------------------------------------------------------------------
+                                Numerical solver                               
+-------------------------------------------------------------------------------
+(CVXPY) Mar 27 12:44:55 PM: Invoking solver GUROBI  to obtain a solution.
+Academic license - for non-commercial use only - expires 2022-12-18
+Using license file /home/pcs00440/gurobi.lic
+Parameter OutputFlag unchanged
+   Value: 1  Min: 0  Max: 1  Default: 1
+Changed value of parameter QCPDual to 1
+   Prev: 0  Min: 0  Max: 1  Default: 0
+Changed value of parameter TimeLimit to 10000.0
+   Prev: inf  Min: 0.0  Max: inf  Default: inf
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+Optimize a model with 57 rows, 392 columns and 784 nonzeros
+Model fingerprint: 0x088218c1
+Model has 6015 quadratic objective terms
+Variable types: 0 continuous, 392 integer (392 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [0e+00, 0e+00]
+  QObjective range [4e+00, 8e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective -2.0000000
+Presolve time: 0.01s
+Presolved: 262 rows, 597 columns, 7209 nonzeros
+Variable types: 0 continuous, 597 integer (398 binary)
+
+Root relaxation: objective -4.678829e+02, 217 iterations, 0.01 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 -467.88289    0   94   -2.00000 -467.88289      -     -    0s
+H    0     0                     -14.0000000 -467.88289  3242%     -    0s
+H    0     0                     -36.0000000 -467.88289  1200%     -    0s
+H    0     0                     -52.0000000 -467.88289   800%     -    0s
+     0     0 -405.79870    0  109  -52.00000 -405.79870   680%     -    0s
+     0     0 -372.07367    0  122  -52.00000 -372.07367   616%     -    0s
+     0     0 -350.76602    0  131  -52.00000 -350.76602   575%     -    0s
+     0     0 -350.76602    0  131  -52.00000 -350.76602   575%     -    0s
+     0     2 -350.76602    0  131  -52.00000 -350.76602   575%     -    0s
+  2165  1786 -293.70933   12  243  -52.00000 -293.70933   465%  22.0    5s
+  5580  3002 -130.91730   32  138  -52.00000 -250.73075   382%  38.4   10s
+ 11895  7145 -109.62450   52  144  -52.00000 -250.73075   382%  43.4   15s
+H20951 12115                     -54.0000000 -250.73075   364%  41.6   19s
+ 21232 12109  -88.13277   82  156  -54.00000 -250.73075   364%  41.6   21s
+ 27383 15221 -116.66324   24   90  -54.00000 -193.18370   258%  41.9   25s
+ 38245 20153  -62.49439   89  119  -54.00000 -124.50704   131%  42.2   30s
+ 48050 24257     cutoff   38       -54.00000 -116.49866   116%  42.1   35s
+ 58872 28387  -96.61039   23  133  -54.00000 -111.19696   106%  41.5   49s
+ 61131 28852  -64.29797   52   77  -54.00000 -110.90129   105%  41.4   50s
+ 67472 30137     cutoff   23       -54.00000 -106.05856  96.4%  42.8   55s
+ 78224 31594  -74.04126   45   68  -54.00000  -99.77630  84.8%  44.6   61s
+ 85458 32198  -57.33093   51   66  -54.00000  -95.99486  77.8%  45.0   65s
+ 95320 32397 infeasible   50       -54.00000  -90.53026  67.6%  45.8   70s
+ 105689 31439  -80.96598   56   93  -54.00000  -85.82257  58.9%  46.6   75s
+ 115821 29412  -58.29016   32   28  -54.00000  -81.38149  50.7%  46.9   80s
+ 129416 25361     cutoff   42       -54.00000  -75.19399  39.2%  46.9   86s
+ 139130 19801  -61.95821   57   50  -54.00000  -71.52873  32.5%  47.0   91s
+ 151309 11886     cutoff   41       -54.00000  -66.39188  22.9%  46.7   95s
+
+Cutting planes:
+  Gomory: 24
+  MIR: 127
+  StrongCG: 9
+  Flow cover: 721
+  Zero half: 2
+  Mod-K: 1
+  RLT: 563
+
+Explored 168556 nodes (7518016 simplex iterations) in 98.13 seconds
+Thread count was 32 (of 32 available processors)
+
+Solution count 5: -54 -52 -36 ... -2
+No other solutions better than -54
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective -5.400000000000e+01, best bound -5.400000000000e+01, gap 0.0000%
+-------------------------------------------------------------------------------
+                                    Summary                                    
+-------------------------------------------------------------------------------
+(CVXPY) Mar 27 12:46:33 PM: Problem status: optimal
+(CVXPY) Mar 27 12:46:33 PM: Optimal value: 5.400e+01
+(CVXPY) Mar 27 12:46:33 PM: Compilation took 2.614e-02 seconds
+(CVXPY) Mar 27 12:46:33 PM: Solver (including time spent in interface) took 9.819e+01 seconds
+in compute graph score
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+Solution is: {'signal processing': b'Zhenjiang Li', 'wireless networks and mobile computing': b'Yunhao Liu', 'computer networking': b'Xiang-Yang Li', 'information retrieval': b'Jinsong Han', 'software engineering': b'Zheng Yang', 'operating systems': b'Jie Liu', 'high-performance computing': b'Jie Wu', 'distributed and parallel computing': b'Mo Li'}
+Solution score for iqp graph truth is: 27
+Edges are: [(b'Yunhao Liu', b'Zhenjiang Li'), (b'Yunhao Liu', b'Xiang-Yang Li'), (b'Yunhao Liu', b'Jinsong Han'), (b'Yunhao Liu', b'Zheng Yang'), (b'Yunhao Liu', b'Jie Liu'), (b'Yunhao Liu', b'Jie Wu'), (b'Yunhao Liu', b'Mo Li'), (b'Xiang-Yang Li', b'Zhenjiang Li'), (b'Xiang-Yang Li', b'Yunhao Liu'), (b'Xiang-Yang Li', b'Jinsong Han'), (b'Xiang-Yang Li', b'Zheng Yang'), (b'Xiang-Yang Li', b'Jie Liu'), (b'Xiang-Yang Li', b'Jie Wu'), (b'Xiang-Yang Li', b'Mo Li'), (b'Jie Liu', b'Xiang-Yang Li'), (b'Jie Wu', b'Zhenjiang Li'), (b'Jie Wu', b'Yunhao Liu'), (b'Jie Wu', b'Jinsong Han'), (b'Jie Wu', b'Zheng Yang'), (b'Jie Wu', b'Mo Li'), (b'Mo Li', b'Zhenjiang Li'), (b'Mo Li', b'Yunhao Liu'), (b'Mo Li', b'Xiang-Yang Li'), (b'Mo Li', b'Jinsong Han'), (b'Mo Li', b'Zheng Yang'), (b'Mo Li', b'Jie Liu'), (b'Mo Li', b'Jie Wu')]
+Running time is: 98.37449359893799
+Exiting main!

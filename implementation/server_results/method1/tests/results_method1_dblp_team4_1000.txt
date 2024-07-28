@@ -1,0 +1,318 @@
+Considering the following customized categories: {'software engineering': 1, 'operating systems': 1, 'high-performance computing': 1, 'distributed and parallel computing': 1}
+Creating graphs.
+in create_graph_gml_files
+in read_dict_to_list
+out read_dict_to_list
+in read_dict_to_pkl_file
+out read_dict_to_pkl_file
+in read_dict_to_pkl_file
+out read_dict_to_pkl_file
+in read_venue_assignments_csv
+out read_venue_assignments_csv
+in create_cat_venue_dictionary
+out create_cat_venue_dictionary
+in get_authors
+out get_authors
+Creating graphs.
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+Time required to create graphhs is: 8.382499933242798 sec
+Adding cross-edges to the graph.
+Category is: software engineering
+New number of nodes of graph: 19653
+New number of edges of graph: 387176
+Category is: operating systems
+New number of nodes of graph: 12160
+New number of edges of graph: 257811
+Category is: high-performance computing
+New number of nodes of graph: 14244
+New number of edges of graph: 307184
+Category is: distributed and parallel computing
+New number of nodes of graph: 29118
+New number of edges of graph: 604413
+Time required to add cross-edges is: 1.5573108196258545 sec
+out create_graph_gml_files
+Cleaning graphs.
+in clean_graphs
+Creating core graph.
+Creating core graph.
+Creating core graph.
+Creating core graph.
+out clean_graphs
+Length of nodes list: 13829 length of nodes 0
+Length of nodes list: 9110 length of nodes 13829
+Length of nodes list: 10252 length of nodes 22939
+Length of nodes list: 23320 length of nodes 33191
+Number of unique nodes 37535 number of all nodes: 56511
+Avg End./Role: 373714.0
+Avg End./Expert: 39.825656054349274
+Max End./Expert 1606
+Number of overlapping nodes: 23320
+in get_overlapping_graph_nodes
+Number of intersecting nodes: 726
+out get_overlapping_graph_nodes
+===============================================================================
+                                     CVXPY                                     
+                                    v1.1.12                                    
+===============================================================================
+(CVXPY) Mar 24 11:38:04 AM: Your problem has 2904 variables, 2 constraints, and 0 parameters.
+(CVXPY) Mar 24 11:38:06 AM: It is compliant with the following grammars: DCP, DQCP
+(CVXPY) Mar 24 11:38:06 AM: (If you need to solve this problem multiple times, but with different data, consider using parameters.)
+(CVXPY) Mar 24 11:38:06 AM: CVXPY will first compile your problem; then, it will invoke a numerical solver to obtain a solution.
+-------------------------------------------------------------------------------
+                                  Compilation                                  
+-------------------------------------------------------------------------------
+(CVXPY) Mar 24 11:38:06 AM: Compiling problem (target solver=GUROBI).
+(CVXPY) Mar 24 11:38:06 AM: Reduction chain: FlipObjective -> CvxAttr2Constr -> Qp2SymbolicQp -> QpMatrixStuffing -> GUROBI
+(CVXPY) Mar 24 11:38:06 AM: Applying reduction FlipObjective
+(CVXPY) Mar 24 11:38:06 AM: Applying reduction CvxAttr2Constr
+(CVXPY) Mar 24 11:38:06 AM: Applying reduction Qp2SymbolicQp
+(CVXPY) Mar 24 11:38:06 AM: Applying reduction QpMatrixStuffing
+(CVXPY) Mar 24 11:38:06 AM: Applying reduction GUROBI
+(CVXPY) Mar 24 11:38:06 AM: Finished problem compilation (took 2.123e-01 seconds).
+-------------------------------------------------------------------------------
+                                Numerical solver                               
+-------------------------------------------------------------------------------
+(CVXPY) Mar 24 11:38:06 AM: Invoking solver GUROBI  to obtain a solution.
+Academic license - for non-commercial use only - expires 2022-12-18
+Using license file /home/pcs00440/gurobi.lic
+Parameter OutputFlag unchanged
+   Value: 1  Min: 0  Max: 1  Default: 1
+Changed value of parameter QCPDual to 1
+   Prev: 0  Min: 0  Max: 1  Default: 0
+Changed value of parameter TimeLimit to 1000.0
+   Prev: inf  Min: 0.0  Max: inf  Default: inf
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+Optimize a model with 730 rows, 2904 columns and 5808 nonzeros
+Model fingerprint: 0x99ad06f3
+Model has 70922 quadratic objective terms
+Variable types: 0 continuous, 2904 integer (2904 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [0e+00, 0e+00]
+  QObjective range [4e+00, 8e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 0.0000000
+Presolve time: 0.21s
+Presolved: 2304 rows, 4478 columns, 79878 nonzeros
+Variable types: 0 continuous, 4478 integer (2936 binary)
+
+Root relaxation: objective -5.141851e+02, 1424 iterations, 0.22 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 -514.18510    0  446    0.00000 -514.18510      -     -    0s
+H    0     0                      -8.0000000 -514.18510  6327%     -    0s
+H    0     0                     -12.0000000 -514.18510  4185%     -    1s
+H    0     0                     -14.0000000 -514.18510  3573%     -    1s
+H    0     0                     -16.0000000 -509.26833  3083%     -    1s
+     0     0 -483.53258    0  458  -16.00000 -483.53258  2922%     -    2s
+     0     0 -467.57852    0  463  -16.00000 -467.57852  2822%     -    3s
+     0     0 -467.57852    0  458  -16.00000 -467.57852  2822%     -    3s
+     0     0 -467.33594    0  457  -16.00000 -467.33594  2821%     -    3s
+     0     0 -450.90689    0  526  -16.00000 -450.90689  2718%     -    4s
+     0     0 -449.23461    0  533  -16.00000 -449.23461  2708%     -    4s
+     0     0 -447.78857    0  536  -16.00000 -447.78857  2699%     -    4s
+     0     0 -447.71607    0  537  -16.00000 -447.71607  2698%     -    4s
+     0     0 -430.09966    0  646  -16.00000 -430.09966  2588%     -    6s
+     0     0 -424.02664    0  633  -16.00000 -424.02664  2550%     -    6s
+     0     0 -423.24332    0  629  -16.00000 -423.24332  2545%     -    6s
+     0     0 -413.97016    0  686  -16.00000 -413.97016  2487%     -    8s
+     0     0 -413.97016    0  686  -16.00000 -413.97016  2487%     -    8s
+     0     2 -413.05730    0  686  -16.00000 -413.05730  2482%     -    9s
+     1     4 -409.46314    1  694  -16.00000 -409.46314  2459%  85.0   10s
+   504   499 -269.27414   19  394  -16.00000 -389.57479  2335%  58.3   15s
+  1712  1455 -349.70706   30  769  -16.00000 -389.57479  2335%  34.4   20s
+H 2309  1907                     -18.0000000 -389.57479  2064%  33.4   21s
+  4065  3561 -328.19098   49  771  -18.00000 -389.57479  2064%  29.6   25s
+  4980  4170 -275.60189   19 1152  -18.00000 -389.57479  2064%  30.5   31s
+  4983  4172 -138.34650   99  472  -18.00000 -389.57479  2064%  30.5   35s
+H 4983  3963                     -20.0000000 -389.57479  1848%  30.5   35s
+  4996  3972  -52.61137  293  763  -20.00000 -383.84852  1819%  30.4   40s
+  5008  3980 -283.23907   26  803  -20.00000 -367.65245  1738%  30.3   46s
+  5019  3987  -76.34171   58  862  -20.00000 -355.55922  1678%  30.3   51s
+  5028  3993  -46.28839  101  927  -20.00000 -341.92725  1610%  30.2   55s
+  5029  3994  -78.39087  257  934  -20.00000 -341.89734  1609%  30.2   68s
+  5035  3998  -29.48098  217  988  -20.00000 -334.41055  1572%  30.2   70s
+  5037  3999  -62.34695   92  989  -20.00000 -332.91322  1565%  30.2   76s
+  5047  4006  -28.42547   85 1067  -20.00000 -326.33014  1532%  30.1   86s
+  5056  4012  -61.95731  218 1120  -20.00000 -319.30856  1497%  30.0   98s
+  5057  4012  -57.88089  327 1117  -20.00000 -318.17640  1491%  30.0  100s
+  5067  4019  -40.52600   55 1177  -20.00000 -315.33912  1477%  30.0  105s
+  5078  4026  -33.63359  323 1197  -20.00000 -313.29991  1466%  29.9  110s
+  5090  4034  -26.16621  351 1262  -20.00000 -309.51790  1448%  29.8  116s
+  5098  4040  -96.98634   87 1284  -20.00000 -307.33956  1437%  29.8  120s
+  5108  4046 -283.23907   26 1346  -20.00000 -305.35110  1427%  29.7  125s
+  5115  4051  -52.46979    7 1409  -20.00000 -303.83137  1419%  29.7  130s
+  5122  4056  -50.88347  323 1436  -20.00000 -302.55820  1413%  29.7  138s
+  5124  4057  -59.13235   70 1464  -20.00000 -300.94707  1405%  29.6  140s
+  5134  4064  -91.96704   21 1529  -20.00000 -300.02001  1400%  29.6  149s
+  5135  4064  -29.48098  217 1510  -20.00000 -299.39575  1397%  29.6  150s
+  5144  4070  -21.46009  325 1533  -20.00000 -297.95372  1390%  29.5  155s
+  5153  4076  -61.27839  107 1568  -20.00000 -297.06374  1385%  29.5  160s
+  5161  4082 -131.71641  100 1586  -20.00000 -296.43583  1382%  29.4  165s
+  5164  4084 -219.34075   40 1593  -20.00000 -296.27338  1381%  29.4  172s
+  5165  4087 -295.57513   14 1554  -20.00000 -296.22175  1381%  42.2  187s
+  5167  4091 -294.48242   15 1548  -20.00000 -294.85894  1374%  47.4  192s
+  5179  4101 -292.69025   17 1501  -20.00000 -293.14144  1366%  50.8  196s
+  5209  4119 -218.26609   19  482  -20.00000 -292.64124  1363%  61.0  207s
+  5257  4148 -200.25253   20  774  -20.00000 -291.77019  1359%  62.9  211s
+  5349  4199 -288.60946   23 1496  -20.00000 -290.75343  1354%  66.6  216s
+  5436  4247 -201.88562   24  800  -20.00000 -287.45871  1337%  69.5  220s
+  5603  4343 -192.79671   26  915  -20.00000 -286.20010  1331%  73.9  226s
+  5875  4489 -191.59385   28  927  -20.00000 -284.26523  1321%  78.4  230s
+  6263  4682 -282.66613   31 1348  -20.00000 -283.03034  1315%  81.9  235s
+  6670  4911 -280.88976   33 1369  -20.00000 -280.88976  1304%  85.3  240s
+  7276  5288 -186.39891   36  873  -20.00000 -279.09095  1295%  90.2  246s
+  7832  5612 -192.18253   38  917  -20.00000 -278.42385  1292%  93.4  251s
+  7976  5639 -277.50201   39 1410  -20.00000 -278.42385  1292%  94.4  255s
+  8517  6044 -277.08613   41 1402  -20.00000 -277.08613  1285%  95.3  260s
+  9276  6196 -196.19953   43  726  -20.00000 -274.86285  1274%  97.4  266s
+  9592  6303 -183.42463   44  915  -20.00000 -274.20383  1271%   101  270s
+  9989  6504 -273.04304   46 1436  -20.00000 -273.04304  1265%   107  275s
+ 10321  6686 -271.90500   48 1439  -20.00000 -271.90500  1260%   111  280s
+ 10712  6823 -271.05510   50 1433  -20.00000 -271.05510  1255%   114  286s
+ 11068  7097 -270.15527   52 1429  -20.00000 -271.01358  1255%   117  290s
+ 11672  7377 -269.02297   54 1413  -20.00000 -271.01358  1255%   119  296s
+ 12350  7672 -268.02202   56 1412  -20.00000 -271.01358  1255%   119  300s
+ 13151  8130 -267.28012   57 1422  -20.00000 -271.01358  1255%   119  306s
+ 14039  8471 -266.91363   59 1407  -20.00000 -271.01358  1255%   120  311s
+ 14945  8671 -266.31350   61 1386  -20.00000 -271.01358  1255%   121  325s
+ 15852  9433 -265.71216   62 1404  -20.00000 -271.01358  1255%   119  330s
+ 16835  9574 -264.49527   64 1437  -20.00000 -271.01358  1255%   120  337s
+ 16991  9889 -263.47687   65 1418  -20.00000 -271.01358  1255%   121  340s
+ 17926 10399 -262.21043   67 1425  -20.00000 -271.01358  1255%   122  348s
+ 18211 11036 -261.96950   68 1425  -20.00000 -271.01358  1255%   123  352s
+ 19088 11507 -261.64972   69 1414  -20.00000 -271.01358  1255%   121  357s
+ 19779 11819 -260.49624   71 1418  -20.00000 -271.01358  1255%   122  360s
+ 20643 12440 -258.85876   73 1454  -20.00000 -271.01358  1255%   125  370s
+ 21046 12967 -258.17983   74 1445  -20.00000 -271.01358  1255%   127  376s
+ 21742 13516 -255.76654   76 1448  -20.00000 -271.01358  1255%   132  383s
+ 22436 14273 -253.86492   78 1446  -20.00000 -271.01358  1255%   136  390s
+ 23376 15006 -173.03450   80  756  -20.00000 -271.01358  1255%   138  396s
+ 24323 15791 -249.75409   82 1451  -20.00000 -271.01358  1255%   140  404s
+ 25409 16475 -248.94300   84 1443  -20.00000 -271.01358  1255%   142  411s
+ 26535 16682 -248.62324   86 1434  -20.00000 -271.01358  1255%   143  427s
+ 26779 17515 -247.39781   88 1421  -20.00000 -271.01358  1255%   145  435s
+ 28002 18309 -246.18542   90 1430  -20.00000 -271.01358  1255%   145  443s
+ 29279 19127 -156.21361   91  995  -20.00000 -271.01358  1255%   145  450s
+ 30191 20441 -244.77859   93 1415  -20.00000 -271.01358  1255%   146  458s
+ 31750 21583 -244.32743   95 1412  -20.00000 -271.01358  1255%   145  467s
+ 33180 22744 -160.69991   97 1005  -20.00000 -271.01358  1255%   145  475s
+ 34542 23866 -242.15283   99 1406  -20.00000 -271.01358  1255%   145  484s
+ 35904 24952 -241.83995  101 1405  -20.00000 -271.01358  1255%   145  492s
+ 37362 26149 -241.24679  103 1411  -20.00000 -271.01358  1255%   147  502s
+ 39078 27216 -240.57935  105 1404  -20.00000 -271.01358  1255%   146  511s
+ 40415 27972 -239.58293  107 1422  -20.00000 -271.01358  1255%   147  519s
+ 41315 27973 -104.19298   84 1152  -20.00000 -271.01358  1255%   147  784s
+ 41317 27974  -80.46804   94  446  -20.00000 -271.01358  1255%   147  788s
+ 41318 27975  -92.04244   51  500  -20.00000 -271.01358  1255%   147  790s
+ 41328 27982  -60.75446  163  822  -20.00000 -271.01358  1255%   147  795s
+ 41338 27988  -22.18128  137  988  -20.00000 -271.01358  1255%   147  805s
+ 41348 27995  -64.55639  146 1066  -20.00000 -271.01358  1255%   147  814s
+ 41349 27996  -44.87035   41 1084  -20.00000 -271.01358  1255%   147  815s
+ 41362 28004  -73.76188  106 1183  -20.00000 -271.01358  1255%   147  820s
+ 41368 28008  -37.26161  323 1186  -20.00000 -271.01358  1255%   147  831s
+ 41375 28013  -30.30396  695 1235  -20.00000 -271.01358  1255%   147  835s
+ 41386 28020  -46.37786  148 1240  -20.00000 -271.01358  1255%   147  843s
+ 41388 28022  -64.08271  133 1264  -20.00000 -271.01358  1255%   147  845s
+ 41391 28024  -37.93718   64 1308  -20.00000 -271.01358  1255%   147  850s
+ 41404 28032  -56.71857  176 1339  -20.00000 -271.01358  1255%   147  858s
+ 41405 28033  -40.97386  685 1360  -20.00000 -271.01358  1255%   147  860s
+ 41414 28039  -70.69785  101 1387  -20.00000 -271.01358  1255%   147  869s
+ 41415 28040 -104.19298   84 1386  -20.00000 -271.01358  1255%   147  870s
+ 41426 28047  -52.64588  546 1437  -20.00000 -271.01358  1255%   147  878s
+ 41428 28048  -60.75446  163 1435  -20.00000 -271.01358  1255%   147  880s
+ 41435 28053  -34.68360  179 1456  -20.00000 -271.01358  1255%   147  889s
+ 41436 28054  -39.78190  612 1442  -20.00000 -271.01358  1255%   147  890s
+ 41450 28063  -53.33186  208 1486  -20.00000 -271.01358  1255%   147  899s
+ 41451 28064  -41.41896   35 1475  -20.00000 -271.01358  1255%   147  900s
+ 41461 28070  -81.05276   73 1494  -20.00000 -271.01358  1255%   146  906s
+ 41474 28079  -26.90367  166 1535  -20.00000 -271.01358  1255%   146  913s
+ 41478 28082 -181.80466  105 1520  -20.00000 -271.01358  1255%   146  915s
+ 41485 28086  -90.92360   70 1511  -20.00000 -271.01358  1255%   146  921s
+ 41494 28092 -148.38628  142 1560  -20.00000 -271.01358  1255%   146  928s
+ 41497 28094  -48.76250  221 1550  -20.00000 -271.01358  1255%   146  930s
+ 41500 28096  -65.66110  483 1548  -20.00000 -271.01358  1255%   146  938s
+ 41502 28098  -47.47567  272 1551  -20.00000 -271.01358  1255%   146  940s
+ 41509 28102  -64.13222  134 1574  -20.00000 -271.01358  1255%   146  950s
+ 41517 28108  -80.46804   94 1558  -20.00000 -271.01358  1255%   146  956s
+ 41528 28115  -60.75446  163 1546  -20.00000 -271.01358  1255%   146  961s
+ 41534 28119 -144.10523  171 1589  -20.00000 -271.01358  1255%   146  965s
+ 41542 28124  -38.58821   47 1583  -20.00000 -271.01358  1255%   146  970s
+ 41546 28127  -65.15302  102 1605  -20.00000 -271.01358  1255%   146  976s
+ 41551 28130  -41.41896   35 1597  -20.00000 -271.01358  1255%   146  980s
+ 41558 28135  -32.12125  696 1606  -20.00000 -271.01358  1255%   146  988s
+ 41563 28138 -120.88514  170 1596  -20.00000 -271.01358  1255%   146  992s
+ 41566 28140  -66.20491  127 1604  -20.00000 -271.01358  1255%   146  997s
+
+Cutting planes:
+  Implied bound: 1
+  MIR: 61
+  Flow cover: 195
+  Zero half: 1
+  RLT: 1084
+  Relax-and-lift: 5
+
+Explored 41569 nodes (6147942 simplex iterations) in 1000.11 seconds
+Thread count was 32 (of 32 available processors)
+
+Solution count 7: -20 -18 -16 ... 0
+
+Time limit reached
+Best objective -2.000000000000e+01, best bound -2.700000000000e+02, gap 1250.0000%
+-------------------------------------------------------------------------------
+                                    Summary                                    
+-------------------------------------------------------------------------------
+(CVXPY) Mar 24 11:54:47 AM: Problem status: user_limit
+(CVXPY) Mar 24 11:54:47 AM: Optimal value: 2.000e+01
+(CVXPY) Mar 24 11:54:47 AM: Compilation took 2.123e-01 seconds
+(CVXPY) Mar 24 11:54:47 AM: Solver (including time spent in interface) took 1.000e+03 seconds
+/home/pcs00440/initial_problem/initial_venv/lib/python3.6/site-packages/cvxpy/problems/problem.py:1268: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  "Solution may be inaccurate. Try another solver, "
+in compute graph score
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+Solution is: {'software engineering': b'Min-You Wu', 'operating systems': b'Xiaosong Ma', 'high-performance computing': b'William Gropp', 'distributed and parallel computing': b'Rajeev Thakur'}
+Solution score for iqp graph truth is: 10
+Edges are: [(b'Min-You Wu', b'William Gropp'), (b'Min-You Wu', b'Rajeev Thakur'), (b'Xiaosong Ma', b'William Gropp'), (b'Xiaosong Ma', b'Rajeev Thakur'), (b'William Gropp', b'Min-You Wu'), (b'William Gropp', b'Xiaosong Ma'), (b'William Gropp', b'Rajeev Thakur'), (b'Rajeev Thakur', b'Min-You Wu'), (b'Rajeev Thakur', b'Xiaosong Ma'), (b'Rajeev Thakur', b'William Gropp')]
+Running time is: 1003.1264364719391
+Considering the following customized categories: {'signal processing': 1, 'wireless networks and mobile computing': 1, 'computer networking': 1, 'information retrieval': 1}
+Creating graphs.
+in create_graph_gml_files
+in read_dict_to_list
+out read_dict_to_list
+in read_dict_to_pkl_file
+out read_dict_to_pkl_file
+in read_dict_to_pkl_file
+out read_dict_to_pkl_file
+in read_venue_assignments_csv
+Traceback (most recent call last):
+  File "method1_dblp.py", line 478, in <module>
+    main()
+  File "method1_dblp.py", line 393, in main
+    category_graph = create_graph_gml_files(file_name_pid_venue,file_name_venues_authors_citations,file_name_pid_authors,file_name_venues_assignment_csv,customized_categories)
+  File "method1_dblp.py", line 167, in create_graph_gml_files
+    venue_cat_dict = read_venue_assignments_csv(file_name_venues_assignment_csv)
+  File "method1_dblp.py", line 53, in read_venue_assignments_csv
+    for i, line in enumerate(reader):
+  File "/usr/lib/python3.6/encodings/ascii.py", line 26, in decode
+    return codecs.ascii_decode(input, self.errors)[0]
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xef in position 0: ordinal not in range(128)

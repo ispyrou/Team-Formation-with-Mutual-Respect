@@ -1,0 +1,207 @@
+Considering the following customized categories: {'software engineering': 1, 'operating systems': 1, 'high-performance computing': 1, 'distributed and parallel computing': 1}
+Creating graphs.
+in create_graph_gml_files
+in read_dict_to_list
+out read_dict_to_list
+in read_dict_to_pkl_file
+out read_dict_to_pkl_file
+in read_dict_to_pkl_file
+out read_dict_to_pkl_file
+in read_venue_assignments_csv
+out read_venue_assignments_csv
+in create_cat_venue_dictionary
+out create_cat_venue_dictionary
+in get_authors
+out get_authors
+Creating graphs.
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+Time required to create graphhs is: 10.993427038192749 sec
+Adding cross-edges to the graph.
+Category is: software engineering
+New number of nodes of graph: 19653
+New number of edges of graph: 387176
+Category is: operating systems
+New number of nodes of graph: 12160
+New number of edges of graph: 257811
+Category is: high-performance computing
+New number of nodes of graph: 14244
+New number of edges of graph: 307184
+Category is: distributed and parallel computing
+New number of nodes of graph: 29118
+New number of edges of graph: 604413
+Time required to add cross-edges is: 1.9623632431030273 sec
+out create_graph_gml_files
+Cleaning graphs.
+in clean_graphs
+Creating core graph.
+Creating core graph.
+Creating core graph.
+Creating core graph.
+out clean_graphs
+Length of nodes list: 13829 length of nodes 0
+Length of nodes list: 9110 length of nodes 13829
+Length of nodes list: 10252 length of nodes 22939
+Length of nodes list: 23320 length of nodes 33191
+Number of unique nodes 37535 number of all nodes: 56511
+Avg End./Role: 373714.0
+Avg End./Expert: 39.825656054349274
+Max End./Expert 1606
+Number of overlapping nodes: 23320
+in get_overlapping_graph_nodes
+Number of intersecting nodes: 726
+out get_overlapping_graph_nodes
+===============================================================================
+                                     CVXPY                                     
+                                    v1.1.12                                    
+===============================================================================
+(CVXPY) Mar 14 02:15:54 PM: Your problem has 2904 variables, 2 constraints, and 0 parameters.
+(CVXPY) Mar 14 02:15:59 PM: It is compliant with the following grammars: DCP, DQCP
+(CVXPY) Mar 14 02:15:59 PM: (If you need to solve this problem multiple times, but with different data, consider using parameters.)
+(CVXPY) Mar 14 02:15:59 PM: CVXPY will first compile your problem; then, it will invoke a numerical solver to obtain a solution.
+-------------------------------------------------------------------------------
+                                  Compilation                                  
+-------------------------------------------------------------------------------
+(CVXPY) Mar 14 02:15:59 PM: Compiling problem (target solver=GUROBI).
+(CVXPY) Mar 14 02:15:59 PM: Reduction chain: FlipObjective -> CvxAttr2Constr -> Qp2SymbolicQp -> QpMatrixStuffing -> GUROBI
+(CVXPY) Mar 14 02:15:59 PM: Applying reduction FlipObjective
+(CVXPY) Mar 14 02:15:59 PM: Applying reduction CvxAttr2Constr
+(CVXPY) Mar 14 02:15:59 PM: Applying reduction Qp2SymbolicQp
+(CVXPY) Mar 14 02:15:59 PM: Applying reduction QpMatrixStuffing
+(CVXPY) Mar 14 02:15:59 PM: Applying reduction GUROBI
+(CVXPY) Mar 14 02:15:59 PM: Finished problem compilation (took 2.500e-01 seconds).
+-------------------------------------------------------------------------------
+                                Numerical solver                               
+-------------------------------------------------------------------------------
+(CVXPY) Mar 14 02:15:59 PM: Invoking solver GUROBI  to obtain a solution.
+Academic license - for non-commercial use only - expires 2022-12-18
+Using license file /home/pcs00440/gurobi.lic
+Parameter OutputFlag unchanged
+   Value: 1  Min: 0  Max: 1  Default: 1
+Changed value of parameter QCPDual to 1
+   Prev: 0  Min: 0  Max: 1  Default: 0
+Changed value of parameter TimeLimit to 100.0
+   Prev: inf  Min: 0.0  Max: inf  Default: inf
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 16 physical cores, 32 logical processors, using up to 32 threads
+Optimize a model with 730 rows, 2904 columns and 5808 nonzeros
+Model fingerprint: 0x99ad06f3
+Model has 70922 quadratic objective terms
+Variable types: 0 continuous, 2904 integer (2904 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [0e+00, 0e+00]
+  QObjective range [4e+00, 8e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 0.0000000
+Presolve time: 0.27s
+Presolved: 2304 rows, 4478 columns, 79878 nonzeros
+Variable types: 0 continuous, 4478 integer (2936 binary)
+
+Root relaxation: objective -5.141851e+02, 1424 iterations, 0.27 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 -514.18510    0  446    0.00000 -514.18510      -     -    1s
+H    0     0                      -8.0000000 -514.18510  6327%     -    1s
+H    0     0                     -12.0000000 -514.18510  4185%     -    1s
+H    0     0                     -14.0000000 -514.18510  3573%     -    1s
+H    0     0                     -16.0000000 -509.26833  3083%     -    2s
+     0     0 -483.53258    0  458  -16.00000 -483.53258  2922%     -    2s
+     0     0 -467.57852    0  463  -16.00000 -467.57852  2822%     -    3s
+     0     0 -467.57852    0  458  -16.00000 -467.57852  2822%     -    3s
+     0     0 -467.33594    0  457  -16.00000 -467.33594  2821%     -    4s
+     0     0 -450.90689    0  526  -16.00000 -450.90689  2718%     -    5s
+     0     0 -449.23461    0  533  -16.00000 -449.23461  2708%     -    5s
+     0     0 -447.78857    0  536  -16.00000 -447.78857  2699%     -    5s
+     0     0 -447.71607    0  537  -16.00000 -447.71607  2698%     -    5s
+     0     0 -430.09966    0  646  -16.00000 -430.09966  2588%     -    7s
+     0     0 -424.02664    0  633  -16.00000 -424.02664  2550%     -    7s
+     0     0 -423.24332    0  629  -16.00000 -423.24332  2545%     -    7s
+     0     0 -413.97016    0  686  -16.00000 -413.97016  2487%     -    9s
+     0     0 -413.97016    0  686  -16.00000 -413.97016  2487%     -   10s
+     0     2 -413.05730    0  686  -16.00000 -413.05730  2482%     -   10s
+   177   177 -375.92370   12  757  -16.00000 -389.57479  2335%  97.3   16s
+   925   883 -358.50903   23  759  -16.00000 -389.57479  2335%  41.1   20s
+  1832  1557 -348.54056   31  768  -16.00000 -389.57479  2335%  35.8   25s
+H 2309  1907                     -18.0000000 -389.57479  2064%  33.4   25s
+  3867  3410 -330.34274   47  767  -18.00000 -389.57479  2064%  29.7   30s
+  4980  4170 -275.60189   19 1152  -18.00000 -389.57479  2064%  30.5   38s
+  4982  4171  -44.88582   75  446  -18.00000 -389.57479  2064%  30.5   41s
+H 4983  3963                     -20.0000000 -389.57479  1848%  30.5   43s
+  4988  3966  -66.55073  159  678  -20.00000 -389.57479  1848%  30.5   45s
+  4999  3974  -72.12735  240  760  -20.00000 -383.77077  1819%  30.4   50s
+  5008  3980 -283.23907   26  803  -20.00000 -367.65245  1738%  30.3   56s
+  5019  3987  -76.34171   58  862  -20.00000 -355.55922  1678%  30.3   63s
+  5023  3990  -79.96014  257  929  -20.00000 -343.63433  1618%  30.2   65s
+  5029  3994  -78.39087  257  934  -20.00000 -341.89734  1609%  30.2   79s
+  5031  3995 -269.25621   20  973  -20.00000 -336.33389  1582%  30.2   80s
+  5037  3999  -62.34695   92  989  -20.00000 -332.91322  1565%  30.2   89s
+  5039  4000  -25.53698  392 1042  -20.00000 -328.63819  1543%  30.1   90s
+
+Cutting planes:
+  MIR: 34
+  Flow cover: 360
+  RLT: 482
+
+Explored 5046 nodes (172881 simplex iterations) in 100.19 seconds
+Thread count was 32 (of 32 available processors)
+
+Solution count 7: -20 -18 -16 ... 0
+
+Time limit reached
+Best objective -2.000000000000e+01, best bound -3.260000000000e+02, gap 1530.0000%
+-------------------------------------------------------------------------------
+                                    Summary                                    
+-------------------------------------------------------------------------------
+(CVXPY) Mar 14 02:17:39 PM: Problem status: user_limit
+(CVXPY) Mar 14 02:17:39 PM: Optimal value: 2.000e+01
+(CVXPY) Mar 14 02:17:39 PM: Compilation took 2.500e-01 seconds
+(CVXPY) Mar 14 02:17:39 PM: Solver (including time spent in interface) took 1.003e+02 seconds
+/home/pcs00440/initial_problem/initial_venv/lib/python3.6/site-packages/cvxpy/problems/problem.py:1268: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  "Solution may be inaccurate. Try another solver, "
+in compute graph score
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+has edge
+Solution is: {'software engineering': b'Min-You Wu', 'operating systems': b'Xiaosong Ma', 'high-performance computing': b'William Gropp', 'distributed and parallel computing': b'Rajeev Thakur'}
+Solution score for iqp graph truth is: 10
+Edges are: [(b'Min-You Wu', b'William Gropp'), (b'Min-You Wu', b'Rajeev Thakur'), (b'Xiaosong Ma', b'William Gropp'), (b'Xiaosong Ma', b'Rajeev Thakur'), (b'William Gropp', b'Min-You Wu'), (b'William Gropp', b'Xiaosong Ma'), (b'William Gropp', b'Rajeev Thakur'), (b'Rajeev Thakur', b'Min-You Wu'), (b'Rajeev Thakur', b'Xiaosong Ma'), (b'Rajeev Thakur', b'William Gropp')]
+Running time is: 105.46690440177917
+Considering the following customized categories: {'signal processing': 1, 'wireless networks and mobile computing': 1, 'computer networking': 1, 'information retrieval': 1}
+Creating graphs.
+in create_graph_gml_files
+in read_dict_to_list
+out read_dict_to_list
+in read_dict_to_pkl_file
+out read_dict_to_pkl_file
+in read_dict_to_pkl_file
+out read_dict_to_pkl_file
+in read_venue_assignments_csv
+Traceback (most recent call last):
+  File "method1_dblp.py", line 478, in <module>
+    main()
+  File "method1_dblp.py", line 393, in main
+    category_graph = create_graph_gml_files(file_name_pid_venue,file_name_venues_authors_citations,file_name_pid_authors,file_name_venues_assignment_csv,customized_categories)
+  File "method1_dblp.py", line 167, in create_graph_gml_files
+    venue_cat_dict = read_venue_assignments_csv(file_name_venues_assignment_csv)
+  File "method1_dblp.py", line 53, in read_venue_assignments_csv
+    for i, line in enumerate(reader):
+  File "/usr/lib/python3.6/encodings/ascii.py", line 26, in decode
+    return codecs.ascii_decode(input, self.errors)[0]
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xef in position 0: ordinal not in range(128)
