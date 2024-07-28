@@ -1,0 +1,491 @@
+Considering the following customized categories: {'artificial intelligence': 1, 'natural language processing': 1, 'robotics': 1, 'neural networks': 1}
+Creating graphs.
+in create_graph_gml_files
+in read_dict_to_list
+out read_dict_to_list
+in read_dict_to_pkl_file
+out read_dict_to_pkl_file
+in read_dict_to_pkl_file
+out read_dict_to_pkl_file
+in read_venue_assignments_csv
+out read_venue_assignments_csv
+in create_cat_venue_dictionary
+out create_cat_venue_dictionary
+in get_authors
+out get_authors
+Creating graphs.
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+Time required to create graphhs is: 15.74156665802002 sec
+Adding cross-edges to the graph.
+Category is: artificial intelligence
+New number of nodes of graph: 43716
+New number of edges of graph: 828114
+Category is: natural language processing
+New number of nodes of graph: 16749
+New number of edges of graph: 640203
+Category is: robotics
+New number of nodes of graph: 31188
+New number of edges of graph: 883725
+Category is: neural networks
+New number of nodes of graph: 39135
+New number of edges of graph: 671388
+Time required to add cross-edges is: 2.3501319885253906 sec
+out create_graph_gml_files
+Cleaning graphs.
+in clean_graphs
+Creating core graph.
+Creating core graph.
+Creating core graph.
+Creating core graph.
+out clean_graphs
+Length of nodes list: 30446 length of nodes 0
+Length of nodes list: 13068 length of nodes 30446
+Length of nodes list: 25796 length of nodes 43514
+Length of nodes list: 28473 length of nodes 69310
+Number of unique nodes 68978 number of all nodes: 97783
+Avg End./Role: 728726.0
+Avg End./Expert: 42.258459218881384
+Max End./Expert 4703
+Number of overlapping nodes: 28473
+in get_overlapping_graph_nodes
+Number of intersecting nodes: 599
+out get_overlapping_graph_nodes
+b'Jian Cheng'
+b'Serge Sharoff'
+b'Bo Li'
+b'Heung-Yeung Shum'
+Greedy solution is: {'natural language processing': (b'Yi Chen', 21), 'artificial intelligence': (b'Li Chen', 15), 'robotics': (b'Yong Zhang', 15), 'neural networks': (b'Min Wang', 15)}
+Solution score for greedy graph truth is: 66
+Running time is: 0.0010144710540771484
+Alternative greedy score is: 66
+Hungarian solution is: {'natural language processing': b'Yi Chen', 'robotics': b'Gregory Z. Grudic', 'neural networks': b'Jian Wang', 'artificial intelligence': b'Li Chen'}
+Solution score for hungarian graph truth is: 66.0
+Running time is: 59.59434509277344
+Alternative hungarian score is: 66
+Considering the following customized categories: {'data mining': 1, 'databases': 1, 'algorithms and theory': 1, 'algorithms': 1}
+Creating graphs.
+in create_graph_gml_files
+in read_dict_to_list
+out read_dict_to_list
+in read_dict_to_pkl_file
+out read_dict_to_pkl_file
+in read_dict_to_pkl_file
+out read_dict_to_pkl_file
+in read_venue_assignments_csv
+out read_venue_assignments_csv
+in create_cat_venue_dictionary
+out create_cat_venue_dictionary
+in get_authors
+out get_authors
+Creating graphs.
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+Time required to create graphhs is: 9.695201396942139 sec
+Adding cross-edges to the graph.
+Category is: data mining
+New number of nodes of graph: 18953
+New number of edges of graph: 497386
+Category is: databases
+New number of nodes of graph: 24693
+New number of edges of graph: 969093
+Category is: algorithms and theory
+New number of nodes of graph: 14324
+New number of edges of graph: 246467
+Category is: algorithms
+New number of nodes of graph: 9072
+New number of edges of graph: 113859
+Time required to add cross-edges is: 1.5888123512268066 sec
+out create_graph_gml_files
+Cleaning graphs.
+in clean_graphs
+Creating core graph.
+Creating core graph.
+Creating core graph.
+Creating core graph.
+out clean_graphs
+Length of nodes list: 15157 length of nodes 0
+Length of nodes list: 20295 length of nodes 15157
+Length of nodes list: 8997 length of nodes 35452
+Length of nodes list: 5449 length of nodes 44449
+Number of unique nodes 31701 number of all nodes: 49898
+Avg End./Role: 442794.25
+Avg End./Expert: 55.87132898015835
+Max End./Expert 3995
+Number of overlapping nodes: 5449
+in get_overlapping_graph_nodes
+Number of intersecting nodes: 1111
+out get_overlapping_graph_nodes
+b'Takuya Akiba'
+b'Diego Sez-Trumper'
+b'Lijun Zhang'
+b'Shimin Chen'
+Greedy solution is: {'data mining': (b'Sandra Zilles', 12), 'databases': (b'Mingwang Tang', 12), 'algorithms and theory': (b'Andr Nichterlein', 12), 'algorithms': (b'Manish Purohit', 0)}
+Solution score for greedy graph truth is: 36
+Running time is: 0.0033712387084960938
+Alternative greedy score is: 36
+Hungarian solution is: {'algorithms': b'Alexander Zelikovsky', 'algorithms and theory': b'Andr Nichterlein', 'databases': b'Antonio Faria', 'data mining': b'Khaled M. Hammouda'}
+Solution score for hungarian graph truth is: 36.0
+Running time is: 166.46966218948364
+Alternative hungarian score is: 36
+Considering the following customized categories: {'data mining': 1, 'databases': 1, 'algorithms and theory': 1, 'algorithms': 1, 'artificial intelligence': 1, 'natural language processing': 1, 'robotics': 1, 'neural networks': 1}
+Creating graphs.
+in create_graph_gml_files
+in read_dict_to_list
+out read_dict_to_list
+in read_dict_to_pkl_file
+out read_dict_to_pkl_file
+in read_dict_to_pkl_file
+out read_dict_to_pkl_file
+in read_venue_assignments_csv
+out read_venue_assignments_csv
+in create_cat_venue_dictionary
+out create_cat_venue_dictionary
+in get_authors
+out get_authors
+Creating graphs.
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+Time required to create graphhs is: 25.449432134628296 sec
+Adding cross-edges to the graph.
+Category is: data mining
+New number of nodes of graph: 29275
+New number of edges of graph: 628167
+Category is: databases
+New number of nodes of graph: 31117
+New number of edges of graph: 1037344
+Category is: algorithms and theory
+New number of nodes of graph: 19888
+New number of edges of graph: 278766
+Category is: algorithms
+New number of nodes of graph: 11599
+New number of edges of graph: 126716
+Category is: artificial intelligence
+New number of nodes of graph: 54758
+New number of edges of graph: 1043585
+Category is: natural language processing
+New number of nodes of graph: 21415
+New number of edges of graph: 714800
+Category is: robotics
+New number of nodes of graph: 31713
+New number of edges of graph: 886838
+Category is: neural networks
+New number of nodes of graph: 45523
+New number of edges of graph: 780411
+Time required to add cross-edges is: 6.051466703414917 sec
+out create_graph_gml_files
+Cleaning graphs.
+in clean_graphs
+Creating core graph.
+Creating core graph.
+Creating core graph.
+Creating core graph.
+Creating core graph.
+Creating core graph.
+Creating core graph.
+Creating core graph.
+out clean_graphs
+Length of nodes list: 21330 length of nodes 0
+Length of nodes list: 23445 length of nodes 21330
+Length of nodes list: 10675 length of nodes 44775
+Length of nodes list: 6351 length of nodes 55450
+Length of nodes list: 37383 length of nodes 61801
+Length of nodes list: 16001 length of nodes 99184
+Length of nodes list: 26011 length of nodes 115185
+Length of nodes list: 32544 length of nodes 141196
+Number of unique nodes 95903 number of all nodes: 173740
+Avg End./Role: 659539.375
+Avg End./Expert: 55.017204884101645
+Max End./Expert 5971
+Number of overlapping nodes: 32544
+in get_overlapping_graph_nodes
+Number of intersecting nodes: 131
+out get_overlapping_graph_nodes
+b'Jing Xiao'
+b'Yong Zhang'
+b'Srinivasan Parthasarathy'
+b'Jun Yang'
+b'Adam Meyerson'
+b'Ming Li'
+b'Jeff M. Phillips'
+b'Tim Roughgarden'
+Greedy solution is: {'neural networks': (b'Hong Cheng', 39), 'artificial intelligence': (b'Srinivasan Parthasarathy', 31), 'algorithms and theory': (b'Abhimanyu Das', 29), 'data mining': (b'Weng-Keen Wong', 26), 'databases': (b'Ke Sun', 26), 'robotics': (b'Rajeev Motwani', 6), 'algorithms': (b'Yue Wang', 0), 'natural language processing': (b'Rong Liu', 0)}
+Solution score for greedy graph truth is: 157
+Running time is: 0.0005509853363037109
+Alternative greedy score is: 157
+Hungarian solution is: {'algorithms and theory': b'Abhimanyu Das', 'neural networks': b'Hong Cheng', 'databases': b'Ke Sun', 'robotics': b'Rajeev Motwani', 'artificial intelligence': b'Srinivasan Parthasarathy', 'data mining': b'Weng-Keen Wong', 'algorithms': b'C. V. Jawahar', 'natural language processing': b'Jie Chen'}
+Solution score for hungarian graph truth is: 157.0
+Running time is: 4.2496631145477295
+Alternative hungarian score is: 157
+Considering the following customized categories: {'software engineering': 1, 'operating systems': 1, 'high-performance computing': 1, 'distributed and parallel computing': 1}
+Creating graphs.
+in create_graph_gml_files
+in read_dict_to_list
+out read_dict_to_list
+in read_dict_to_pkl_file
+out read_dict_to_pkl_file
+in read_dict_to_pkl_file
+out read_dict_to_pkl_file
+in read_venue_assignments_csv
+out read_venue_assignments_csv
+in create_cat_venue_dictionary
+out create_cat_venue_dictionary
+in get_authors
+out get_authors
+Creating graphs.
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+Time required to create graphhs is: 8.554496049880981 sec
+Adding cross-edges to the graph.
+Category is: software engineering
+New number of nodes of graph: 19653
+New number of edges of graph: 387176
+Category is: operating systems
+New number of nodes of graph: 12160
+New number of edges of graph: 257811
+Category is: high-performance computing
+New number of nodes of graph: 14244
+New number of edges of graph: 307184
+Category is: distributed and parallel computing
+New number of nodes of graph: 29118
+New number of edges of graph: 604413
+Time required to add cross-edges is: 1.5385231971740723 sec
+out create_graph_gml_files
+Cleaning graphs.
+in clean_graphs
+Creating core graph.
+Creating core graph.
+Creating core graph.
+Creating core graph.
+out clean_graphs
+Length of nodes list: 13829 length of nodes 0
+Length of nodes list: 9110 length of nodes 13829
+Length of nodes list: 10252 length of nodes 22939
+Length of nodes list: 23320 length of nodes 33191
+Number of unique nodes 37535 number of all nodes: 56511
+Avg End./Role: 373714.0
+Avg End./Expert: 39.825656054349274
+Max End./Expert 1606
+Number of overlapping nodes: 23320
+in get_overlapping_graph_nodes
+Number of intersecting nodes: 726
+out get_overlapping_graph_nodes
+b'Jean-Guy Schneider'
+b'Ivan Beschastnikh'
+b'Micah Beck'
+b'Lei Xu'
+Greedy solution is: {'distributed and parallel computing': (b'Zhen Li', 21), 'operating systems': (b'Wei Dong', 18), 'high-performance computing': (b'Radu Prodan', 15), 'software engineering': (b'Kaveh Razavi', 12)}
+Solution score for greedy graph truth is: 66
+Running time is: 0.0029425621032714844
+Alternative greedy score is: 66
+Hungarian solution is: {'high-performance computing': b'Radu Prodan', 'operating systems': b'Wei Dong', 'distributed and parallel computing': b'Zhen Li', 'software engineering': b'Jianjun Li'}
+Solution score for hungarian graph truth is: 66.0
+Running time is: 76.3330819606781
+Alternative hungarian score is: 66
+Considering the following customized categories: {'signal processing': 1, 'wireless networks and mobile computing': 1, 'computer networking': 1, 'information retrieval': 1}
+Creating graphs.
+in create_graph_gml_files
+in read_dict_to_list
+out read_dict_to_list
+in read_dict_to_pkl_file
+out read_dict_to_pkl_file
+in read_dict_to_pkl_file
+out read_dict_to_pkl_file
+in read_venue_assignments_csv
+out read_venue_assignments_csv
+in create_cat_venue_dictionary
+out create_cat_venue_dictionary
+in get_authors
+out get_authors
+Creating graphs.
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+Time required to create graphhs is: 13.051837682723999 sec
+Adding cross-edges to the graph.
+Category is: signal processing
+New number of nodes of graph: 24928
+New number of edges of graph: 478148
+Category is: wireless networks and mobile computing
+New number of nodes of graph: 14007
+New number of edges of graph: 261795
+Category is: computer networking
+New number of nodes of graph: 51372
+New number of edges of graph: 1524831
+Category is: information retrieval
+New number of nodes of graph: 5951
+New number of edges of graph: 156395
+Time required to add cross-edges is: 1.573258876800537 sec
+out create_graph_gml_files
+Cleaning graphs.
+in clean_graphs
+Creating core graph.
+Creating core graph.
+Creating core graph.
+Creating core graph.
+out clean_graphs
+Length of nodes list: 18415 length of nodes 0
+Length of nodes list: 9645 length of nodes 18415
+Length of nodes list: 43221 length of nodes 28060
+Length of nodes list: 4660 length of nodes 71281
+Number of unique nodes 56754 number of all nodes: 75941
+Avg End./Role: 586495.5
+Avg End./Expert: 41.335976318849774
+Max End./Expert 3165
+Number of overlapping nodes: 4660
+in get_overlapping_graph_nodes
+Number of intersecting nodes: 159
+out get_overlapping_graph_nodes
+b'Wei Wang'
+b'Li Wang'
+b'Liu Yang'
+b'Lei Shi'
+Greedy solution is: {'wireless networks and mobile computing': (b'Lance M. Kaplan', 15), 'computer networking': (b'Jing Li', 15), 'information retrieval': (b'Qinghua Zheng', 15), 'signal processing': (b'Yue Gao', 12)}
+Solution score for greedy graph truth is: 57
+Running time is: 0.00030541419982910156
+Alternative greedy score is: 57
+Hungarian solution is: {'computer networking': b'Jing Li', 'wireless networks and mobile computing': b'Lance M. Kaplan', 'information retrieval': b'Qinghua Zheng', 'signal processing': b'Jing Liu'}
+Solution score for hungarian graph truth is: 57.0
+Running time is: 2.4206836223602295
+Alternative hungarian score is: 57
+Considering the following customized categories: {'signal processing': 1, 'wireless networks and mobile computing': 1, 'computer networking': 1, 'information retrieval': 1, 'software engineering': 1, 'operating systems': 1, 'high-performance computing': 1, 'distributed and parallel computing': 1}
+Creating graphs.
+in create_graph_gml_files
+in read_dict_to_list
+out read_dict_to_list
+in read_dict_to_pkl_file
+out read_dict_to_pkl_file
+in read_dict_to_pkl_file
+out read_dict_to_pkl_file
+in read_venue_assignments_csv
+out read_venue_assignments_csv
+in create_cat_venue_dictionary
+out create_cat_venue_dictionary
+in get_authors
+out get_authors
+Creating graphs.
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+in create_graph
+out create_graph
+Time required to create graphhs is: 21.609326601028442 sec
+Adding cross-edges to the graph.
+Category is: signal processing
+New number of nodes of graph: 25560
+New number of edges of graph: 481729
+Category is: wireless networks and mobile computing
+New number of nodes of graph: 16296
+New number of edges of graph: 312068
+Category is: computer networking
+New number of nodes of graph: 58701
+New number of edges of graph: 1702478
+Category is: information retrieval
+New number of nodes of graph: 6951
+New number of edges of graph: 161829
+Category is: software engineering
+New number of nodes of graph: 21690
+New number of edges of graph: 398561
+Category is: operating systems
+New number of nodes of graph: 16239
+New number of edges of graph: 298947
+Category is: high-performance computing
+New number of nodes of graph: 15648
+New number of edges of graph: 316409
+Category is: distributed and parallel computing
+New number of nodes of graph: 39535
+New number of edges of graph: 720772
+Time required to add cross-edges is: 4.490476846694946 sec
+out create_graph_gml_files
+Cleaning graphs.
+in clean_graphs
+Creating core graph.
+Creating core graph.
+Creating core graph.
+Creating core graph.
+Creating core graph.
+Creating core graph.
+Creating core graph.
+Creating core graph.
+out clean_graphs
+Length of nodes list: 18668 length of nodes 0
+Length of nodes list: 11141 length of nodes 18668
+Length of nodes list: 48007 length of nodes 29809
+Length of nodes list: 5064 length of nodes 77816
+Length of nodes list: 14594 length of nodes 82880
+Length of nodes list: 11654 length of nodes 97474
+Length of nodes list: 10897 length of nodes 109128
+Length of nodes list: 29238 length of nodes 120025
+Number of unique nodes 90803 number of all nodes: 149263
+Avg End./Role: 527465.75
+Avg End./Expert: 46.47121791130249
+Max End./Expert 3258
+Number of overlapping nodes: 29238
+in get_overlapping_graph_nodes
+Number of intersecting nodes: 49
+out get_overlapping_graph_nodes
+b'Jun Zhang'
+b'Yue Zhang'
+b'Yan Li'
+b'Bo Zhang'
+b'Yang Liu'
+b'Wei Wang'
+b'Wei Chen'
+b'Lei Wang'
+Greedy solution is: {'wireless networks and mobile computing': (b'Wei Li', 47), 'computer networking': (b'Ying Zhang', 39), 'distributed and parallel computing': (b'Yue Zhang', 21), 'software engineering': (b'Chao Wang', 7), 'signal processing': (b'Wei Zhang', 4), 'information retrieval': (b'Bo Zhang', 0), 'operating systems': (b'Qing Yang', 0), 'high-performance computing': (b'Yan Li', 0)}
+Solution score for greedy graph truth is: 118
+Running time is: 0.0002472400665283203
+Alternative greedy score is: 118
+Hungarian solution is: {'software engineering': b'Chao Wang', 'wireless networks and mobile computing': b'Wei Li', 'signal processing': b'Wei Zhang', 'computer networking': b'Ying Zhang', 'distributed and parallel computing': b'Yue Zhang', 'information retrieval': b'Bo Zhang', 'operating systems': b'Qing Yang', 'high-performance computing': b'Yan Li'}
+Solution score for hungarian graph truth is: 118.0
+Running time is: 0.47344255447387695
+Alternative hungarian score is: 118
+Exiting main!
